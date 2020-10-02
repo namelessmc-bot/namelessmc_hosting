@@ -4,6 +4,7 @@ import db
 
 import create_site
 import update_site
+import delete_site
 
 print("Daemon started")
 
@@ -23,6 +24,9 @@ def daemon():
             elif job_type == 1:
                 site_id = int(job_content)
                 update_site.run(site_id)
+            elif job_type == 4:
+                site_id = int(job_content)
+                delete_site.run(site_id)
             else:
                 print(f"Unknown job type {job_type}")
                 # do not set job to done

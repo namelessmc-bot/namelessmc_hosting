@@ -18,3 +18,7 @@ def create_website_dataset(website_id):
         # libzfs_core.lzc_create(dataset_name, ds_type='zfs', props=ZFS_DATASET_OPTIONS)
     # except FilesystemExists:
         # print('Dataset already exists')
+
+
+def remove_website_dataset(website_id):
+    os.system(f"zfs rename {ZFS_ROOT}/{website_id} {ZFS_ROOT}/{website_id}_deleted")

@@ -2,6 +2,7 @@ from os import environ as env
 import os
 import network
 
+
 def install(website_id, db_password):
     with open('compose-template.yaml', 'r') as file:
         data = file.read()
@@ -15,3 +16,8 @@ def install(website_id, db_password):
         dest_file.write(data)
 
     os.system(f"docker-compose -f {dest_path} up -d")
+
+
+def uninstall(website_id):
+    dest_path = f"/{env['ZFS_ROOT']}/{website_id}/docker-compose.yaml"
+    os.system(f"docker-compose -f {dest_path} down")
