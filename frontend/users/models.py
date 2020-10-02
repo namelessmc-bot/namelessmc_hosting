@@ -1,10 +1,19 @@
 from django.db import models
 from django.contrib.auth.models import User
+from django.core.exceptions import ValidationError
 from django.urls import reverse
 from .utils import pass_gen
 
+def validate_domain(value):
+    if 'rs-sys.nl' in value:
+        raise ValidationError("Illegal domain", params={'value': value})
+
+    if not '.' in value:
+        raise ValidationError("Invalid domain", params={'value': value})
+
+
 class Website(models.Model):
-    domain = models.CharField(max_length=100, unique=True)
+    domain = models.CharField(max_length=100, unique=True, validators=[validate_domain])
     use_https = models.BooleanField(default=False)
     date_created = models.DateTimeField(auto_now_add=True)
     name = models.CharField(max_length=100)
@@ -13,6 +22,7 @@ class Website(models.Model):
 
     def __str__(self):
         return self.name
+
 
     def get_absolute_url(self):
         return reverse("website-detail", kwargs={"pk": self.pk})
