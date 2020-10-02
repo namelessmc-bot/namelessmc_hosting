@@ -68,7 +68,7 @@
 
     <div class="mt-4">
         <a href="{% url 'website-update' website.id %}" class="btn btn-outline-info">Edit</a>
-        <a href="{% url 'website-db-pass-regen' website.id %}" class="btn btn-outline-warning">Regenerate database password</a>
+        {% comment %} <a href="{% url 'website-db-pass-regen' website.id %}" class="btn btn-outline-warning">Regenerate database password</a> {% endcomment %}
         <a href="{% url 'website-delete' website.id %}" class="btn btn-outline-danger">Delete</a>
     </div>
 </div>
