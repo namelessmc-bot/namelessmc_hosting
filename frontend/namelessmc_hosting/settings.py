@@ -129,8 +129,8 @@ LOGIN_URL = 'login'
 if 'PROD' in os.environ:
     print("Using production settings")
     SECRET_KEY = os.environ['SECRET_KEY']
-    DEBUG = False
-    ALLOWED_HOSTS = ['nlmc.rs-sys.nl']
+    DEBUG = bool(os.environ['DEBUG'])
+    ALLOWED_HOSTS = [os.environ['ALLOWED_HOST']]
     DATABASES = {
         'default': {
             'ENGINE': 'django.db.backends.postgresql_psycopg2',
