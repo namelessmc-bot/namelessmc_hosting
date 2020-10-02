@@ -10,7 +10,6 @@ print("Daemon started")
 
 def daemon():
     while True:
-        print("Checking for jobs")
         conn = db.open_db()
         cur = conn.cursor()
         cur.execute("SELECT id,type,content FROM jobs WHERE done = FALSE ORDER BY priority DESC LIMIT 1")
@@ -38,8 +37,7 @@ def daemon():
             cur.execute("UPDATE jobs SET done = TRUE WHERE id=%s", (job_id,))
             conn.commit()
             print("Done")
-        else:
-            print("No jobs available")
+
         cur.close()
         conn.close()
         sleep(5)

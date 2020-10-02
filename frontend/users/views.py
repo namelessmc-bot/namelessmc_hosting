@@ -66,8 +66,7 @@ class WebsiteCreateView(LoginRequiredMixin, CreateView):
 
 class WebsiteUpdateView(LoginRequiredMixin, UserPassesTestMixin, UpdateView):
     model = Website
-    # fields = ['name', 'domain', 'use_https']
-    fields = ['name', 'domain']
+    fields = ['name', 'domain', 'use_https']
 
     def form_valid(self, form):
         form.instance.owner = self.request.user
