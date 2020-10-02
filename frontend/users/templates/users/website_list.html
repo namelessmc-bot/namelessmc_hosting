@@ -1,12 +1,17 @@
 {% extends 'main/base.html' %}
 {% block content %}
 <div class="content-section">
-    <h3>Your sites</h3>
-    <a href="{% url 'website-new' %}" class="btn btn-outline-info">Create new website</a>
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="{% url 'account' %}">Account</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Websites</li>
+        </ol>
+    </nav>
+    <h2 class="border-bottom">Your sites</h2>
     {% comment %} date_created, db_password, domain, id, name, owner, owner_id, use_https {% endcomment %}
     {% for website in websites %}
-        <div class="card mt-2">
-            <div class="card-header">
+        <div class="card mb-4 mt-4">
+            <div class="card-header bg-dark text-white">
                 {{ website.name }} - <a href="{% if website.use_https %}https://{{ website.domain }}{% else %}http://{{ website.domain}}{% endif %}">{{ website.domain }}</a>
             </div>
             <div class="card-body">
@@ -28,10 +33,11 @@
                 </table> {% endcomment %}
                 <a class="btn btn-outline-info" href="{% url 'website-detail' website.id %}">View &amp; Edit</a>
             </div>
-            <div class="card-footer">
+            {% comment %} <div class="card-footer bg-secondary text-white">
                 Date created (UTC) {{ website.date_created }}
-            </div>
+            </div> {% endcomment %}
         </div>
     {% endfor %}
+    <a href="{% url 'website-new' %}" class="btn btn-outline-success">Create new website</a>
 </div>
 {% endblock content %}
