@@ -3,9 +3,9 @@
 Install:
 
 ```sh
-apt install install python3-pyzfs python3-psycopg2
+apt install install python3-psycopg2
 or
-pip3 install pyzfs psycopg2
+pip3 install psycopg2
 ```
 
 Run:
