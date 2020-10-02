@@ -4,7 +4,7 @@ from django.urls import reverse
 from .utils import pass_gen
 
 class Website(models.Model):
-    domain = models.CharField(max_length=100)
+    domain = models.CharField(max_length=100, unique=True)
     use_https = models.BooleanField(default=False)
     date_created = models.DateTimeField(auto_now_add=True)
     name = models.CharField(max_length=100)
