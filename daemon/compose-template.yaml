@@ -1,0 +1,36 @@
+version: '3'
+
+services:
+
+  namelessmc:
+    nginx:
+      image: namelessmc/nginx
+      networks:
+        default:
+        namelessmc_proxy:
+          ipv4_address: REPLACEME_IPADDR
+      volumes: ['./web:/data:ro']
+      depends_on: [php]
+      restart: always
+      # labels:
+      #   - "traefik.enable=true"
+      #   - "traefik.http.routers.whoami.rule=Host(`REPLACEME_HOSTNAME`)"
+      #   - "traefik.http.routers.whoami.entrypoints=web"
+
+    php:
+      image: namelessmc/php
+      volumes: ['./web:/data']
+      depends_on: [db]
+      restart: always
+
+    database:
+      image: mariadb
+      volumes: ['./db:/var/lib/mysql']
+      environment:
+        MYSQL_ROOT_PASSWORD: REPLACEME_DBPASSWORD
+        MYSQL_DATABASE: nameless
+      restart: always
+
+networks:
+  namelessmc_proxy:
+    external: true
