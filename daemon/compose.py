@@ -1,4 +1,5 @@
 from os import environ as env
+import os
 import network
 
 def install(website_id, db_password):
@@ -12,3 +13,5 @@ def install(website_id, db_password):
     dest_path = f"/{env['ZFS_ROOT']}/{website_id}/docker-compose.yaml"
     with open(dest_path, 'w') as dest_file:
         dest_file.write(data)
+
+    os.system(f"docker-compose -f {dest_path} up -d")
