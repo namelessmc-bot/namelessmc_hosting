@@ -3,7 +3,12 @@
 <div class="content-section">
     <small class="text-muted"><a href="{% url 'websites' %}">Back to websites list</a></small>
     <h3>{{ website.name }}</h3>
-    Your website may not be available if you've just created it. Please wait a couple minutes and try again.
+    <div class="alert alert-warning" role="alert">
+        Your website may not be available if you've just created it. Please wait a couple minutes and try again.
+    </div>
+    <div class="alert alert-secondary" role="alert">
+        Add a <code>CNAME</code> record from <code>{{ website.domain }}</code> (and probably <code>www.{{ website.domain }}</code>) to <code>nlmc-website.rs-sys.nl</code>
+    </div>
     <table class="table">
         <tbody>
             <tr>
@@ -11,12 +16,12 @@
                 <td>{{ website.domain }}</td>
             </tr>
             <tr>
-                <td>Use HTTPS? <small class="text-muted">(coming soon)</small></td>
+                <td>Use HTTPS? <small class="text-muted">you will soon be able to change this</small></td>
                 <td>{{ website.use_https }}</td>
             </tr>
             <tr>
                 <td>URL</td>
-                <td><a href="{% if website.use_https %}https://{{ website.domain }}{% else %}http://{{ website.domain}}{% endif %}">{{ website.domain }}</a></td>
+                <td><a href="{% if website.use_https %}https://{{ website.domain }}{% else %}http://{{ website.domain}}{% endif %}">{% if website.use_https %}https://{{ website.domain }}{% else %}http://{{ website.domain}}{% endif %}</a></td>
             </tr>
             <tr>
                 <td>Date created (UTC)</td>
