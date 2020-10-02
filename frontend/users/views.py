@@ -5,6 +5,7 @@ from django.contrib import messages
 from django.contrib.auth.decorators import login_required
 from .forms import UserRegisterForm, UserUpdateForm
 from .models import Website
+from .utils import pass_gen
 
 
 def register(request):
@@ -92,8 +93,3 @@ def website_db_pass_regen(request, pk):
     website.db_password = pass_gen()
     website.save()
     return redirect('website-detail', pk=pk)
-
-
-def pass_gen():
-    import random, string # pylint: disable=import-outside-toplevel,multiple-imports
-    return ''.join(random.choice(string.ascii_letters) for i in range(30))
