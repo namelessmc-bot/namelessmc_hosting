@@ -40,6 +40,6 @@ def daemon():
 
         cur.close()
         conn.close()
-        sleep(5)
+        sleep(2)
 
 daemon()
