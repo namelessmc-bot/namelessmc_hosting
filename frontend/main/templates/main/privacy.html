@@ -1,0 +1,33 @@
+{% extends 'main/base.html' %}
+{% load static %}
+{% block content %}
+<h2>Privacy Policy</h2>
+<div class="row">
+    <div class="col md-8">
+        <p>This privacy policy covers only this website, not any NamelessMC websites hosted here.</p>
+
+        <h3>Cookies</h3>
+        <p>This website uses cookies for sessions (for logging in) and for storing a CSRF
+        token (for security). We do not use any tracking cookies.</p>
+
+        <h3>Data</h3>
+        <p>We only store data you explicity provide us. For example, during sign-up you
+        provide a username and email address. We do not store IP addresses right now but
+        we may in the future if it is necessary to combat spam. We also (obviously) store
+        all website data. The server is located in the Netherlands, protected by European
+        data protection regulations. Our backups are encrypted client side. We will never
+        share your data with third parties, we make money by selling hosting, not data.</p>
+
+        <p>Currently, there's no way to delete your account through the web interface. We do plan
+        to add this functionality in the near future. When you delete files through SFTP or delete your
+        entire website, your data may stick around for up to a year in our backups. You can request it
+        to be deleted completely by contacting us.</p>
+    </div>
+    <div class="col md-4">
+        <img src="{% static 'illustrations/undraw_privacy_protection.svg' %}" style="width: 100%; height: 300px">
+    </div>
+</div>
+
+
+
+{% endblock content %}

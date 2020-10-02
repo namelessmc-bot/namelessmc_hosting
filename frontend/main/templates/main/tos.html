@@ -1,0 +1,28 @@
+{% extends 'main/base.html' %}
+{% load static %}
+{% block content %}
+<h2>Terms and Conditions</h2>
+<div class="row">
+    <div class="col md-8">
+        <p>You agree to be bound by our website rules and any laws which may apply to this website
+        and your participation.</p>
+
+        <p>The website administration have the right to terminate your account at any time
+            and delete any websites you may have created or other information you have provied.</p>
+
+        <p>We are not responsible for any consequences that may arise from temporary or permanent
+        downtime and data loss on our side. Please keep your own backups so you can easily move to
+        a different hosting provider.</p>
+
+        <p>The site administration have the right to change these terms and conditions at any point
+        without warning. We will notify you of any changes that may impact you in a negative way at
+        least one week prior. To reduce spam, we won't notify for any typo fixes or changes that impact
+        you positively (e.g. SLA increasing from 99.2% to 99.3%). It is your responsibility to check
+        these terms and the rules periodically.</p>
+    </div>
+    <div class="col md-4">
+        <img src="{% static 'illustrations/undraw_terms.svg' %}" style="width: 100%; height: 300px">
+    </div>
+</div>
+
+{% endblock content %}

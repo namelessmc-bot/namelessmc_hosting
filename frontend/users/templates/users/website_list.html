@@ -1,0 +1,37 @@
+{% extends 'main/base.html' %}
+{% block content %}
+<div class="content-section">
+    <h3>Your sites</h3>
+    <a href="{% url 'website-new' %}" class="btn btn-outline-info">Create new website</a>
+    {% comment %} date_created, db_password, domain, id, name, owner, owner_id, use_https {% endcomment %}
+    {% for website in websites %}
+        <div class="card mt-2">
+            <div class="card-header">
+                {{ website.name }} - <a href="{% if website.use_https %}https://{{ website.domain }}{% else %}http://{{ website.domain}}{% endif %}">{{ website.domain }}</a>
+            </div>
+            <div class="card-body">
+                {% comment %} <table class="table">
+                    <tbody>
+                        <tr>
+                            <td>Domain</td>
+                            <td>{{ website.created_on }}</td>
+                        </tr>
+                        <tr>
+                            <td>Use HTTPS?</td>
+                            <td>{{ website.db_password }}</td>
+                        </tr>
+                        <tr>
+                            <td>Database password</td> {% comment %} TODO Click to reveal {% endcomment %} {% comment %}
+                            <td>{{ website.db_password }}</td>
+                        </tr>
+                    </tbody>
+                </table> {% endcomment %}
+                <a class="btn btn-outline-info" href="{% url 'website-detail' website.id %}">View &amp; Edit</a>
+            </div>
+            <div class="card-footer">
+                Date created (UTC) {{ website.date_created }}
+            </div>
+        </div>
+    {% endfor %}
+</div>
+{% endblock content %}

@@ -1,0 +1,52 @@
+{% extends 'main/base.html' %}
+{% block content %}
+<div class="content-section">
+    <small class="text-muted"><a href="{% url 'websites' %}">Back to websites list</a></small>
+    <h3>{{ website.name }}</h3>
+    Your website may not be available if you've just created it. Please wait a couple minutes and try again.
+    <table class="table">
+        <tbody>
+            <tr>
+                <td>Domain</td>
+                <td>{{ website.domain }}</td>
+            </tr>
+            <tr>
+                <td>Use HTTPS? <small class="text-muted">(coming soon)</small></td>
+                <td>{{ website.use_https }}</td>
+            </tr>
+            <tr>
+                <td>URL</td>
+                <td><a href="{% if website.use_https %}https://{{ website.domain }}{% else %}http://{{ website.domain}}{% endif %}">{{ website.domain }}</a></td>
+            </tr>
+            <tr>
+                <td>Date created (UTC)</td>
+                <td>{{ website.date_created }}</td>
+            </tr>
+        </tbody>
+    </table>
+    <a href="{% url 'website-update' website.id %}" class="btn btn-outline-info">Edit</a>
+    <h3 class="mt-3">Database information</h3>
+    Please note that it may take a minute or two for a password change to take effect
+    <table class="table">
+        <tbody>
+            <tr>
+                <td>hostname</td>
+                <td>database</td>
+            </tr>
+            <tr>
+                <td>port</td>
+                <td>3306</td>
+            </tr>
+            <tr>
+                <td>username</td>
+                <td>root</td>
+            </tr>
+            <tr>
+                <td>password</td> {% comment %} TODO Click to reveal {% endcomment %}
+                <td>{{ website.db_password }} <a href="{% url 'website-db-pass-regen' website.id %}" class="btn btn-outline-warning">Regenerate</a></td>
+            </tr>
+        </tbody>
+    </table>
+    <a href="{% url 'website-delete' website.id %}" class="btn btn-outline-danger">Delete</a>
+</div>
+{% endblock content %}

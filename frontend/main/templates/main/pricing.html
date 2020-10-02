@@ -1,0 +1,21 @@
+{% extends 'main/base.html' %}
+{% load static %}
+{% block content %}
+<h2>Pricing</h2>
+<div class="row">
+    <div class="col md-8">
+        <p>Your account will start with 30 credits. For every website you run it will go down by
+         one every day. Currently during testing, credits won't go down. (they aren't even displayed
+         yet)</p>
+
+        <p>Buy 50 credits for $5 or 150 credits for $10. (so one website is $2-$3/mo). Pricing
+         may change later depending on success. Maybe even a free plan, who knows.</p>
+
+        <p>NamelessMC software is free and open source. You can download and host it yourself for
+         free.</p>
+    </div>
+    <div class="col md-4">
+        <img src="{% static 'illustrations/undraw_wallet.svg' %}" style="width: 100%; height: 300px">
+    </div>
+</div>
+{% endblock content %}
