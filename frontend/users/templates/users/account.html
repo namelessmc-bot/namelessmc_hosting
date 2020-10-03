@@ -15,14 +15,14 @@
                     <h5 class="card-header">30 credits</h5>
                     <div class="card-body text-center">
                         <p>$5</p>
-                        <button class="btn btn-outline-secondary" type="submit">Buy</button>
+                        {{ buy_form_30.render }}
                     </div>
                 </div>
                 <div class="card mx-2 border-success">
                     <h5 class="card-header">100 credits</h5>
                     <div class="card-body text-center">
                         <p>$10</p>
-                        <button class="btn btn-outline-success" type="submit">Buy</button>
+                        {{ buy_form_30.render }}
                     </div>
                 </div>
             </div>
@@ -37,9 +37,9 @@
         <div class="card-body">
             <form method="POST">
                 {% csrf_token %}
-                {{ form|crispy }}
+                {{ update_form|crispy }}
                 <div class="form-group">
-                    <button class="btn btn-outline-info" type="submit">Submit</button>
+                    <button class="btn btn-outline-info" type="submit" name="update-account">Submit</button>
                 </div>
             </form>
         </div>

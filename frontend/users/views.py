@@ -1,8 +1,11 @@
 from django.shortcuts import render, redirect
+from django.urls import reverse
+from django.http import HttpResponse
 from django.contrib.auth.mixins import LoginRequiredMixin, UserPassesTestMixin
 from django.views.generic import ListView, DetailView, CreateView, UpdateView, DeleteView
 from django.contrib import messages
 from django.contrib.auth.decorators import login_required
+from paypal.standard.forms import PayPalPaymentsForm
 from .forms import UserRegisterForm, UserUpdateForm
 from .models import Website
 from .utils import pass_gen
@@ -24,15 +27,48 @@ def register(request):
 @login_required
 def account(request):
     if request.method == 'POST':
-        form = UserUpdateForm(request.POST, instance=request.user)
-        if form.is_valid():
-            form.save()
-            messages.success(request, 'Your account information has been updated.')
-            return redirect('account')
-    else:
-        form = UserUpdateForm(instance=request.user)
+        if 'update-account' in request.POST:
+            update_form = UserUpdateForm(request.POST, instance=request.user)
+            if update_form.is_valid():
+                update_form.save()
+                messages.success(request, 'Your account information has been updated.')
+                return redirect('account')
+        else:
+            return HttpResponse('Invalid request')
 
-    return render(request, 'users/account.html', {'form': form})
+    else:
+        update_form = UserUpdateForm(instance=request.user)
+
+    paypal_dict_30 = {
+        "business": "rs.systems@derkad.es",
+        "amount": "5.00",
+        "item_name": "Named Hosting Credits",
+        "notify_url": request.build_absolute_uri(reverse('paypal-ipn')),
+        "return": request.build_absolute_uri(reverse('payment-complete')),
+        "cancel_return": request.build_absolute_uri(reverse('payment-cancelled')),
+        "custom": "credits_30",
+    }
+
+    paypal_dict_100 = {
+        "business": "rs.systems@derkad.es",
+        "amount": "10.00",
+        "item_name": "Named Hosting Credits",
+        "notify_url": request.build_absolute_uri(reverse('paypal-ipn')),
+        "return": request.build_absolute_uri(reverse('payment-complete')),
+        "cancel_return": request.build_absolute_uri(reverse('payment-cancelled')),
+        "custom": "credits_100",
+    }
+
+    form_30 = PayPalPaymentsForm(initial=paypal_dict_30)
+    form_100 = PayPalPaymentsForm(initial=paypal_dict_100)
+
+    context = {
+        "update_form": update_form,
+        "buy_form_30": form_30,
+        "buy_form_100": form_100,
+    }
+
+    return render(request, 'users/account.html', context)
 
 
 class WebsiteListView(LoginRequiredMixin, ListView):
@@ -85,6 +121,7 @@ class WebsiteDeleteView(LoginRequiredMixin, UserPassesTestMixin, DeleteView):
         return self.request.user == website.owner
 
 
+@login_required
 def website_db_pass_regen(request, pk):
     website = Website.objects.get(pk=pk)
     website.db_password = pass_gen()

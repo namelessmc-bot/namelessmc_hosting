@@ -81,3 +81,12 @@ class Job(models.Model):
     priority = models.IntegerField(choices=PRIORITIES)
     content = models.CharField(max_length=200, null=True)
     done = models.BooleanField(default=False)
+
+
+class Transaction(models.Model):
+    price = models.IntegerField(null=True)
+    product = models.CharField(max_length=30, null=True)
+    target_email = models.CharField(max_length=100, null=True)
+    payer_email = models.CharField(max_length=200, null=True)
+    currency = models.CharField(max_length=10, null=True)
+    success = models.BooleanField()

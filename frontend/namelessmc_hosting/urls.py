@@ -16,6 +16,8 @@ Including another URLconf
 from django.contrib import admin
 from django.contrib.auth import views as auth
 from django.urls import path, include
+from django.conf.urls import url
+from django.views.generic import TemplateView
 from users import views as users
 from users.views import WebsiteListView, WebsiteDetailView, WebsiteCreateView, WebsiteUpdateView, WebsiteDeleteView
 
@@ -32,4 +34,7 @@ urlpatterns = [
     path('website/<int:pk>/db-pass-regen/', users.website_db_pass_regen, name='website-db-pass-regen'),
     path('login/', auth.LoginView.as_view(template_name='users/login.html'), name='login'),
     path('logout/', auth.LogoutView.as_view(template_name='users/logout.html'), name='logout'),
+    url(r'^paypal/', include('paypal.standard.ipn.urls')),
+    path('payment_complete', TemplateView.as_view(), name='payment-complete'),
+    path('payment_cancelled', TemplateView.as_view(), name='payment-cancelled'),
 ]

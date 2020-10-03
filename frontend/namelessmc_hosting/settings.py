@@ -34,6 +34,7 @@ INSTALLED_APPS = [
     'main.apps.MainConfig',
     'users.apps.UsersConfig',
     'crispy_forms',
+    'paypal.standard.ipn',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -143,3 +144,6 @@ if 'PROD' in os.environ:
     }
     USE_X_FORWARDED_HOST = True
     STATIC_ROOT = '/static'
+    PAYPAL_TEST = False
+else:
+    PAYPAL_TEST = True
