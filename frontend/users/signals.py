@@ -19,7 +19,7 @@ def save_account(sender, instance, **_kwargs): # pylint: disable=unused-argument
 def save_website(sender, instance, created, **_kwargs): # pylint: disable=unused-argument
     if created:
         # Hack to set passwords without saving the objects (which would cause another job to be created)
-        Website.objects.filter(id=instance.id).update(db_password=pass_gen(), sftp_password=pass_gen())
+        Website.objects.filter(id=instance.id).update(db_password=pass_gen(), files_password=pass_gen())
         Job.objects.create(type=Job.CREATE_WEBSITE, priority=Job.NORMAL, content=instance.id)
     else:
         Job.objects.create(type=Job.UPDATE_WEBSITE, priority=Job.HIGH, content=instance.pk)
@@ -27,4 +27,5 @@ def save_website(sender, instance, created, **_kwargs): # pylint: disable=unused
 
 @receiver(pre_delete, sender=Website)
 def delete_website(sender, instance, using, **_kwargs): # pylint: disable=unused-argument
-    Job.objects.create(type=Job.DELETE_WEBSITE, priority=Job.LOW, content=instance.id)
+    content = f'{instance.id}_{instance.domain}'
+    Job.objects.create(type=Job.DELETE_WEBSITE, priority=Job.LOW, content=content)

@@ -1,17 +1,14 @@
 from time import sleep
-# import libzfs_core
 import db
-import sftp
-
 import create_site
 import update_site
 import delete_site
 
+
 print("Daemon started")
 
-def daemon():
-    sftp.startup()
 
+def daemon():
     while True:
         conn = db.open_db()
         cur = conn.cursor()
@@ -27,7 +24,9 @@ def daemon():
                 site_id = int(job_content)
                 update_site.run(site_id)
             elif job_type == 4:
-                site_id = int(job_content)
+                pos = job_content.find('_')
+                site_id = int(job_content[:pos])
+                _domain = job_content[pos+1:]
                 delete_site.run(site_id)
             else:
                 print(f"Unknown job type {job_type}")

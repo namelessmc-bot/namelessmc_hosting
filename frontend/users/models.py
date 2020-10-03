@@ -25,7 +25,7 @@ class Website(models.Model):
     name = models.CharField(max_length=100)
     owner = models.ForeignKey(User, on_delete=models.CASCADE)
     db_password = models.CharField(max_length=50, default=pass_gen)
-    sftp_password = models.CharField(max_length=50, default=pass_gen)
+    files_password = models.CharField(max_length=50, default=pass_gen)
 
     def __str__(self):
         return self.name

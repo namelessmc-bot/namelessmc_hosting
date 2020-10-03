@@ -2,6 +2,7 @@ import compose
 import nginx
 import zfs
 
+
 def run(website_id):
     compose.uninstall(website_id)
     nginx.uninstall(website_id)

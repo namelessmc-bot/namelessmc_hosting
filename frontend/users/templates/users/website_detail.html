@@ -50,7 +50,7 @@
             <tbody>
                 <tr>
                     <td class="w-50">hostname</td>
-                    <td class="w-50">database</td>
+                    <td class="w-50"><code>database</code></td>
                 </tr>
                 <tr>
                     <td>port</td>
@@ -58,15 +58,15 @@
                 </tr>
                 <tr>
                     <td>database name</td>
-                    <td>nameless</td>
+                    <td><code>nameless</code></td>
                 </tr>
                 <tr>
                     <td>username</td>
-                    <td>root</td>
+                    <td><code>root</code></td>
                 </tr>
                 <tr>
                     <td>password</td> {% comment %} TODO Click to reveal {% endcomment %}
-                    <td>{{ website.db_password }}</td>
+                    <td><code>{{ website.db_password }}</code></td>
                 </tr>
                 <tr>
                     <td>phpmyadmin</td>
@@ -74,33 +74,26 @@
                 </tr>
             </tbody>
         </table>
-        <h4>SFTP</h4>
-        <small class="text-muted">It can take up to 5 minutes for SFTP changes to take effect (account creation and password changes)</small>
-        <table class="table table-hover">
-            <tbody>
-                <tr>
-                    <td class="w-50">hostname</td>
-                    <td class="w-50">vps1.derkad.es</td>
-                </tr>
-                <tr>
-                    <td>port</td>
-                    <td>2222</td>
-                </tr>
-                <tr>
-                    <td>username</td>
-                    <td>{{ website.domain }}</td>
-                </tr>
-                <tr>
-                    <td>password</td>
-                    <td>{{ website.sftp_password }}</td>
-                </tr>
-                <tr>
-                    <td>fingerprints</td>
-                    <td><small class="text-muted">ED25519 SHA256:QGG3EnIzZAgqgFuOPlWEbszKQar80d+0zSDtD0hy5Cs<br>
-                    RSA SHA256:bxLa03FqaUbdDhEaMlj3oTKMw+jCTfDXWGxYDRXlytI</small></td>
-                </tr>
-            </tbody>
-        </table>
+        <h4>Files</h4>
+        <h6>Windows</h6>
+        <ol>
+            <li>Open Explorer (<kbd>Win</kbd>+<kbd>E</kbd>)</li>
+            <li>Right click on <code>This PC</code></li>
+            <li>Click <code>Add a network location</code></li>
+            <li>For the address, use <code>{% if website.use_https %}https://{% else %}http://{% endif %}{{ website.domain }}/dav</code></li>
+            <li>Log in with the username <code>user</code> and password <code>{{ website.files_password }}</code></li>
+        </ol>
+        <h6>Linux: KDE</h6>
+        <ol>
+            <li>Open Dolphin (file manager)</li>
+            <li>Click the URL bar and enter <code>{% if website.use_https %}webdavs://{% else %}webdav://{% endif %}{{ website.domain }}/dav</code> </li>
+            <li>Log in with the username <code>user</code> and password <code>{{ website.files_password }}</code></li>
+            <li>To save for future use, right click on empty space and choose <code>Add to places</code></li>
+        </ol>
+        <h6>Linux: Gnome</h6>
+        <ol>
+            <li>TODO</li>
+        </ol>
     </div>
 </div>
 {% endblock content %}

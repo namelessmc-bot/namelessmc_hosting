@@ -38,6 +38,15 @@ services:
     entrypoint: /bin/bash
     command: -c "sed -i 's/Listen 80/Listen 8080/g' /etc/apache2/ports.conf && /docker-entrypoint.sh apache2-foreground"
 
+  webdav:
+    image: webdav
+    network_mode: service:nginx
+    volumes: ['./web:/data/web']
+    environment:
+      USERNAME: REPLACEME_FILESUSER
+      PASSWORD: REPLACEME_FILESPASSWORD
+    restart: always
+
 networks:
   namelessmc_proxy:
     external: true
