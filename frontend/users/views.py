@@ -13,7 +13,6 @@ def register(request):
         form = UserRegisterForm(request.POST)
         if form.is_valid():
             form.save()
-            # username = form.cleaned_data.get('username')
             messages.success(request, 'Your account has been created, please log in.')
             return redirect('login')
     else:
@@ -38,7 +37,6 @@ def account(request):
 
 class WebsiteListView(LoginRequiredMixin, ListView):
     model = Website
-    # login_required = True
     #template_name =
     context_object_name = 'websites'
     ordering = ['date_created']
