@@ -10,66 +10,83 @@
     </nav>
     <h2>{{ website.name }}</h2>
 
-    <div class="row border-top mt-2 pt-4">
-        <div class="col md-6">
-            <h4>Website</h4>
-            <table class="table">
-                <tbody>
-                    <tr>
-                        <td>Domain</td>
-                        <td>{{ website.domain }}</td>
-                    </tr>
-                    <tr>
-                        <td>HTTPS</td>
-                        <td>{{ website.use_https }}</td>
-                    </tr>
-                    <tr>
-                        <td>URL</td>
-                        <td><a href="{% if website.use_https %}https://{{ website.domain }}{% else %}http://{{ website.domain}}{% endif %}">{% if website.use_https %}https://{{ website.domain }}{% else %}http://{{ website.domain}}{% endif %}</a></td>
-                    </tr>
-                    <tr>
-                        <td>Date created (UTC)</td>
-                        <td>{{ website.date_created }}</td>
-                    </tr>
-                </tbody>
-            </table>
-            <div class="alert alert-secondary" role="alert">
-                Add a <code>CNAME</code> record from <code>{{ website.domain }}</code> to <code>nlmc-website.rs-sys.nl</code>
-            </div>
-        </div>
-        <div class="col md-6">
-            <h4>Database</h4>
-            <table class="table">
-                <tbody>
-                    <tr>
-                        <td>hostname</td>
-                        <td>database</td>
-                    </tr>
-                    <tr>
-                        <td>port</td>
-                        <td>3306</td>
-                    </tr>
-                    <tr>
-                        <td>database name</td>
-                        <td>nameless</td>
-                    </tr>
-                    <tr>
-                        <td>username</td>
-                        <td>root</td>
-                    </tr>
-                    <tr>
-                        <td>password</td> {% comment %} TODO Click to reveal {% endcomment %}
-                        <td>{{ website.db_password }}</td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-    </div>
-
-    <div class="mt-4">
+    <div class="border-top mt-2 pt-3">
         <a href="{% url 'website-update' website.id %}" class="btn btn-outline-info">Edit</a>
         {% comment %} <a href="{% url 'website-db-pass-regen' website.id %}" class="btn btn-outline-warning">Regenerate database password</a> {% endcomment %}
         <a href="{% url 'website-delete' website.id %}" class="btn btn-outline-danger">Delete</a>
+    </div>
+
+    <div class="mt-2 pt-4">
+        <h4>Website</h4>
+        <table class="table table-hover">
+            <tbody>
+                <tr>
+                    <td class="w-50">Domain</td>
+                    <td class="w-50">{{ website.domain }}</td>
+                </tr>
+                <tr>
+                    <td>HTTPS</td>
+                    <td>{{ website.use_https }}</td>
+                </tr>
+                <tr>
+                    <td>URL</td>
+                    <td><a href="{% if website.use_https %}https://{{ website.domain }}{% else %}http://{{ website.domain}}{% endif %}">{% if website.use_https %}https://{{ website.domain }}{% else %}http://{{ website.domain}}{% endif %}</a></td>
+                </tr>
+                <tr>
+                    <td>Date created (UTC)</td>
+                    <td>{{ website.date_created }}</td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="alert alert-secondary" role="alert">
+            Add a <code>CNAME</code> record from <code>{{ website.domain }}</code> to <code>nlmc-website.rs-sys.nl</code>
+        </div>
+        <h4>Database</h4>
+        <table class="table table-hover">
+            <tbody>
+                <tr>
+                    <td class="w-50">hostname</td>
+                    <td class="w-50">database</td>
+                </tr>
+                <tr>
+                    <td>port</td>
+                    <td>3306</td>
+                </tr>
+                <tr>
+                    <td>database name</td>
+                    <td>nameless</td>
+                </tr>
+                <tr>
+                    <td>username</td>
+                    <td>root</td>
+                </tr>
+                <tr>
+                    <td>password</td> {% comment %} TODO Click to reveal {% endcomment %}
+                    <td>{{ website.db_password }}</td>
+                </tr>
+            </tbody>
+        </table>
+        <h4>SFTP</h4>
+        <table class="table table-hover">
+            <tbody>
+                <tr>
+                    <td class="w-50">hostname</td>
+                    <td class="w-50">nlmc.rs-sys.nl</td>
+                </tr>
+                <tr>
+                    <td>port</td>
+                    <td>2222</td>
+                </tr>
+                <tr>
+                    <td>username</td>
+                    <td>{{ website.domain }}</td>
+                </tr>
+                <tr>
+                    <td>password</td>
+                    <td>{{ website.sftp_password }}</td>
+                </tr>
+            </tbody>
+        </table>
     </div>
 </div>
 {% endblock content %}
