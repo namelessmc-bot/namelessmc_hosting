@@ -30,7 +30,7 @@
                 </tr>
                 <tr>
                     <td>URL</td>
-                    <td><a href="{% if website.use_https %}https://{{ website.domain }}{% else %}http://{{ website.domain}}{% endif %}">{% if website.use_https %}https://{{ website.domain }}{% else %}http://{{ website.domain}}{% endif %}</a></td>
+                    <td><a href="{% if website.use_https %}https://{% else %}http://{% endif %}{{ website.domain }}">{% if website.use_https %}https://{% else %}http://{% endif %}{{ website.domain }}</a></td>
                 </tr>
                 <tr>
                     <td>Date created (UTC)</td>
@@ -63,6 +63,10 @@
                 <tr>
                     <td>password</td> {% comment %} TODO Click to reveal {% endcomment %}
                     <td>{{ website.db_password }}</td>
+                </tr>
+                <tr>
+                    <td>phpmyadmin</td>
+                    <td><a href="{% if website.use_https %}https://{% else %}http://{% endif %}{{ website.domain }}/phpmyadmin">{% if website.use_https %}https://{% else %}http://{% endif %}{{ website.domain }}/phpmyadmin</a></td>
                 </tr>
             </tbody>
         </table>
