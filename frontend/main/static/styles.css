@@ -15,3 +15,24 @@ body {
     line-height: 70px;
     background-color: #171717;
 }
+
+.homepage-illustration {
+    height: 200px;
+    width: 100%;
+}
+
+.flex-equal > * {
+    -ms-flex: 1;
+    flex: 1;
+}
+
+@media (min-width: 768px) {
+    .flex-md-equal > * {
+        -ms-flex: 1;
+        flex: 1;
+    }
+}
+
+main.features > div > div {
+    border-radius: .5em;
+}
