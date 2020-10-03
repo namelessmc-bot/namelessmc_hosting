@@ -80,11 +80,22 @@
             </div>
         </main>
 
-        <footer class="footer">
-            <div class="container text-light">
-                Not affiliated with the <a href="https://namelessmc.com">NamelessMC project</a>.
-                Powered by <a href="https://rs-sys.nl/">RS Systems</a>.
-                <a href="{% url 'privacy' %}">Privacy Policy</a>. <a href="{% url 'tos' %}">Terms of service</a></small>
+        <footer>
+            <div class="container text-light py-md-4">
+                <div class="d-flex flex-column flex-md-row justify-content-center">
+                    <div class="px-4">
+                        Not affiliated with the <a href="https://namelessmc.com">NamelessMC project</a><br>
+                        This hosting system is <a href="https://github.com/Derkades/namelessmc_hosting">is open source</a><br>
+                    </div>
+                    <div class="px-4">
+                        Powered by <a href="https://rs-sys.nl/">RS Systems</a><br>
+                        pls someone explain how to center footer??
+                    </div>
+                    <div class="px-4">
+                        <a href="{% url 'privacy' %}">Privacy Policy</a><br>
+                        <a href="{% url 'tos' %}">Terms of service</a>
+                    </div>
+                </div>
             </div>
         </footer>
     </body>
