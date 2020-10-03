@@ -35,7 +35,7 @@ def remove(domain):
 
 
 def generate_users_config():
-    print("Generating SFTP users config")
+    print("Generating SFTP users config..")
     data = ""
     with db.open_db() as conn:
         with conn.cursor() as cur:
