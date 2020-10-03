@@ -2,16 +2,47 @@
 {% load crispy_forms_tags %}
 {% block content %}
 <div class="content-section">
-    <p>Welcome, {{ user.username }}</p>
-    <form method="POST">
-        {% csrf_token %}
-        <fieldset class="form-group">
-            <legend class="border-bottom mb-4">Update account settings</legend>
-            {{ form|crispy }}
-        </fieldset>
-        <div class="form-group">
-            <button class="btn btn-outline-info" type="submit">Submit</button>
+    <h3>Welcome, {{ user.username }}</h3>
+    <div class="card mt-2">
+        <h5 class="card-header">Credit</h5>
+        <div class="card-body">
+            <p>You have <code>{{ user.account.credit}}</code> credits remaining in your
+            account. For every website you have, this number will go down by one every
+            day. Your websites are shut down when you run out of credits.</p>
+            <h5>Buy more</h5>
+            <div class="d-flex flex-row mt-1">
+                <div class="card mx-2">
+                    <h5 class="card-header">30 credits</h5>
+                    <div class="card-body text-center">
+                        <p>$5</p>
+                        <button class="btn btn-outline-secondary" type="submit">Buy</button>
+                    </div>
+                </div>
+                <div class="card mx-2 border-success">
+                    <h5 class="card-header">100 credits</h5>
+                    <div class="card-body text-center">
+                        <p>$10</p>
+                        <button class="btn btn-outline-success" type="submit">Buy</button>
+                    </div>
+                </div>
+            </div>
         </div>
-    </form>
+        <div class="card-footer">
+            This does not work yet. For right now, websites are free.
+        </div>
+    </div>
+
+    <div class="card mt-4">
+        <h5 class="card-header">Update account settings</h5>
+        <div class="card-body">
+            <form method="POST">
+                {% csrf_token %}
+                {{ form|crispy }}
+                <div class="form-group">
+                    <button class="btn btn-outline-info" type="submit">Submit</button>
+                </div>
+            </form>
+        </div>
+    </div>
 </div>
 {% endblock content %}
