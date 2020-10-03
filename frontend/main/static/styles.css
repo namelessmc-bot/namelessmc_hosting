@@ -38,6 +38,13 @@ footer {
     }
 }
 
-main.features > div > div {
+section#features > div > div {
     border-radius: .5em;
+}
+
+section#create-now {
+    /* background-color: red; */
+    border-radius: .5em;
+    background: url('server.jpeg') no-repeat center;
+    background-size: cover;
 }
