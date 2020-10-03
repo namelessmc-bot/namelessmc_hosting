@@ -19,6 +19,7 @@ def save_account(sender, instance, **_kwargs): # pylint: disable=unused-argument
 def save_website(sender, instance, created, **_kwargs): # pylint: disable=unused-argument
     if created:
         instance.db_password = pass_gen()
+        instance.sftp_password = pass_gen()
         instance.save()
         Job.objects.create(type=Job.CREATE_WEBSITE, priority=Job.NORMAL, content=instance.id)
     else:
