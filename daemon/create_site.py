@@ -19,7 +19,7 @@ def run(website_id):
 
     zfs.create_website_dataset(website_id)
 
-    compose.install(website_id, db_password)
+    compose.install(website_id, domain, use_https, db_password)
     nginx.install(website_id, domain, use_https)
     sftp.setup(website_id, domain)
     sftp.generate_users_config()

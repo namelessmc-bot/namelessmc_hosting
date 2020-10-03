@@ -16,6 +16,6 @@ def get_website_info(website_id):
 def run(website_id):
     (domain, use_https, db_password) = get_website_info(website_id)
 
-    compose.install(website_id, db_password)
+    compose.install(website_id, domain, use_https, db_password)
     nginx.install(website_id, domain, use_https)
     sftp.generate_users_config() # in case SFTP password has changed
