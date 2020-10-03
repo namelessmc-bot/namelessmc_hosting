@@ -1,6 +1,8 @@
 import compose
 import db
 import nginx
+import sftp
+
 
 def get_website_info(website_id):
     with db.open_db() as conn:
@@ -16,3 +18,4 @@ def run(website_id):
 
     compose.install(website_id, db_password)
     nginx.install(website_id, domain, use_https)
+    sftp.generate_users_config() # in case SFTP password has changed

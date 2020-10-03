@@ -1,3 +1,7 @@
+import socket
+from contextlib import closing
+
+
 PREFIX = '10.130'
 
 def get_webserver_ip(website_id):
@@ -9,3 +13,10 @@ def get_webserver_ip(website_id):
     second = int(binary[8:], 2)
     # format as IP address
     return f'{PREFIX}.{first}.{second}'
+
+
+def find_free_port():
+    with closing(socket.socket(socket.AF_INET, socket.SOCK_STREAM)) as s:
+        s.bind(('localhost', 0))
+        s.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
+        return s.getsockname()[1]

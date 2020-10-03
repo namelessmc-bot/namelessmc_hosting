@@ -2,6 +2,7 @@ import compose
 import db
 import zfs
 import nginx
+import sftp
 
 
 def get_website_info(website_id):
@@ -20,3 +21,5 @@ def run(website_id):
 
     compose.install(website_id, db_password)
     nginx.install(website_id, domain, use_https)
+    sftp.setup(website_id, domain)
+    sftp.generate_users_config()

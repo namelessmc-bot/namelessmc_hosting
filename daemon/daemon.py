@@ -1,6 +1,7 @@
 from time import sleep
 # import libzfs_core
 import db
+import sftp
 
 import create_site
 import update_site
@@ -9,6 +10,8 @@ import delete_site
 print("Daemon started")
 
 def daemon():
+    sftp.startup()
+
     while True:
         conn = db.open_db()
         cur = conn.cursor()
