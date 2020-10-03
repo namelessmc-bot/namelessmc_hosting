@@ -46,8 +46,6 @@ def generate_users_config():
                 (domain, sftp_password) = website
                 data += f"{domain}:{sftp_password}:33:33\n"
 
-    print(data)
-
     dest_path = '/ssd/container/namelessmc/proxy/sftp_users.conf'
     with open(dest_path, 'w') as dest_file:
         dest_file.write(data)
