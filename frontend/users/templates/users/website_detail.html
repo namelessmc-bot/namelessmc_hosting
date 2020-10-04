@@ -86,13 +86,24 @@
         <h6>Linux: KDE</h6>
         <ol>
             <li>Open Dolphin (file manager)</li>
-            <li>Click the URL bar and enter <code>{% if website.use_https %}webdavs://{% else %}webdav://{% endif %}{{ website.domain }}/dav</code> </li>
+            <li>Click the URL bar and enter <code>{% if website.use_https %}webdavs://{% else %}webdav://{% endif %}{{ website.domain }}/dav</code></li>
             <li>Log in with the username <code>user</code> and password <code>{{ website.files_password }}</code></li>
             <li>To save for future use, right click on empty space and choose <code>Add to places</code></li>
         </ol>
         <h6>Linux: Gnome</h6>
         <ol>
-            <li>TODO</li>
+            <li>Open Nautilus (file manager)</li>
+            <li>Click <code>Other Locations</code></li>
+            <li>In the address bar, enter <code>{% if website.use_https %}davs://{% else %}dav://{% endif %}{{ website.domain }}/dav</code>
+            <li>Log in with the username <code>user</code> and password <code>{{ website.files_password }}</code></li>
+        </ol>
+        <h6>Mac OS 10.8+</h6>
+        <ol>
+            <li>Open Finder</li>
+            <li>Click <code>Go</code> then <code>Connect to Server...</code></li>
+            <li>In the address bar, enter <code>{% if website.use_https %}https://{% else %}http://{% endif %}{{ website.domain }}/dav</code>
+            <li>Before connecting, make sure to click the <kbd>&plus;</kbd> button to save the connection for future use</li>
+            <li>Connect and log in with the username <code>user</code> and password <code>{{ website.files_password }}</code></li>
         </ol>
     </div>
 </div>
