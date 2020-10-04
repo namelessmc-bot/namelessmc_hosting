@@ -89,4 +89,5 @@ class Transaction(models.Model):
     target_email = models.CharField(max_length=100, null=True)
     payer_email = models.CharField(max_length=200, null=True)
     currency = models.CharField(max_length=10, null=True)
+    target_user = models.ForeignKey(User, on_delete=models.SET_NULL, null=True)
     success = models.BooleanField()

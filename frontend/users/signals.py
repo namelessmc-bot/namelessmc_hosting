@@ -1,4 +1,5 @@
 from django.db.models.signals import post_save, pre_delete
+from django.db.models import F
 from django.contrib.auth.models import User
 from django.dispatch import receiver
 from paypal.standard.models import ST_PP_COMPLETED
@@ -47,25 +48,41 @@ def paypal_money_received(sender, **_kwargs):
 
         # ALSO: for the same reason, check the amount received, `custom` etc.
 
-        product = ipn_obj.custom
+        product = ipn_obj.item_number
         if product == "credits_30":
             expected_price = '5.0'
-        elif product == "credits_30":
+            credits_to_add = 30
+        elif product == "credits_100":
             expected_price = '10.00'
+            credits_to_add = 100
         else:
-            Transaction.objects.create(success=False, target_email=target_email, product=product)
+            Transaction.objects.create(success=False, target_email=target_email,
+                                       product=product)
             return
 
         paid_price = ipn_obj.mc_gross
         if paid_price != expected_price:
-            Transaction.objects.create(success=False, target_email=target_email, product=product, price=paid_price)
+            Transaction.objects.create(success=False, target_email=target_email,
+                                       product=product, price=paid_price)
 
         paid_currency = ipn_obj.mc_currency
         if paid_currency != 'USD':
-            Transaction.objects.create(success=False, target_email=target_email, product=product, price=paid_price, currency=paid_currency)
+            Transaction.objects.create(success=False, target_email=target_email,
+                                       product=product, price=paid_price,
+                                       currency=paid_currency)
             return
 
-        Transaction.objects.create(success=True, target_email=target_email, product=product, price=paid_price, currency=paid_currency)
+        target_user = ipn_obj.custom
+        user = User.objects.filter(pk=target_user)
+        if user:
+            user.account.update(credits=F('credits') + credits_to_add)
+            Transaction.objects.create(success=True, target_email=target_email,
+                                       product=product, price=paid_price,
+                                       currency=paid_currency, user=user)
+        else:
+            Transaction.objects.create(success=False, target_email=target_email,
+                                       product=product, price=paid_price,
+                                       currency=paid_currency)
     else:
         Transaction.objects.create(success=False)
         return

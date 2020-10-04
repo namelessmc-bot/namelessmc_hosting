@@ -130,7 +130,7 @@ LOGIN_URL = 'login'
 if 'PROD' in os.environ:
     print("Using production settings")
     SECRET_KEY = os.environ['SECRET_KEY']
-    DEBUG = bool(os.environ['DEBUG'])
+    DEBUG = False
     ALLOWED_HOSTS = [os.environ['ALLOWED_HOST']]
     DATABASES = {
         'default': {
@@ -144,6 +144,6 @@ if 'PROD' in os.environ:
     }
     USE_X_FORWARDED_HOST = True
     STATIC_ROOT = '/static'
-    PAYPAL_TEST = False
+    PAYPAL_TEST = True
 else:
     PAYPAL_TEST = True

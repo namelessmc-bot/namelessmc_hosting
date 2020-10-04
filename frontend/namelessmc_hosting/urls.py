@@ -35,6 +35,6 @@ urlpatterns = [
     path('login/', auth.LoginView.as_view(template_name='users/login.html'), name='login'),
     path('logout/', auth.LogoutView.as_view(template_name='users/logout.html'), name='logout'),
     url(r'^paypal/', include('paypal.standard.ipn.urls')),
-    path('payment_complete', TemplateView.as_view(), name='payment-complete'),
-    path('payment_cancelled', TemplateView.as_view(), name='payment-cancelled'),
+    path('payment_complete', users.payment_complete, name='payment-complete'),
+    path('payment_cancelled', TemplateView.as_view(template_name='users/payment_cancelled.html'), name='payment-cancelled'),
 ]

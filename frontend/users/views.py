@@ -5,6 +5,7 @@ from django.contrib.auth.mixins import LoginRequiredMixin, UserPassesTestMixin
 from django.views.generic import ListView, DetailView, CreateView, UpdateView, DeleteView
 from django.contrib import messages
 from django.contrib.auth.decorators import login_required
+from django.views.decorators.csrf import csrf_exempt
 from paypal.standard.forms import PayPalPaymentsForm
 from .forms import UserRegisterForm, UserUpdateForm
 from .models import Website
@@ -39,24 +40,28 @@ def account(request):
     else:
         update_form = UserUpdateForm(instance=request.user)
 
+    user_id = request.user.id
+
     paypal_dict_30 = {
         "business": "rs.systems@derkad.es",
         "amount": "5.00",
-        "item_name": "Named Hosting Credits",
+        "item_name": "30 Named Hosting Credits",
+        "item_number": "credits_30",
         "notify_url": request.build_absolute_uri(reverse('paypal-ipn')),
         "return": request.build_absolute_uri(reverse('payment-complete')),
         "cancel_return": request.build_absolute_uri(reverse('payment-cancelled')),
-        "custom": "credits_30",
+        "custom": str(user_id),
     }
 
     paypal_dict_100 = {
         "business": "rs.systems@derkad.es",
         "amount": "10.00",
-        "item_name": "Named Hosting Credits",
+        "item_name": "100 Named Hosting Credits",
+        "item_number": "credits_100",
         "notify_url": request.build_absolute_uri(reverse('paypal-ipn')),
         "return": request.build_absolute_uri(reverse('payment-complete')),
         "cancel_return": request.build_absolute_uri(reverse('payment-cancelled')),
-        "custom": "credits_100",
+        "custom": str(user_id),
     }
 
     form_30 = PayPalPaymentsForm(initial=paypal_dict_30)
@@ -127,3 +132,8 @@ def website_db_pass_regen(request, pk):
     website.db_password = pass_gen()
     website.save()
     return redirect('website-detail', pk=pk)
+
+
+@csrf_exempt
+def payment_complete(request):
+    return render(request, template_name='users/payment_complete.html')
