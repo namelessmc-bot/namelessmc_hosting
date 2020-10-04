@@ -144,6 +144,6 @@ if 'PROD' in os.environ:
     }
     USE_X_FORWARDED_HOST = True
     STATIC_ROOT = '/static'
-    PAYPAL_TEST = True
+    PAYPAL_TEST = False
 else:
     PAYPAL_TEST = True
