@@ -40,7 +40,7 @@ footer {
 
 section#features > div > div,
 section#create-now,
-main.jumbotron {
+section.jumbotron {
     border-radius: .5em;
 }
 
