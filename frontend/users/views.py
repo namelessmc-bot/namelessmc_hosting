@@ -1,6 +1,7 @@
 from django.shortcuts import render, redirect
 from django.urls import reverse
 from django.http import HttpResponse
+from django.db.models import F
 from django.contrib.auth.mixins import LoginRequiredMixin, UserPassesTestMixin
 from django.views.generic import ListView, DetailView, CreateView, UpdateView, DeleteView
 from django.contrib import messages
@@ -8,7 +9,7 @@ from django.contrib.auth.decorators import login_required
 from django.views.decorators.csrf import csrf_exempt
 from paypal.standard.forms import PayPalPaymentsForm
 from .forms import UserRegisterForm, UserUpdateForm
-from .models import Website
+from .models import Website, Voucher, Account
 from .utils import pass_gen
 
 
@@ -34,6 +35,18 @@ def account(request):
                 update_form.save()
                 messages.success(request, 'Your account information has been updated.')
                 return redirect('account')
+        elif 'redeem-voucher' in request.POST:
+            vouchers = Voucher.objects.filter(code=request.POST.get('code', ''))
+            if vouchers.exists():
+                voucher = vouchers.first()
+                credits_to_add = voucher.amount
+                voucher.delete()
+                Account.objects.filter(user=request.user).update(credit=F('credit') + credits_to_add)
+                messages.success(request, f'Voucher redeemed, added {credits_to_add} credits to your account.')
+            else:
+                messages.warning(request, 'Voucher invalid or already redeemed')
+
+            return redirect('account')
         else:
             return HttpResponse('Invalid request')
 

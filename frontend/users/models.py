@@ -91,3 +91,8 @@ class Transaction(models.Model):
     currency = models.CharField(max_length=10, null=True)
     target_user = models.ForeignKey(User, on_delete=models.SET_NULL, null=True)
     success = models.BooleanField()
+
+
+class Voucher(models.Model):
+    code = models.CharField(max_length=50, default=pass_gen, unique=True)
+    amount = models.IntegerField(default=30)

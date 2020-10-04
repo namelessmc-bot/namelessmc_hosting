@@ -75,7 +75,7 @@ def paypal_money_received(sender, **_kwargs):
         target_user = ipn_obj.custom
         user = User.objects.filter(pk=target_user)
         if user:
-            user.account.update(credits=F('credits') + credits_to_add)
+            Account.objects.filter(user=user).update(credit=F('credit') + credits_to_add)
             Transaction.objects.create(success=True, target_email=target_email,
                                        product=product, price=paid_price,
                                        currency=paid_currency, user=user)
