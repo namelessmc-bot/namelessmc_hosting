@@ -26,6 +26,12 @@ class Website(models.Model):
     owner = models.ForeignKey(User, on_delete=models.CASCADE)
     db_password = models.CharField(max_length=50, default=pass_gen)
     files_password = models.CharField(max_length=50, default=pass_gen)
+    versions_choices = [
+        ('latest', 'Latest (v2-pre7)'),
+        ('dev', 'Development version (v2) - TESTING ONLY')
+    ]
+    version = models.CharField(max_length=20, default='latest', choices=versions_choices)
+    webserver_ip = models.CharField(max_length=20, default=None, null=True)
 
     def __str__(self):
         return self.name

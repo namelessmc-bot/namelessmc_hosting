@@ -110,15 +110,16 @@ class WebsiteDetailView(LoginRequiredMixin, UserPassesTestMixin, DetailView):
 
 class WebsiteCreateView(LoginRequiredMixin, CreateView):
     model = Website
-    fields = ['name', 'domain']
+    fields = ['name', 'domain', 'version']
 
     def form_valid(self, form):
         form.instance.owner = self.request.user
         return super().form_valid(form)
 
+
 class WebsiteUpdateView(LoginRequiredMixin, UserPassesTestMixin, UpdateView):
     model = Website
-    fields = ['name', 'domain', 'use_https']
+    fields = ['name', 'domain', 'use_https', 'version']
 
     def form_valid(self, form):
         form.instance.owner = self.request.user
