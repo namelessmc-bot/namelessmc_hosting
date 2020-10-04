@@ -75,7 +75,32 @@
             </tbody>
         </table>
         <h4>Files</h4>
-        <h6>Windows</h6>
+        <p>Use an FTP client to connect. We recommend FileZilla. The server
+        supports TLS encryption. FileZilla will tell you that the certificate
+        is "unknown", no worries, <a href="https://forum.filezilla-project.org/viewtopic.php?t=25595">
+        it displays this even for trusted certificates</a>, you can click OK.</p>
+        <table class="table table-hover">
+            <tbody>
+                <tr>
+                    <td class="w-50">address</td>
+                    <td class="w-50"><code>vps1.derkad.es</code></td>
+                </tr>
+                <tr>
+                    <td>port</td>
+                    <td><code>21</code></td>
+                </tr>
+                <tr>
+                    <td>username</td>
+                    <td><code>user_{{ website.id }}</code></td>
+                </tr>
+                <tr>
+                    <td>password</td>
+                    <td><code>{{ website.files_password }}</code></td>
+                </tr>
+            </tbody>
+        </table>
+
+        {% comment %} <h6>Windows</h6>
         <ol>
             <li>Open Explorer (<kbd>Win</kbd>+<kbd>E</kbd>)</li>
             <li>Right click on <code>This PC</code></li>
@@ -104,7 +129,7 @@
             <li>In the address bar, enter <code>{% if website.use_https %}https://{% else %}http://{% endif %}{{ website.domain }}/dav</code>
             <li>Before connecting, make sure to click the <kbd>&plus;</kbd> button to save the connection for future use</li>
             <li>Connect and log in with the username <code>user</code> and password <code>{{ website.files_password }}</code></li>
-        </ol>
+        </ol> {% endcomment %}
     </div>
 </div>
 {% endblock content %}
