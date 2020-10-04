@@ -83,14 +83,14 @@
             <li>For the address, use <code>{% if website.use_https %}https://{% else %}http://{% endif %}{{ website.domain }}/dav</code></li>
             <li>Log in with the username <code>user</code> and password <code>{{ website.files_password }}</code></li>
         </ol>
-        <h6>Linux: KDE</h6>
+        <h6>Linux: KDE (Kubuntu, Manjaro KDE, KDE Neon)</h6>
         <ol>
             <li>Open Dolphin (file manager)</li>
             <li>Click the URL bar and enter <code>{% if website.use_https %}webdavs://{% else %}webdav://{% endif %}{{ website.domain }}/dav</code></li>
             <li>Log in with the username <code>user</code> and password <code>{{ website.files_password }}</code></li>
             <li>To save for future use, right click on empty space and choose <code>Add to places</code></li>
         </ol>
-        <h6>Linux: Gnome</h6>
+        <h6>Linux: Gnome (Ubuntu, Debian, Fedora)</h6>
         <ol>
             <li>Open Nautilus (file manager)</li>
             <li>Click <code>Other Locations</code></li>
