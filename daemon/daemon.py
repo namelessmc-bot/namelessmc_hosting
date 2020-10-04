@@ -1,5 +1,6 @@
 from time import sleep
 import db
+import ftp
 import create_site
 import update_site
 import delete_site
@@ -9,6 +10,8 @@ print("Daemon started")
 
 
 def daemon():
+    ftp.recreate()
+
     while True:
         conn = db.open_db()
         cur = conn.cursor()
