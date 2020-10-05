@@ -31,6 +31,7 @@ urlpatterns = [
     path('website/new/', WebsiteCreateView.as_view(), name='website-new'),
     path('website/<int:pk>/edit/', WebsiteUpdateView.as_view(), name='website-update'),
     path('website/<int:pk>/delete/', WebsiteDeleteView.as_view(), name='website-delete'),
+    path('website/<int:pk>/reset/', users.website_reset, name='website-reset'),
     path('website/<int:pk>/db-pass-regen/', users.website_db_pass_regen, name='website-db-pass-regen'),
     path('login/', auth.LoginView.as_view(template_name='users/login.html'), name='login'),
     path('logout/', auth.LogoutView.as_view(template_name='users/logout.html'), name='logout'),

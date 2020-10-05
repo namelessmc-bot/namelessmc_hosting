@@ -1,6 +1,6 @@
 from django.shortcuts import render, redirect
 from django.urls import reverse
-from django.http import HttpResponse
+from django.http import HttpResponse, HttpResponseNotFound
 from django.db.models import F
 from django.contrib.auth.mixins import LoginRequiredMixin, UserPassesTestMixin
 from django.views.generic import ListView, DetailView, CreateView, UpdateView, DeleteView
@@ -9,7 +9,7 @@ from django.contrib.auth.decorators import login_required
 from django.views.decorators.csrf import csrf_exempt
 from paypal.standard.forms import PayPalPaymentsForm
 from .forms import UserRegisterForm, UserUpdateForm
-from .models import Website, Voucher, Account
+from .models import Website, Voucher, Account, Job
 from .utils import pass_gen
 
 
@@ -138,6 +138,22 @@ class WebsiteDeleteView(LoginRequiredMixin, UserPassesTestMixin, DeleteView):
     def test_func(self):
         website = self.get_object()
         return self.request.user == website.owner
+
+
+@login_required
+def website_reset(request, pk):
+    if request.method == 'POST':
+        if request.user == Website.objects.filter(pk=pk).first().owner:
+            Job.objects.create(type=Job.RESET_WEBSITE, priority=Job.NORMAL, content=pk)
+            return redirect('website-detail', pk)
+        else:
+            return HttpResponse("Invalid request")
+
+    websites = Website.objects.filter(pk=pk)
+    if not websites.exists():
+        return HttpResponseNotFound()
+
+    return render(request, 'users/website_reset.html', context={'website': websites.first()})
 
 
 @login_required

@@ -15,6 +15,7 @@
         </div>
         <div>
             <a href="{% url 'website-update' website.id %}" class="btn btn-outline-info mr-2">Edit</a>
+            <a href="{% url 'website-reset' website.id %}" class="btn btn-outline-warning mr-2">Reset</a>
             <a href="{% url 'website-delete' website.id %}" class="btn btn-outline-danger">Delete</a>
         </div>
     </div>
@@ -46,6 +47,10 @@
             </tbody>
         </table>
         <h4>Database</h4>
+        <p>These are only the default credentials. You can add, remove or
+         change users, databases and passwords in phpmyadmin. The
+         information displayed here will not update when you make changes
+         yourself.</p>
         <table class="table table-hover">
             <tbody>
                 <tr>

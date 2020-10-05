@@ -4,6 +4,7 @@ import ftp
 import create_site
 import update_site
 import delete_site
+import reset_site
 
 
 print("Daemon started")
@@ -26,6 +27,9 @@ def daemon():
             elif job_type == 1:
                 site_id = int(job_content)
                 update_site.run(site_id)
+            elif job_type == 2:
+                site_id = int(job_content)
+                reset_site.run(site_id)
             elif job_type == 4:
                 pos = job_content.find('_')
                 site_id = int(job_content[:pos])

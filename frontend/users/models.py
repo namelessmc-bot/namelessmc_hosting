@@ -55,18 +55,16 @@ class Job(models.Model):
 
     CREATE_WEBSITE = 0 # Create website dataset and containers
     UPDATE_WEBSITE = 1 # Update domain and/or database password
-    RESET_DATABASE = 2 # Stop database container, delete files, start database container
-    RESET_WEB = 3 # Delete all files in web/ directory and restart php container to re-download website
+    RESET_WEBSITE = 2
+    RESERVED = 3
     DELETE_WEBSITE = 4 # Delete website and all data
-    RECREATE_WEBSITE_CONTAINERS = 5 # Recreate docker containers for this website
 
     JOB_TYPES = [
         (CREATE_WEBSITE, 'Create website'),
         (UPDATE_WEBSITE, 'Update website'),
-        (RESET_DATABASE, 'Reset database'),
-        (RESET_WEB, 'Reset web'),
+        (RESET_WEBSITE, 'Reset website'),
+        (RESERVED, 'nothing'),
         (DELETE_WEBSITE, 'Delete website'),
-        (RECREATE_WEBSITE_CONTAINERS, 'Recreate website containers'),
     ]
 
     CRITICAL = 4
