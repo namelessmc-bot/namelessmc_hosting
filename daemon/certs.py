@@ -1,6 +1,7 @@
 import os
 
 ZFS_ROOT = os.environ['ZFS_ROOT']
+NGINX_CERTS_DIR = os.environ['NGINX_CERTS_DIR']
 
 
 def has_certs(website_id, domain):
@@ -19,7 +20,7 @@ def renew_cert(website_id):
 
 def copy_certs(website_id, domain):
     # TODO Is rm necessary?
-    os.system(f'rm -f /ssd/container/namelessmc/proxy/certs/{domain}.cert')
-    os.system(f'rm -f /ssd/container/namelessmc/proxy/certs/{domain}.key')
-    os.system(f'cp /{ZFS_ROOT}/{website_id}/certs/live/{domain}/fullchain.pem /ssd/container/namelessmc/proxy/certs/{domain}.cert')
-    os.system(f'cp /{ZFS_ROOT}/{website_id}/certs/live/{domain}/privkey.pem /ssd/container/namelessmc/proxy/certs/{domain}.key')
+    os.system(f'rm -f {NGINX_CERTS_DIR}/{domain}.cert')
+    os.system(f'rm -f {NGINX_CERTS_DIR}/{domain}.key')
+    os.system(f'cp /{ZFS_ROOT}/{website_id}/certs/live/{domain}/fullchain.pem {NGINX_CERTS_DIR}/{domain}.cert')
+    os.system(f'cp /{ZFS_ROOT}/{website_id}/certs/live/{domain}/privkey.pem {NGINX_CERTS_DIR}/{domain}.key')

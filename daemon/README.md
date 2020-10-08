@@ -18,6 +18,7 @@ export DB_PASS=""
 export DB_PORT=""
 export ZFS_ROOT=""
 export NGINX_SITES_DIR=""
+export NGINX_CERTS_DIR=""
 export NGINX_RELOAD_COMMAND="" # optional
 
 python3 daemon.py
