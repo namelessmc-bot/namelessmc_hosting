@@ -20,6 +20,7 @@ export ZFS_ROOT=""
 export NGINX_SITES_DIR=""
 export NGINX_CERTS_DIR=""
 export NGINX_RELOAD_COMMAND="" # optional
+export FTP_COMPOSE_PATH=""
 
 python3 daemon.py
 ```
