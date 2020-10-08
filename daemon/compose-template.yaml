@@ -27,25 +27,14 @@ services:
     restart: always
 
   phpmyadmin:
-    image: phpmyadmin/phpmyadmin
+    image: nlmc_hosting/phpmyadmin
     network_mode: service:nginx
     volumes: [/sessions]
+    depends_on: [database]
     environment:
       PMA_HOST: database
       PMA_ABSOLUTE_URI: REPLACEME_PHPMYADMINURI
-      UPLOAD_LIMIT: 100M
     restart: always
-    entrypoint: /bin/bash
-    command: -c "sed -i 's/Listen 80/Listen 8080/g' /etc/apache2/ports.conf && /docker-entrypoint.sh apache2-foreground"
-
-  # webdav:
-  #   image: webdav
-  #   network_mode: service:nginx
-  #   volumes: ['./web:/data/web']
-  #   environment:
-  #     USERNAME: REPLACEME_FILESUSER
-  #     PASSWORD: REPLACEME_FILESPASSWORD
-  #   restart: always
 
 networks:
   namelessmc_proxy:
