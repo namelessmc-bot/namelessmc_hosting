@@ -35,6 +35,7 @@ class Website(models.Model):
     ]
     version = models.CharField(max_length=20, default='latest', choices=versions_choices)
     webserver_ip = models.CharField(max_length=20, default=None, null=True)
+    www = models.BooleanField(default=False, verbose_name='Enable www.')
 
     def __str__(self):
         return self.name
@@ -88,6 +89,7 @@ class Job(models.Model):
     priority = models.IntegerField(choices=PRIORITIES)
     content = models.CharField(max_length=200, null=True)
     done = models.BooleanField(default=False)
+    running = models.BooleanField(default=False)
 
 
 class Transaction(models.Model):

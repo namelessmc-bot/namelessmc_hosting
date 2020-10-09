@@ -119,7 +119,7 @@ class WebsiteCreateView(LoginRequiredMixin, CreateView):
 
 class WebsiteUpdateView(LoginRequiredMixin, UserPassesTestMixin, UpdateView):
     model = Website
-    fields = ['name', 'domain', 'use_https', 'version']
+    fields = ['name', 'domain', 'www', 'version', 'use_https']
 
     def form_valid(self, form):
         form.instance.owner = self.request.user
@@ -144,7 +144,7 @@ class WebsiteDeleteView(LoginRequiredMixin, UserPassesTestMixin, DeleteView):
 def website_reset(request, pk):
     if request.method == 'POST':
         if request.user == Website.objects.filter(pk=pk).first().owner:
-            if Job.objects.filter(type=Job.RESET_WEBSITE, content=pk, done=False):
+            if Job.objects.filter(type=Job.RESET_WEBSITE, content=pk, done=False, running=False):
                 print('Skipped creating job to prevent duplicates')
             else:
                 Job.objects.create(type=Job.RESET_WEBSITE, priority=Job.NORMAL, content=pk)
