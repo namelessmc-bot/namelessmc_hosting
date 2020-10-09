@@ -25,7 +25,10 @@ def save_website(sender, instance, created, **_kwargs): # pylint: disable=unused
         Website.objects.filter(id=instance.id).update(db_password=pass_gen(), files_password=pass_gen())
         Job.objects.create(type=Job.CREATE_WEBSITE, priority=Job.HIGH, content=instance.id)
     else:
-        Job.objects.create(type=Job.UPDATE_WEBSITE, priority=Job.NORMAL, content=instance.pk)
+        if Job.objects.filter(type=Job.UPDATE_WEBSITE, content=instance.pk, done=False).exists():
+            print('Skipped creating job to prevent duplicates')
+        else:
+            Job.objects.create(type=Job.UPDATE_WEBSITE, priority=Job.NORMAL, content=instance.pk)
 
 
 @receiver(pre_delete, sender=Website)

@@ -144,7 +144,10 @@ class WebsiteDeleteView(LoginRequiredMixin, UserPassesTestMixin, DeleteView):
 def website_reset(request, pk):
     if request.method == 'POST':
         if request.user == Website.objects.filter(pk=pk).first().owner:
-            Job.objects.create(type=Job.RESET_WEBSITE, priority=Job.NORMAL, content=pk)
+            if Job.objects.filter(type=Job.RESET_WEBSITE, content=pk, done=False):
+                print('Skipped creating job to prevent duplicates')
+            else:
+                Job.objects.create(type=Job.RESET_WEBSITE, priority=Job.NORMAL, content=pk)
             return redirect('website-detail', pk)
         else:
             return HttpResponse("Invalid request")
