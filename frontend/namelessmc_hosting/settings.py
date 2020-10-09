@@ -124,7 +124,7 @@ USE_TZ = True
 STATIC_URL = '/static/'
 
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
-LOGIN_REDIRECT_URL = 'account'
+LOGIN_REDIRECT_URL = 'websites'
 LOGIN_URL = 'login'
 
 if 'PROD' in os.environ:
