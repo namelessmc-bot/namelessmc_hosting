@@ -2,4 +2,4 @@
 docker build -t nlmc_hosting/phpmyadmin phpmyadmin
 cp -r ../frontend frontend/app
 docker build -t nlmc_hosting/frontend frontend
-rm -r frontent/app
+rm -r frontend/app
