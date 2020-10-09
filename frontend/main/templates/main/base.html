@@ -70,8 +70,8 @@
                 <div class="col">
                     {% if user.is_authenticated and user.account.credit < 18 %}
                         <div class="alert alert-warning" role="alert">
-                            Your credit is low. Make sure to <a href="{% url 'account' %}">buy
-                            more</a> if you don't want your websites to be shut down.
+                            Your credit is low. Make sure to <a href="{% url 'account' %}">
+                            buy more</a> if you don't want your websites to be shut down.
                         </div>
                     {% endif %}
 
@@ -91,12 +91,13 @@
             <div class="container text-light py-md-4">
                 <div class="d-flex flex-column flex-md-row justify-content-center">
                     <div class="px-4">
-                        Not affiliated with the <a href="https://namelessmc.com">NamelessMC project</a><br>
-                        This hosting system is <a href="https://github.com/Derkades/namelessmc_hosting">is open source</a><br>
+                        Not affiliated with the
+                        <a href="https://namelessmc.com">NamelessMC project</a><br>
+                        This hosting system is <a href="https://github.com/Derkades/namelessmc_hosting">
+                        open source</a><br>
                     </div>
                     <div class="px-4">
                         Powered by <a href="https://rs-sys.nl/">RS Systems</a><br>
-                        pls someone explain how to center footer??
                     </div>
                     <div class="px-4">
                         <a href="{% url 'privacy' %}">Privacy Policy</a><br>

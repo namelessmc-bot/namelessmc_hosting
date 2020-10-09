@@ -48,9 +48,8 @@
         </table>
         <h4>Database</h4>
         <p>These are only the default credentials. You can add, remove or
-         change users, databases and passwords in phpmyadmin. The
-         information displayed here will not update when you make changes
-         yourself.</p>
+         change users, databases and passwords in phpmyadmin. The information
+         displayed here will not update when you make changes yourself.</p>
         <table class="table table-hover">
             <tbody>
                 <tr>
@@ -104,37 +103,6 @@
                 </tr>
             </tbody>
         </table>
-
-        {% comment %} <h6>Windows</h6>
-        <ol>
-            <li>Open Explorer (<kbd>Win</kbd>+<kbd>E</kbd>)</li>
-            <li>Right click on <code>This PC</code></li>
-            <li>Click <code>Add a network location</code></li>
-            <li>For the address, use <code>{% if website.use_https %}https://{% else %}http://{% endif %}{{ website.domain }}/dav</code></li>
-            <li>Log in with the username <code>user</code> and password <code>{{ website.files_password }}</code></li>
-        </ol>
-        <h6>Linux: KDE (Kubuntu, Manjaro KDE, KDE Neon)</h6>
-        <ol>
-            <li>Open Dolphin (file manager)</li>
-            <li>Click the URL bar and enter <code>{% if website.use_https %}webdavs://{% else %}webdav://{% endif %}{{ website.domain }}/dav</code></li>
-            <li>Log in with the username <code>user</code> and password <code>{{ website.files_password }}</code></li>
-            <li>To save for future use, right click on empty space and choose <code>Add to places</code></li>
-        </ol>
-        <h6>Linux: Gnome (Ubuntu, Debian, Fedora)</h6>
-        <ol>
-            <li>Open Nautilus (file manager)</li>
-            <li>Click <code>Other Locations</code></li>
-            <li>In the address bar, enter <code>{% if website.use_https %}davs://{% else %}dav://{% endif %}{{ website.domain }}/dav</code>
-            <li>Log in with the username <code>user</code> and password <code>{{ website.files_password }}</code></li>
-        </ol>
-        <h6>Mac OS 10.8+</h6>
-        <ol>
-            <li>Open Finder</li>
-            <li>Click <code>Go</code> then <code>Connect to Server...</code></li>
-            <li>In the address bar, enter <code>{% if website.use_https %}https://{% else %}http://{% endif %}{{ website.domain }}/dav</code>
-            <li>Before connecting, make sure to click the <kbd>&plus;</kbd> button to save the connection for future use</li>
-            <li>Connect and log in with the username <code>user</code> and password <code>{{ website.files_password }}</code></li>
-        </ol> {% endcomment %}
     </div>
 </div>
 {% endblock content %}
