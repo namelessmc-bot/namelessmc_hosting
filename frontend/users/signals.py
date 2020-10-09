@@ -23,9 +23,9 @@ def save_website(sender, instance, created, **_kwargs): # pylint: disable=unused
     if created:
         # Hack to set passwords without saving the objects (which would cause another job to be created)
         Website.objects.filter(id=instance.id).update(db_password=pass_gen(), files_password=pass_gen())
-        Job.objects.create(type=Job.CREATE_WEBSITE, priority=Job.NORMAL, content=instance.id)
+        Job.objects.create(type=Job.CREATE_WEBSITE, priority=Job.HIGH, content=instance.id)
     else:
-        Job.objects.create(type=Job.UPDATE_WEBSITE, priority=Job.HIGH, content=instance.pk)
+        Job.objects.create(type=Job.UPDATE_WEBSITE, priority=Job.NORMAL, content=instance.pk)
 
 
 @receiver(pre_delete, sender=Website)
