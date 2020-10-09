@@ -13,7 +13,11 @@ def get_website_info(website_id):
 
 
 def run(website_id):
-    (domain, use_https, db_password, files_password, version) = get_website_info(website_id)
+    data = get_website_info(website_id)
+    if data is None:
+        print(f'Skip updating website, {website_id} no longer exists')
+        return
 
+    (domain, use_https, db_password, files_password, version) = data
     compose.install(website_id, domain, use_https, db_password, files_password, version)
     nginx.install(website_id, domain, use_https)
