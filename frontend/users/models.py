@@ -14,6 +14,9 @@ def validate_domain(value):
     if 'rs-sys.nl' in value:
         raise ValidationError("Invalid domain", params={'value': value})
 
+    if 'www.' in value:
+        raise ValidationError("Don't include www. in your domain", params={'value': value})
+
     if not '.' in value:
         raise ValidationError("Invalid domain", params={'value': value})
 
