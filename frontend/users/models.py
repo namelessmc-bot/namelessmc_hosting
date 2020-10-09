@@ -38,7 +38,7 @@ class Website(models.Model):
     www = models.BooleanField(default=False, verbose_name='Enable www.')
 
     def __str__(self):
-        return self.name
+        return self.domain
 
 
     def get_absolute_url(self):
@@ -50,7 +50,7 @@ class Account(models.Model):
     credit = models.IntegerField(default=30)
 
     def __str__(self):
-        return f'{self.user.username} Account'
+        return f'{self.user.username} - {self.credit} Account'
 
 
 class Job(models.Model):
@@ -105,3 +105,6 @@ class Transaction(models.Model):
 class Voucher(models.Model):
     code = models.CharField(max_length=50, default=pass_gen, unique=True)
     amount = models.IntegerField(default=30)
+
+    def __str__(self):
+        return f'{self.amount} credits voucher {self.code}'
