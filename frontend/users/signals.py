@@ -31,6 +31,7 @@ def save_website(sender, instance, created, **_kwargs): # pylint: disable=unused
 @receiver(pre_delete, sender=Website)
 def delete_website(sender, instance, using, **_kwargs): # pylint: disable=unused-argument
     content = f'{instance.id}_{instance.domain}'
+    Job.objects.filter(website=instance).delete()
     Job.objects.create(type=Job.DELETE_WEBSITE, priority=Job.LOW, content=content)
 
 
