@@ -2,7 +2,7 @@ from os import environ as env
 import os
 import network
 import certs
-
+from db import open_db
 
 def get_path(website_id):
     return os.path.abspath(f"{env['NGINX_SITES_DIR']}/website_{website_id}.conf")
@@ -30,8 +30,13 @@ def deal_with_certs(website_id, domain):
 def install(website_id, domain, use_https):
     if use_https:
         # turn off use_https if cert fails
-        use_https = deal_with_certs(website_id, domain)
-
+        work = deal_with_certs(website_id, domain)
+        if not work:
+            use_https = False
+            with open_db() as conn:
+                with conn.cursor() as cur:
+                    query = "UPDATE users_website SET use_https = FALSE WHERE id=%s"
+                    cur.execute(query, (website_id,))
 
     ip_addr = network.get_webserver_ip(website_id)
     dest_path = get_path(website_id)
