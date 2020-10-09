@@ -1,37 +1,18 @@
 from os import environ as env
 import os
 import network
-import certs
+from certs import generate_certs
 from db import open_db
 
 def get_path(website_id):
     return os.path.abspath(f"{env['NGINX_SITES_DIR']}/website_{website_id}.conf")
 
 
-def deal_with_certs(website_id, domain):
-    if certs.has_certs(website_id, domain):
-        certs.copy_certs(website_id, domain) # just in case
-        print("Website already has certs")
-        return True
-    else:
-        print("Website does not have certs, generating..")
-        certs.get_cert(website_id, domain)
-        if certs.has_certs(website_id, domain):
-            print("it worked!")
-            # epic.
-            certs.copy_certs(website_id, domain)
-            return True
-        else:
-            print("it did not work.")
-            # :(
-            return False
-
-
-def install(website_id, domain, use_https):
+def install(website_id, domain, use_https, use_www):
     if use_https:
         # turn off use_https if cert fails
-        work = deal_with_certs(website_id, domain)
-        if not work:
+        worked = generate_certs(website_id, domain, use_www)
+        if not worked:
             use_https = False
             with open_db() as conn:
                 with conn.cursor() as cur:
@@ -48,6 +29,7 @@ def install(website_id, domain, use_https):
         with open('nginx-template.conf', 'r') as file:
             data = file.read()
 
+    # www. can be added here safely without checking use_www
     data = data.replace('REPLACEME_DOMAIN', f'{domain} www.{domain}')
     data = data.replace('REPLACEME_IPADDR', ip_addr)
 
