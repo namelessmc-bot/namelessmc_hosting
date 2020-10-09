@@ -17,6 +17,10 @@ def generate_certs(website_id, domain, use_www):
     if has_certs(website_id, domain, use_www):
         print("it worked!")
         # epic.
+        if use_www:
+            os.system(f'touch /{ZFS_ROOT}/{website_id}/.certs_www')
+        else:
+            os.system(f'rm -f /{ZFS_ROOT}/{website_id}/.certs_www')
         copy_certs(website_id, domain)
         return True
 
@@ -26,8 +30,14 @@ def generate_certs(website_id, domain, use_www):
 
 
 def has_certs(website_id, domain, use_www):
-    # TODO Somehow check if cert is valid for www.
-    return os.path.exists(f'/{ZFS_ROOT}/{website_id}/certs/live/{domain}/fullchain.pem')
+    cert_exists = os.path.exists(f'/{ZFS_ROOT}/{website_id}/certs/live/{domain}/fullchain.pem')
+
+    if cert_exists and use_www and not os.path.exists(f'/{ZFS_ROOT}/{website_id}/.certs_www'):
+        print('Certs exist but not for www.')
+        cert_exists = False
+
+    return cert_exists
+
 
 
 def get_cert(website_id, domain, use_www):

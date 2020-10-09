@@ -20,21 +20,31 @@ def install(website_id, domain, use_https, use_www):
                     cur.execute(query, (website_id,))
 
     ip_addr = network.get_webserver_ip(website_id)
-    dest_path = get_path(website_id)
 
-    if use_https:
-        with open('nginx-template-https.conf', 'r') as file:
-            data = file.read()
+    template = read_template(use_https, use_www)
+    template = template.replace('REPLACEME_DOMAIN', domain)
+    template = template.replace('REPLACEME_IPADDR', ip_addr)
+
+    write_config(website_id, template)
+
+
+def read_template(use_https, use_www):
+    if use_https and use_www:
+        name = 'www-https'
+    elif use_https and not use_www:
+        name = 'https'
+    elif not use_https and use_www:
+        name = 'www'
     else:
-        with open('nginx-template.conf', 'r') as file:
-            data = file.read()
+        name = 'default'
+    with open(f'nginx-template-{name}.conf', 'r') as file:
+        return file.read()
 
-    # www. can be added here safely without checking use_www
-    data = data.replace('REPLACEME_DOMAIN', f'{domain} www.{domain}')
-    data = data.replace('REPLACEME_IPADDR', ip_addr)
 
+def write_config(website_id, template):
+    dest_path = get_path(website_id)
     with open(dest_path, 'w') as dest_file:
-        dest_file.write(data)
+        dest_file.write(template)
 
     reload_nginx()
 
