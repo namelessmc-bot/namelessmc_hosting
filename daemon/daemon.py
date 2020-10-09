@@ -11,7 +11,7 @@ print("Daemon started")
 
 
 def daemon():
-    ftp.recreate()
+    # ftp.recreate()
 
     while True:
         conn = db.open_db()
