@@ -21,6 +21,7 @@ def daemon():
         if job:
             print(f"Job: {job}")
             (job_id, job_type, job_content) = job
+            cur.execute("UPDATE jobs SET running = TRUE WHERE id=%s", (job_id,))
             if job_type == 0:
                 site_id = int(job_content)
                 create_site.run(site_id)
@@ -37,13 +38,14 @@ def daemon():
                 delete_site.run(site_id)
             else:
                 print(f"Unknown job type {job_type}")
-                # do not set job to done
+                cur.execute("UPDATE jobs SET running = FALSE WHERE id=%s", (job_id,))
+                conn.commit()
                 cur.close()
                 conn.close()
                 sleep(5)
                 continue
 
-            cur.execute("UPDATE jobs SET done = TRUE WHERE id=%s", (job_id,))
+            cur.execute("UPDATE jobs SET done = TRUE, running = FALSE WHERE id=%s", (job_id,))
             conn.commit()
             print("Done")
 
