@@ -6,7 +6,7 @@ import nginx
 def get_website_info(website_id):
     with db.open_db() as conn:
         with conn.cursor() as cur:
-            query = "SELECT domain,use_https,db_password,files_password,version,use_www FROM users_website WHERE id=%s"
+            query = "SELECT domain,use_https,db_password,files_password,version,www FROM users_website WHERE id=%s"
             cur.execute(query, (website_id,))
             data = cur.fetchone()
             return data
