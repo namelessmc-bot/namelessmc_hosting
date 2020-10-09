@@ -43,7 +43,7 @@ def install(website_id, domain, use_https):
         with open('nginx-template.conf', 'r') as file:
             data = file.read()
 
-    data = data.replace('REPLACEME_DOMAIN', domain)
+    data = data.replace('REPLACEME_DOMAIN', f'{domain} www.{domain}')
     data = data.replace('REPLACEME_IPADDR', ip_addr)
 
     with open(dest_path, 'w') as dest_file:

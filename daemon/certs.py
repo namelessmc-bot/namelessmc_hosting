@@ -10,7 +10,7 @@ def has_certs(website_id, domain):
 
 def get_cert(website_id, domain):
     dataset = f'/{ZFS_ROOT}/{website_id}'
-    os.system(f'docker run -it --rm -v {dataset}/web:/web -v {dataset}/certs:/etc/letsencrypt certbot/certbot certonly -n --webroot --register-unsafely-without-email --agree-tos -d {domain} --webroot-path /web')
+    os.system(f'docker run -it --rm -v {dataset}/web:/web -v {dataset}/certs:/etc/letsencrypt certbot/certbot certonly -n --webroot --register-unsafely-without-email --agree-tos -d {domain} -d www.{domain} --webroot-path /web')
 
 
 def renew_cert(website_id):
