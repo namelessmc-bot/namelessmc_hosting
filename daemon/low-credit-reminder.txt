@@ -1,0 +1,8 @@
+Hello {username},
+
+You have {credit} credit remaining in your Named Hosting account. With {websites} website(s), that means you will run out of credit in {days_left} days.
+When you run out of credit, your website(s) may be shut down or deleted. To avoid this, please buy more credit on the account page: https://namedhosting.com/account
+
+Thank you for using Named Hosting. If you have any questions feel free to reply to this email or join the support Discord: https://discord.gg/ePApzPp
+
+You received this email because you are low on credit and have one or more websites on Named Hosting. If you wish to stop receiving these emails, delete all your websites.
