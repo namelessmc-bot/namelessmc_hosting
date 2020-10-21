@@ -79,7 +79,7 @@
         <main role="main" class="container">
             <div class="row mt-3">
                 <div class="col">
-                    {% if user.is_authenticated and user.account.credit < 18 %}
+                    {% if user.is_authenticated and user.account.credit <= 20 %}
                         <div class="alert alert-warning" role="alert">
                             Your credit is low. Make sure to <a href="{% url 'account' %}">
                             buy more</a> if you don't want your websites to be shut down.
