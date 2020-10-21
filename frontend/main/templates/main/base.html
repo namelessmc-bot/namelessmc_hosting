@@ -4,6 +4,17 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta property="og:site_name" content="Named Hosting">
+        {% if title%}
+            <meta property="og:title" content="Named Hosting - {{ title }}">
+        {% else %}
+            <meta property="og:title" content="Named Hosting">
+        {% endif %}
+        <meta property="og:type" content="website">
+        <meta property="og:url" content="https://namedhosting.com">
+        {% comment %} <meta property="og:image" content=""> {% endcomment %}
+        <meta property="og:description" content="Convenient and affordable hosting for NamelessMC websites">
+        <meta name="theme-color" content="#343a40">
         {% if title%}
             <title>Named Hosting - {{ title }}</title>
         {% else %}
