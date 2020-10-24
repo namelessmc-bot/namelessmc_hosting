@@ -13,6 +13,11 @@ for user in users:
     if new_credit < 0:
         new_credit = 0
         # TODO suspend websites
+        cur.execute("SELECT id,domain FROM users_website WHERE owner_id=%s", (user_id,))
+        websites = cur.fetchall()
+        for website in websites:
+            (web_id, domain) = website
+            print(f"Delete {username}'s website {web_id} {domain}")
 
     cur.execute("UPDATE users_account SET credit=%s WHERE user_id=%s", (new_credit, user_id))
     conn.commit()
