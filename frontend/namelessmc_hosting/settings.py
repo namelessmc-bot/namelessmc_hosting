@@ -147,3 +147,17 @@ if 'PROD' in os.environ:
     PAYPAL_TEST = False
 else:
     PAYPAL_TEST = True
+
+LOGGING = {
+    'version': 1,
+    'disable_existing_loggers': False,
+    'handlers': {
+        'console': {
+            'class': 'logging.StreamHandler',
+        },
+    },
+    'root': {
+        'handlers': ['console'],
+        'level': 'DEBUG',
+    },
+}
