@@ -19,6 +19,7 @@ def install(website_id, domain, use_https, db_password, files_password, version,
     data = data.replace('REPLACEME_SITENAME', site_name)
     data = data.replace('REPLACEME_USERNAME', username)
     data = data.replace('REPLACEME_EMAIL', email)
+    data = data.replace('REPLACEME_AUTOFILLDBPASSWORD', db_password if 'demo' in domain else '')
 
     dest_path = f"/{env['ZFS_ROOT']}/{website_id}/docker-compose.yaml"
     with open(dest_path, 'w') as dest_file:
