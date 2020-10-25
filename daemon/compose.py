@@ -4,7 +4,7 @@ import network
 
 
 def install(website_id, domain, use_https, db_password, files_password, version, \
-            username, email):
+            site_name, username, email):
     with open('compose-template.yaml', 'r') as file:
         data = file.read()
 
@@ -16,6 +16,7 @@ def install(website_id, domain, use_https, db_password, files_password, version,
     data = data.replace('REPLACEME_FILESPASSWORD', files_password)
     data = data.replace('REPLACEME_VERSION', version)
     data = data.replace('REPLACEME_HOSTNAME', domain)
+    data = data.replace('REPLACEME_SITENAME', site_name)
     data = data.replace('REPLACEME_USERNAME', username)
     data = data.replace('REPLACEME_EMAIL', email)
 
