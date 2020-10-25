@@ -3,7 +3,8 @@ import os
 import network
 
 
-def install(website_id, domain, use_https, db_password, files_password, version):
+def install(website_id, domain, use_https, db_password, files_password, version, \
+            username, email):
     with open('compose-template.yaml', 'r') as file:
         data = file.read()
 
@@ -14,6 +15,9 @@ def install(website_id, domain, use_https, db_password, files_password, version)
     data = data.replace('REPLACEME_FILESUSER', "user")
     data = data.replace('REPLACEME_FILESPASSWORD', files_password)
     data = data.replace('REPLACEME_VERSION', version)
+    data = data.replace('REPLACEME_HOSTNAME', domain)
+    data = data.replace('REPLACEME_USERNAME', username)
+    data = data.replace('REPLACEME_EMAIL', email)
 
     dest_path = f"/{env['ZFS_ROOT']}/{website_id}/docker-compose.yaml"
     with open(dest_path, 'w') as dest_file:
