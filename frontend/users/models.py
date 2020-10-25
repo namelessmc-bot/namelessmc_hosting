@@ -6,12 +6,17 @@ from .utils import pass_gen
 
 def validate_domain(value):
     # TODO there has to be a better way
-    allowed_domain_chars = ['_','-','a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z','1','2','3','4','5','6','7','8','9','0','.']
+    allowed_domain_chars = ['_', '-', 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h',\
+                            'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r',\
+                            's', 't', 'u', 'v', 'w', 'x', 'y', 'z', '1', '2',\
+                            '3', '4', '5', '6', '7', '8', '9', '0', '.']
     for char in value:
         if char not in allowed_domain_chars:
             raise ValidationError("Invalid domain", params={'value': value})
 
-    if 'rs-sys.nl' in value:
+    if 'rs-sys.nl' in value \
+        or value in ['namedhosting.com', 'site.namedhosting.com', \
+                        'www.namedhosting.com']:
         raise ValidationError("Invalid domain", params={'value': value})
 
     if 'www.' in value:
