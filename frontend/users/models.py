@@ -35,8 +35,8 @@ class Website(models.Model):
     db_password = models.CharField(max_length=50, default=pass_gen)
     files_password = models.CharField(max_length=50, default=pass_gen)
     versions_choices = [
-        ('latest', 'Latest (v2-pre7)'),
-        ('dev', 'Development version (v2) - TESTING ONLY')
+        ('latest', 'v2-pre7 (Latest stable)'),
+        ('dev', 'Latest development version - TESTING ONLY')
     ]
     version = models.CharField(max_length=20, default='latest', choices=versions_choices)
     webserver_ip = models.CharField(max_length=20, default=None, null=True)

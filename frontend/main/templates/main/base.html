@@ -40,10 +40,10 @@
                         <a class="nav-link" href="{{ home_url }}">Home</a>
                     </li>
 
-                    {% comment %} {% url 'pricing' as pricing_url %}
+                    {% url 'pricing' as pricing_url %}
                     <li class="nav-item {% if request.get_full_path == pricing_url %}active{% endif %}">
                         <a class="nav-link" href="{{ pricing_url }}">Pricing</a>
-                    </li> {% endcomment %}
+                    </li>
                 </ul>
                 <ul class="navbar-nav navbar-right">
                     {% if user.is_authenticated %}

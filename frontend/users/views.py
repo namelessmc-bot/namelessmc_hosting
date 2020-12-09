@@ -10,7 +10,7 @@ from django.views.decorators.csrf import csrf_exempt
 from paypal.standard.forms import PayPalPaymentsForm
 from .forms import UserRegisterForm, UserUpdateForm
 from .models import Website, Voucher, Account, Job
-from .utils import pass_gen
+from . import utils
 
 
 def register(request):
@@ -95,6 +95,11 @@ class WebsiteListView(LoginRequiredMixin, ListView):
     context_object_name = 'websites'
     ordering = ['date_created']
 
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        context['show_create_button'] = not utils.is_over_website_limit(self.request.user)
+        return context
+
     def get_queryset(self):
         return Website.objects.filter(owner=self.request.user)
 
@@ -114,6 +119,10 @@ class WebsiteCreateView(LoginRequiredMixin, CreateView):
 
     def form_valid(self, form):
         form.instance.owner = self.request.user
+
+        if utils.is_over_website_limit(self.request.user):
+            return HttpResponse('Too many websites')
+
         return super().form_valid(form)
 
 
@@ -143,6 +152,7 @@ class WebsiteDeleteView(LoginRequiredMixin, UserPassesTestMixin, DeleteView):
 @login_required
 def website_reset(request, pk):
     if request.method == 'POST':
+        # Clicked OK
         if request.user == Website.objects.filter(pk=pk).first().owner:
             if Job.objects.filter(type=Job.RESET_WEBSITE, content=pk, done=False, running=False).exists():
                 print('Skipped creating job to prevent duplicates')
@@ -151,18 +161,24 @@ def website_reset(request, pk):
             return redirect('website-detail', pk)
         else:
             return HttpResponse("Invalid request")
+    else:
+        # Display 'Are you sure?'
+        websites = Website.objects.filter(pk=pk)
+        if not websites.exists():
+            return HttpResponseNotFound()
 
-    websites = Website.objects.filter(pk=pk)
-    if not websites.exists():
-        return HttpResponseNotFound()
-
-    return render(request, 'users/website_reset.html', context={'website': websites.first()})
+        return render(request, 'users/website_reset.html', context={'website': websites.first()})
 
 
 @login_required
 def website_db_pass_regen(request, pk):
     website = Website.objects.get(pk=pk)
-    website.db_password = pass_gen()
+    print(website.owner, flush=True)
+    print(request.user, flush=True)
+    if website.owner != request.user:
+        return HttpResponse('Permission denied')
+
+    website.db_password = utils.pass_gen()
     website.save()
     return redirect('website-detail', pk=pk)
 

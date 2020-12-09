@@ -18,6 +18,11 @@
             </div>
         </div>
     {% endfor %}
-    <a href="{% url 'website-new' %}" class="btn btn-outline-success">Create new website</a>
+
+    {% if show_create_button %}
+        <a href="{% url 'website-new' %}" class="btn btn-outline-success">Create new website</a>
+    {% else %}
+        <button class="btn btn-outline-success" disabled>Create new website</button> Free accounts are limited to 1 website, paid accounts are limited to 3.
+    {% endif %}
 </div>
 {% endblock content %}

@@ -6,7 +6,9 @@
         <fieldset class="form-group">
             <legend class="border-bottom mb-4">Reset website '{{ website.name }}'</legend>
             <p>Are you sure you want to reset your website? This will
-             permanently delete all databases and website data.</p>
+             permanently delete all databases and website data. After
+             resetting your website, wait about a minute and you'll
+             see installer when going to your website.</p>
         </fieldset>
         <div class="form-group">
             <a class="btn btn-outline-secondary" href="{% url 'website-detail' website.id %}">Cancel</a>
