@@ -35,9 +35,9 @@ class Website(models.Model):
     db_password = models.CharField(max_length=50, default=pass_gen)
     files_password = models.CharField(max_length=50, default=pass_gen)
     versions_choices = [
-        ('latest', 'v2-pr7 (Latest stable)'),
+        ('latest', 'v2-pr8 (Latest stable)'),
         ('dev', 'Latest development version - TESTING ONLY'),
-        ('php8', 'v2-pr7 on PHP 8 - TESTING ONLY'),
+        ('php8', 'v2-pr8 on PHP 8 - TESTING ONLY'),
         ('php8-dev', 'Latest development version on PHP 8 - TESTING ONLY')
     ]
     version = models.CharField(max_length=20, default='latest', choices=versions_choices)
