@@ -38,7 +38,7 @@ class Website(models.Model):
         ('v2-pr7', 'v2-pr7 (previous stable)'),
         ('v2-pr8', 'v2-pr8 (current stable)'),
         ('v2-pr9dev', 'v2-pr9 development - TESTING ONLY'),
-        ('v2-pr9dev-php8', 'v2-pr8 development on PHP 8 - TESTING ONLY')
+        ('v2-pr9dev-php8', 'v2-pr9 development on PHP 8 - TESTING ONLY')
     ]
     version = models.CharField(max_length=20, default='v2-pr8', choices=versions_choices)
     webserver_ip = models.CharField(max_length=20, default=None, null=True)
