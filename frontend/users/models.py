@@ -35,12 +35,12 @@ class Website(models.Model):
     db_password = models.CharField(max_length=50, default=pass_gen)
     files_password = models.CharField(max_length=50, default=pass_gen)
     versions_choices = [
-        ('latest', 'v2-pr8 (Latest stable)'),
-        ('dev', 'Latest development version - TESTING ONLY'),
-        ('php8', 'v2-pr8 on PHP 8 - TESTING ONLY'),
-        ('php8-dev', 'Latest development version on PHP 8 - TESTING ONLY')
+        ('v2-pr7', 'v2-pr7 (previous stable)'),
+        ('v2-pr8', 'v2-pr8 (current stable)'),
+        ('v2-pr9dev', 'v2-pr9 development - TESTING ONLY'),
+        ('v2-pr9dev-php8', 'v2-pr8 development on PHP 8 - TESTING ONLY')
     ]
-    version = models.CharField(max_length=20, default='latest', choices=versions_choices)
+    version = models.CharField(max_length=20, default='v2-pr8', choices=versions_choices)
     webserver_ip = models.CharField(max_length=20, default=None, null=True)
     www = models.BooleanField(default=False, verbose_name='Enable www.')
 
