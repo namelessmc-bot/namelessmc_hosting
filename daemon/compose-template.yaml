@@ -3,7 +3,7 @@ version: '3'
 services:
 
   nginx:
-    image: namelessmc/nginx
+    image: namelessmc/nginx:REPLACEME_VERSION
     networks:
       default:
       namelessmc_proxy:
