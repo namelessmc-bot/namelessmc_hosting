@@ -16,11 +16,11 @@ def daemon():
     while True:
         conn = db.open_db()
         cur = conn.cursor()
-        cur.execute("SELECT id,type,content FROM jobs WHERE done = FALSE ORDER BY priority DESC LIMIT 1")
+        cur.execute("SELECT id,type,content,priority FROM jobs WHERE done = FALSE ORDER BY priority DESC LIMIT 1")
         job = cur.fetchone()
         if job:
-            print(f"Job: {job}")
-            (job_id, job_type, job_content) = job
+            (job_id, job_type, job_content, job_priority) = job
+            print('Job', 'job_id', job_id, 'job_type', job_type, 'job_content', job_content, 'job_priority', job_priority)
             cur.execute("UPDATE jobs SET running = TRUE WHERE id=%s", (job_id,))
             if job_type == 0:
                 site_id = int(job_content)
