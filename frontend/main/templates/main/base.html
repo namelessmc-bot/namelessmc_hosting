@@ -40,10 +40,10 @@
                         <a class="nav-link" href="{{ home_url }}">Home</a>
                     </li>
 
-                    {% url 'pricing' as pricing_url %}
+                    {% comment %} {% url 'pricing' as pricing_url %}
                     <li class="nav-item {% if request.get_full_path == pricing_url %}active{% endif %}">
                         <a class="nav-link" href="{{ pricing_url }}">Pricing</a>
-                    </li>
+                    </li> {% endcomment %}
                 </ul>
                 <ul class="navbar-nav navbar-right">
                     {% if user.is_authenticated %}
@@ -79,12 +79,12 @@
         <main role="main" class="container">
             <div class="row mt-3">
                 <div class="col">
-                    {% if user.is_authenticated and user.account.credit <= 20 %}
+                    {% comment %} {% if user.is_authenticated and user.account.credit <= 20 %}
                         <div class="alert alert-warning" role="alert">
                             Your credit is low. Make sure to <a href="{% url 'account' %}">
                             buy more</a> if you don't want your websites to be shut down.
                         </div>
-                    {% endif %}
+                    {% endif %} {% endcomment %}
 
                     {% if messages %}
                         {% for message in messages %}

@@ -3,7 +3,7 @@
 {% block content %}
 <div class="content-section">
     <h3>Welcome, {{ user.username }}</h3>
-    <div class="card mt-2">
+    {% comment %} <div class="card mt-2">
         <h5 class="card-header">Credit</h5>
         <div class="card-body">
             <p>You have <code>{{ user.account.credit}}</code> credits remaining in your
@@ -35,7 +35,7 @@
                 </div>
             </form>
         </div>
-    </div>
+    </div> {% endcomment %}
 
     <div class="card mt-4">
         <h5 class="card-header">Update account settings</h5>
