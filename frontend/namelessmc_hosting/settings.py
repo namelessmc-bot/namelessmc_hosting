@@ -150,6 +150,7 @@ if 'PROD' in os.environ:
     EMAIL_HOST = os.environ['SMTP_HOST']
     EMAIL_PORT = int(os.environ['SMTP_PORT']) if 'SMTP_PORT' in os.environ else 587
     EMAIL_HOST_USER = os.environ['SMTP_USER']
+    DEFAULT_FROM_EMAIL = os.environ['SMTP_USER']
     EMAIL_HOST_PASSWORD = os.environ['SMTP_PASSWORD']
     EMAIL_USE_TLS = True
     EMAIL_TIMEOUT = 15
