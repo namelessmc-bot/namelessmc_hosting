@@ -145,8 +145,17 @@ if 'PROD' in os.environ:
     USE_X_FORWARDED_HOST = True
     STATIC_ROOT = '/static'
     PAYPAL_TEST = False
+
+    EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+    EMAIL_HOST = os.environ['SMTP_HOST']
+    EMAIL_PORT = int(os.environ['SMTP_PORT']) if 'SMTP_PORT' in os.environ else 587
+    EMAIL_HOST_USER = os.environ['SMTP_USER']
+    EMAIL_HOST_PASSWORD = os.environ['SMTP_PASSWORD']
+    EMAIL_USE_TLS = True
+    EMAIL_TIMEOUT = 15
 else:
     PAYPAL_TEST = True
+    EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 
 LOGGING = {
     'version': 1,
