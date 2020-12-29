@@ -26,6 +26,7 @@ urlpatterns = [
     path('', include('main.urls')),
     path('register/', users.register, name='register'),
     path('account/', users.account, name='account'),
+    path('change_password/', users.change_password, name='change_password'),
     path('websites/', WebsiteListView.as_view(), name='websites'),
     path('website/<int:pk>/', WebsiteDetailView.as_view(), name='website-detail'),
     path('website/new/', WebsiteCreateView.as_view(), name='website-new'),
