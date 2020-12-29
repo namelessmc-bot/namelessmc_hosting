@@ -13,7 +13,10 @@
         </div>
     </form>
     <div class="border-top pt-3">
-        <small class="text-muted">Need an account? <a class="ml-2" href="{% url 'register' %}">Sign up</a></small>
+        <small class="text-muted">
+            Need an account? <a class="ml-2 mr-4" href="{% url 'register' %}">Sign up</a>
+            Forgot password?<a class="ml-2 mr-4" href="{% url 'password_reset' %}">Reset password</a>
+        </small>
     </div>
 </div>
 {% endblock content %}
