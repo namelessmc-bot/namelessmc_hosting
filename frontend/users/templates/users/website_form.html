@@ -14,8 +14,9 @@
             {{ form|crispy }}
             {% if object %}
                 <p class="text-muted">Please make sure your website works
-                 without HTTPS before enabling HTTPS. Version changes do
-                 not take effect until you use the 'Reset' button.</p>
+                 without HTTPS before enabling HTTPS. Do not enable HTTPS
+                 if you are using CloudFlare flexible SSL. Version changes
+                 do not take effect until you use the 'Reset' button.</p>
             {% endif %}
         </fieldset>
         <div class="form-group">
