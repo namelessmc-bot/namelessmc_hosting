@@ -95,7 +95,7 @@ class Job(models.Model):
     ]
 
     type = models.IntegerField(choices=JOB_TYPES)
-    priority = models.IntegerField(choices=PRIORITIES)
+    priority = models.IntegerField(choices=PRIORITIES, default=NORMAL)
     content = models.CharField(max_length=200, null=True)
     done = models.BooleanField(default=False)
     running = models.BooleanField(default=False)
