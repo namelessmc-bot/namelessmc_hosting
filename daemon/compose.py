@@ -3,29 +3,42 @@ import os
 import network
 
 
+autofill_domains = [
+    'nlmc-php74.derkad.es',
+    'nlmc-php8.derkad.es',
+    'demo-1.namedhosting.com',
+    'demo-2.namedhosting.com',
+    'demo-3.namedhosting.com',
+    'demo-4.namedhosting.com',
+    'demo-5.namedhosting.com'
+]
+
+
 def install(website_id, domain, use_https, db_password, files_password, version, \
             site_name, username, email):
     with open('compose-template.yaml', 'r') as file:
         data = file.read()
 
     ip_addr = network.get_webserver_ip(website_id)
-    data = data.replace('REPLACEME_IPADDR', ip_addr)
-    data = data.replace('REPLACEME_DBPASSWORD', db_password)
-    data = data.replace('REPLACEME_PHPMYADMINURI', get_phpmyadmin_uri(domain, use_https))
-    data = data.replace('REPLACEME_FILESUSER', "user")
-    data = data.replace('REPLACEME_FILESPASSWORD', files_password)
-    data = data.replace('REPLACEME_VERSION', version)
-    data = data.replace('REPLACEME_HOSTNAME', domain)
-    data = data.replace('REPLACEME_SITENAME', site_name)
-    data = data.replace('REPLACEME_USERNAME', username)
-    data = data.replace('REPLACEME_EMAIL', email)
-    data = data.replace('REPLACEME_AUTOFILLDBPASSWORD', db_password if 'demo' in domain else '')
+    data = data \
+        .replace('REPLACEME_SITEID', str(website_id)) \
+        .replace('REPLACEME_IPADDR', ip_addr) \
+        .replace('REPLACEME_DBPASSWORD', db_password) \
+        .replace('REPLACEME_PHPMYADMINURI', get_phpmyadmin_uri(domain, use_https)) \
+        .replace('REPLACEME_FILESUSER', "user") \
+        .replace('REPLACEME_FILESPASSWORD', files_password) \
+        .replace('REPLACEME_VERSION', version) \
+        .replace('REPLACEME_HOSTNAME', domain) \
+        .replace('REPLACEME_SITENAME', site_name) \
+        .replace('REPLACEME_USERNAME', username) \
+        .replace('REPLACEME_EMAIL', email) \
+        .replace('REPLACEME_DBPASSWORD', db_password if domain in autofill_domains else '') \
 
     dest_path = f"/{env['ZFS_ROOT']}/{website_id}/docker-compose.yaml"
     with open(dest_path, 'w') as dest_file:
         dest_file.write(data)
 
-    os.system(f"docker-compose -f {dest_path} up -d --remove-orphans")
+    os.system(f"docker-compose -f {dest_path} up -d --remove-orphans --force-recreate")
 
 
 def uninstall(website_id):

@@ -64,7 +64,7 @@
                 </tr>
                 <tr>
                     <td>username</td>
-                    <td><code>root</code></td>
+                    <td><code>user_{{ website.id }}</code></td>
                 </tr>
                 <tr>
                     <td>password</td> {% comment %} TODO Click to reveal {% endcomment %}
@@ -72,11 +72,11 @@
                 </tr>
                 <tr>
                     <td>database name</td>
-                    <td><code>nameless</code></td>
+                    <td><code>site_{{ website.id }}</code></td>
                 </tr>
                 <tr>
                     <td>phpmyadmin</td>
-                    <td><a target="_blank" href="{% if website.use_https %}https://{% else %}http://{% endif %}{{ website.domain }}/phpmyadmin">{% if website.use_https %}https://{% else %}http://{% endif %}{% if website.www %}www.{% endif %}{{ website.domain }}/phpmyadmin</a></td>
+                    <td><a target="_blank" href="https://phpmyadmin.namedhosting.com">https://phpmyadmin.namedhosting.com</a></td>
                 </tr>
             </tbody>
         </table>

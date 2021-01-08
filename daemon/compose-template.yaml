@@ -4,48 +4,32 @@ services:
 
   nginx:
     image: namelessmc/nginx:REPLACEME_VERSION
+    extra_hosts: ['database:10.0.6.2']
     networks:
-      default:
+      # default:
       namelessmc_proxy:
         ipv4_address: REPLACEME_IPADDR
     volumes: ['./web:/data:ro']
-    depends_on: [php]
+    environment:
+      PHP_FPM: localhost:9000
     restart: always
 
   php:
     image: namelessmc/php:REPLACEME_VERSION
     volumes: ['./web:/data']
-    depends_on: [database]
+    network_mode: 'service:nginx'
     environment:
       NAMELESS_HOSTNAME: REPLACEME_HOSTNAME
       NAMELESS_DATABASE_ADDRESS: database
-      NAMELESS_DATABASE_NAME: nameless
-      NAMELESS_DATABASE_USERNAME: root
-      NAMELESS_DATABASE_PASSWORD: REPLACEME_AUTOFILLDBPASSWORD
+      NAMELESS_DATABASE_NAME: site_REPLACEME_SITEID
+      NAMELESS_DATABASE_USERNAME: user_REPLACEME_SITEID
+      NAMELESS_DATABASE_PASSWORD: REPLACEME_DBPASSWORD
       NAMELESS_FRIENDLY_URLS: 'true'
       NAMELESS_SITE_NAME: REPLACEME_SITENAME
       NAMELESS_SITE_CONTACT_EMAIL: REPLACEME_EMAIL
       NAMELESS_SITE_OUTGOING_EMAIL: REPLACEME_EMAIL
       NAMELESS_ADMIN_USERNAME: REPLACEME_USERNAME
       NAMELESS_ADMIN_EMAIL: REPLACEME_EMAIL
-    restart: always
-
-  database:
-    image: mariadb
-    volumes: ['./db:/var/lib/mysql']
-    environment:
-      MYSQL_ROOT_PASSWORD: REPLACEME_DBPASSWORD
-      MYSQL_DATABASE: nameless
-    restart: always
-
-  phpmyadmin:
-    image: nlmc_hosting/phpmyadmin
-    network_mode: service:nginx
-    volumes: [/sessions]
-    depends_on: [database]
-    environment:
-      PMA_HOST: database
-      PMA_ABSOLUTE_URI: REPLACEME_PHPMYADMINURI
     restart: always
 
 networks:
