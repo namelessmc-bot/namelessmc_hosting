@@ -129,7 +129,7 @@ class WebsiteDetailView(LoginRequiredMixin, UserPassesTestMixin, DetailView):
 
     def test_func(self):
         website = self.get_object()
-        return self.request.user == website.owner or self.request.user.is_superuser
+        return self.request.user == website.owner or self.request.user.is_staff
 
 
 class WebsiteCreateView(LoginRequiredMixin, CreateView):
@@ -154,7 +154,7 @@ class WebsiteUpdateView(LoginRequiredMixin, UserPassesTestMixin, UpdateView):
 
     def test_func(self):
         website = self.get_object()
-        return self.request.user == website.owner or self.request.user.is_superuser
+        return self.request.user == website.owner or self.request.user.is_staff
 
 
 class WebsiteDeleteView(LoginRequiredMixin, UserPassesTestMixin, DeleteView):
@@ -164,7 +164,7 @@ class WebsiteDeleteView(LoginRequiredMixin, UserPassesTestMixin, DeleteView):
 
     def test_func(self):
         website = self.get_object()
-        return self.request.user == website.owner or self.request.user.is_superuser
+        return self.request.user == website.owner or self.request.user.is_staff
 
 
 @login_required
