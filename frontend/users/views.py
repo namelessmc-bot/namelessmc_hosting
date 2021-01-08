@@ -150,7 +150,6 @@ class WebsiteUpdateView(LoginRequiredMixin, UserPassesTestMixin, UpdateView):
     fields = ['name', 'domain', 'www', 'version', 'use_https']
 
     def form_valid(self, form):
-        form.instance.owner = self.request.user
         return super().form_valid(form)
 
     def test_func(self):
