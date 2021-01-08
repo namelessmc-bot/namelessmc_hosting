@@ -43,7 +43,7 @@ class Website(models.Model):
         ('dev-php8', 'Development on PHP 8 - TESTING ONLY')
     ]
     version = models.CharField(max_length=20, default='v2-pr9', choices=versions_choices)
-    webserver_ip = models.CharField(max_length=20, default=None, null=True)
+    webserver_ip = models.CharField(max_length=20, default=None, null=True, blank=True)
     www = models.BooleanField(default=False, verbose_name='Enable www.')
 
     def __str__(self):
@@ -96,18 +96,18 @@ class Job(models.Model):
 
     type = models.IntegerField(choices=JOB_TYPES)
     priority = models.IntegerField(choices=PRIORITIES, default=NORMAL)
-    content = models.CharField(max_length=200, null=True)
+    content = models.CharField(max_length=200, null=True, blank=True)
     done = models.BooleanField(default=False)
     running = models.BooleanField(default=False)
 
 
 class Transaction(models.Model):
-    price = models.IntegerField(null=True)
-    product = models.CharField(max_length=30, null=True)
-    target_email = models.CharField(max_length=100, null=True)
-    payer_email = models.CharField(max_length=200, null=True)
-    currency = models.CharField(max_length=10, null=True)
-    target_user = models.ForeignKey(User, on_delete=models.SET_NULL, null=True)
+    price = models.IntegerField(null=True, blank=True)
+    product = models.CharField(max_length=30, null=True, blank=True)
+    target_email = models.CharField(max_length=100, null=True, blank=True)
+    payer_email = models.CharField(max_length=200, null=True, blank=True)
+    currency = models.CharField(max_length=10, null=True, blank=True)
+    target_user = models.ForeignKey(User, on_delete=models.SET_NULL, null=True, blank=True)
     success = models.BooleanField()
 
 
