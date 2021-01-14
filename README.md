@@ -17,6 +17,7 @@ cd frontend
 chmod +x manage.py
 ./manage.py makemigrations
 ./manage.py migrate
+./manage.py compilemessages
 ```
 
 Run:
@@ -26,3 +27,10 @@ Run:
 ```
 
 Webserver will run on localhost:8000. It will automatically reload when source code changes!
+
+Update translations:
+
+```sh
+./manage.py makemessages -all
+./manage.py compilemessages
+```
