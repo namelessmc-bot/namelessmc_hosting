@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-01-14 17:24+0000\n"
+"POT-Creation-Date: 2021-01-14 17:33+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,107 +19,119 @@ msgstr ""
 "Plural-Forms: nplurals=4; plural=(n % 1 == 0 && n == 1 ? 0 : n % 1 == 0 && n "
 ">= 2 && n <= 4 ? 1 : n % 1 != 0 ? 2: 3);\n"
 
-#: main/templates/main/base.html:41
+#: main/templates/main/base.html:43
 msgid "Home"
 msgstr ""
 
-#: main/templates/main/base.html:54
+#: main/templates/main/base.html:56
 msgid "Your Websites"
 msgstr ""
 
-#: main/templates/main/base.html:59 users/templates/users/website_detail.html:6
-#: users/templates/users/website_list.html:6
+#: main/templates/main/base.html:61 users/templates/users/website_detail.html:7
+#: users/templates/users/website_list.html:7
 msgid "Account"
 msgstr ""
 
-#: main/templates/main/base.html:64
+#: main/templates/main/base.html:66
 msgid "Logout"
 msgstr ""
 
-#: main/templates/main/base.html:69
+#: main/templates/main/base.html:71
 msgid "Login"
 msgstr ""
 
-#: main/templates/main/base.html:74
+#: main/templates/main/base.html:76
 msgid "Register"
 msgstr ""
 
-#: main/templates/main/base.html:115
+#: main/templates/main/base.html:117
 msgid "Support Discord"
 msgstr ""
 
-#: main/templates/main/base.html:118
+#: main/templates/main/base.html:120
 msgid "Privacy Policy"
 msgstr ""
 
-#: main/templates/main/base.html:119
+#: main/templates/main/base.html:121
 msgid "Terms of service"
 msgstr ""
 
-#: main/templates/main/index.html:14
+#: main/templates/main/index.html:10
+msgid ""
+"Start a NamelessMC website the easy way. We built our hosting system from "
+"scratch to be as simple as possible without limiting possibilities."
+msgstr ""
+
+#: main/templates/main/index.html:12
+msgid ""
+"No complicated panels, configuration, creating databases, uploading files, "
+"etc. Enter your domain, click one button and your website is online."
+msgstr ""
+
+#: main/templates/main/index.html:15
 #, python-format
 msgid ""
 "Currently hosting <kbd>%(websites)s</kbd> websites for <kbd>%(users)s</kbd> "
 "users."
 msgstr ""
 
-#: main/templates/main/index.html:21
+#: main/templates/main/index.html:22
 msgid "Simple"
 msgstr ""
 
-#: main/templates/main/index.html:22
+#: main/templates/main/index.html:23
 msgid "Server configured automatically, start the installer right away"
 msgstr ""
 
-#: main/templates/main/index.html:28
+#: main/templates/main/index.html:29
 msgid "Full access"
 msgstr ""
 
-#: main/templates/main/index.html:29
+#: main/templates/main/index.html:30
 msgid "Upload your own templates and edit the database using phpmyadmin"
 msgstr ""
 
-#: main/templates/main/index.html:35
+#: main/templates/main/index.html:36
 msgid "No artificial limits"
 msgstr ""
 
-#: main/templates/main/index.html:36
+#: main/templates/main/index.html:37
 msgid "No limits on modules, templates, users, etc."
 msgstr ""
 
-#: main/templates/main/index.html:44
+#: main/templates/main/index.html:45
 msgid "No limits "
 msgstr ""
 
-#: main/templates/main/index.html:45
+#: main/templates/main/index.html:46
 msgid "We donate part of our income to NamelessMC contributors"
 msgstr ""
 
-#: main/templates/main/index.html:51
+#: main/templates/main/index.html:52
 msgid "Secure"
 msgstr ""
 
-#: main/templates/main/index.html:52
+#: main/templates/main/index.html:53
 msgid "Protect your website with modern TLS encryption without hassle."
 msgstr ""
 
-#: main/templates/main/index.html:58
+#: main/templates/main/index.html:59
 msgid "High performance"
 msgstr ""
 
-#: main/templates/main/index.html:59
+#: main/templates/main/index.html:60
 msgid "Dedicated web server for every website."
 msgstr ""
 
-#: main/templates/main/index.html:70
+#: main/templates/main/index.html:71
 msgid "Create your website now"
 msgstr ""
 
-#: main/templates/main/index.html:74
+#: main/templates/main/index.html:75
 msgid "Get started"
 msgstr ""
 
-#: main/templates/main/index.html:76
+#: main/templates/main/index.html:77
 msgid "Sign up"
 msgstr ""
 
@@ -140,142 +152,151 @@ msgstr ""
 msgid "Change password"
 msgstr ""
 
-#: users/templates/users/payment_cancelled.html:3
+#: users/templates/users/payment_cancelled.html:4
 msgid "Payment cancelled."
 msgstr ""
 
-#: users/templates/users/payment_complete.html:3
+#: users/templates/users/payment_complete.html:4
 msgid "Payment complete"
 msgstr ""
 
-#: users/templates/users/register.html:8
+#: users/templates/users/register.html:9
 msgid "Create account"
 msgstr ""
 
-#: users/templates/users/register.html:12
+#: users/templates/users/register.html:13
 msgid "Sign Up"
 msgstr ""
 
-#: users/templates/users/register.html:16
+#: users/templates/users/register.html:17
 msgid "Already have an account?"
 msgstr ""
 
-#: users/templates/users/register.html:16
+#: users/templates/users/register.html:17
 msgid "Sign in"
 msgstr ""
 
-#: users/templates/users/website_confirm_delete.html:8
+#: users/templates/users/website_confirm_delete.html:9
 #, python-format
 msgid "Delete website '%(sitename)s'"
 msgstr ""
 
-#: users/templates/users/website_confirm_delete.html:9
+#: users/templates/users/website_confirm_delete.html:10
 msgid "Are you sure you want to delete this website?"
 msgstr ""
 
-#: users/templates/users/website_confirm_delete.html:12
-#: users/templates/users/website_reset.html:14
+#: users/templates/users/website_confirm_delete.html:13
+#: users/templates/users/website_reset.html:15
 msgid "Cancel"
 msgstr ""
 
-#: users/templates/users/website_confirm_delete.html:13
-#: users/templates/users/website_form.html:23
-#: users/templates/users/website_reset.html:15
+#: users/templates/users/website_confirm_delete.html:14
+#: users/templates/users/website_form.html:24
+#: users/templates/users/website_reset.html:16
 msgid "Confirm"
 msgstr ""
 
-#: users/templates/users/website_detail.html:7
-#: users/templates/users/website_list.html:7
+#: users/templates/users/website_detail.html:8
+#: users/templates/users/website_list.html:8
 msgid "Websites"
 msgstr ""
 
-#: users/templates/users/website_detail.html:17
-#: users/templates/users/website_list.html:17
+#: users/templates/users/website_detail.html:18
+#: users/templates/users/website_list.html:18
 msgid "Edit"
 msgstr ""
 
-#: users/templates/users/website_detail.html:18
+#: users/templates/users/website_detail.html:19
 msgid "Reset"
 msgstr ""
 
-#: users/templates/users/website_detail.html:19
+#: users/templates/users/website_detail.html:20
 msgid "Delete"
 msgstr ""
 
-#: users/templates/users/website_detail.html:32
+#: users/templates/users/website_detail.html:33
 msgid "Website"
 msgstr ""
 
-#: users/templates/users/website_detail.html:36
+#: users/templates/users/website_detail.html:37
 msgid "Domain"
 msgstr ""
 
-#: users/templates/users/website_detail.html:48
+#: users/templates/users/website_detail.html:49
 msgid "Date created (UTC)"
 msgstr ""
 
-#: users/templates/users/website_detail.html:53
+#: users/templates/users/website_detail.html:54
 msgid "Database"
 msgstr ""
 
-#: users/templates/users/website_detail.html:57
+#: users/templates/users/website_detail.html:58
 #: users/templates/users/website_detail.html:91
 msgid "address"
 msgstr ""
 
-#: users/templates/users/website_detail.html:61
+#: users/templates/users/website_detail.html:62
 #: users/templates/users/website_detail.html:95
 msgid "port"
 msgstr ""
 
-#: users/templates/users/website_detail.html:65
+#: users/templates/users/website_detail.html:66
 #: users/templates/users/website_detail.html:99
 msgid "username"
 msgstr ""
 
-#: users/templates/users/website_detail.html:69
+#: users/templates/users/website_detail.html:70
 #: users/templates/users/website_detail.html:103
 msgid "password"
 msgstr ""
 
-#: users/templates/users/website_detail.html:74
+#: users/templates/users/website_detail.html:75
 msgid "database name"
 msgstr ""
 
-#: users/templates/users/website_detail.html:78
+#: users/templates/users/website_detail.html:79
 msgid "phpmyadmin"
 msgstr ""
 
-#: users/templates/users/website_detail.html:83
+#: users/templates/users/website_detail.html:84
 msgid "Files"
 msgstr ""
 
-#: users/templates/users/website_form.html:9
+#: users/templates/users/website_detail.html:86
+msgid ""
+"Use an FTP client to connect. We recommend FileZilla or WinSCP. The server "
+"supports TLS encryption. FileZilla will tell you that the certificate is "
+"\"unknown\", no worries, <a href=\"https://forum.filezilla-project.org/"
+"viewtopic.php?t=25595\"> it displays this even for trusted certificates</a>, "
+"you can click OK."
+msgstr ""
+
+#: users/templates/users/website_form.html:10
 msgid "Update website"
 msgstr ""
 
-#: users/templates/users/website_form.html:11
+#: users/templates/users/website_form.html:12
 msgid "Create website"
 msgstr ""
 
-#: users/templates/users/website_list.html:10
+#: users/templates/users/website_list.html:11
 msgid "Your sites"
 msgstr ""
 
-#: users/templates/users/website_list.html:17
+#: users/templates/users/website_list.html:18
 msgid "View"
 msgstr ""
 
-#: users/templates/users/website_list.html:23
-#: users/templates/users/website_list.html:25
+#: users/templates/users/website_list.html:24
+#: users/templates/users/website_list.html:26
 msgid "Create new website"
 msgstr ""
 
-#: users/templates/users/website_list.html:25
+#: users/templates/users/website_list.html:26
 msgid "Free accounts are limited to 1 website, paid accounts are limited to 3."
 msgstr ""
 
-#: users/templates/users/website_reset.html:7
+#: users/templates/users/website_reset.html:8
 #, python-format
 msgid "Reset website '%(sitename)s'"
 msgstr ""

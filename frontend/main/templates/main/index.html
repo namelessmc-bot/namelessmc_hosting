@@ -6,11 +6,11 @@
 <section class="jumbotron mx-2 py-4">
     <h1 class="display-4 mt-n3">Named Hosting</h1>
     <span class="lead">
-     <p>{% trans "Start a NamelessMC website the easy way. We built our
-     hosting system from scratch to be as simple as possible without limiting
-     possibilities." %}</p>
-     <p>{% trans "No complicated panels, configuration, creating databases, uploading files, etc. Enter your domain,
-     click one button and your website is online." %}</p>
+<p>
+{% blocktrans %}Start a NamelessMC website the easy way. We built our hosting system from scratch to be as simple as possible without limiting possibilities.{% endblocktrans %}
+</p><p>
+{% blocktrans %}No complicated panels, configuration, creating databases, uploading files, etc. Enter your domain, click one button and your website is online.{% endblocktrans %}
+</p>
      </span>
     <span class="text-muted">{% blocktranslate with websites=count_websites users=count_users %}Currently hosting <kbd>{{ websites }}</kbd> websites for <kbd>{{ users }}</kbd> users.{% endblocktranslate %}</span>
 </section>
