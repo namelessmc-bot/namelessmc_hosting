@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-01-14 19:49+0000\n"
-"PO-Revision-Date: 2021-01-14 19:54+0000\n"
+"PO-Revision-Date: 2021-01-14 23:19+0000\n"
 "Last-Translator: NamelessMC Translations <robin@derkad.es>\n"
 "Language-Team: Dutch <http://translate.namelessmc.com/projects/named-hosting/"
 "named-hosting/nl/>\n"
@@ -49,12 +49,16 @@ msgid ""
 "Not affiliated with the <a href=\"https://namelessmc.com\">NamelessMC "
 "project</a>"
 msgstr ""
+"Niet aangesloten bij het <a href=\"https://namelessmc.com\">NamelessMC "
+"project</a>"
 
 #: main/templates/main/base.html:112
 msgid ""
 "This hosting system is <a href=\"https://github.com/Derkades/"
 "namelessmc_hosting\">open source</a>"
 msgstr ""
+"Dit hosting systeem is <a href=\"https://github.com/Derkades/"
+"namelessmc_hosting\">open source</a>"
 
 #: main/templates/main/base.html:117
 msgid "Support Discord"
@@ -124,8 +128,6 @@ msgid "Support NamelessMC"
 msgstr "Steun NamelessMC"
 
 #: main/templates/main/index.html:46
-#, fuzzy
-#| msgid "We donate part of our income to NamelessMC contributors"
 msgid "We donate part of our income to NamelessMC developers"
 msgstr "Wij doneren deel van ons inkomen aan NamelessMC ontwikkelaars"
 
@@ -311,7 +313,7 @@ msgstr "Jouw websites"
 
 #: users/templates/users/website_list.html:18
 msgid "View &amp; Edit"
-msgstr ""
+msgstr "Bekijken en bewerken"
 
 #: users/templates/users/website_list.html:24
 #: users/templates/users/website_list.html:26
