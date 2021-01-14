@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-01-14 17:01+0000\n"
-"PO-Revision-Date: 2021-01-14 17:17+0000\n"
+"PO-Revision-Date: 2021-01-14 19:48+0000\n"
 "Last-Translator: NamelessMC Translations <robin@derkad.es>\n"
 "Language-Team: Dutch <http://translate.namelessmc.com/projects/named-hosting/"
 "named-hosting/nl/>\n"
@@ -21,52 +21,58 @@ msgstr ""
 
 #: main/templates/main/base.html:43
 msgid "Home"
-msgstr ""
+msgstr "Home"
 
 #: main/templates/main/base.html:56
 msgid "Your Websites"
-msgstr ""
+msgstr "Jouw Websites"
 
 #: main/templates/main/base.html:61 users/templates/users/website_detail.html:7
 #: users/templates/users/website_list.html:7
 msgid "Account"
-msgstr ""
+msgstr "Account"
 
 #: main/templates/main/base.html:66
 msgid "Logout"
-msgstr ""
+msgstr "Uitloggen"
 
 #: main/templates/main/base.html:71
 msgid "Login"
-msgstr ""
+msgstr "Inloggen"
 
 #: main/templates/main/base.html:76
 msgid "Register"
-msgstr ""
+msgstr "Registreren"
 
 #: main/templates/main/base.html:117
 msgid "Support Discord"
-msgstr ""
+msgstr "Discord ondersteuning"
 
 #: main/templates/main/base.html:120
 msgid "Privacy Policy"
-msgstr ""
+msgstr "Privacybeleid"
 
 #: main/templates/main/base.html:121
 msgid "Terms of service"
-msgstr ""
+msgstr "Gebruikersvoorwaarden"
 
 #: main/templates/main/index.html:10
 msgid ""
 "Start a NamelessMC website the easy way. We built our hosting system from "
 "scratch to be as simple as possible without limiting possibilities."
 msgstr ""
+"Maak een NamelessMC website op de makkelijke manier. We hebben ons hosting-"
+"systeem zelf gebouwd om zo simpel mogelijk te zijn zonder mogelijkheden te "
+"beperken."
 
 #: main/templates/main/index.html:12
 msgid ""
 "No complicated panels, configuration, creating databases, uploading files, "
 "etc. Enter your domain, click one button and your website is online."
 msgstr ""
+"Geen ingewikkelde configuratieschermen, instellingen, databases maken, "
+"bestanden uploaden, etc. Vul je domeinnaam in, druk op een knop en je "
+"website is online."
 
 #: main/templates/main/index.html:15
 #, python-format
@@ -74,30 +80,32 @@ msgid ""
 "Currently hosting <kbd>%(websites)s</kbd> websites for <kbd>%(users)s</kbd> "
 "users."
 msgstr ""
+"Op dit moment hosten wij <kbd>%(websites)s</kbd> websites voor "
+"<kbd>%(users)s</kbd> gebruikers."
 
 #: main/templates/main/index.html:22
 msgid "Simple"
-msgstr ""
+msgstr "Eenvoudig"
 
 #: main/templates/main/index.html:23
 msgid "Server configured automatically, start the installer right away"
-msgstr ""
+msgstr "Server automatisch ingesteld, begin meteen met installeren"
 
 #: main/templates/main/index.html:29
 msgid "Full access"
-msgstr ""
+msgstr "Volledige toegang"
 
 #: main/templates/main/index.html:30
 msgid "Upload your own templates and edit the database using phpmyadmin"
-msgstr ""
+msgstr "Upload je eigen templates en bewerk de database met phpmyadmin"
 
 #: main/templates/main/index.html:36
 msgid "No artificial limits"
-msgstr ""
+msgstr "Geen kunstmatige beperkingen"
 
 #: main/templates/main/index.html:37
 msgid "No limits on modules, templates, users, etc."
-msgstr ""
+msgstr "Onbeperkte modules, templates, gebruikers, etc."
 
 #: main/templates/main/index.html:45
 msgid "No limits "
@@ -105,35 +113,35 @@ msgstr ""
 
 #: main/templates/main/index.html:46
 msgid "We donate part of our income to NamelessMC contributors"
-msgstr ""
+msgstr "Wij doneren deel van ons inkomen aan NamelessMC ontwikkelaars"
 
 #: main/templates/main/index.html:52
 msgid "Secure"
-msgstr ""
+msgstr "Veilig"
 
 #: main/templates/main/index.html:53
 msgid "Protect your website with modern TLS encryption without hassle."
-msgstr ""
+msgstr "Bescherm je website met moderne TLS versleuteling zonder moeite."
 
 #: main/templates/main/index.html:59
 msgid "High performance"
-msgstr ""
+msgstr "Hoge prestaties"
 
 #: main/templates/main/index.html:60
 msgid "Dedicated web server for every website."
-msgstr ""
+msgstr "Gescheiden webserver voor elke website."
 
 #: main/templates/main/index.html:71
 msgid "Create your website now"
-msgstr ""
+msgstr "Maak je website nu"
 
 #: main/templates/main/index.html:75
 msgid "Get started"
-msgstr ""
+msgstr "Begin"
 
 #: main/templates/main/index.html:77
 msgid "Sign up"
-msgstr ""
+msgstr "Inschrijven"
 
 #: users/templates/users/account.html:7
 #, python-format
@@ -166,101 +174,101 @@ msgstr "Account aanmaken"
 
 #: users/templates/users/register.html:13
 msgid "Sign Up"
-msgstr ""
+msgstr "Inschrijven"
 
 #: users/templates/users/register.html:17
 msgid "Already have an account?"
-msgstr ""
+msgstr "Heb je al een account?"
 
 #: users/templates/users/register.html:17
 msgid "Sign in"
-msgstr ""
+msgstr "Inloggen"
 
 #: users/templates/users/website_confirm_delete.html:9
 #, python-format
 msgid "Delete website '%(sitename)s'"
-msgstr ""
+msgstr "Website '%(sitename)s' verwijderen"
 
 #: users/templates/users/website_confirm_delete.html:10
 msgid "Are you sure you want to delete this website?"
-msgstr ""
+msgstr "Weet je zeker dat je deze website wilt verwijderen?"
 
 #: users/templates/users/website_confirm_delete.html:13
 #: users/templates/users/website_reset.html:15
 msgid "Cancel"
-msgstr ""
+msgstr "Annuleren"
 
 #: users/templates/users/website_confirm_delete.html:14
 #: users/templates/users/website_form.html:24
 #: users/templates/users/website_reset.html:16
 msgid "Confirm"
-msgstr ""
+msgstr "Bevestigen"
 
 #: users/templates/users/website_detail.html:8
 #: users/templates/users/website_list.html:8
 msgid "Websites"
-msgstr ""
+msgstr "Websites"
 
 #: users/templates/users/website_detail.html:18
 #: users/templates/users/website_list.html:18
 msgid "Edit"
-msgstr ""
+msgstr "Bewerken"
 
 #: users/templates/users/website_detail.html:19
 msgid "Reset"
-msgstr ""
+msgstr "Reset"
 
 #: users/templates/users/website_detail.html:20
 msgid "Delete"
-msgstr ""
+msgstr "Verwijderen"
 
 #: users/templates/users/website_detail.html:33
 msgid "Website"
-msgstr ""
+msgstr "Website"
 
 #: users/templates/users/website_detail.html:37
 msgid "Domain"
-msgstr ""
+msgstr "Domein"
 
 #: users/templates/users/website_detail.html:49
 msgid "Date created (UTC)"
-msgstr ""
+msgstr "Datum aangemaakt (UTC)"
 
 #: users/templates/users/website_detail.html:54
 msgid "Database"
-msgstr ""
+msgstr "Database"
 
 #: users/templates/users/website_detail.html:58
 #: users/templates/users/website_detail.html:91
 msgid "address"
-msgstr ""
+msgstr "adres"
 
 #: users/templates/users/website_detail.html:62
 #: users/templates/users/website_detail.html:95
 msgid "port"
-msgstr ""
+msgstr "poort"
 
 #: users/templates/users/website_detail.html:66
 #: users/templates/users/website_detail.html:99
 msgid "username"
-msgstr ""
+msgstr "gebruikersnaam"
 
 #: users/templates/users/website_detail.html:70
 #: users/templates/users/website_detail.html:103
 msgid "password"
-msgstr ""
+msgstr "wachtwoord"
 
 #: users/templates/users/website_detail.html:75
 msgid "database name"
-msgstr ""
+msgstr "database naam"
 
 #: users/templates/users/website_detail.html:79
 msgid "phpmyadmin"
-msgstr ""
+msgstr "phpmyadmin"
 
 #: users/templates/users/website_detail.html:84
 msgid "Files"
-msgstr ""
+msgstr "Bestanden"
 
 #: users/templates/users/website_detail.html:86
 msgid ""
@@ -270,33 +278,38 @@ msgid ""
 "viewtopic.php?t=25595\"> it displays this even for trusted certificates</a>, "
 "you can click OK."
 msgstr ""
+"Gebruik een FTP cliënt om te verbinden. Wij raden FileZillla of WinSCP aan. "
+"De server ondersteund TLS versleuteling. FileZilla zal je waarschuwen dat "
+"het certificaat onbekend is, geen zorgen, <a href=\"https://forum.filezilla-"
+"project.org/viewtopic.php?t=25595\">het laat dit ook zien voor geldige "
+"certificaten</a>, je kan op OK drukken."
 
 #: users/templates/users/website_form.html:10
 msgid "Update website"
-msgstr ""
+msgstr "Website wijzigen"
 
 #: users/templates/users/website_form.html:12
 msgid "Create website"
-msgstr ""
+msgstr "Website maken"
 
 #: users/templates/users/website_list.html:11
 msgid "Your sites"
-msgstr ""
+msgstr "Jouw websites"
 
 #: users/templates/users/website_list.html:18
 msgid "View"
-msgstr ""
+msgstr "Bekijken"
 
 #: users/templates/users/website_list.html:24
 #: users/templates/users/website_list.html:26
 msgid "Create new website"
-msgstr ""
+msgstr "Nieuwe website maken"
 
 #: users/templates/users/website_list.html:26
 msgid "Free accounts are limited to 1 website, paid accounts are limited to 3."
-msgstr ""
+msgstr "Gratis accounts zijn beperkt tot 1 website, betaalde accounts tot 3."
 
 #: users/templates/users/website_reset.html:8
 #, python-format
 msgid "Reset website '%(sitename)s'"
-msgstr ""
+msgstr "Website '%(sitename)s' resetten"

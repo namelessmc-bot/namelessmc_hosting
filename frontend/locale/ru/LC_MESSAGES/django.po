@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-01-14 17:08+0000\n"
-"PO-Revision-Date: 2021-01-14 17:33+0000\n"
+"PO-Revision-Date: 2021-01-14 19:48+0000\n"
 "Last-Translator: LOyoujoLI <minion2018@hotmail.com>\n"
 "Language-Team: Russian <http://translate.namelessmc.com/projects/"
 "named-hosting/named-hosting/ru/>\n"
@@ -23,52 +23,56 @@ msgstr ""
 
 #: main/templates/main/base.html:43
 msgid "Home"
-msgstr ""
+msgstr "Главная"
 
 #: main/templates/main/base.html:56
 msgid "Your Websites"
-msgstr ""
+msgstr "Ваши вебсайты"
 
 #: main/templates/main/base.html:61 users/templates/users/website_detail.html:7
 #: users/templates/users/website_list.html:7
 msgid "Account"
-msgstr ""
+msgstr "Аккаунт"
 
 #: main/templates/main/base.html:66
 msgid "Logout"
-msgstr ""
+msgstr "Выйти"
 
 #: main/templates/main/base.html:71
 msgid "Login"
-msgstr ""
+msgstr "Войти"
 
 #: main/templates/main/base.html:76
 msgid "Register"
-msgstr ""
+msgstr "Зарегистрироваться"
 
 #: main/templates/main/base.html:117
 msgid "Support Discord"
-msgstr ""
+msgstr "Поддержка в Discord"
 
 #: main/templates/main/base.html:120
 msgid "Privacy Policy"
-msgstr ""
+msgstr "Политика конфиденциальности"
 
 #: main/templates/main/base.html:121
 msgid "Terms of service"
-msgstr ""
+msgstr "Условия использования"
 
 #: main/templates/main/index.html:10
 msgid ""
 "Start a NamelessMC website the easy way. We built our hosting system from "
 "scratch to be as simple as possible without limiting possibilities."
 msgstr ""
+"Запустите с нами сайт на NamelessMC. Мы писали нашу систему хостинга с нуля, "
+"чтобы она была максимально простой и удобной для вас."
 
 #: main/templates/main/index.html:12
 msgid ""
 "No complicated panels, configuration, creating databases, uploading files, "
 "etc. Enter your domain, click one button and your website is online."
 msgstr ""
+"Нету готовых панелей, настроек, баз данных, файлов и т.д. Введите ваш домен, "
+"нажмите одну кнопку, и ваш сайт будет готов к использованию."
 
 #: main/templates/main/index.html:15
 #, python-format
@@ -76,66 +80,69 @@ msgid ""
 "Currently hosting <kbd>%(websites)s</kbd> websites for <kbd>%(users)s</kbd> "
 "users."
 msgstr ""
+"Сейчас размещены <kbd>%(websites)s</kbd> сайтов для <kbd>%(users)s</kbd> "
+"пользователей."
 
 #: main/templates/main/index.html:22
 msgid "Simple"
-msgstr ""
+msgstr "Лёгкий"
 
 #: main/templates/main/index.html:23
 msgid "Server configured automatically, start the installer right away"
-msgstr ""
+msgstr "Сервер будет настроен автоматически, запустите установку прямо сейчас"
 
 #: main/templates/main/index.html:29
 msgid "Full access"
-msgstr ""
+msgstr "Полный доступ"
 
 #: main/templates/main/index.html:30
 msgid "Upload your own templates and edit the database using phpmyadmin"
 msgstr ""
+"Загрузите ваши шаблоны и отредактируйте базу данных с помошью phpmyadmin"
 
 #: main/templates/main/index.html:36
 msgid "No artificial limits"
-msgstr ""
+msgstr "Никаких ограничений"
 
 #: main/templates/main/index.html:37
 msgid "No limits on modules, templates, users, etc."
-msgstr ""
+msgstr "У нас нету лимитов на модули, пользователей, стилей и т.д."
 
 #: main/templates/main/index.html:45
 msgid "No limits "
-msgstr ""
+msgstr "Без лимитов "
 
 #: main/templates/main/index.html:46
 msgid "We donate part of our income to NamelessMC contributors"
-msgstr ""
+msgstr "Мы жертвуем часть нашего дохода участникам NamelessMC"
 
 #: main/templates/main/index.html:52
 msgid "Secure"
-msgstr ""
+msgstr "Защищенность"
 
 #: main/templates/main/index.html:53
 msgid "Protect your website with modern TLS encryption without hassle."
-msgstr ""
+msgstr "Защитите свой сайт со современным TLS шифрованием без всяких подвохов."
 
 #: main/templates/main/index.html:59
 msgid "High performance"
-msgstr ""
+msgstr "Высокая производительность"
 
 #: main/templates/main/index.html:60
 msgid "Dedicated web server for every website."
-msgstr ""
+msgstr "Выделенный сервер для каждого сайта."
 
 #: main/templates/main/index.html:71
 msgid "Create your website now"
-msgstr ""
+msgstr "Создайте свой сайт прямо сейчас"
 
 #: main/templates/main/index.html:75
 msgid "Get started"
-msgstr ""
+msgstr "Приступить"
 
 #: main/templates/main/index.html:77
 msgid "Sign up"
-msgstr ""
+msgstr "Войти"
 
 #: users/templates/users/account.html:7
 #, python-format
@@ -190,13 +197,13 @@ msgstr "Вы действительно хотите удалить этот в�
 #: users/templates/users/website_confirm_delete.html:13
 #: users/templates/users/website_reset.html:15
 msgid "Cancel"
-msgstr ""
+msgstr "Отмена"
 
 #: users/templates/users/website_confirm_delete.html:14
 #: users/templates/users/website_form.html:24
 #: users/templates/users/website_reset.html:16
 msgid "Confirm"
-msgstr ""
+msgstr "Подтвердить"
 
 #: users/templates/users/website_detail.html:8
 #: users/templates/users/website_list.html:8
@@ -206,7 +213,7 @@ msgstr "Вебсайты"
 #: users/templates/users/website_detail.html:18
 #: users/templates/users/website_list.html:18
 msgid "Edit"
-msgstr "Редакт."
+msgstr "Редактировать"
 
 #: users/templates/users/website_detail.html:19
 msgid "Reset"
@@ -226,43 +233,43 @@ msgstr "Домен"
 
 #: users/templates/users/website_detail.html:49
 msgid "Date created (UTC)"
-msgstr ""
+msgstr "Дата создания (UTC)"
 
 #: users/templates/users/website_detail.html:54
 msgid "Database"
-msgstr ""
+msgstr "База данных"
 
 #: users/templates/users/website_detail.html:58
 #: users/templates/users/website_detail.html:91
 msgid "address"
-msgstr ""
+msgstr "Адрес"
 
 #: users/templates/users/website_detail.html:62
 #: users/templates/users/website_detail.html:95
 msgid "port"
-msgstr ""
+msgstr "Порт"
 
 #: users/templates/users/website_detail.html:66
 #: users/templates/users/website_detail.html:99
 msgid "username"
-msgstr ""
+msgstr "Имя пользователя"
 
 #: users/templates/users/website_detail.html:70
 #: users/templates/users/website_detail.html:103
 msgid "password"
-msgstr ""
+msgstr "Пароль"
 
 #: users/templates/users/website_detail.html:75
 msgid "database name"
-msgstr ""
+msgstr "Название базы данных"
 
 #: users/templates/users/website_detail.html:79
 msgid "phpmyadmin"
-msgstr ""
+msgstr "phpmyadmin"
 
 #: users/templates/users/website_detail.html:84
 msgid "Files"
-msgstr ""
+msgstr "Файлы"
 
 #: users/templates/users/website_detail.html:86
 msgid ""
@@ -272,33 +279,40 @@ msgid ""
 "viewtopic.php?t=25595\"> it displays this even for trusted certificates</a>, "
 "you can click OK."
 msgstr ""
+"Используйте FTP клиент для подключения. Мы рекомендуем FileZilla или WinSCP. "
+"Сервера поддерживают TLS шифрование. FileZilla может пометить сертификат как "
+"\"неизвестный\", но переживать не стоит, <a href=\"https://forum.filezilla-"
+"project.org/viewtopic.php?t=25595\"> он отображает это даже для доверенных "
+"сертификатов</a>, вы можете нажать OK."
 
 #: users/templates/users/website_form.html:10
 msgid "Update website"
-msgstr ""
+msgstr "Обновить сайт"
 
 #: users/templates/users/website_form.html:12
 msgid "Create website"
-msgstr ""
+msgstr "Создать сайт"
 
 #: users/templates/users/website_list.html:11
 msgid "Your sites"
-msgstr ""
+msgstr "Ваши сайты"
 
 #: users/templates/users/website_list.html:18
 msgid "View"
-msgstr ""
+msgstr "Просмотреть"
 
 #: users/templates/users/website_list.html:24
 #: users/templates/users/website_list.html:26
 msgid "Create new website"
-msgstr ""
+msgstr "Создать новый сайт"
 
 #: users/templates/users/website_list.html:26
 msgid "Free accounts are limited to 1 website, paid accounts are limited to 3."
 msgstr ""
+"Бесплатные аккаунты могут иметь только 1 сайт, но платные пользователи могут "
+"иметь 3 сайта."
 
 #: users/templates/users/website_reset.html:8
 #, python-format
 msgid "Reset website '%(sitename)s'"
-msgstr ""
+msgstr "Сброс сайта '%(sitename)s'"
