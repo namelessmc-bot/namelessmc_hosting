@@ -3,20 +3,21 @@
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-01-14 17:33+0000\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
+"POT-Creation-Date: 2021-01-14 17:01+0000\n"
+"PO-Revision-Date: 2021-01-14 17:17+0000\n"
+"Last-Translator: NamelessMC Translations <robin@derkad.es>\n"
+"Language-Team: Dutch <http://translate.namelessmc.com/projects/named-hosting/"
+"named-hosting/nl/>\n"
+"Language: nl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 4.4\n"
 
 #: main/templates/main/base.html:43
 msgid "Home"
@@ -141,27 +142,27 @@ msgstr "Welkom, %(username)s"
 
 #: users/templates/users/account.html:45
 msgid "Update account settings"
-msgstr ""
+msgstr "Accountinstellingen wijzigen"
 
 #: users/templates/users/account.html:51
 msgid "Submit"
-msgstr ""
+msgstr "Verzenden"
 
 #: users/templates/users/account.html:54
 msgid "Change password"
-msgstr ""
+msgstr "Wachtwoord wijzigen"
 
 #: users/templates/users/payment_cancelled.html:4
 msgid "Payment cancelled."
-msgstr ""
+msgstr "Betaling geanulleerd."
 
 #: users/templates/users/payment_complete.html:4
 msgid "Payment complete"
-msgstr ""
+msgstr "Betaling voltooid"
 
 #: users/templates/users/register.html:9
 msgid "Create account"
-msgstr ""
+msgstr "Account aanmaken"
 
 #: users/templates/users/register.html:13
 msgid "Sign Up"
