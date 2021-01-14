@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-01-14 19:53+0000\n"
+"POT-Creation-Date: 2021-01-14 19:55+0000\n"
 "PO-Revision-Date: 2021-01-14 19:48+0000\n"
 "Last-Translator: LOyoujoLI <minion2018@hotmail.com>\n"
 "Language-Team: Russian <http://translate.namelessmc.com/projects/named-"
@@ -225,7 +225,6 @@ msgid "Websites"
 msgstr "Вебсайты"
 
 #: users/templates/users/website_detail.html:18
-#: users/templates/users/website_list.html:18
 msgid "Edit"
 msgstr "Редактировать"
 
@@ -312,8 +311,8 @@ msgid "Your sites"
 msgstr "Ваши сайты"
 
 #: users/templates/users/website_list.html:18
-msgid "View"
-msgstr "Просмотреть"
+msgid "View &amp; Edit"
+msgstr ""
 
 #: users/templates/users/website_list.html:24
 #: users/templates/users/website_list.html:26
@@ -330,6 +329,9 @@ msgstr ""
 #, python-format
 msgid "Reset website '%(sitename)s'"
 msgstr "Сброс сайта '%(sitename)s'"
+
+#~ msgid "View"
+#~ msgstr "Просмотреть"
 
 #~ msgid "No limits "
 #~ msgstr "Без лимитов "

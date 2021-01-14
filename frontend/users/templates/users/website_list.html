@@ -15,7 +15,7 @@
                 {{ website.name }} - <a href="{% if website.use_https %}https://{{ website.domain }}{% else %}http://{{ website.domain}}{% endif %}">{{ website.domain }}</a>
             </div>
             <div class="card-body">
-                <a class="btn btn-outline-info" href="{% url 'website-detail' website.id %}">{% trans "View" %} &amp; {% trans "Edit" %}</a>
+                <a class="btn btn-outline-info" href="{% url 'website-detail' website.id %}">{% trans "View &amp; Edit" %}</a>
             </div>
         </div>
     {% endfor %}
