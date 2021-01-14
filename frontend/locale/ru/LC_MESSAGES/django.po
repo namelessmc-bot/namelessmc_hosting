@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-01-14 19:55+0000\n"
+"POT-Creation-Date: 2021-01-14 19:56+0000\n"
 "PO-Revision-Date: 2021-01-14 19:48+0000\n"
 "Last-Translator: LOyoujoLI <minion2018@hotmail.com>\n"
 "Language-Team: Russian <http://translate.namelessmc.com/projects/named-"
@@ -48,7 +48,7 @@ msgstr "Зарегистрироваться"
 
 #: main/templates/main/base.html:110
 msgid ""
-"Not affiliated with the<a href=\"https://namelessmc.com\">NamelessMC "
+"Not affiliated with the <a href=\"https://namelessmc.com\">NamelessMC "
 "project</a>\""
 msgstr ""
 
