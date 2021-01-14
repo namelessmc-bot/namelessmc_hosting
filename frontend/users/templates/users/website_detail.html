@@ -3,8 +3,8 @@
 <div class="content-section">
     <nav aria-label="breadcrumb">
         <ol class="breadcrumb">
-            <li class="breadcrumb-item"><a href="{% url 'account' %}">Account</a></li>
-            <li class="breadcrumb-item"><a href="{% url 'websites' %}">Websites</a></li>
+            <li class="breadcrumb-item"><a href="{% url 'account' %}">{% trans "Account" %}</a></li>
+            <li class="breadcrumb-item"><a href="{% url 'websites' %}">{% trans "Websites" %}</a></li>
             <li class="breadcrumb-item active" aria-current="page">{{ website.name }}</li>
         </ol>
     </nav>
@@ -14,9 +14,9 @@
             <h2>{{ website.name }}</h2>
         </div>
         <div>
-            <a href="{% url 'website-update' website.id %}" class="btn btn-outline-info mr-2">Edit</a>
-            <a href="{% url 'website-reset' website.id %}" class="btn btn-outline-warning mr-2">Reset</a>
-            <a href="{% url 'website-delete' website.id %}" class="btn btn-outline-danger">Delete</a>
+            <a href="{% url 'website-update' website.id %}" class="btn btn-outline-info mr-2">{% trans "Edit" %}</a>
+            <a href="{% url 'website-reset' website.id %}" class="btn btn-outline-warning mr-2">{% trans "Reset" %}</a>
+            <a href="{% url 'website-delete' website.id %}" class="btn btn-outline-danger">{% trans "Delete" %}</a>
         </div>
     </div>
 
@@ -28,11 +28,11 @@
          Wiki: Creating a CNAME record</a>.
     </div>
     <div class="mt-2">
-        <h4>Website</h4>
+        <h4>{% trans "Website" %}</h4>
         <table class="table table-hover">
             <tbody>
                 <tr>
-                    <td class="w-50">Domain</td>
+                    <td class="w-50">{% trans "Domain" %}</td>
                     <td class="w-50">{{ website.domain }}</td>
                 </tr>
                 <tr>
@@ -44,61 +44,61 @@
                     <td><a target="_blank" href="{% if website.use_https %}https://{% else %}http://{% endif %}{{ website.domain }}">{% if website.use_https %}https://{% else %}http://{% endif %}{% if website.www %}www.{% endif %}{{ website.domain }}</a></td>
                 </tr>
                 <tr>
-                    <td>Date created (UTC)</td>
+                    <td>{% trans "Date created (UTC)" %}</td>
                     <td>{{ website.date_created }}</td>
                 </tr>
             </tbody>
         </table>
-        <h4>Database</h4>
+        <h4>{% trans "Database" %}</h4>
         <table class="table table-hover">
             <tbody>
                 <tr>
-                    <td class="w-50">address</td>
+                    <td class="w-50">{% trans "address" %}</td>
                     <td class="w-50"><code>database</code></td>
                 </tr>
                 <tr>
-                    <td>port</td>
+                    <td>{% trans "port" %}</td>
                     <td><code>3306</code></td>
                 </tr>
                 <tr>
-                    <td>username</td>
+                    <td>{% trans "username" %}</td>
                     <td><code>user_{{ website.id }}</code></td>
                 </tr>
                 <tr>
-                    <td>password</td> {% comment %} TODO Click to reveal {% endcomment %}
+                    <td>{% trans "password" %}</td> {% comment %} TODO Click to reveal {% endcomment %}
                     <td><code>{{ website.db_password }}</code></td>
                 </tr>
                 <tr>
-                    <td>database name</td>
+                    <td>{% trans "database name" %}</td>
                     <td><code>site_{{ website.id }}</code></td>
                 </tr>
                 <tr>
-                    <td>phpmyadmin</td>
+                    <td>{% trans "phpmyadmin" %}</td>
                     <td><a target="_blank" href="https://phpmyadmin.namedhosting.com">https://phpmyadmin.namedhosting.com</a></td>
                 </tr>
             </tbody>
         </table>
-        <h4>Files</h4>
-        <p>Use an FTP client to connect. We recommend FileZilla or WinSCP. The server
+        <h4>{% trans "Files" %}</h4>
+        <p>{% trans "Use an FTP client to connect. We recommend FileZilla or WinSCP. The server
         supports TLS encryption. FileZilla will tell you that the certificate
         is "unknown", no worries, <a href="https://forum.filezilla-project.org/viewtopic.php?t=25595">
-        it displays this even for trusted certificates</a>, you can click OK.</p>
+        it displays this even for trusted certificates</a>, you can click OK." %}</p>
         <table class="table table-hover">
             <tbody>
                 <tr>
-                    <td class="w-50">address</td>
+                    <td class="w-50">{% trans "address" %}</td>
                     <td class="w-50"><code>vps1.derkad.es</code></td>
                 </tr>
                 <tr>
-                    <td>port</td>
+                    <td>{% trans "port" %}</td>
                     <td><code>21</code></td>
                 </tr>
                 <tr>
-                    <td>username</td>
+                    <td>{% trans "username" %}</td>
                     <td><code>user_{{ website.id }}</code></td>
                 </tr>
                 <tr>
-                    <td>password</td>
+                    <td>{% trans "password" %}</td>
                     <td><code>{{ website.files_password }}</code></td>
                 </tr>
             </tbody>

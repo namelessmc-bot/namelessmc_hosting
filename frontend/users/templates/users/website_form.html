@@ -6,21 +6,21 @@
         {% csrf_token %}
         <fieldset class="form-group">
             {% if object %}
-                <legend class="border-bottom mb-4">Update website</legend>
+                <legend class="border-bottom mb-4">{% trans "Update website" %}</legend>
             {% else %}
-                <legend class="border-bottom mb-4">Create website</legend>
+                <legend class="border-bottom mb-4">{% trans "Create website" %}</legend>
             {% endif %}
 
             {{ form|crispy }}
             {% if object %}
-                <p class="text-muted">Please make sure your website works
+                <p class="text-muted">{% trans "Please make sure your website works
                  without HTTPS before enabling HTTPS. Do not enable HTTPS
                  if you are using CloudFlare flexible SSL. Version changes
-                 do not take effect until you use the 'Reset' button.</p>
+                 do not take effect until you use the 'Reset' button." %}</p>
             {% endif %}
         </fieldset>
         <div class="form-group">
-            <button class="btn btn-outline-info" type="submit">Confirm</button>
+            <button class="btn btn-outline-info" type="submit">{% trans "Confirm" %}</button>
         </div>
     </form>
 </div>

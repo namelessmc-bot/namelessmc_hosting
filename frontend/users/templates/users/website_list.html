@@ -3,26 +3,26 @@
 <div class="content-section">
     <nav aria-label="breadcrumb">
         <ol class="breadcrumb">
-            <li class="breadcrumb-item"><a href="{% url 'account' %}">Account</a></li>
-            <li class="breadcrumb-item active" aria-current="page">Websites</li>
+            <li class="breadcrumb-item"><a href="{% url 'account' %}">{% trans "Account" %}</a></li>
+            <li class="breadcrumb-item active" aria-current="page">{% trans "Websites" %}</li>
         </ol>
     </nav>
-    <h2 class="border-bottom">Your sites</h2>
+    <h2 class="border-bottom">{% trans "Your sites" %}</h2>
     {% for website in websites %}
         <div class="card mb-4 mt-4">
             <div class="card-header bg-dark text-white">
                 {{ website.name }} - <a href="{% if website.use_https %}https://{{ website.domain }}{% else %}http://{{ website.domain}}{% endif %}">{{ website.domain }}</a>
             </div>
             <div class="card-body">
-                <a class="btn btn-outline-info" href="{% url 'website-detail' website.id %}">View &amp; Edit</a>
+                <a class="btn btn-outline-info" href="{% url 'website-detail' website.id %}">{% trans "View" %} &amp; {% trans "Edit" %}</a>
             </div>
         </div>
     {% endfor %}
 
     {% if show_create_button %}
-        <a href="{% url 'website-new' %}" class="btn btn-outline-success">Create new website</a>
+        <a href="{% url 'website-new' %}" class="btn btn-outline-success">{% trans "Create new website" %}</a>
     {% else %}
-        <button class="btn btn-outline-success" disabled>Create new website</button> Free accounts are limited to 1 website, paid accounts are limited to 3.
+        <button class="btn btn-outline-success" disabled>{% trans "Create new website" %}</button> {% trans "Free accounts are limited to 1 website, paid accounts are limited to 3." %}
     {% endif %}
 </div>
 {% endblock content %}

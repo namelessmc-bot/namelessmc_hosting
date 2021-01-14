@@ -1,8 +1,11 @@
 {% extends 'main/base.html' %}
 {% load crispy_forms_tags %}
+{% load i18n %}
 {% block content %}
 <div class="content-section">
-    <h3>Welcome, {{ user.username }}</h3>
+    <h3>
+        {% blocktranslate with username=user.username %}Welcome, {{ username }}{% endblocktranslate %}
+    </h3>
     {% comment %} <div class="card mt-2">
         <h5 class="card-header">Credit</h5>
         <div class="card-body">
@@ -38,16 +41,16 @@
     </div> {% endcomment %}
 
     <div class="card mt-4">
-        <h5 class="card-header">Update account settings</h5>
+        <h5 class="card-header">{% trans "Update account settings" %}</h5>
         <div class="card-body">
             <form method="POST">
                 {% csrf_token %}
                 {{ update_form|crispy }}
                 <div class="form-group">
-                    <button class="btn btn-outline-info" type="submit" name="update-account">Submit</button>
+                    <button class="btn btn-outline-info" type="submit" name="update-account">{% trans "Submit" %}</button>
                 </div>
             </form>
-            <a href="{% url 'password_change' %}">Change password</a>
+            <a href="{% url 'password_change' %}">{% trans "Change password" %}</a>
         </div>
     </div>
 </div>

@@ -9,6 +9,7 @@ from django.contrib.auth import update_session_auth_hash
 from django.contrib.auth.decorators import login_required
 from django.contrib.auth.forms import PasswordChangeForm
 from django.views.decorators.csrf import csrf_exempt
+from django.utils.translation import gettext as _
 from paypal.standard.forms import PayPalPaymentsForm
 from .forms import UserRegisterForm, UserUpdateForm
 from .models import Website, Voucher, Account, Job
