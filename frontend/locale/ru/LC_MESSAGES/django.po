@@ -3,114 +3,115 @@
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-01-14 17:08+0000\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
+"PO-Revision-Date: 2021-01-14 17:33+0000\n"
+"Last-Translator: LOyoujoLI <minion2018@hotmail.com>\n"
+"Language-Team: Russian <http://translate.namelessmc.com/projects/"
+"named-hosting/named-hosting/ru/>\n"
+"Language: ru\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
 "%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n"
 "%100>=11 && n%100<=14)? 2 : 3);\n"
+"X-Generator: Weblate 4.4\n"
 
 #: users/templates/users/account.html:7
 #, python-format
 msgid "Welcome, %(username)s"
-msgstr ""
+msgstr "Добро пожаловать, %(username)s"
 
 #: users/templates/users/account.html:45
 msgid "Update account settings"
-msgstr ""
+msgstr "Обновить данные аккаунта"
 
 #: users/templates/users/account.html:51
 msgid "Submit"
-msgstr ""
+msgstr "Отправить"
 
 #: users/templates/users/account.html:54
 msgid "Change password"
-msgstr ""
+msgstr "Изменить пароль"
 
 #: users/templates/users/payment_cancelled.html:3
 msgid "Payment cancelled."
-msgstr ""
+msgstr "Платёж отменён."
 
 #: users/templates/users/payment_complete.html:3
 msgid "Payment complete"
-msgstr ""
+msgstr "Платёж принят"
 
 #: users/templates/users/register.html:8
 msgid "Create account"
-msgstr ""
+msgstr "Создать аккаунт"
 
 #: users/templates/users/register.html:12
 msgid "Sign Up"
-msgstr ""
+msgstr "Зарегистрироваться"
 
 #: users/templates/users/register.html:16
 msgid "Already have an account?"
-msgstr ""
+msgstr "Уже есть аккаунт?"
 
 #: users/templates/users/register.html:16
 msgid "Sign in"
-msgstr ""
+msgstr "Войти"
 
 #: users/templates/users/website_confirm_delete.html:8
 #, python-format
 msgid "Delete website '%(sitename)s'"
-msgstr ""
+msgstr "Удалить вебсайт '%(sitename)s'"
 
 #: users/templates/users/website_confirm_delete.html:9
 msgid "Are you sure you want to delete this website?"
-msgstr ""
+msgstr "Вы действительно хотите удалить этот вебсайт?"
 
 #: users/templates/users/website_confirm_delete.html:12
 #: users/templates/users/website_reset.html:14
 msgid "Cancel"
-msgstr ""
+msgstr "Отмена"
 
 #: users/templates/users/website_confirm_delete.html:13
 #: users/templates/users/website_form.html:23
 #: users/templates/users/website_reset.html:15
 msgid "Confirm"
-msgstr ""
+msgstr "Подтвердить"
 
 #: users/templates/users/website_detail.html:6
 #: users/templates/users/website_list.html:6
 msgid "Account"
-msgstr ""
+msgstr "Аккаунт"
 
 #: users/templates/users/website_detail.html:7
 #: users/templates/users/website_list.html:7
 msgid "Websites"
-msgstr ""
+msgstr "Вебсайты"
 
 #: users/templates/users/website_detail.html:17
 #: users/templates/users/website_list.html:17
 msgid "Edit"
-msgstr ""
+msgstr "Редакт."
 
 #: users/templates/users/website_detail.html:18
 msgid "Reset"
-msgstr ""
+msgstr "Сбросить"
 
 #: users/templates/users/website_detail.html:19
 msgid "Delete"
-msgstr ""
+msgstr "Удалить"
 
 #: users/templates/users/website_detail.html:32
 msgid "Website"
-msgstr ""
+msgstr "Вебсайт"
 
 #: users/templates/users/website_detail.html:36
 msgid "Domain"
-msgstr ""
+msgstr "Домен"
 
 #: users/templates/users/website_detail.html:48
 msgid "Date created (UTC)"
