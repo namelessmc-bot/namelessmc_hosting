@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-01-14 19:59+0000\n"
-"PO-Revision-Date: 2021-01-14 20:58+0000\n"
+"PO-Revision-Date: 2021-01-14 23:19+0000\n"
 "Last-Translator: Magyar Adam <mestermc594@gmail.com>\n"
 "Language-Team: Hungarian <http://translate.namelessmc.com/projects/"
 "named-hosting/named-hosting/hu/>\n"
@@ -131,161 +131,161 @@ msgstr "NamelessMC támogatása"
 
 #: main/templates/main/index.html:46
 msgid "We donate part of our income to NamelessMC developers"
-msgstr ""
+msgstr "A jövedelmünk egy részét a NamelessMC fejlesztőknek ajánljuk fel"
 
 #: main/templates/main/index.html:52
 msgid "Secure"
-msgstr ""
+msgstr "Biztonságos"
 
 #: main/templates/main/index.html:53
 msgid "Protect your website with modern TLS encryption without hassle."
-msgstr ""
+msgstr "Védje webhelyét modern TLS titkosítással, gond nélkül."
 
 #: main/templates/main/index.html:59
 msgid "High performance"
-msgstr ""
+msgstr "Nagy teljesítményű"
 
 #: main/templates/main/index.html:60
 msgid "Dedicated web server for every website."
-msgstr ""
+msgstr "Dedikált webszerver minden webhelyhez."
 
 #: main/templates/main/index.html:71
 msgid "Create your website now"
-msgstr ""
+msgstr "Készítse el most webhelyét"
 
 #: main/templates/main/index.html:75
 msgid "Get started"
-msgstr ""
+msgstr "Kezdés"
 
 #: main/templates/main/index.html:77
 msgid "Sign up"
-msgstr ""
+msgstr "Regisztrálj"
 
 #: users/templates/users/account.html:7
 #, python-format
 msgid "Welcome, %(username)s"
-msgstr ""
+msgstr "Üdvözlet, %(username)s"
 
 #: users/templates/users/account.html:45
 msgid "Update account settings"
-msgstr ""
+msgstr "Frissítse a fiókbeállításokat"
 
 #: users/templates/users/account.html:51
 msgid "Submit"
-msgstr ""
+msgstr "Küldés"
 
 #: users/templates/users/account.html:54
 msgid "Change password"
-msgstr ""
+msgstr "Jelszó módosítása"
 
 #: users/templates/users/payment_cancelled.html:4
 msgid "Payment cancelled."
-msgstr ""
+msgstr "A fizetés törölve."
 
 #: users/templates/users/payment_complete.html:4
 msgid "Payment complete"
-msgstr ""
+msgstr "A fizetés kész"
 
 #: users/templates/users/register.html:9
 msgid "Create account"
-msgstr ""
+msgstr "Fiók létrehozása"
 
 #: users/templates/users/register.html:13
 msgid "Sign Up"
-msgstr ""
+msgstr "Sign Up"
 
 #: users/templates/users/register.html:17
 msgid "Already have an account?"
-msgstr ""
+msgstr "Már van fiókja?"
 
 #: users/templates/users/register.html:17
 msgid "Sign in"
-msgstr ""
+msgstr "Bejelentkezés"
 
 #: users/templates/users/website_confirm_delete.html:9
 #, python-format
 msgid "Delete website '%(sitename)s'"
-msgstr ""
+msgstr "'%(sitename)s' webhely törlése"
 
 #: users/templates/users/website_confirm_delete.html:10
 msgid "Are you sure you want to delete this website?"
-msgstr ""
+msgstr "Biztosan törli ezt a weboldalt?"
 
 #: users/templates/users/website_confirm_delete.html:13
 #: users/templates/users/website_reset.html:15
 msgid "Cancel"
-msgstr ""
+msgstr "Mégse"
 
 #: users/templates/users/website_confirm_delete.html:14
 #: users/templates/users/website_form.html:24
 #: users/templates/users/website_reset.html:16
 msgid "Confirm"
-msgstr ""
+msgstr "Megerősítés"
 
 #: users/templates/users/website_detail.html:8
 #: users/templates/users/website_list.html:8
 msgid "Websites"
-msgstr ""
+msgstr "Weboldalaid"
 
 #: users/templates/users/website_detail.html:18
 msgid "Edit"
-msgstr ""
+msgstr "Szerkesztés"
 
 #: users/templates/users/website_detail.html:19
 msgid "Reset"
-msgstr ""
+msgstr "Visszaállítás"
 
 #: users/templates/users/website_detail.html:20
 msgid "Delete"
-msgstr ""
+msgstr "Törlés"
 
 #: users/templates/users/website_detail.html:33
 msgid "Website"
-msgstr ""
+msgstr "Weboldal"
 
 #: users/templates/users/website_detail.html:37
 msgid "Domain"
-msgstr ""
+msgstr "Domain cím"
 
 #: users/templates/users/website_detail.html:49
 msgid "Date created (UTC)"
-msgstr ""
+msgstr "Létrehozás dátuma (UTC)"
 
 #: users/templates/users/website_detail.html:54
 msgid "Database"
-msgstr ""
+msgstr "Adatbázis"
 
 #: users/templates/users/website_detail.html:58
 #: users/templates/users/website_detail.html:91
 msgid "address"
-msgstr ""
+msgstr "cím"
 
 #: users/templates/users/website_detail.html:62
 #: users/templates/users/website_detail.html:95
 msgid "port"
-msgstr ""
+msgstr "port"
 
 #: users/templates/users/website_detail.html:66
 #: users/templates/users/website_detail.html:99
 msgid "username"
-msgstr ""
+msgstr "felhasználónév"
 
 #: users/templates/users/website_detail.html:70
 #: users/templates/users/website_detail.html:103
 msgid "password"
-msgstr ""
+msgstr "jelszó"
 
 #: users/templates/users/website_detail.html:75
 msgid "database name"
-msgstr ""
+msgstr "adatbázis neve"
 
 #: users/templates/users/website_detail.html:79
 msgid "phpmyadmin"
-msgstr ""
+msgstr "mysql"
 
 #: users/templates/users/website_detail.html:84
 msgid "Files"
-msgstr ""
+msgstr "Fájlok"
 
 #: users/templates/users/website_detail.html:86
 msgid ""
@@ -295,33 +295,38 @@ msgid ""
 "viewtopic.php?t=25595\"> it displays this even for trusted certificates</a>, "
 "you can click OK."
 msgstr ""
+"Használjon FTP-klienst a csatlakozáshoz. Javasoljuk a FileZillát vagy a "
+"WinSCP-t. A szerver támogatja a TLS titkosítást. A FileZilla megmondja, hogy "
+"a tanúsítvány \"ismeretlen\", nincs gond, <a href=\"https://forum.filezilla-"
+"project.org/viewtopic.php?t=25595\"> ezt még a megbízható tanúsítványok "
+"esetében is megjeleníti </a>, akkor kattintson az OK gombra."
 
 #: users/templates/users/website_form.html:10
 msgid "Update website"
-msgstr ""
+msgstr "Webhely frissítése"
 
 #: users/templates/users/website_form.html:12
 msgid "Create website"
-msgstr ""
+msgstr "Weboldal létrehozása"
 
 #: users/templates/users/website_list.html:11
 msgid "Your sites"
-msgstr ""
+msgstr "Weboldalaid"
 
 #: users/templates/users/website_list.html:18
 msgid "View &amp; Edit"
-msgstr ""
+msgstr "&amp; Szerkesztés"
 
 #: users/templates/users/website_list.html:24
 #: users/templates/users/website_list.html:26
 msgid "Create new website"
-msgstr ""
+msgstr "Hozzon létre egy új weboldalt"
 
 #: users/templates/users/website_list.html:26
 msgid "Free accounts are limited to 1 website, paid accounts are limited to 3."
-msgstr ""
+msgstr "A fiókod korlátozva van 1 webhelyre a fizetős, pedig 3 webhelyre."
 
 #: users/templates/users/website_reset.html:8
 #, python-format
 msgid "Reset website '%(sitename)s'"
-msgstr ""
+msgstr "Weboldal újratelepítése: '%(sitename)s'"
