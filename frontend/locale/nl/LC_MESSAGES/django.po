@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-01-14 17:01+0000\n"
+"POT-Creation-Date: 2021-01-14 19:49+0000\n"
 "PO-Revision-Date: 2021-01-14 19:48+0000\n"
 "Last-Translator: NamelessMC Translations <robin@derkad.es>\n"
 "Language-Team: Dutch <http://translate.namelessmc.com/projects/named-hosting/"
@@ -80,8 +80,8 @@ msgid ""
 "Currently hosting <kbd>%(websites)s</kbd> websites for <kbd>%(users)s</kbd> "
 "users."
 msgstr ""
-"Op dit moment hosten wij <kbd>%(websites)s</kbd> websites voor "
-"<kbd>%(users)s</kbd> gebruikers."
+"Op dit moment hosten wij <kbd>%(websites)s</kbd> websites voor <kbd>"
+"%(users)s</kbd> gebruikers."
 
 #: main/templates/main/index.html:22
 msgid "Simple"
@@ -108,7 +108,7 @@ msgid "No limits on modules, templates, users, etc."
 msgstr "Onbeperkte modules, templates, gebruikers, etc."
 
 #: main/templates/main/index.html:45
-msgid "No limits "
+msgid "Support NamelessMC"
 msgstr ""
 
 #: main/templates/main/index.html:46

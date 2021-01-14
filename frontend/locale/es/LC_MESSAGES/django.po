@@ -7,11 +7,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-01-14 17:33+0000\n"
+"POT-Creation-Date: 2021-01-14 19:49+0000\n"
 "PO-Revision-Date: 2021-01-14 19:47+0000\n"
 "Last-Translator: Marcos <marckos03br@gmail.com>\n"
-"Language-Team: Spanish <http://translate.namelessmc.com/projects/"
-"named-hosting/named-hosting/es/>\n"
+"Language-Team: Spanish <http://translate.namelessmc.com/projects/named-"
+"hosting/named-hosting/es/>\n"
 "Language: es\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -101,7 +101,7 @@ msgid "No limits on modules, templates, users, etc."
 msgstr ""
 
 #: main/templates/main/index.html:45
-msgid "No limits "
+msgid "Support NamelessMC"
 msgstr ""
 
 #: main/templates/main/index.html:46
