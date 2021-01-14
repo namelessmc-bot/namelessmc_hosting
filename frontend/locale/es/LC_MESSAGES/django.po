@@ -3,57 +3,59 @@
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-01-14 17:33+0000\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
+"PO-Revision-Date: 2021-01-14 19:47+0000\n"
+"Last-Translator: Marcos <marckos03br@gmail.com>\n"
+"Language-Team: Spanish <http://translate.namelessmc.com/projects/"
+"named-hosting/named-hosting/es/>\n"
+"Language: es\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 4.4\n"
 
 #: main/templates/main/base.html:43
 msgid "Home"
-msgstr ""
+msgstr "Inicio"
 
 #: main/templates/main/base.html:56
 msgid "Your Websites"
-msgstr ""
+msgstr "Sus sitios web"
 
 #: main/templates/main/base.html:61 users/templates/users/website_detail.html:7
 #: users/templates/users/website_list.html:7
 msgid "Account"
-msgstr ""
+msgstr "Cuenta"
 
 #: main/templates/main/base.html:66
 msgid "Logout"
-msgstr ""
+msgstr "Cerrar sesión"
 
 #: main/templates/main/base.html:71
 msgid "Login"
-msgstr ""
+msgstr "Iniciar sesión"
 
 #: main/templates/main/base.html:76
 msgid "Register"
-msgstr ""
+msgstr "Registrarse"
 
 #: main/templates/main/base.html:117
+#, fuzzy
 msgid "Support Discord"
-msgstr ""
+msgstr "Discord de soporte"
 
 #: main/templates/main/base.html:120
 msgid "Privacy Policy"
-msgstr ""
+msgstr "Política de privacidad"
 
 #: main/templates/main/base.html:121
 msgid "Terms of service"
-msgstr ""
+msgstr "Términos de servicio"
 
 #: main/templates/main/index.html:10
 msgid ""
