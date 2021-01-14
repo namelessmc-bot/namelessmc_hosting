@@ -3,81 +3,92 @@
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-01-14 19:59+0000\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
+"PO-Revision-Date: 2021-01-14 20:58+0000\n"
+"Last-Translator: Magyar Adam <mestermc594@gmail.com>\n"
+"Language-Team: Hungarian <http://translate.namelessmc.com/projects/"
+"named-hosting/named-hosting/hu/>\n"
+"Language: hu\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 4.4\n"
 
 #: main/templates/main/base.html:43
 msgid "Home"
-msgstr ""
+msgstr "Kezdőlap"
 
 #: main/templates/main/base.html:56
 msgid "Your Websites"
-msgstr ""
+msgstr "Weboldalaid"
 
 #: main/templates/main/base.html:61 users/templates/users/website_detail.html:7
 #: users/templates/users/website_list.html:7
 msgid "Account"
-msgstr ""
+msgstr "Fiókod"
 
 #: main/templates/main/base.html:66
 msgid "Logout"
-msgstr ""
+msgstr "Kijelentkezés"
 
 #: main/templates/main/base.html:71
 msgid "Login"
-msgstr ""
+msgstr "Bejelentkezés"
 
 #: main/templates/main/base.html:76
 msgid "Register"
-msgstr ""
+msgstr "Regisztráció"
 
 #: main/templates/main/base.html:110
 msgid ""
 "Not affiliated with the <a href=\"https://namelessmc.com\">NamelessMC "
 "project</a>"
 msgstr ""
+"Nem áll kapcsolatban a <a href=\"https://namelessmc.com\"> NamelessMC "
+"projekttel </a>"
 
 #: main/templates/main/base.html:112
 msgid ""
 "This hosting system is <a href=\"https://github.com/Derkades/"
 "namelessmc_hosting\">open source</a>"
 msgstr ""
+"Ez a tárhely rendszer <a href=\"https://github.com/Derkades/"
+"namelessmc_hosting\"> nyílt forráskódú </a>"
 
 #: main/templates/main/base.html:117
 msgid "Support Discord"
-msgstr ""
+msgstr "Discordos segítség"
 
 #: main/templates/main/base.html:120
 msgid "Privacy Policy"
-msgstr ""
+msgstr "Adatvédelmi irányelvek"
 
 #: main/templates/main/base.html:121
 msgid "Terms of service"
-msgstr ""
+msgstr "Szolgáltatási feltételek"
 
 #: main/templates/main/index.html:10
 msgid ""
 "Start a NamelessMC website the easy way. We built our hosting system from "
 "scratch to be as simple as possible without limiting possibilities."
 msgstr ""
+"Indítson el egy NamelessMC weboldalt a egyszerű módon. Az alapoktól kezdve "
+"építettük be hosting rendszerünket, hogy a lehető legegyszerűbb legyen, a "
+"lehetőségek korlátozása nélkül."
 
 #: main/templates/main/index.html:12
 msgid ""
 "No complicated panels, configuration, creating databases, uploading files, "
 "etc. Enter your domain, click one button and your website is online."
 msgstr ""
+"Nincsenek bonyolult panelek, konfigurálás, adatbázisok létrehozása, fájlok "
+"feltöltése stb. Írja be domainjét, kattintson az egyik gombra, és a "
+"weboldala online lesz."
 
 #: main/templates/main/index.html:15
 #, python-format
@@ -85,34 +96,38 @@ msgid ""
 "Currently hosting <kbd>%(websites)s</kbd> websites for <kbd>%(users)s</kbd> "
 "users."
 msgstr ""
+"Jelenleg <kbd>%(websites)s</kbd> webhelyeket tárol <kbd>%(users)s</kbd> "
+"felhasználók számára."
 
 #: main/templates/main/index.html:22
 msgid "Simple"
-msgstr ""
+msgstr "Egyszerű"
 
 #: main/templates/main/index.html:23
 msgid "Server configured automatically, start the installer right away"
-msgstr ""
+msgstr "Az automatikusan konfigurált szerver, azonnal indítsa el a telepítőt"
 
 #: main/templates/main/index.html:29
 msgid "Full access"
-msgstr ""
+msgstr "Teljes hozzáférés"
 
 #: main/templates/main/index.html:30
 msgid "Upload your own templates and edit the database using phpmyadmin"
 msgstr ""
+"Töltse fel saját sablonjait és szerkessze az adatbázist a phpmyadmin "
+"segítségével"
 
 #: main/templates/main/index.html:36
 msgid "No artificial limits"
-msgstr ""
+msgstr "Nincsenek mesterséges korlátok"
 
 #: main/templates/main/index.html:37
 msgid "No limits on modules, templates, users, etc."
-msgstr ""
+msgstr "Nincs korlátozás a modulokra, a sablonokra, a felhasználókra stb."
 
 #: main/templates/main/index.html:45
 msgid "Support NamelessMC"
-msgstr ""
+msgstr "NamelessMC támogatása"
 
 #: main/templates/main/index.html:46
 msgid "We donate part of our income to NamelessMC developers"
