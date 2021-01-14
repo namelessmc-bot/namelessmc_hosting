@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-01-14 17:08+0000\n"
+"POT-Creation-Date: 2021-01-14 17:24+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,6 +19,110 @@ msgstr ""
 "Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
 "%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n"
 "%100>=11 && n%100<=14)? 2 : 3);\n"
+
+#: main/templates/main/base.html:41
+msgid "Home"
+msgstr ""
+
+#: main/templates/main/base.html:54
+msgid "Your Websites"
+msgstr ""
+
+#: main/templates/main/base.html:59 users/templates/users/website_detail.html:6
+#: users/templates/users/website_list.html:6
+msgid "Account"
+msgstr ""
+
+#: main/templates/main/base.html:64
+msgid "Logout"
+msgstr ""
+
+#: main/templates/main/base.html:69
+msgid "Login"
+msgstr ""
+
+#: main/templates/main/base.html:74
+msgid "Register"
+msgstr ""
+
+#: main/templates/main/base.html:115
+msgid "Support Discord"
+msgstr ""
+
+#: main/templates/main/base.html:118
+msgid "Privacy Policy"
+msgstr ""
+
+#: main/templates/main/base.html:119
+msgid "Terms of service"
+msgstr ""
+
+#: main/templates/main/index.html:14
+#, python-format
+msgid ""
+"Currently hosting <kbd>%(websites)s</kbd> websites for <kbd>%(users)s</kbd> "
+"users."
+msgstr ""
+
+#: main/templates/main/index.html:21
+msgid "Simple"
+msgstr ""
+
+#: main/templates/main/index.html:22
+msgid "Server configured automatically, start the installer right away"
+msgstr ""
+
+#: main/templates/main/index.html:28
+msgid "Full access"
+msgstr ""
+
+#: main/templates/main/index.html:29
+msgid "Upload your own templates and edit the database using phpmyadmin"
+msgstr ""
+
+#: main/templates/main/index.html:35
+msgid "No artificial limits"
+msgstr ""
+
+#: main/templates/main/index.html:36
+msgid "No limits on modules, templates, users, etc."
+msgstr ""
+
+#: main/templates/main/index.html:44
+msgid "No limits "
+msgstr ""
+
+#: main/templates/main/index.html:45
+msgid "We donate part of our income to NamelessMC contributors"
+msgstr ""
+
+#: main/templates/main/index.html:51
+msgid "Secure"
+msgstr ""
+
+#: main/templates/main/index.html:52
+msgid "Protect your website with modern TLS encryption without hassle."
+msgstr ""
+
+#: main/templates/main/index.html:58
+msgid "High performance"
+msgstr ""
+
+#: main/templates/main/index.html:59
+msgid "Dedicated web server for every website."
+msgstr ""
+
+#: main/templates/main/index.html:70
+msgid "Create your website now"
+msgstr ""
+
+#: main/templates/main/index.html:74
+msgid "Get started"
+msgstr ""
+
+#: main/templates/main/index.html:76
+msgid "Sign up"
+msgstr ""
 
 #: users/templates/users/account.html:7
 #, python-format
@@ -79,11 +183,6 @@ msgstr ""
 #: users/templates/users/website_form.html:23
 #: users/templates/users/website_reset.html:15
 msgid "Confirm"
-msgstr ""
-
-#: users/templates/users/website_detail.html:6
-#: users/templates/users/website_list.html:6
-msgid "Account"
 msgstr ""
 
 #: users/templates/users/website_detail.html:7

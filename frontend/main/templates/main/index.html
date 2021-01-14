@@ -1,39 +1,40 @@
 {% extends 'main/base.html' %}
 {% load static %}
+{% load i18n %}
 {% block content %}
 
 <section class="jumbotron mx-2 py-4">
     <h1 class="display-4 mt-n3">Named Hosting</h1>
     <span class="lead">
-     <p>Start a NamelessMC website the easy way. We built our
+     <p>{% trans "Start a NamelessMC website the easy way. We built our
      hosting system from scratch to be as simple as possible without limiting
-     possibilities.</p>
-     <p>No complicated panels, configuration, creating databases, uploading files, etc. Enter your domain,
-     click one button and your website is online.</p>
+     possibilities." %}</p>
+     <p>{% trans "No complicated panels, configuration, creating databases, uploading files, etc. Enter your domain,
+     click one button and your website is online." %}</p>
      </span>
-    <span class="text-muted">Currently hosting <kbd>{{ count_websites }}</kbd> websites for <kbd>{{ count_users }}</kbd> users.</span>
+    <span class="text-muted">{% blocktranslate with websites=count_websites users=count_users %}Currently hosting <kbd>{{ websites }}</kbd> websites for <kbd>{{ users }}</kbd> users.{% endblocktranslate %}</span>
 </section>
 
 <section id="features">
     <div class="d-md-flex flex-md-equal w-100">
         <div class="bg-secondary px-3 pt-3 pb-5 mx-2 my-2 text-center text-white overflow-hidden shadow">
             <div class="py-3">
-                <h2 class="display-5">Simple</h2>
-                <p class="lead">Server configured automatically, start the installer right away</p>
+                <h2 class="display-5">{% trans "Simple" %}</h2>
+                <p class="lead">{% trans "Server configured automatically, start the installer right away" %}</p>
             </div>
             <img src="{% static 'illustrations/undraw_web_developer.svg' %}" class="homepage-illustration">
         </div>
         <div class="bg-secondary px-3 pt-3 pb-5 mx-2 my-2 text-center text-white overflow-hidden shadow">
             <div class="py-3">
-                <h2 class="display-5">Full access</h2>
-                <p class="lead">Upload your own templates and edit the database using phpmyadmin</p>
+                <h2 class="display-5">{% trans "Full access" %}</h2>
+                <p class="lead">{% trans "Upload your own templates and edit the database using phpmyadmin" %}</p>
             </div>
             <img src="{% static 'illustrations/undraw_my_files.svg' %}" class="homepage-illustration">
         </div>
         <div class="bg-secondary px-3 pt-3 pb-5 mx-2 my-2 text-center text-white overflow-hidden shadow">
             <div class="py-3">
-                <h2 class="display-5">No artificial limits</h2>
-                <p class="lead">No limits on modules, templates, users, etc.</p>
+                <h2 class="display-5">{% trans "No artificial limits" %}</h2>
+                <p class="lead">{% trans "No limits on modules, templates, users, etc." %}</p>
             </div>
             <img src="{% static 'illustrations/undraw_i_can_fly.svg' %}" class="homepage-illustration">
         </div>
@@ -41,22 +42,22 @@
     <div class="d-md-flex flex-md-equal w-100">
         <div class="bg-secondary px-3 pt-3 pb-5 mx-2 my-2 text-center text-white overflow-hidden shadow">
             <div class="py-3">
-                <h2 class="display-5">Support NamelessMC</h2>
-                <p class="lead">We donate part of our income to NamelessMC contributors</p>
+                <h2 class="display-5">{% trans "No limits " %}</h2>
+                <p class="lead">{% trans "We donate part of our income to NamelessMC contributors" %}</p>
             </div>
             <img src="{% static 'illustrations/undraw_wallet.svg' %}" class="homepage-illustration">
         </div>
         <div class="bg-secondary px-3 pt-3 pb-5 mx-2 my-2 text-center text-white overflow-hidden shadow">
             <div class="py-3">
-                <h2 class="display-5">Secure</h2>
-                <p class="lead">Protect your website with modern TLS encryption without hassle.</p>
+                <h2 class="display-5">{% trans "Secure" %}</h2>
+                <p class="lead">{% trans "Protect your website with modern TLS encryption without hassle." %}</p>
             </div>
             <img src="{% static 'illustrations/undraw_security_on.svg' %}" class="homepage-illustration">
         </div>
         <div class="bg-secondary px-3 pt-3 pb-5 mx-2 my-2 text-center text-white overflow-hidden shadow">
             <div class="py-3">
-                <h2 class="display-5">High performance</h2>
-                <p class="lead">Dedicated web server for every website.</p>
+                <h2 class="display-5">{% trans "High performance" %}</h2>
+                <p class="lead">{% trans "Dedicated web server for every website." %}</p>
             </div>
             <img src="{% static 'illustrations/undraw_fast_loading.svg' %}" class="homepage-illustration">
         </div>
@@ -67,13 +68,13 @@
 
 <section id="create-now" class="px-5 py-5 mx-2 mt-3 text-center shadow">
     <div class="py-3">
-        <h2 class="display-5 text-white">Create your website now</h2>
+        <h2 class="display-5 text-white">{% trans "Create your website now" %}</h2>
     </div>
     <div class="py-3">
         {% if user.is_authenticated %}
-            <a class="btn btn-outline-light" href="{% url 'website-new' %}">Get started</a>
+            <a class="btn btn-outline-light" href="{% url 'website-new' %}">{% trans "Get started" %}</a>
         {% else %}
-            <a class="btn btn-outline-light" href="{% url 'register' %}">Sign up</a>
+            <a class="btn btn-outline-light" href="{% url 'register' %}">{% trans "Sign up" %}</a>
         {% endif %}
     </div>
 </section>

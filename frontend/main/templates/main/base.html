@@ -1,4 +1,6 @@
 {% load static %}
+{% load i18n %}
+
 <!DOCTYPE html>
 <html>
     <head>
@@ -37,7 +39,7 @@
                 <ul class="navbar-nav mr-auto">
                     {% url 'home' as home_url %}
                     <li class="nav-item {% if request.get_full_path == home_url %}active{% endif %}">
-                        <a class="nav-link" href="{{ home_url }}">Home</a>
+                        <a class="nav-link" href="{{ home_url }}">{% trans "Home" %}</a>
                     </li>
 
                     {% comment %} {% url 'pricing' as pricing_url %}
@@ -49,27 +51,27 @@
                     {% if user.is_authenticated %}
                         {% url 'websites' as websites_url %}
                         <li class="nav-item {% if request.get_full_path == websites_url %}active{% endif %}">
-                            <a class="nav-link" href="{{ websites_url }}">Your Websites</a>
+                            <a class="nav-link" href="{{ websites_url }}">{% trans "Your Websites" %}</a>
                         </li>
 
                         {% url 'account' as account_url %}
                         <li class="nav-item {% if request.get_full_path == account_url %}active{% endif %}">
-                            <a class="nav-link" href="{{ account_url }}">Account</a>
+                            <a class="nav-link" href="{{ account_url }}">{% trans "Account" %}</a>
                         </li>
 
                         {% url 'logout' as logout_url %}
                         <li class="nav-item {% if request.get_full_path == logout_url %}active{% endif %}">
-                            <a class="nav-link" href="{{ logout_url }}">Logout</a>
+                            <a class="nav-link" href="{{ logout_url }}">{% trans "Logout" %}</a>
                         </li>
                     {% else %}
                         {% url 'login' as login_url %}
                         <li class="nav-item {% if request.get_full_path == login_url %}active{% endif %}">
-                            <a class="nav-link" href="{{ login_url }}">Login</a>
+                            <a class="nav-link" href="{{ login_url }}">{% trans "Login" %}</a>
                         </li>
 
                         {% url 'register' as register_url %}
                         <li class="nav-item {% if request.get_full_path == register_url %}active{% endif %}">
-                            <a class="nav-link" href="{{ register_url }}">Register</a>
+                            <a class="nav-link" href="{{ register_url }}">{% trans "Register" %}</a>
                         </li>
                     {% endif %}
                 </ul>
@@ -102,18 +104,18 @@
             <div class="container text-light py-md-4">
                 <div class="d-flex flex-column flex-md-row justify-content-center">
                     <div class="px-4">
-                        Not affiliated with the
-                        <a href="https://namelessmc.com">NamelessMC project</a><br>
-                        This hosting system is <a href="https://github.com/Derkades/namelessmc_hosting">
-                        open source</a><br>
+                       {% trans " Not affiliated with the
+                        <a href="https://namelessmc.com">NamelessMC project</a>" %}<br>
+                        {% trans "This hosting system is <a href="https://github.com/Derkades/namelessmc_hosting">
+                        open source</a>" %}<br>
                     </div>
                     <div class="px-4">
                         Powered by <a href="https://rs-sys.nl/">RS Systems</a><br>
-                        <a href="https://discord.gg/ePApzPp">Support discord</a>
+                        <a href="https://discord.gg/ePApzPp">{% trans "Support Discord" %}</a>
                     </div>
                     <div class="px-4">
-                        <a href="{% url 'privacy' %}">Privacy Policy</a><br>
-                        <a href="{% url 'tos' %}">Terms of service</a>
+                        <a href="{% url 'privacy' %}">{% trans "Privacy Policy" %}</a><br>
+                        <a href="{% url 'tos' %}">{% trans "Terms of service" %}</a>
                     </div>
                 </div>
             </div>
