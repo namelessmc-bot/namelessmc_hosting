@@ -22,9 +22,10 @@
 
     {% comment %} <a href="{% url 'website-db-pass-regen' website.id %}" class="btn btn-outline-warning">Regenerate database password</a> {% endcomment %}
     <div class="alert alert-secondary mt-4" role="alert">
-        Add a <code>CNAME</code> record from <code>{{ website.domain }}</code>
-        {% if website.www %} and <code>www.{{ website.domain }}</code>{% endif %}
-         to <code>site.namedhosting.com</code>
+        Add a <code>CNAME</code> record on <code>{{ website.domain }}</code> (and <code>www.{{ website.domain }}</code>) that points
+         to <code>site.namedhosting.com</code>. This process varies depending on where you registered your domain. For more
+         information, please read <a href="https://github.com/Derkades/namelessmc_hosting/wiki/Creating-a-CNAME-record" target="_blank">
+         Wiki: Creating a CNAME record</a>.
     </div>
     <div class="mt-2">
         <h4>Website</h4>
