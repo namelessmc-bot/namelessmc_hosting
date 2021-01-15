@@ -8,10 +8,10 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-01-15 12:16+0000\n"
-"PO-Revision-Date: 2021-01-14 23:19+0000\n"
+"PO-Revision-Date: 2021-01-15 20:19+0000\n"
 "Last-Translator: Marcos <marckos03br@gmail.com>\n"
-"Language-Team: Spanish <http://translate.namelessmc.com/projects/named-"
-"hosting/named-hosting/es/>\n"
+"Language-Team: Spanish <http://translate.namelessmc.com/projects/"
+"named-hosting/named-hosting/es/>\n"
 "Language: es\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -163,11 +163,11 @@ msgstr "Regístrate"
 
 #: users/models.py:16 users/models.py:21 users/models.py:27
 msgid "Invalid domain"
-msgstr ""
+msgstr "Dominio inválido"
 
 #: users/models.py:24
 msgid "Don't include www. in your domain"
-msgstr ""
+msgstr "No incluya www. en su dominio"
 
 #: users/models.py:31 users/templates/users/website_detail.html:37
 msgid "Domain"
@@ -175,45 +175,43 @@ msgstr "Dominio"
 
 #: users/models.py:32
 msgid "Use HTTPS?"
-msgstr ""
+msgstr "¿Usar HTTPS?"
 
 #: users/models.py:34
-#, fuzzy
-#| msgid "Website"
 msgid "Website name"
-msgstr "Sitio web"
+msgstr "Nombre del sitio web"
 
 #: users/models.py:39
 msgid "v2 pre release 7 (old)"
-msgstr ""
+msgstr "v2 pre release 7 (antiguo)"
 
 #: users/models.py:40
 msgid "v2 pre release 8 (previous)"
-msgstr ""
+msgstr "v2 pre release 8 (anterior)"
 
 #: users/models.py:41
 msgid "v2 pre release 9 (current)"
-msgstr ""
+msgstr "v2 pre release 9 (actual)"
 
 #: users/models.py:42
 msgid "v2 pre release 9 on PHP 8 - TESTING ONLY"
-msgstr ""
+msgstr "v2 pre release 9 en PHP 8 - SOLO PRUEBAS"
 
 #: users/models.py:43
 msgid "Development - TESTING ONLY"
-msgstr ""
+msgstr "Desarrollo - SOLO PRUEBAS"
 
 #: users/models.py:44
 msgid "Development on PHP 8 - TESTING ONLY"
-msgstr ""
+msgstr "Desarrollo en PHP 8 - SOLO PRUEBAS"
 
 #: users/models.py:46
 msgid "Version"
-msgstr ""
+msgstr "Versión"
 
 #: users/models.py:48
 msgid "Enable www."
-msgstr ""
+msgstr "Activar www."
 
 #: users/models.py:77 users/templates/users/website_form.html:12
 msgid "Create website"
@@ -224,62 +222,50 @@ msgid "Update website"
 msgstr "Actualizar el sitio web"
 
 #: users/models.py:79
-#, fuzzy
-#| msgid "Create website"
 msgid "Reset website"
-msgstr "Crear un sitio web"
+msgstr "Reiniciar el sitio web"
 
 #: users/models.py:81
-#, fuzzy
-#| msgid "Create website"
 msgid "Delete website"
-msgstr "Crear un sitio web"
+msgstr "Eliminar el sitio web"
 
 #: users/templates/registration/logged_out.html:3
 msgid "You have been logged out."
-msgstr ""
+msgstr "Se ha cerrado la sesión."
 
 #: users/templates/registration/logged_out.html:5
 msgid "Log in again"
-msgstr ""
+msgstr "Ingresar de nuevo"
 
 #: users/templates/registration/login.html:8
 #: users/templates/registration/login.html:12
 msgid "Log in"
-msgstr ""
+msgstr "Iniciar sesión"
 
 #: users/templates/registration/login.html:17
-#, fuzzy
-#| msgid "Already have an account?"
 msgid "Need an account?"
-msgstr "¿Ya tiene una cuenta?"
+msgstr "¿Necesita una cuenta?"
 
 #: users/templates/registration/login.html:18
-#, fuzzy
-#| msgid "password"
 msgid "Forgot password?"
-msgstr "contraseña"
+msgstr "¿Olvidó su contraseña?"
 
 #: users/templates/registration/login.html:18
 #: users/templates/registration/password_reset_form.html:8
-#, fuzzy
-#| msgid "password"
 msgid "Reset password"
-msgstr "contraseña"
+msgstr "Restablecer la contraseña"
 
 #: users/templates/registration/password_change_done.html:3
 msgid "Password changed."
-msgstr ""
+msgstr "Contraseña cambiada."
 
 #: users/templates/registration/password_change_done.html:5
 msgid "Back to account page"
-msgstr ""
+msgstr "Volver a la página de la cuenta"
 
 #: users/templates/registration/password_change_form.html:8
-#, fuzzy
-#| msgid "Change password"
 msgid "Update password"
-msgstr "Cambiar la contraseña"
+msgstr "Actualizar la contraseña"
 
 #: users/templates/registration/password_change_form.html:12
 #: users/templates/registration/password_reset_confirm.html:13
@@ -293,26 +279,31 @@ msgid ""
 "Your new password has been set. You can log in now on the <a href="
 "\"%(login_url)s\">log in page</a>."
 msgstr ""
+"Su nueva contraseña ha sido establecida. Ahora puedes <a href=\"%(login_url)"
+"s\">iniciar sesión</a>."
 
 #: users/templates/registration/password_reset_confirm.html:9
-#, fuzzy
-#| msgid "Change password"
 msgid "Set new password"
-msgstr "Cambiar la contraseña"
+msgstr "Establecer una nueva contraseña"
 
 #: users/templates/registration/password_reset_confirm.html:17
 msgid ""
 "The password reset link was invalid, possibly because it has already been "
 "used. Please request a new password reset."
 msgstr ""
+"El enlace de restablecimiento de la contraseña era inválido, posiblemente "
+"porque ya ha sido utilizado. Por favor, solicite un nuevo restablecimiento "
+"de la contraseña."
 
 #: users/templates/registration/password_reset_done.html:4
 msgid "Password reset email sent, please check your inbox."
 msgstr ""
+"Se ha enviado el correo electrónico de restablecimiento de contraseña, por "
+"favor, compruebe su bandeja de entrada."
 
 #: users/templates/registration/password_reset_form.html:12
 msgid "Send email"
-msgstr ""
+msgstr "Enviar correo electrónico"
 
 #: users/templates/users/account.html:7
 #, python-format
@@ -452,6 +443,10 @@ msgid ""
 "not enable HTTPS if you are using CloudFlare flexible SSL. Version changes "
 "do not take effect until you use the 'Reset' button."
 msgstr ""
+"Por favor, asegúrese de que su sitio web funciona sin HTTPS antes de activar "
+"el HTTPS. No habilite HTTPS si está utilizando el SSL flexible de "
+"CloudFlare. Los cambios de versión no surten efecto hasta que se utiliza el "
+"botón \"Reiniciar\"."
 
 #: users/templates/users/website_list.html:11
 msgid "Your sites"
