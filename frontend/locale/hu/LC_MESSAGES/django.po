@@ -8,10 +8,10 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-01-15 12:16+0000\n"
-"PO-Revision-Date: 2021-01-14 23:19+0000\n"
+"PO-Revision-Date: 2021-01-15 23:19+0000\n"
 "Last-Translator: Magyar Adam <mestermc594@gmail.com>\n"
-"Language-Team: Hungarian <http://translate.namelessmc.com/projects/named-"
-"hosting/named-hosting/hu/>\n"
+"Language-Team: Hungarian <http://translate.namelessmc.com/projects/"
+"named-hosting/named-hosting/hu/>\n"
 "Language: hu\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -163,11 +163,11 @@ msgstr "Regisztrálj"
 
 #: users/models.py:16 users/models.py:21 users/models.py:27
 msgid "Invalid domain"
-msgstr ""
+msgstr "Érvénytelen domain"
 
 #: users/models.py:24
 msgid "Don't include www. in your domain"
-msgstr ""
+msgstr "Ne írja be a www-t. a domainjébe"
 
 #: users/models.py:31 users/templates/users/website_detail.html:37
 msgid "Domain"
@@ -175,45 +175,43 @@ msgstr "Domain cím"
 
 #: users/models.py:32
 msgid "Use HTTPS?"
-msgstr ""
+msgstr "HTTPS-t használ?"
 
 #: users/models.py:34
-#, fuzzy
-#| msgid "Website"
 msgid "Website name"
-msgstr "Weboldal"
+msgstr "Webhely neve"
 
 #: users/models.py:39
 msgid "v2 pre release 7 (old)"
-msgstr ""
+msgstr "v2.0.0 pre-7 kiadás (régi)"
 
 #: users/models.py:40
 msgid "v2 pre release 8 (previous)"
-msgstr ""
+msgstr "v2.0.0 pre-8 kiadás (előző)"
 
 #: users/models.py:41
 msgid "v2 pre release 9 (current)"
-msgstr ""
+msgstr "v2.0.0 pre-9 kiadás (aktuális)"
 
 #: users/models.py:42
 msgid "v2 pre release 9 on PHP 8 - TESTING ONLY"
-msgstr ""
+msgstr "v2.0.0 pre-9 PHP 8-on - CSAK TESZTELÉS"
 
 #: users/models.py:43
 msgid "Development - TESTING ONLY"
-msgstr ""
+msgstr "Fejlesztés - CSAK TESZTELÉS"
 
 #: users/models.py:44
 msgid "Development on PHP 8 - TESTING ONLY"
-msgstr ""
+msgstr "Fejlesztés PHP 8-on - CSAK TESZTELÉS"
 
 #: users/models.py:46
 msgid "Version"
-msgstr ""
+msgstr "Verzió"
 
 #: users/models.py:48
 msgid "Enable www."
-msgstr ""
+msgstr "Engedélyezi a www."
 
 #: users/models.py:77 users/templates/users/website_form.html:12
 msgid "Create website"
@@ -224,62 +222,50 @@ msgid "Update website"
 msgstr "Webhely frissítése"
 
 #: users/models.py:79
-#, fuzzy
-#| msgid "Create website"
 msgid "Reset website"
-msgstr "Weboldal létrehozása"
+msgstr "Webhely visszaállítása"
 
 #: users/models.py:81
-#, fuzzy
-#| msgid "Create website"
 msgid "Delete website"
-msgstr "Weboldal létrehozása"
+msgstr "Webhely törlése"
 
 #: users/templates/registration/logged_out.html:3
 msgid "You have been logged out."
-msgstr ""
+msgstr "Kijelentkeztél."
 
 #: users/templates/registration/logged_out.html:5
 msgid "Log in again"
-msgstr ""
+msgstr "Jelentkezzen be újra"
 
 #: users/templates/registration/login.html:8
 #: users/templates/registration/login.html:12
 msgid "Log in"
-msgstr ""
+msgstr "Bejelentkezés"
 
 #: users/templates/registration/login.html:17
-#, fuzzy
-#| msgid "Already have an account?"
 msgid "Need an account?"
-msgstr "Már van fiókja?"
+msgstr "Szüksége van egy fiókra?"
 
 #: users/templates/registration/login.html:18
-#, fuzzy
-#| msgid "password"
 msgid "Forgot password?"
-msgstr "jelszó"
+msgstr "Elfelejtette a jelszavát?"
 
 #: users/templates/registration/login.html:18
 #: users/templates/registration/password_reset_form.html:8
-#, fuzzy
-#| msgid "password"
 msgid "Reset password"
-msgstr "jelszó"
+msgstr "Jelszó visszaállítása"
 
 #: users/templates/registration/password_change_done.html:3
 msgid "Password changed."
-msgstr ""
+msgstr "A jelszó megváltoztatva."
 
 #: users/templates/registration/password_change_done.html:5
 msgid "Back to account page"
-msgstr ""
+msgstr "Vissza a fiók oldalra"
 
 #: users/templates/registration/password_change_form.html:8
-#, fuzzy
-#| msgid "Change password"
 msgid "Update password"
-msgstr "Jelszó módosítása"
+msgstr "Jelszó frissítése"
 
 #: users/templates/registration/password_change_form.html:12
 #: users/templates/registration/password_reset_confirm.html:13
@@ -293,26 +279,28 @@ msgid ""
 "Your new password has been set. You can log in now on the <a href="
 "\"%(login_url)s\">log in page</a>."
 msgstr ""
+"Az új jelszó be lett állítva. Most bejelentkezhet a <a href=\"%(login_url)s\""
+"> bejelentkezési oldalon </a>."
 
 #: users/templates/registration/password_reset_confirm.html:9
-#, fuzzy
-#| msgid "Change password"
 msgid "Set new password"
-msgstr "Jelszó módosítása"
+msgstr "Állítson be új jelszót"
 
 #: users/templates/registration/password_reset_confirm.html:17
 msgid ""
 "The password reset link was invalid, possibly because it has already been "
 "used. Please request a new password reset."
 msgstr ""
+"A jelszó-visszaállító link érvénytelen volt, valószínűleg azért, mert már "
+"használták. Kérjen új jelszó-visszaállítást."
 
 #: users/templates/registration/password_reset_done.html:4
 msgid "Password reset email sent, please check your inbox."
-msgstr ""
+msgstr "Jelszó-visszaállító e-mail elküldve, ellenőrizze a beérkező leveleket."
 
 #: users/templates/registration/password_reset_form.html:12
 msgid "Send email"
-msgstr ""
+msgstr "Email elküldése"
 
 #: users/templates/users/account.html:7
 #, python-format
@@ -452,6 +440,9 @@ msgid ""
 "not enable HTTPS if you are using CloudFlare flexible SSL. Version changes "
 "do not take effect until you use the 'Reset' button."
 msgstr ""
+"A HTTPS engedélyezése előtt ellenőrizze, hogy webhelye HTTPS nélkül működik-"
+"e. Ne engedélyezze a HTTPS-t, ha CloudFlare rugalmas SSL-t használ. A "
+"verzióváltások csak a „Visszaállítás” gomb használatakor lépnek életbe."
 
 #: users/templates/users/website_list.html:11
 msgid "Your sites"
