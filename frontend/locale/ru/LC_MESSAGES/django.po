@@ -8,10 +8,10 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-01-15 12:16+0000\n"
-"PO-Revision-Date: 2021-01-14 23:19+0000\n"
+"PO-Revision-Date: 2021-01-15 15:19+0000\n"
 "Last-Translator: LOyoujoLI <minion2018@hotmail.com>\n"
-"Language-Team: Russian <http://translate.namelessmc.com/projects/named-"
-"hosting/named-hosting/ru/>\n"
+"Language-Team: Russian <http://translate.namelessmc.com/projects/"
+"named-hosting/named-hosting/ru/>\n"
 "Language: ru\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -162,11 +162,11 @@ msgstr "Войти"
 
 #: users/models.py:16 users/models.py:21 users/models.py:27
 msgid "Invalid domain"
-msgstr ""
+msgstr "Некорректный"
 
 #: users/models.py:24
 msgid "Don't include www. in your domain"
-msgstr ""
+msgstr "В домене не должно быть www"
 
 #: users/models.py:31 users/templates/users/website_detail.html:37
 msgid "Domain"
@@ -174,45 +174,43 @@ msgstr "Домен"
 
 #: users/models.py:32
 msgid "Use HTTPS?"
-msgstr ""
+msgstr "Использовать HTTPS?"
 
 #: users/models.py:34
-#, fuzzy
-#| msgid "Website"
 msgid "Website name"
-msgstr "Вебсайт"
+msgstr "Название сайта"
 
 #: users/models.py:39
 msgid "v2 pre release 7 (old)"
-msgstr ""
+msgstr "v2 предрелиз 7 (старая)"
 
 #: users/models.py:40
 msgid "v2 pre release 8 (previous)"
-msgstr ""
+msgstr "v2 предрелиз 8 (предыдущая)"
 
 #: users/models.py:41
 msgid "v2 pre release 9 (current)"
-msgstr ""
+msgstr "v2 предрелиз 9 (текущая)"
 
 #: users/models.py:42
 msgid "v2 pre release 9 on PHP 8 - TESTING ONLY"
-msgstr ""
+msgstr "v2 предрелиз 9 на базе PHP7 - ТОЛЬКО ДЛЯ ТЕСТИРОВАНИЯ"
 
 #: users/models.py:43
 msgid "Development - TESTING ONLY"
-msgstr ""
+msgstr "Разработка - ТОЛЬКО ДЛЯ ТЕСТИРОВАНИЯ"
 
 #: users/models.py:44
 msgid "Development on PHP 8 - TESTING ONLY"
-msgstr ""
+msgstr "Разработка на PHP 8 - ТОЛЬКО ДЛЯ ТЕСТИРОВАНИЯ"
 
 #: users/models.py:46
 msgid "Version"
-msgstr ""
+msgstr "Версия"
 
 #: users/models.py:48
 msgid "Enable www."
-msgstr ""
+msgstr "Включить www."
 
 #: users/models.py:77 users/templates/users/website_form.html:12
 msgid "Create website"
@@ -223,62 +221,50 @@ msgid "Update website"
 msgstr "Обновить сайт"
 
 #: users/models.py:79
-#, fuzzy
-#| msgid "Create website"
 msgid "Reset website"
-msgstr "Создать сайт"
+msgstr "Сбросить настройки сайта"
 
 #: users/models.py:81
-#, fuzzy
-#| msgid "Create website"
 msgid "Delete website"
-msgstr "Создать сайт"
+msgstr "Удалить сайт"
 
 #: users/templates/registration/logged_out.html:3
 msgid "You have been logged out."
-msgstr ""
+msgstr "Вы вышли из аккаунта."
 
 #: users/templates/registration/logged_out.html:5
 msgid "Log in again"
-msgstr ""
+msgstr "Войти снова"
 
 #: users/templates/registration/login.html:8
 #: users/templates/registration/login.html:12
 msgid "Log in"
-msgstr ""
+msgstr "Войти"
 
 #: users/templates/registration/login.html:17
-#, fuzzy
-#| msgid "Already have an account?"
 msgid "Need an account?"
-msgstr "Уже есть аккаунт?"
+msgstr "Нужен аккаунт?"
 
 #: users/templates/registration/login.html:18
-#, fuzzy
-#| msgid "password"
 msgid "Forgot password?"
-msgstr "Пароль"
+msgstr "Забыли пароль?"
 
 #: users/templates/registration/login.html:18
 #: users/templates/registration/password_reset_form.html:8
-#, fuzzy
-#| msgid "password"
 msgid "Reset password"
-msgstr "Пароль"
+msgstr "Сбросить пароль"
 
 #: users/templates/registration/password_change_done.html:3
 msgid "Password changed."
-msgstr ""
+msgstr "Пароль изменён."
 
 #: users/templates/registration/password_change_done.html:5
 msgid "Back to account page"
-msgstr ""
+msgstr "Вернуться к странице"
 
 #: users/templates/registration/password_change_form.html:8
-#, fuzzy
-#| msgid "Change password"
 msgid "Update password"
-msgstr "Изменить пароль"
+msgstr "Обновить пароль"
 
 #: users/templates/registration/password_change_form.html:12
 #: users/templates/registration/password_reset_confirm.html:13
@@ -292,26 +278,29 @@ msgid ""
 "Your new password has been set. You can log in now on the <a href="
 "\"%(login_url)s\">log in page</a>."
 msgstr ""
+"Новый пароль установлен. Вы можете войти в аккаунт <a href=\"%(login_url)s\""
+">прямо сейчас</a>."
 
 #: users/templates/registration/password_reset_confirm.html:9
-#, fuzzy
-#| msgid "Change password"
 msgid "Set new password"
-msgstr "Изменить пароль"
+msgstr "Установить новый пароль"
 
 #: users/templates/registration/password_reset_confirm.html:17
 msgid ""
 "The password reset link was invalid, possibly because it has already been "
 "used. Please request a new password reset."
 msgstr ""
+"Эта ссылка на сброс пароля не работает. Его могли уже использовать. Сделайте "
+"новый запрос на сброс пароля."
 
 #: users/templates/registration/password_reset_done.html:4
 msgid "Password reset email sent, please check your inbox."
 msgstr ""
+"Ссылка для сброса пароля была отправлена на вашу почту, проверьте вашу почту."
 
 #: users/templates/registration/password_reset_form.html:12
 msgid "Send email"
-msgstr ""
+msgstr "Отправить на почту"
 
 #: users/templates/users/account.html:7
 #, python-format
@@ -451,6 +440,9 @@ msgid ""
 "not enable HTTPS if you are using CloudFlare flexible SSL. Version changes "
 "do not take effect until you use the 'Reset' button."
 msgstr ""
+"Убедитесь, что ваш сайт работает с HTTP. Не включайте здесь HTTPS, если у "
+"вас SSL от CloudFlare. Смена версии не влияет пока вы не сбросите настройки "
+"сайта."
 
 #: users/templates/users/website_list.html:11
 msgid "Your sites"
