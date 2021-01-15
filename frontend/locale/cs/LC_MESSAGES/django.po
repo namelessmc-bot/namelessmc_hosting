@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-01-15 12:16+0000\n"
-"PO-Revision-Date: 2021-01-15 10:19+0000\n"
+"POT-Creation-Date: 2021-01-15 11:58+0000\n"
+"PO-Revision-Date: 2021-01-15 12:17+0000\n"
 "Last-Translator: Jonáš Loskot <fjuro@seznam.cz>\n"
 "Language-Team: Czech <http://translate.namelessmc.com/projects/named-hosting/"
 "named-hosting/cs/>\n"
@@ -233,49 +233,41 @@ msgstr "Vytvořit web"
 
 #: users/templates/registration/logged_out.html:3
 msgid "You have been logged out."
-msgstr ""
+msgstr "Byli jste odhlášeni."
 
 #: users/templates/registration/logged_out.html:5
 msgid "Log in again"
-msgstr ""
+msgstr "Znovu se přihlásit"
 
 #: users/templates/registration/login.html:8
 #: users/templates/registration/login.html:12
 msgid "Log in"
-msgstr ""
+msgstr "Přihlásit se"
 
 #: users/templates/registration/login.html:17
-#, fuzzy
-#| msgid "Already have an account?"
 msgid "Need an account?"
-msgstr "Již máte účet?"
+msgstr "Chcete účet?"
 
 #: users/templates/registration/login.html:18
-#, fuzzy
-#| msgid "password"
 msgid "Forgot password?"
-msgstr "heslo"
+msgstr "Zapomněli jste heslo?"
 
 #: users/templates/registration/login.html:18
 #: users/templates/registration/password_reset_form.html:8
-#, fuzzy
-#| msgid "password"
 msgid "Reset password"
-msgstr "heslo"
+msgstr "Obnovit heslo"
 
 #: users/templates/registration/password_change_done.html:3
 msgid "Password changed."
-msgstr ""
+msgstr "Heslo změněno."
 
 #: users/templates/registration/password_change_done.html:5
 msgid "Back to account page"
-msgstr ""
+msgstr "Zpět na stránku účtu"
 
 #: users/templates/registration/password_change_form.html:8
-#, fuzzy
-#| msgid "Change password"
 msgid "Update password"
-msgstr "Změnit heslo"
+msgstr "Aktualizovat heslo"
 
 #: users/templates/registration/password_change_form.html:12
 #: users/templates/registration/password_reset_confirm.html:13
@@ -289,26 +281,28 @@ msgid ""
 "Your new password has been set. You can log in now on the <a href="
 "\"%(login_url)s\">log in page</a>."
 msgstr ""
+"<p>Vaše heslo bylo změněno. Nyní se můžete přihlásit na <a href=\""
+"%(login_url)s\">stránce přihlášení</a>."
 
 #: users/templates/registration/password_reset_confirm.html:9
-#, fuzzy
-#| msgid "Change password"
 msgid "Set new password"
-msgstr "Změnit heslo"
+msgstr "Nastavit nové heslo"
 
 #: users/templates/registration/password_reset_confirm.html:17
 msgid ""
 "The password reset link was invalid, possibly because it has already been "
 "used. Please request a new password reset."
 msgstr ""
+"Odkaz na obnovení hesla je neplatný, protože byl již nejspíš použit. "
+"Zažádejte prosím o nový odkaz."
 
 #: users/templates/registration/password_reset_done.html:4
 msgid "Password reset email sent, please check your inbox."
-msgstr ""
+msgstr "E-mail pro odeslání hesla byl odeslán, zkontrolujte vaši schránku."
 
 #: users/templates/registration/password_reset_form.html:12
 msgid "Send email"
-msgstr ""
+msgstr "Odeslat e-mail"
 
 #: users/templates/users/account.html:7
 #, python-format
@@ -448,6 +442,9 @@ msgid ""
 "not enable HTTPS if you are using CloudFlare flexible SSL. Version changes "
 "do not take effect until you use the 'Reset' button."
 msgstr ""
+"Ujistěte se, že váš web funguje bez HTTPS, než funkci povolíte. Nepovolujte "
+"HTTPS, pokud používáte \"Flexible\" SSL Cloudflare. Změny verzí se "
+"neprojeví, dokud nepoužijete tlačítko 'Obnovit'."
 
 #: users/templates/users/website_list.html:11
 msgid "Your sites"
