@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-01-15 11:58+0000\n"
+"POT-Creation-Date: 2021-01-15 12:16+0000\n"
 "PO-Revision-Date: 2021-01-14 23:19+0000\n"
 "Last-Translator: LOyoujoLI <minion2018@hotmail.com>\n"
 "Language-Team: Russian <http://translate.namelessmc.com/projects/named-"
@@ -160,6 +160,80 @@ msgstr "Приступить"
 msgid "Sign up"
 msgstr "Войти"
 
+#: users/models.py:16 users/models.py:21 users/models.py:27
+msgid "Invalid domain"
+msgstr ""
+
+#: users/models.py:24
+msgid "Don't include www. in your domain"
+msgstr ""
+
+#: users/models.py:31 users/templates/users/website_detail.html:37
+msgid "Domain"
+msgstr "Домен"
+
+#: users/models.py:32
+msgid "Use HTTPS?"
+msgstr ""
+
+#: users/models.py:34
+#, fuzzy
+#| msgid "Website"
+msgid "Website name"
+msgstr "Вебсайт"
+
+#: users/models.py:39
+msgid "v2 pre release 7 (old)"
+msgstr ""
+
+#: users/models.py:40
+msgid "v2 pre release 8 (previous)"
+msgstr ""
+
+#: users/models.py:41
+msgid "v2 pre release 9 (current)"
+msgstr ""
+
+#: users/models.py:42
+msgid "v2 pre release 9 on PHP 8 - TESTING ONLY"
+msgstr ""
+
+#: users/models.py:43
+msgid "Development - TESTING ONLY"
+msgstr ""
+
+#: users/models.py:44
+msgid "Development on PHP 8 - TESTING ONLY"
+msgstr ""
+
+#: users/models.py:46
+msgid "Version"
+msgstr ""
+
+#: users/models.py:48
+msgid "Enable www."
+msgstr ""
+
+#: users/models.py:77 users/templates/users/website_form.html:12
+msgid "Create website"
+msgstr "Создать сайт"
+
+#: users/models.py:78 users/templates/users/website_form.html:10
+msgid "Update website"
+msgstr "Обновить сайт"
+
+#: users/models.py:79
+#, fuzzy
+#| msgid "Create website"
+msgid "Reset website"
+msgstr "Создать сайт"
+
+#: users/models.py:81
+#, fuzzy
+#| msgid "Create website"
+msgid "Delete website"
+msgstr "Создать сайт"
+
 #: users/templates/registration/logged_out.html:3
 msgid "You have been logged out."
 msgstr ""
@@ -212,10 +286,10 @@ msgstr "Изменить пароль"
 msgid "Change password"
 msgstr "Изменить пароль"
 
-#: users/templates/registration/password_reset_complete.html:5
+#: users/templates/registration/password_reset_complete.html:6
 #, python-format
 msgid ""
-"<p>Your new password has been set. You can log in now on the <a href="
+"Your new password has been set. You can log in now on the <a href="
 "\"%(login_url)s\">log in page</a>."
 msgstr ""
 
@@ -317,10 +391,6 @@ msgstr "Удалить"
 msgid "Website"
 msgstr "Вебсайт"
 
-#: users/templates/users/website_detail.html:37
-msgid "Domain"
-msgstr "Домен"
-
 #: users/templates/users/website_detail.html:49
 msgid "Date created (UTC)"
 msgstr "Дата создания (UTC)"
@@ -374,14 +444,6 @@ msgstr ""
 "\"неизвестный\", но переживать не стоит, <a href=\"https://forum.filezilla-"
 "project.org/viewtopic.php?t=25595\"> он отображает это даже для доверенных "
 "сертификатов</a>, вы можете нажать OK."
-
-#: users/templates/users/website_form.html:10
-msgid "Update website"
-msgstr "Обновить сайт"
-
-#: users/templates/users/website_form.html:12
-msgid "Create website"
-msgstr "Создать сайт"
 
 #: users/templates/users/website_form.html:18
 msgid ""
