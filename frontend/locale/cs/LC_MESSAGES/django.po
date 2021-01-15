@@ -3,82 +3,90 @@
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-01-14 19:59+0000\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
+"PO-Revision-Date: 2021-01-15 10:19+0000\n"
+"Last-Translator: Jonáš Loskot <fjuro@seznam.cz>\n"
+"Language-Team: Czech <http://translate.namelessmc.com/projects/named-hosting/"
+"named-hosting/cs/>\n"
+"Language: cs\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=4; plural=(n == 1 && n % 1 == 0) ? 0 : (n >= 2 && n "
 "<= 4 && n % 1 == 0) ? 1: (n % 1 != 0 ) ? 2 : 3;\n"
+"X-Generator: Weblate 4.4\n"
 
 #: main/templates/main/base.html:43
 msgid "Home"
-msgstr ""
+msgstr "Domů"
 
 #: main/templates/main/base.html:56
 msgid "Your Websites"
-msgstr ""
+msgstr "Vaše weby"
 
 #: main/templates/main/base.html:61 users/templates/users/website_detail.html:7
 #: users/templates/users/website_list.html:7
 msgid "Account"
-msgstr ""
+msgstr "Účet"
 
 #: main/templates/main/base.html:66
 msgid "Logout"
-msgstr ""
+msgstr "Odhlásit se"
 
 #: main/templates/main/base.html:71
 msgid "Login"
-msgstr ""
+msgstr "Přihlásit se"
 
 #: main/templates/main/base.html:76
 msgid "Register"
-msgstr ""
+msgstr "Zaregistrovat se"
 
 #: main/templates/main/base.html:110
 msgid ""
 "Not affiliated with the <a href=\"https://namelessmc.com\">NamelessMC "
 "project</a>"
 msgstr ""
+"Nejsme spojeni s <a href=\"https://namelessmc.com\">projektem NamelessMC</a>"
 
 #: main/templates/main/base.html:112
 msgid ""
 "This hosting system is <a href=\"https://github.com/Derkades/"
 "namelessmc_hosting\">open source</a>"
 msgstr ""
+"Tento hosting je <a href=\"https://github.com/Derkades/namelessmc_hosting\""
+">open source</a>"
 
 #: main/templates/main/base.html:117
 msgid "Support Discord"
-msgstr ""
+msgstr "Discord podpora"
 
 #: main/templates/main/base.html:120
 msgid "Privacy Policy"
-msgstr ""
+msgstr "Zásady ochrany osobních údajů"
 
 #: main/templates/main/base.html:121
 msgid "Terms of service"
-msgstr ""
+msgstr "Podmínky služby"
 
 #: main/templates/main/index.html:10
 msgid ""
 "Start a NamelessMC website the easy way. We built our hosting system from "
 "scratch to be as simple as possible without limiting possibilities."
 msgstr ""
+"Začněte s NamelessMC webem jednoduše. Náš hosting jsme udělali od nuly, aby "
+"byl co nejjednodušší a bez jakýchkoli omezení."
 
 #: main/templates/main/index.html:12
 msgid ""
 "No complicated panels, configuration, creating databases, uploading files, "
 "etc. Enter your domain, click one button and your website is online."
 msgstr ""
+"Žádné komplikované panely, konfigurace, vytváření databází, nahrávání "
+"souborů atd. Zadejte svou doménu, klikněte na tlačítko a váš web je online."
 
 #: main/templates/main/index.html:15
 #, python-format
@@ -86,192 +94,194 @@ msgid ""
 "Currently hosting <kbd>%(websites)s</kbd> websites for <kbd>%(users)s</kbd> "
 "users."
 msgstr ""
+"Momentálně hostujeme <kbd>%(websites)s</kbd> webů pro <kbd>%(users)s</kbd> "
+"uživatelů."
 
 #: main/templates/main/index.html:22
 msgid "Simple"
-msgstr ""
+msgstr "Jednoduchý"
 
 #: main/templates/main/index.html:23
 msgid "Server configured automatically, start the installer right away"
-msgstr ""
+msgstr "Server je automaticky nakonfigurován, stačí jen spustit instalátor"
 
 #: main/templates/main/index.html:29
 msgid "Full access"
-msgstr ""
+msgstr "Plný přístup"
 
 #: main/templates/main/index.html:30
 msgid "Upload your own templates and edit the database using phpmyadmin"
-msgstr ""
+msgstr "Nahrávejte vlastní šablony a upravujte databázi pomocí phpMyAdmin"
 
 #: main/templates/main/index.html:36
 msgid "No artificial limits"
-msgstr ""
+msgstr "Žádné umělé limity"
 
 #: main/templates/main/index.html:37
 msgid "No limits on modules, templates, users, etc."
-msgstr ""
+msgstr "Žádné omezení doplňků, šablon, uživatelů atd."
 
 #: main/templates/main/index.html:45
 msgid "Support NamelessMC"
-msgstr ""
+msgstr "Podpora NamelessMC"
 
 #: main/templates/main/index.html:46
 msgid "We donate part of our income to NamelessMC developers"
-msgstr ""
+msgstr "Část našich příjmů darujeme vývojářům NamelessMC"
 
 #: main/templates/main/index.html:52
 msgid "Secure"
-msgstr ""
+msgstr "Bezpečný"
 
 #: main/templates/main/index.html:53
 msgid "Protect your website with modern TLS encryption without hassle."
-msgstr ""
+msgstr "Chraňte svůj web pomocí šifrování TLS bez potíží."
 
 #: main/templates/main/index.html:59
 msgid "High performance"
-msgstr ""
+msgstr "Vysoký výkon"
 
 #: main/templates/main/index.html:60
 msgid "Dedicated web server for every website."
-msgstr ""
+msgstr "Dedikovaný server pro každý web."
 
 #: main/templates/main/index.html:71
 msgid "Create your website now"
-msgstr ""
+msgstr "Vytvořte si svůj web hned teď"
 
 #: main/templates/main/index.html:75
 msgid "Get started"
-msgstr ""
+msgstr "Začít"
 
 #: main/templates/main/index.html:77
 msgid "Sign up"
-msgstr ""
+msgstr "Zaregistrovat se"
 
 #: users/templates/users/account.html:7
 #, python-format
 msgid "Welcome, %(username)s"
-msgstr ""
+msgstr "Vítejte, %(username)s"
 
 #: users/templates/users/account.html:45
 msgid "Update account settings"
-msgstr ""
+msgstr "Aktualizovat nastavení účtu"
 
 #: users/templates/users/account.html:51
 msgid "Submit"
-msgstr ""
+msgstr "Potvrdit"
 
 #: users/templates/users/account.html:54
 msgid "Change password"
-msgstr ""
+msgstr "Změnit heslo"
 
 #: users/templates/users/payment_cancelled.html:4
 msgid "Payment cancelled."
-msgstr ""
+msgstr "Platba zrušena."
 
 #: users/templates/users/payment_complete.html:4
 msgid "Payment complete"
-msgstr ""
+msgstr "Platba dokončena"
 
 #: users/templates/users/register.html:9
 msgid "Create account"
-msgstr ""
+msgstr "Vytvořit účet"
 
 #: users/templates/users/register.html:13
 msgid "Sign Up"
-msgstr ""
+msgstr "Zaregistrovat se"
 
 #: users/templates/users/register.html:17
 msgid "Already have an account?"
-msgstr ""
+msgstr "Již máte účet?"
 
 #: users/templates/users/register.html:17
 msgid "Sign in"
-msgstr ""
+msgstr "Přihlásit se"
 
 #: users/templates/users/website_confirm_delete.html:9
 #, python-format
 msgid "Delete website '%(sitename)s'"
-msgstr ""
+msgstr "Odstranit web '%(sitename)s'"
 
 #: users/templates/users/website_confirm_delete.html:10
 msgid "Are you sure you want to delete this website?"
-msgstr ""
+msgstr "Opravdu chcete odstranit tento web?"
 
 #: users/templates/users/website_confirm_delete.html:13
 #: users/templates/users/website_reset.html:15
 msgid "Cancel"
-msgstr ""
+msgstr "Zrušit"
 
 #: users/templates/users/website_confirm_delete.html:14
 #: users/templates/users/website_form.html:24
 #: users/templates/users/website_reset.html:16
 msgid "Confirm"
-msgstr ""
+msgstr "Potvrdit"
 
 #: users/templates/users/website_detail.html:8
 #: users/templates/users/website_list.html:8
 msgid "Websites"
-msgstr ""
+msgstr "Weby"
 
 #: users/templates/users/website_detail.html:18
 msgid "Edit"
-msgstr ""
+msgstr "Upravit"
 
 #: users/templates/users/website_detail.html:19
 msgid "Reset"
-msgstr ""
+msgstr "Obnovit"
 
 #: users/templates/users/website_detail.html:20
 msgid "Delete"
-msgstr ""
+msgstr "Odstranit"
 
 #: users/templates/users/website_detail.html:33
 msgid "Website"
-msgstr ""
+msgstr "Web"
 
 #: users/templates/users/website_detail.html:37
 msgid "Domain"
-msgstr ""
+msgstr "Doména"
 
 #: users/templates/users/website_detail.html:49
 msgid "Date created (UTC)"
-msgstr ""
+msgstr "Datum vytvoření (UTC)"
 
 #: users/templates/users/website_detail.html:54
 msgid "Database"
-msgstr ""
+msgstr "Databáze"
 
 #: users/templates/users/website_detail.html:58
 #: users/templates/users/website_detail.html:91
 msgid "address"
-msgstr ""
+msgstr "adresa"
 
 #: users/templates/users/website_detail.html:62
 #: users/templates/users/website_detail.html:95
 msgid "port"
-msgstr ""
+msgstr "port"
 
 #: users/templates/users/website_detail.html:66
 #: users/templates/users/website_detail.html:99
 msgid "username"
-msgstr ""
+msgstr "uživatelské jméno"
 
 #: users/templates/users/website_detail.html:70
 #: users/templates/users/website_detail.html:103
 msgid "password"
-msgstr ""
+msgstr "heslo"
 
 #: users/templates/users/website_detail.html:75
 msgid "database name"
-msgstr ""
+msgstr "název databáze"
 
 #: users/templates/users/website_detail.html:79
 msgid "phpmyadmin"
-msgstr ""
+msgstr "phpmyadmin"
 
 #: users/templates/users/website_detail.html:84
 msgid "Files"
-msgstr ""
+msgstr "Soubory"
 
 #: users/templates/users/website_detail.html:86
 msgid ""
@@ -281,33 +291,38 @@ msgid ""
 "viewtopic.php?t=25595\"> it displays this even for trusted certificates</a>, "
 "you can click OK."
 msgstr ""
+"Použijte FTP klient pro připojení. Doporučujeme FileZillu nebo WinSCP. "
+"Server podporuje šifrování TLS. FileZilla vám řekne, že je certifikát "
+"\"neznámý\", ale žádný strach, <a href=\"https://forum.filezilla-project.org/"
+"viewtopic.php?t=25595\">zobrazuje to i u důvěryhodných certifikátů</a>, "
+"stačí kliknout na OK."
 
 #: users/templates/users/website_form.html:10
 msgid "Update website"
-msgstr ""
+msgstr "AKtualizovat web"
 
 #: users/templates/users/website_form.html:12
 msgid "Create website"
-msgstr ""
+msgstr "Vytvořit web"
 
 #: users/templates/users/website_list.html:11
 msgid "Your sites"
-msgstr ""
+msgstr "Vaše weby"
 
 #: users/templates/users/website_list.html:18
 msgid "View &amp; Edit"
-msgstr ""
+msgstr "Zobrazit a upravit"
 
 #: users/templates/users/website_list.html:24
 #: users/templates/users/website_list.html:26
 msgid "Create new website"
-msgstr ""
+msgstr "Vytvořit nový web"
 
 #: users/templates/users/website_list.html:26
 msgid "Free accounts are limited to 1 website, paid accounts are limited to 3."
-msgstr ""
+msgstr "Účty zdarma jsou omezeny na 1 web, placené účty jsou omezené na 3."
 
 #: users/templates/users/website_reset.html:8
 #, python-format
 msgid "Reset website '%(sitename)s'"
-msgstr ""
+msgstr "Obnovit web '%(sitename)s'"
