@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-01-15 11:48+0000\n"
+"POT-Creation-Date: 2021-01-15 11:54+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -202,7 +202,7 @@ msgid "Cancel"
 msgstr ""
 
 #: users/templates/users/website_confirm_delete.html:14
-#: users/templates/users/website_form.html:24
+#: users/templates/users/website_form.html:23
 #: users/templates/users/website_reset.html:16
 msgid "Confirm"
 msgstr ""
@@ -287,6 +287,13 @@ msgstr ""
 
 #: users/templates/users/website_form.html:12
 msgid "Create website"
+msgstr ""
+
+#: users/templates/users/website_form.html:18
+msgid ""
+"Please make sure your website works without HTTPS before enabling HTTPS. Do "
+"not enable HTTPS if you are using CloudFlare flexible SSL. Version changes "
+"do not take effect until you use the 'Reset' button."
 msgstr ""
 
 #: users/templates/users/website_list.html:11
