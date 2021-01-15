@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-01-15 11:54+0000\n"
+"POT-Creation-Date: 2021-01-15 11:58+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -143,8 +143,77 @@ msgstr ""
 msgid "Get started"
 msgstr ""
 
-#: main/templates/main/index.html:77
+#: main/templates/main/index.html:77 users/templates/registration/login.html:17
 msgid "Sign up"
+msgstr ""
+
+#: users/templates/registration/logged_out.html:3
+msgid "You have been logged out."
+msgstr ""
+
+#: users/templates/registration/logged_out.html:5
+msgid "Log in again"
+msgstr ""
+
+#: users/templates/registration/login.html:8
+#: users/templates/registration/login.html:12
+msgid "Log in"
+msgstr ""
+
+#: users/templates/registration/login.html:17
+msgid "Need an account?"
+msgstr ""
+
+#: users/templates/registration/login.html:18
+msgid "Forgot password?"
+msgstr ""
+
+#: users/templates/registration/login.html:18
+#: users/templates/registration/password_reset_form.html:8
+msgid "Reset password"
+msgstr ""
+
+#: users/templates/registration/password_change_done.html:3
+msgid "Password changed."
+msgstr ""
+
+#: users/templates/registration/password_change_done.html:5
+msgid "Back to account page"
+msgstr ""
+
+#: users/templates/registration/password_change_form.html:8
+msgid "Update password"
+msgstr ""
+
+#: users/templates/registration/password_change_form.html:12
+#: users/templates/registration/password_reset_confirm.html:13
+#: users/templates/users/account.html:54
+msgid "Change password"
+msgstr ""
+
+#: users/templates/registration/password_reset_complete.html:5
+#, python-format
+msgid ""
+"<p>Your new password has been set. You can log in now on the <a href="
+"\"%(login_url)s\">log in page</a>."
+msgstr ""
+
+#: users/templates/registration/password_reset_confirm.html:9
+msgid "Set new password"
+msgstr ""
+
+#: users/templates/registration/password_reset_confirm.html:17
+msgid ""
+"The password reset link was invalid, possibly because it has already been "
+"used. Please request a new password reset."
+msgstr ""
+
+#: users/templates/registration/password_reset_done.html:4
+msgid "Password reset email sent, please check your inbox."
+msgstr ""
+
+#: users/templates/registration/password_reset_form.html:12
+msgid "Send email"
 msgstr ""
 
 #: users/templates/users/account.html:7
@@ -158,10 +227,6 @@ msgstr ""
 
 #: users/templates/users/account.html:51
 msgid "Submit"
-msgstr ""
-
-#: users/templates/users/account.html:54
-msgid "Change password"
 msgstr ""
 
 #: users/templates/users/payment_cancelled.html:4
