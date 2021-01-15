@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-01-15 12:16+0000\n"
-"PO-Revision-Date: 2021-01-14 23:19+0000\n"
+"POT-Creation-Date: 2021-01-15 11:58+0000\n"
+"PO-Revision-Date: 2021-01-15 12:17+0000\n"
 "Last-Translator: NamelessMC Translations <robin@derkad.es>\n"
 "Language-Team: Dutch <http://translate.namelessmc.com/projects/named-hosting/"
 "named-hosting/nl/>\n"
@@ -235,47 +235,39 @@ msgstr "Website maken"
 
 #: users/templates/registration/logged_out.html:3
 msgid "You have been logged out."
-msgstr ""
+msgstr "Je bent uitgelogd."
 
 #: users/templates/registration/logged_out.html:5
 msgid "Log in again"
-msgstr ""
+msgstr "Opnieuw inloggen"
 
 #: users/templates/registration/login.html:8
 #: users/templates/registration/login.html:12
 msgid "Log in"
-msgstr ""
+msgstr "Inloggen"
 
 #: users/templates/registration/login.html:17
-#, fuzzy
-#| msgid "Already have an account?"
 msgid "Need an account?"
-msgstr "Heb je al een account?"
+msgstr "Heb je een account nodig?"
 
 #: users/templates/registration/login.html:18
-#, fuzzy
-#| msgid "password"
 msgid "Forgot password?"
-msgstr "wachtwoord"
+msgstr "Wachtwoord vergeten?"
 
 #: users/templates/registration/login.html:18
 #: users/templates/registration/password_reset_form.html:8
-#, fuzzy
-#| msgid "password"
 msgid "Reset password"
-msgstr "wachtwoord"
+msgstr "Wachtwoord herstellen"
 
 #: users/templates/registration/password_change_done.html:3
 msgid "Password changed."
-msgstr ""
+msgstr "Wachtwoord veranderd."
 
 #: users/templates/registration/password_change_done.html:5
 msgid "Back to account page"
-msgstr ""
+msgstr "Terug naar accountpagina"
 
 #: users/templates/registration/password_change_form.html:8
-#, fuzzy
-#| msgid "Change password"
 msgid "Update password"
 msgstr "Wachtwoord wijzigen"
 
@@ -293,10 +285,8 @@ msgid ""
 msgstr ""
 
 #: users/templates/registration/password_reset_confirm.html:9
-#, fuzzy
-#| msgid "Change password"
 msgid "Set new password"
-msgstr "Wachtwoord wijzigen"
+msgstr "Nieuw wachtwoord instellen"
 
 #: users/templates/registration/password_reset_confirm.html:17
 msgid ""
