@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-01-15 12:16+0000\n"
-"PO-Revision-Date: 2021-01-15 23:19+0000\n"
+"PO-Revision-Date: 2021-01-16 22:19+0000\n"
 "Last-Translator: Magyar Adam <mestermc594@gmail.com>\n"
 "Language-Team: Hungarian <http://translate.namelessmc.com/projects/"
 "named-hosting/named-hosting/hu/>\n"
@@ -96,8 +96,8 @@ msgid ""
 "Currently hosting <kbd>%(websites)s</kbd> websites for <kbd>%(users)s</kbd> "
 "users."
 msgstr ""
-"Jelenleg <kbd>%(websites)s</kbd> webhelyeket tárol <kbd>%(users)s</kbd> "
-"felhasználók számára."
+"Jelenleg <kbd>%(websites)s</kbd> webhelyt tárolunk <kbd>%(users)s</kbd> "
+"felhasználó számára."
 
 #: main/templates/main/index.html:22
 msgid "Simple"
@@ -105,7 +105,7 @@ msgstr "Egyszerű"
 
 #: main/templates/main/index.html:23
 msgid "Server configured automatically, start the installer right away"
-msgstr "Az automatikusan konfigurált szerver, azonnal indítsa el a telepítőt"
+msgstr "Az automatikusan konfigurált szerver, azonnal elindítja a telepítőt"
 
 #: main/templates/main/index.html:29
 msgid "Full access"
@@ -191,7 +191,7 @@ msgstr "v2.0.0 pre-8 kiadás (előző)"
 
 #: users/models.py:41
 msgid "v2 pre release 9 (current)"
-msgstr "v2.0.0 pre-9 kiadás (aktuális)"
+msgstr "v2.0.0 pre-9 kiadás (jelenlegi)"
 
 #: users/models.py:42
 msgid "v2 pre release 9 on PHP 8 - TESTING ONLY"
