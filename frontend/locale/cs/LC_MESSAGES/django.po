@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-01-15 11:58+0000\n"
-"PO-Revision-Date: 2021-01-15 12:17+0000\n"
+"PO-Revision-Date: 2021-01-17 10:19+0000\n"
 "Last-Translator: Jonáš Loskot <fjuro@seznam.cz>\n"
 "Language-Team: Czech <http://translate.namelessmc.com/projects/named-hosting/"
 "named-hosting/cs/>\n"
@@ -159,11 +159,11 @@ msgstr "Zaregistrovat se"
 
 #: users/models.py:16 users/models.py:21 users/models.py:27
 msgid "Invalid domain"
-msgstr ""
+msgstr "Neplatná doména"
 
 #: users/models.py:24
 msgid "Don't include www. in your domain"
-msgstr ""
+msgstr "Do domény nezahrnujte www."
 
 #: users/models.py:31 users/templates/users/website_detail.html:37
 msgid "Domain"
@@ -171,45 +171,43 @@ msgstr "Doména"
 
 #: users/models.py:32
 msgid "Use HTTPS?"
-msgstr ""
+msgstr "Použít HTTPS?"
 
 #: users/models.py:34
-#, fuzzy
-#| msgid "Website"
 msgid "Website name"
-msgstr "Web"
+msgstr "Název webu"
 
 #: users/models.py:39
 msgid "v2 pre release 7 (old)"
-msgstr ""
+msgstr "v2 předběžné vydání 7 (staré)"
 
 #: users/models.py:40
 msgid "v2 pre release 8 (previous)"
-msgstr ""
+msgstr "v2 předběžné vydání 8 (předchozí)"
 
 #: users/models.py:41
 msgid "v2 pre release 9 (current)"
-msgstr ""
+msgstr "v2 předběžné vydání 9 (současné)"
 
 #: users/models.py:42
 msgid "v2 pre release 9 on PHP 8 - TESTING ONLY"
-msgstr ""
+msgstr "v2 předběžné vydání 9 na PHP 8 - POUZE K TESTOVÁNÍ"
 
 #: users/models.py:43
 msgid "Development - TESTING ONLY"
-msgstr ""
+msgstr "Vývojová verze - POUZE K TESTOVÁNÍ"
 
 #: users/models.py:44
 msgid "Development on PHP 8 - TESTING ONLY"
-msgstr ""
+msgstr "Vývojová verze na PHP 8 - POUZE K TESTOVÁNÍ"
 
 #: users/models.py:46
 msgid "Version"
-msgstr ""
+msgstr "Verze"
 
 #: users/models.py:48
 msgid "Enable www."
-msgstr ""
+msgstr "Povolit www."
 
 #: users/models.py:77 users/templates/users/website_form.html:12
 msgid "Create website"
@@ -220,16 +218,12 @@ msgid "Update website"
 msgstr "AKtualizovat web"
 
 #: users/models.py:79
-#, fuzzy
-#| msgid "Create website"
 msgid "Reset website"
-msgstr "Vytvořit web"
+msgstr "Obnovit web"
 
 #: users/models.py:81
-#, fuzzy
-#| msgid "Create website"
 msgid "Delete website"
-msgstr "Vytvořit web"
+msgstr "Odstranit web"
 
 #: users/templates/registration/logged_out.html:3
 msgid "You have been logged out."
@@ -281,8 +275,8 @@ msgid ""
 "Your new password has been set. You can log in now on the <a href="
 "\"%(login_url)s\">log in page</a>."
 msgstr ""
-"<p>Vaše heslo bylo změněno. Nyní se můžete přihlásit na <a href=\""
-"%(login_url)s\">stránce přihlášení</a>."
+"Vaše heslo bylo změněno. Nyní se můžete přihlásit na <a href=\"%(login_url)"
+"s\">stránce přihlášení</a>."
 
 #: users/templates/registration/password_reset_confirm.html:9
 msgid "Set new password"
