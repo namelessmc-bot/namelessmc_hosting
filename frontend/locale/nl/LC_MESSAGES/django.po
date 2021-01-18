@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-01-15 11:58+0000\n"
-"PO-Revision-Date: 2021-01-15 12:17+0000\n"
+"PO-Revision-Date: 2021-01-15 15:19+0000\n"
 "Last-Translator: NamelessMC Translations <robin@derkad.es>\n"
 "Language-Team: Dutch <http://translate.namelessmc.com/projects/named-hosting/"
 "named-hosting/nl/>\n"
@@ -161,11 +161,11 @@ msgstr "Inschrijven"
 
 #: users/models.py:16 users/models.py:21 users/models.py:27
 msgid "Invalid domain"
-msgstr ""
+msgstr "Ongeldig domein"
 
 #: users/models.py:24
 msgid "Don't include www. in your domain"
-msgstr ""
+msgstr "Laat www. weg uit je domein"
 
 #: users/models.py:31 users/templates/users/website_detail.html:37
 msgid "Domain"
@@ -173,45 +173,43 @@ msgstr "Domein"
 
 #: users/models.py:32
 msgid "Use HTTPS?"
-msgstr ""
+msgstr "Gebruik HTTPS?"
 
 #: users/models.py:34
-#, fuzzy
-#| msgid "Website"
 msgid "Website name"
-msgstr "Website"
+msgstr "Website naam"
 
 #: users/models.py:39
 msgid "v2 pre release 7 (old)"
-msgstr ""
+msgstr "v2 pre release 7 (oud)"
 
 #: users/models.py:40
 msgid "v2 pre release 8 (previous)"
-msgstr ""
+msgstr "v2 pre release 8 (vorige)"
 
 #: users/models.py:41
 msgid "v2 pre release 9 (current)"
-msgstr ""
+msgstr "v2 pre release 9 (huidig)"
 
 #: users/models.py:42
 msgid "v2 pre release 9 on PHP 8 - TESTING ONLY"
-msgstr ""
+msgstr "v2 pre release 9 met PHP 8 - ALLEEN VOOR TESTEN"
 
 #: users/models.py:43
 msgid "Development - TESTING ONLY"
-msgstr ""
+msgstr "Ontwikkeling - ALLEEN VOOR TESTEN"
 
 #: users/models.py:44
 msgid "Development on PHP 8 - TESTING ONLY"
-msgstr ""
+msgstr "Ontwikkeling met PHP 8 - ALLEEN VOOR TESTEN"
 
 #: users/models.py:46
 msgid "Version"
-msgstr ""
+msgstr "Versie"
 
 #: users/models.py:48
 msgid "Enable www."
-msgstr ""
+msgstr "Gebruik www."
 
 #: users/models.py:77 users/templates/users/website_form.html:12
 msgid "Create website"
@@ -222,16 +220,12 @@ msgid "Update website"
 msgstr "Website wijzigen"
 
 #: users/models.py:79
-#, fuzzy
-#| msgid "Create website"
 msgid "Reset website"
-msgstr "Website maken"
+msgstr "Reset website"
 
 #: users/models.py:81
-#, fuzzy
-#| msgid "Create website"
 msgid "Delete website"
-msgstr "Website maken"
+msgstr "Website verwijderen"
 
 #: users/templates/registration/logged_out.html:3
 msgid "You have been logged out."
@@ -283,6 +277,8 @@ msgid ""
 "Your new password has been set. You can log in now on the <a href="
 "\"%(login_url)s\">log in page</a>."
 msgstr ""
+"Je nieuwe wachtwoord is ingesteld. Je kan nu inloggen op de <a href=\""
+"%(login_url)s\">login pagina</a>."
 
 #: users/templates/registration/password_reset_confirm.html:9
 msgid "Set new password"
@@ -293,14 +289,16 @@ msgid ""
 "The password reset link was invalid, possibly because it has already been "
 "used. Please request a new password reset."
 msgstr ""
+"De wachtwoordherstel link is niet geldig, misschien omdat deze al is "
+"gebruik. Probeer opnieuw je wachtwoord te herstellen."
 
 #: users/templates/registration/password_reset_done.html:4
 msgid "Password reset email sent, please check your inbox."
-msgstr ""
+msgstr "E-mail om wachtwoord te herstellen is verstuurd, check je inbox."
 
 #: users/templates/registration/password_reset_form.html:12
 msgid "Send email"
-msgstr ""
+msgstr "E-mail versturen"
 
 #: users/templates/users/account.html:7
 #, python-format
@@ -440,6 +438,9 @@ msgid ""
 "not enable HTTPS if you are using CloudFlare flexible SSL. Version changes "
 "do not take effect until you use the 'Reset' button."
 msgstr ""
+"Zorg alsjeblieft dat je website werkt zonder HTTPS voordat je HTTPS aanzet. "
+"Zet HTTPS niet aan als je gebruik maakt van CloudFlare Flexible SSL. "
+"Versiewijzigingen hebben geen effect tot je op de 'Reset' knop drukt."
 
 #: users/templates/users/website_list.html:11
 msgid "Your sites"

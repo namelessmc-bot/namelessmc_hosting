@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-01-15 12:16+0000\n"
-"PO-Revision-Date: 2021-01-14 23:19+0000\n"
+"PO-Revision-Date: 2021-01-15 20:19+0000\n"
 "Last-Translator: Maiu <maiuxd77@gmail.com>\n"
 "Language-Team: Norwegian Bokmål <http://translate.namelessmc.com/projects/"
 "named-hosting/named-hosting/nb_NO/>\n"
@@ -160,11 +160,11 @@ msgstr "Registrer deg"
 
 #: users/models.py:16 users/models.py:21 users/models.py:27
 msgid "Invalid domain"
-msgstr ""
+msgstr "Ugyldig domene"
 
 #: users/models.py:24
 msgid "Don't include www. in your domain"
-msgstr ""
+msgstr "Ikke inkluder www. i ditt domene"
 
 #: users/models.py:31 users/templates/users/website_detail.html:37
 msgid "Domain"
@@ -172,45 +172,43 @@ msgstr "Domene"
 
 #: users/models.py:32
 msgid "Use HTTPS?"
-msgstr ""
+msgstr "Bruk HTTPS?"
 
 #: users/models.py:34
-#, fuzzy
-#| msgid "Website"
 msgid "Website name"
-msgstr "Nettside"
+msgstr "Nettsidenavn"
 
 #: users/models.py:39
 msgid "v2 pre release 7 (old)"
-msgstr ""
+msgstr "v2 pre release 7 (gammel)"
 
 #: users/models.py:40
 msgid "v2 pre release 8 (previous)"
-msgstr ""
+msgstr "v2 pre release 8 (forrige)"
 
 #: users/models.py:41
 msgid "v2 pre release 9 (current)"
-msgstr ""
+msgstr "v2 pre release 9 (nåværende)"
 
 #: users/models.py:42
 msgid "v2 pre release 9 on PHP 8 - TESTING ONLY"
-msgstr ""
+msgstr "v2 pre release 9 på PHP 8 - KUN FOR TESTING"
 
 #: users/models.py:43
 msgid "Development - TESTING ONLY"
-msgstr ""
+msgstr "Utvikling - KUN FOR TESTING"
 
 #: users/models.py:44
 msgid "Development on PHP 8 - TESTING ONLY"
-msgstr ""
+msgstr "Utvikling på PHP 8 - KUN FOR TESTING"
 
 #: users/models.py:46
 msgid "Version"
-msgstr ""
+msgstr "Versjon"
 
 #: users/models.py:48
 msgid "Enable www."
-msgstr ""
+msgstr "Aktiver www."
 
 #: users/models.py:77 users/templates/users/website_form.html:12
 msgid "Create website"
@@ -221,62 +219,50 @@ msgid "Update website"
 msgstr "Oppdater nettside"
 
 #: users/models.py:79
-#, fuzzy
-#| msgid "Create website"
 msgid "Reset website"
-msgstr "Opprett nettside"
+msgstr "Tilbakestill nettside"
 
 #: users/models.py:81
-#, fuzzy
-#| msgid "Create website"
 msgid "Delete website"
-msgstr "Opprett nettside"
+msgstr "Slett nettside"
 
 #: users/templates/registration/logged_out.html:3
 msgid "You have been logged out."
-msgstr ""
+msgstr "Du har blitt logget ut."
 
 #: users/templates/registration/logged_out.html:5
 msgid "Log in again"
-msgstr ""
+msgstr "Logg inn igjen"
 
 #: users/templates/registration/login.html:8
 #: users/templates/registration/login.html:12
 msgid "Log in"
-msgstr ""
+msgstr "Logg inn"
 
 #: users/templates/registration/login.html:17
-#, fuzzy
-#| msgid "Already have an account?"
 msgid "Need an account?"
-msgstr "Har du allerede en konto?"
+msgstr "Trenger du en konto?"
 
 #: users/templates/registration/login.html:18
-#, fuzzy
-#| msgid "password"
 msgid "Forgot password?"
-msgstr "passord"
+msgstr "Glemt passord?"
 
 #: users/templates/registration/login.html:18
 #: users/templates/registration/password_reset_form.html:8
-#, fuzzy
-#| msgid "password"
 msgid "Reset password"
-msgstr "passord"
+msgstr "Tilbakestill passord"
 
 #: users/templates/registration/password_change_done.html:3
 msgid "Password changed."
-msgstr ""
+msgstr "Passord endret."
 
 #: users/templates/registration/password_change_done.html:5
 msgid "Back to account page"
-msgstr ""
+msgstr "Tilbake til kontoside"
 
 #: users/templates/registration/password_change_form.html:8
-#, fuzzy
-#| msgid "Change password"
 msgid "Update password"
-msgstr "Endre passord"
+msgstr "Oppdater passord"
 
 #: users/templates/registration/password_change_form.html:12
 #: users/templates/registration/password_reset_confirm.html:13
@@ -290,26 +276,28 @@ msgid ""
 "Your new password has been set. You can log in now on the <a href="
 "\"%(login_url)s\">log in page</a>."
 msgstr ""
+"Ditt nye passord har blitt satt. Du kan logge inn igjen nå på <a href=\""
+"%(login_url)s\">påloggingssiden</a>."
 
 #: users/templates/registration/password_reset_confirm.html:9
-#, fuzzy
-#| msgid "Change password"
 msgid "Set new password"
-msgstr "Endre passord"
+msgstr "Sett nytt passord"
 
 #: users/templates/registration/password_reset_confirm.html:17
 msgid ""
 "The password reset link was invalid, possibly because it has already been "
 "used. Please request a new password reset."
 msgstr ""
+"Tilbakestillingslenken var ugyldig, muligens fordi den allerede har blitt "
+"brukt. Vennligst prøv å tilbakestille passordet på nytt."
 
 #: users/templates/registration/password_reset_done.html:4
 msgid "Password reset email sent, please check your inbox."
-msgstr ""
+msgstr "Tilbakestillingse-post har blitt sendt, vennligst sjekk din innboks."
 
 #: users/templates/registration/password_reset_form.html:12
 msgid "Send email"
-msgstr ""
+msgstr "Send e-post"
 
 #: users/templates/users/account.html:7
 #, python-format
@@ -449,6 +437,9 @@ msgid ""
 "not enable HTTPS if you are using CloudFlare flexible SSL. Version changes "
 "do not take effect until you use the 'Reset' button."
 msgstr ""
+"Vennligst pass på at nettsiden fungerer uten HTTPS før du aktiverer HTTPS. "
+"Ikke aktiver HTTPS hvis du bruker CloudFlare flexible SSL. Versjonendringer "
+"blir ikke tatt i bruk før du trykker 'Tilbakestill'-knappen."
 
 #: users/templates/users/website_list.html:11
 msgid "Your sites"
