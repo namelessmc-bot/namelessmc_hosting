@@ -7,11 +7,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-01-15 12:16+0000\n"
+"POT-Creation-Date: 2021-01-18 20:22+0100\n"
 "PO-Revision-Date: 2021-01-16 22:19+0000\n"
 "Last-Translator: Magyar Adam <mestermc594@gmail.com>\n"
-"Language-Team: Hungarian <http://translate.namelessmc.com/projects/"
-"named-hosting/named-hosting/hu/>\n"
+"Language-Team: Hungarian <http://translate.namelessmc.com/projects/named-"
+"hosting/named-hosting/hu/>\n"
 "Language: hu\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -157,7 +157,7 @@ msgstr "Készítse el most webhelyét"
 msgid "Get started"
 msgstr "Kezdés"
 
-#: main/templates/main/index.html:77 users/templates/registration/login.html:17
+#: main/templates/main/index.html:77 users/templates/registration/login.html:18
 msgid "Sign up"
 msgstr "Regisztrálj"
 
@@ -229,64 +229,64 @@ msgstr "Webhely visszaállítása"
 msgid "Delete website"
 msgstr "Webhely törlése"
 
-#: users/templates/registration/logged_out.html:3
+#: users/templates/registration/logged_out.html:4
 msgid "You have been logged out."
 msgstr "Kijelentkeztél."
 
-#: users/templates/registration/logged_out.html:5
+#: users/templates/registration/logged_out.html:6
 msgid "Log in again"
 msgstr "Jelentkezzen be újra"
 
-#: users/templates/registration/login.html:8
-#: users/templates/registration/login.html:12
+#: users/templates/registration/login.html:9
+#: users/templates/registration/login.html:13
 msgid "Log in"
 msgstr "Bejelentkezés"
 
-#: users/templates/registration/login.html:17
+#: users/templates/registration/login.html:18
 msgid "Need an account?"
 msgstr "Szüksége van egy fiókra?"
 
-#: users/templates/registration/login.html:18
+#: users/templates/registration/login.html:19
 msgid "Forgot password?"
 msgstr "Elfelejtette a jelszavát?"
 
-#: users/templates/registration/login.html:18
-#: users/templates/registration/password_reset_form.html:8
+#: users/templates/registration/login.html:19
+#: users/templates/registration/password_reset_form.html:9
 msgid "Reset password"
 msgstr "Jelszó visszaállítása"
 
-#: users/templates/registration/password_change_done.html:3
+#: users/templates/registration/password_change_done.html:4
 msgid "Password changed."
 msgstr "A jelszó megváltoztatva."
 
-#: users/templates/registration/password_change_done.html:5
+#: users/templates/registration/password_change_done.html:6
 msgid "Back to account page"
 msgstr "Vissza a fiók oldalra"
 
-#: users/templates/registration/password_change_form.html:8
+#: users/templates/registration/password_change_form.html:9
 msgid "Update password"
 msgstr "Jelszó frissítése"
 
-#: users/templates/registration/password_change_form.html:12
-#: users/templates/registration/password_reset_confirm.html:13
+#: users/templates/registration/password_change_form.html:13
+#: users/templates/registration/password_reset_confirm.html:14
 #: users/templates/users/account.html:54
 msgid "Change password"
 msgstr "Jelszó módosítása"
 
-#: users/templates/registration/password_reset_complete.html:6
+#: users/templates/registration/password_reset_complete.html:7
 #, python-format
 msgid ""
 "Your new password has been set. You can log in now on the <a href="
 "\"%(login_url)s\">log in page</a>."
 msgstr ""
-"Az új jelszó be lett állítva. Most bejelentkezhet a <a href=\"%(login_url)s\""
-"> bejelentkezési oldalon </a>."
+"Az új jelszó be lett állítva. Most bejelentkezhet a <a href=\"%(login_url)s"
+"\"> bejelentkezési oldalon </a>."
 
-#: users/templates/registration/password_reset_confirm.html:9
+#: users/templates/registration/password_reset_confirm.html:10
 msgid "Set new password"
 msgstr "Állítson be új jelszót"
 
-#: users/templates/registration/password_reset_confirm.html:17
+#: users/templates/registration/password_reset_confirm.html:18
 msgid ""
 "The password reset link was invalid, possibly because it has already been "
 "used. Please request a new password reset."
@@ -294,11 +294,11 @@ msgstr ""
 "A jelszó-visszaállító link érvénytelen volt, valószínűleg azért, mert már "
 "használták. Kérjen új jelszó-visszaállítást."
 
-#: users/templates/registration/password_reset_done.html:4
+#: users/templates/registration/password_reset_done.html:5
 msgid "Password reset email sent, please check your inbox."
 msgstr "Jelszó-visszaállító e-mail elküldve, ellenőrizze a beérkező leveleket."
 
-#: users/templates/registration/password_reset_form.html:12
+#: users/templates/registration/password_reset_form.html:13
 msgid "Send email"
 msgstr "Email elküldése"
 
@@ -349,13 +349,13 @@ msgid "Are you sure you want to delete this website?"
 msgstr "Biztosan törli ezt a weboldalt?"
 
 #: users/templates/users/website_confirm_delete.html:13
-#: users/templates/users/website_reset.html:15
+#: users/templates/users/website_reset.html:14
 msgid "Cancel"
 msgstr "Mégse"
 
 #: users/templates/users/website_confirm_delete.html:14
 #: users/templates/users/website_form.html:23
-#: users/templates/users/website_reset.html:16
+#: users/templates/users/website_reset.html:15
 msgid "Confirm"
 msgstr "Megerősítés"
 
@@ -465,3 +465,10 @@ msgstr "A fiókod korlátozva van 1 webhelyre a fizetős, pedig 3 webhelyre."
 #, python-format
 msgid "Reset website '%(sitename)s'"
 msgstr "Weboldal újratelepítése: '%(sitename)s'"
+
+#: users/templates/users/website_reset.html:10
+msgid ""
+"Are you sure you want to reset your website? This will permanently delete "
+"all databases and website data. After resetting your website, wait about a "
+"minute and you'll see installer when going to your website."
+msgstr ""

@@ -6,10 +6,9 @@
         {% csrf_token %}
         <fieldset class="form-group">
             <legend class="border-bottom mb-4">{% blocktranslate with sitename=website.name %}Reset website '{{ sitename }}'{% endblocktranslate %}</legend>
-            <p>{% trans "Are you sure you want to reset your website? This will
-             permanently delete all databases and website data. After
-             resetting your website, wait about a minute and you'll
-             see installer when going to your website." %}</p>
+            <p>
+{% blocktrans %}Are you sure you want to reset your website? This will permanently delete all databases and website data. After resetting your website, wait about a minute and you'll see installer when going to your website.{% endblocktrans %}
+            </p>
         </fieldset>
         <div class="form-group">
             <a class="btn btn-outline-secondary" href="{% url 'website-detail' website.id %}">{% trans "Cancel" %}</a>

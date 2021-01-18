@@ -7,11 +7,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-01-15 12:16+0000\n"
+"POT-Creation-Date: 2021-01-18 20:22+0100\n"
 "PO-Revision-Date: 2021-01-15 20:19+0000\n"
 "Last-Translator: Marcos <marckos03br@gmail.com>\n"
-"Language-Team: Spanish <http://translate.namelessmc.com/projects/"
-"named-hosting/named-hosting/es/>\n"
+"Language-Team: Spanish <http://translate.namelessmc.com/projects/named-"
+"hosting/named-hosting/es/>\n"
 "Language: es\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -157,7 +157,7 @@ msgstr "Cree su sitio web ahora"
 msgid "Get started"
 msgstr "Comenzar"
 
-#: main/templates/main/index.html:77 users/templates/registration/login.html:17
+#: main/templates/main/index.html:77 users/templates/registration/login.html:18
 msgid "Sign up"
 msgstr "Regístrate"
 
@@ -229,64 +229,64 @@ msgstr "Reiniciar el sitio web"
 msgid "Delete website"
 msgstr "Eliminar el sitio web"
 
-#: users/templates/registration/logged_out.html:3
+#: users/templates/registration/logged_out.html:4
 msgid "You have been logged out."
 msgstr "Se ha cerrado la sesión."
 
-#: users/templates/registration/logged_out.html:5
+#: users/templates/registration/logged_out.html:6
 msgid "Log in again"
 msgstr "Ingresar de nuevo"
 
-#: users/templates/registration/login.html:8
-#: users/templates/registration/login.html:12
+#: users/templates/registration/login.html:9
+#: users/templates/registration/login.html:13
 msgid "Log in"
 msgstr "Iniciar sesión"
 
-#: users/templates/registration/login.html:17
+#: users/templates/registration/login.html:18
 msgid "Need an account?"
 msgstr "¿Necesita una cuenta?"
 
-#: users/templates/registration/login.html:18
+#: users/templates/registration/login.html:19
 msgid "Forgot password?"
 msgstr "¿Olvidó su contraseña?"
 
-#: users/templates/registration/login.html:18
-#: users/templates/registration/password_reset_form.html:8
+#: users/templates/registration/login.html:19
+#: users/templates/registration/password_reset_form.html:9
 msgid "Reset password"
 msgstr "Restablecer la contraseña"
 
-#: users/templates/registration/password_change_done.html:3
+#: users/templates/registration/password_change_done.html:4
 msgid "Password changed."
 msgstr "Contraseña cambiada."
 
-#: users/templates/registration/password_change_done.html:5
+#: users/templates/registration/password_change_done.html:6
 msgid "Back to account page"
 msgstr "Volver a la página de la cuenta"
 
-#: users/templates/registration/password_change_form.html:8
+#: users/templates/registration/password_change_form.html:9
 msgid "Update password"
 msgstr "Actualizar la contraseña"
 
-#: users/templates/registration/password_change_form.html:12
-#: users/templates/registration/password_reset_confirm.html:13
+#: users/templates/registration/password_change_form.html:13
+#: users/templates/registration/password_reset_confirm.html:14
 #: users/templates/users/account.html:54
 msgid "Change password"
 msgstr "Cambiar la contraseña"
 
-#: users/templates/registration/password_reset_complete.html:6
+#: users/templates/registration/password_reset_complete.html:7
 #, python-format
 msgid ""
 "Your new password has been set. You can log in now on the <a href="
 "\"%(login_url)s\">log in page</a>."
 msgstr ""
-"Su nueva contraseña ha sido establecida. Ahora puedes <a href=\"%(login_url)"
-"s\">iniciar sesión</a>."
+"Su nueva contraseña ha sido establecida. Ahora puedes <a href=\"%(login_url)s"
+"\">iniciar sesión</a>."
 
-#: users/templates/registration/password_reset_confirm.html:9
+#: users/templates/registration/password_reset_confirm.html:10
 msgid "Set new password"
 msgstr "Establecer una nueva contraseña"
 
-#: users/templates/registration/password_reset_confirm.html:17
+#: users/templates/registration/password_reset_confirm.html:18
 msgid ""
 "The password reset link was invalid, possibly because it has already been "
 "used. Please request a new password reset."
@@ -295,13 +295,13 @@ msgstr ""
 "porque ya ha sido utilizado. Por favor, solicite un nuevo restablecimiento "
 "de la contraseña."
 
-#: users/templates/registration/password_reset_done.html:4
+#: users/templates/registration/password_reset_done.html:5
 msgid "Password reset email sent, please check your inbox."
 msgstr ""
 "Se ha enviado el correo electrónico de restablecimiento de contraseña, por "
 "favor, compruebe su bandeja de entrada."
 
-#: users/templates/registration/password_reset_form.html:12
+#: users/templates/registration/password_reset_form.html:13
 msgid "Send email"
 msgstr "Enviar correo electrónico"
 
@@ -352,13 +352,13 @@ msgid "Are you sure you want to delete this website?"
 msgstr "¿Estás seguro de que quieres borrar este sitio web?"
 
 #: users/templates/users/website_confirm_delete.html:13
-#: users/templates/users/website_reset.html:15
+#: users/templates/users/website_reset.html:14
 msgid "Cancel"
 msgstr "Cancelar"
 
 #: users/templates/users/website_confirm_delete.html:14
 #: users/templates/users/website_form.html:23
-#: users/templates/users/website_reset.html:16
+#: users/templates/users/website_reset.html:15
 msgid "Confirm"
 msgstr "Confirmar"
 
@@ -471,3 +471,10 @@ msgstr ""
 #, python-format
 msgid "Reset website '%(sitename)s'"
 msgstr "Reiniciar el sitio web '%(sitename)s'"
+
+#: users/templates/users/website_reset.html:10
+msgid ""
+"Are you sure you want to reset your website? This will permanently delete "
+"all databases and website data. After resetting your website, wait about a "
+"minute and you'll see installer when going to your website."
+msgstr ""
