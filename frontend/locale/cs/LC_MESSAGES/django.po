@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-01-22 20:50+0000\n"
-"PO-Revision-Date: 2021-01-19 10:03+0000\n"
+"POT-Creation-Date: 2021-01-18 20:22+0100\n"
+"PO-Revision-Date: 2021-01-22 11:43+0000\n"
 "Last-Translator: Jonáš Loskot <fjuro@seznam.cz>\n"
 "Language-Team: Czech <http://translate.namelessmc.com/projects/named-hosting/"
 "named-hosting/cs/>\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=4; plural=(n == 1 && n % 1 == 0) ? 0 : (n >= 2 && n "
 "<= 4 && n % 1 == 0) ? 1: (n % 1 != 0 ) ? 2 : 3;\n"
-"X-Generator: Weblate 4.4\n"
+"X-Generator: Weblate 4.4.2\n"
 
 #: main/templates/main/base.html:43
 msgid "Home"
@@ -204,7 +204,7 @@ msgstr "Vytvořit web"
 
 #: users/models.py:78 users/templates/users/website_form.html:10
 msgid "Update website"
-msgstr "AKtualizovat web"
+msgstr "Aktualizovat web"
 
 #: users/models.py:79
 msgid "Reset website"
