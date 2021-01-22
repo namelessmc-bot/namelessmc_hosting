@@ -8,16 +8,16 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-01-22 20:50+0000\n"
-"PO-Revision-Date: 2021-01-18 22:19+0000\n"
+"PO-Revision-Date: 2021-01-22 23:43+0000\n"
 "Last-Translator: Marcos <marckos03br@gmail.com>\n"
-"Language-Team: Spanish <http://translate.namelessmc.com/projects/named-"
-"hosting/named-hosting/es/>\n"
+"Language-Team: Spanish <http://translate.namelessmc.com/projects/"
+"named-hosting/named-hosting/es/>\n"
 "Language: es\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.4\n"
+"X-Generator: Weblate 4.4.2\n"
 
 #: main/templates/main/base.html:43
 msgid "Home"
@@ -74,7 +74,7 @@ msgstr "Términos de servicio"
 
 #: main/templates/main/index.html:10
 msgid "Free hosting that actually works."
-msgstr ""
+msgstr "Alojamiento gratuito que realmente funciona."
 
 #: main/templates/main/index.html:14
 #, python-format
@@ -85,6 +85,11 @@ msgid ""
 "%(users)s customers, operated by Derkades (developer of Nameless Plugin and "
 "Discord bot)."
 msgstr ""
+"Proporciona acceso a archivos FTP, a diferencia de NamelessHosting. "
+"Compatible con integraciones como el plugin dentro del servidor de juego y "
+"el bot de Discord, a diferencia de 000webhost y otros. Actualmente alojamos "
+"%(websites)s sitios web para %(users)s clientes, operado por Derkades ("
+"desarrollador de Nameless Plugin y Discord bot)."
 
 #: main/templates/main/index.html:23
 msgid "Simple"
