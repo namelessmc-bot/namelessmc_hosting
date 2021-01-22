@@ -8,16 +8,16 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-01-22 20:50+0000\n"
-"PO-Revision-Date: 2021-01-18 22:19+0000\n"
+"PO-Revision-Date: 2021-01-22 23:43+0000\n"
 "Last-Translator: Magyar Adam <mestermc594@gmail.com>\n"
-"Language-Team: Hungarian <http://translate.namelessmc.com/projects/named-"
-"hosting/named-hosting/hu/>\n"
+"Language-Team: Hungarian <http://translate.namelessmc.com/projects/"
+"named-hosting/named-hosting/hu/>\n"
 "Language: hu\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.4\n"
+"X-Generator: Weblate 4.4.2\n"
 
 #: main/templates/main/base.html:43
 msgid "Home"
@@ -74,7 +74,7 @@ msgstr "Szolgáltatási feltételek"
 
 #: main/templates/main/index.html:10
 msgid "Free hosting that actually works."
-msgstr ""
+msgstr "Valójában működő ingyenes tárhely."
 
 #: main/templates/main/index.html:14
 #, python-format
@@ -85,6 +85,11 @@ msgid ""
 "%(users)s customers, operated by Derkades (developer of Nameless Plugin and "
 "Discord bot)."
 msgstr ""
+"FTP fájlhozzáférést biztosít, ellentétben a NamelessHosting programmal. "
+"Kompatibilis az olyan integrációkkal, mint az ingame plugin plugin és a "
+"Discord bot, ellentétben a 000webhosttal és másokkal. Jelenleg%(websites)s "
+"webhelyet látunk vendégül%(users)s felhasználó számára, amelyeket a Derkades "
+"(a Nameless Plugin és a Discord bot fejlesztője) üzemeltet."
 
 #: main/templates/main/index.html:23
 msgid "Simple"
