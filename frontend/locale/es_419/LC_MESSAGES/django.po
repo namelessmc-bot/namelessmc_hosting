@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-01-18 20:22+0100\n"
+"POT-Creation-Date: 2021-01-22 20:50+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -67,81 +67,76 @@ msgid "Terms of service"
 msgstr ""
 
 #: main/templates/main/index.html:10
-msgid ""
-"Start a NamelessMC website the easy way. We built our hosting system from "
-"scratch to be as simple as possible without limiting possibilities."
+msgid "Free hosting that actually works."
 msgstr ""
 
-#: main/templates/main/index.html:12
-msgid ""
-"No complicated panels, configuration, creating databases, uploading files, "
-"etc. Enter your domain, click one button and your website is online."
-msgstr ""
-
-#: main/templates/main/index.html:15
+#: main/templates/main/index.html:14
 #, python-format
 msgid ""
-"Currently hosting <kbd>%(websites)s</kbd> websites for <kbd>%(users)s</kbd> "
-"users."
-msgstr ""
-
-#: main/templates/main/index.html:22
-msgid "Simple"
+"Provides FTP file access, unlike NamelessHosting. Compatible with "
+"integrations like the ingame plugin plugin and Discord bot, unlike "
+"000webhost and others.  We currently host %(websites)s websites for "
+"%(users)s customers, operated by Derkades (developer of Nameless Plugin and "
+"Discord bot)."
 msgstr ""
 
 #: main/templates/main/index.html:23
+msgid "Simple"
+msgstr ""
+
+#: main/templates/main/index.html:24
 msgid "Server configured automatically, start the installer right away"
 msgstr ""
 
-#: main/templates/main/index.html:29
+#: main/templates/main/index.html:30
 msgid "Full access"
 msgstr ""
 
-#: main/templates/main/index.html:30
+#: main/templates/main/index.html:31
 msgid "Upload your own templates and edit the database using phpmyadmin"
 msgstr ""
 
-#: main/templates/main/index.html:36
+#: main/templates/main/index.html:37
 msgid "No artificial limits"
 msgstr ""
 
-#: main/templates/main/index.html:37
+#: main/templates/main/index.html:38
 msgid "No limits on modules, templates, users, etc."
 msgstr ""
 
-#: main/templates/main/index.html:45
+#: main/templates/main/index.html:46
 msgid "Support NamelessMC"
 msgstr ""
 
-#: main/templates/main/index.html:46
+#: main/templates/main/index.html:47
 msgid "We donate part of our income to NamelessMC developers"
 msgstr ""
 
-#: main/templates/main/index.html:52
+#: main/templates/main/index.html:53
 msgid "Secure"
 msgstr ""
 
-#: main/templates/main/index.html:53
+#: main/templates/main/index.html:54
 msgid "Protect your website with modern TLS encryption without hassle."
 msgstr ""
 
-#: main/templates/main/index.html:59
+#: main/templates/main/index.html:60
 msgid "High performance"
 msgstr ""
 
-#: main/templates/main/index.html:60
+#: main/templates/main/index.html:61
 msgid "Dedicated web server for every website."
 msgstr ""
 
-#: main/templates/main/index.html:71
+#: main/templates/main/index.html:72
 msgid "Create your website now"
 msgstr ""
 
-#: main/templates/main/index.html:75
+#: main/templates/main/index.html:76
 msgid "Get started"
 msgstr ""
 
-#: main/templates/main/index.html:77 users/templates/registration/login.html:18
+#: main/templates/main/index.html:78 users/templates/registration/login.html:18
 msgid "Sign up"
 msgstr ""
 
@@ -282,11 +277,6 @@ msgstr ""
 msgid "Send email"
 msgstr ""
 
-#: users/templates/users/account.html:7
-#, python-format
-msgid "Welcome, %(username)s"
-msgstr ""
-
 #: users/templates/users/account.html:45
 msgid "Update account settings"
 msgstr ""
@@ -317,11 +307,6 @@ msgstr ""
 
 #: users/templates/users/register.html:17
 msgid "Sign in"
-msgstr ""
-
-#: users/templates/users/website_confirm_delete.html:9
-#, python-format
-msgid "Delete website '%(sitename)s'"
 msgstr ""
 
 #: users/templates/users/website_confirm_delete.html:10
@@ -431,11 +416,6 @@ msgstr ""
 
 #: users/templates/users/website_list.html:26
 msgid "Free accounts are limited to 1 website, paid accounts are limited to 3."
-msgstr ""
-
-#: users/templates/users/website_reset.html:8
-#, python-format
-msgid "Reset website '%(sitename)s'"
 msgstr ""
 
 #: users/templates/users/website_reset.html:10

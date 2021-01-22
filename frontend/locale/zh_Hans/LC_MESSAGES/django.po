@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-01-19 11:03+0100\n"
+"POT-Creation-Date: 2021-01-22 20:50+0000\n"
 "PO-Revision-Date: 2021-01-19 13:02+0000\n"
 "Last-Translator: Gabriel Leen <hello@dreta.dev>\n"
 "Language-Team: Chinese (Simplified) <http://translate.namelessmc.com/"
@@ -55,7 +55,8 @@ msgid ""
 "This hosting system is <a href=\"https://github.com/Derkades/"
 "namelessmc_hosting\">open source</a>"
 msgstr ""
-"此建站系统是<a href=\"https://github.com/Derkades/namelessmc_hosting\">开源软件</a>"
+"此建站系统是<a href=\"https://github.com/Derkades/namelessmc_hosting\">开源软"
+"件</a>"
 
 #: main/templates/main/base.html:117
 msgid "Support Discord"
@@ -70,81 +71,76 @@ msgid "Terms of service"
 msgstr "服务条款"
 
 #: main/templates/main/index.html:10
-msgid ""
-"Start a NamelessMC website the easy way. We built our hosting system from "
-"scratch to be as simple as possible without limiting possibilities."
-msgstr "现在，您便可以通过简洁明了的方式建立一个 NamelessMC 网站。我们的建站系统由我们细心雕琢，使得您能探索无限可能。"
+msgid "Free hosting that actually works."
+msgstr ""
 
-#: main/templates/main/index.html:12
-msgid ""
-"No complicated panels, configuration, creating databases, uploading files, "
-"etc. Enter your domain, click one button and your website is online."
-msgstr "没有复杂的控制台，配置文件，数据库，上传文件 — 只需输入域名，动动手指，网站立刻便可开始使用。"
-
-#: main/templates/main/index.html:15
+#: main/templates/main/index.html:14
 #, python-format
 msgid ""
-"Currently hosting <kbd>%(websites)s</kbd> websites for <kbd>%(users)s</kbd> "
-"users."
-msgstr "已经为 <kbd>%(users)s</kbd> 用户建立了 <kbd>%(websites)s</kbd> 个网站。"
+"Provides FTP file access, unlike NamelessHosting. Compatible with "
+"integrations like the ingame plugin plugin and Discord bot, unlike "
+"000webhost and others.  We currently host %(websites)s websites for "
+"%(users)s customers, operated by Derkades (developer of Nameless Plugin and "
+"Discord bot)."
+msgstr ""
 
-#: main/templates/main/index.html:22
+#: main/templates/main/index.html:23
 msgid "Simple"
 msgstr "简洁"
 
-#: main/templates/main/index.html:23
+#: main/templates/main/index.html:24
 msgid "Server configured automatically, start the installer right away"
 msgstr "服务器会自动配置，您可以马上开始安装"
 
-#: main/templates/main/index.html:29
+#: main/templates/main/index.html:30
 msgid "Full access"
 msgstr "完整控制"
 
-#: main/templates/main/index.html:30
+#: main/templates/main/index.html:31
 msgid "Upload your own templates and edit the database using phpmyadmin"
 msgstr "上传您自己的模版，或用 phpMyAdmin 编辑数据库"
 
-#: main/templates/main/index.html:36
+#: main/templates/main/index.html:37
 msgid "No artificial limits"
 msgstr "无人工限制"
 
-#: main/templates/main/index.html:37
+#: main/templates/main/index.html:38
 msgid "No limits on modules, templates, users, etc."
 msgstr "您可添加无限个模块，用户，模版等。"
 
-#: main/templates/main/index.html:45
+#: main/templates/main/index.html:46
 msgid "Support NamelessMC"
 msgstr "支持 NamelessMC"
 
-#: main/templates/main/index.html:46
+#: main/templates/main/index.html:47
 msgid "We donate part of our income to NamelessMC developers"
 msgstr "我们会将部分收入捐赠给 NamelessMC 开发者"
 
-#: main/templates/main/index.html:52
+#: main/templates/main/index.html:53
 msgid "Secure"
 msgstr "安全"
 
-#: main/templates/main/index.html:53
+#: main/templates/main/index.html:54
 msgid "Protect your website with modern TLS encryption without hassle."
 msgstr "毫不麻烦地用现代 TLS 加密保护您的网站。"
 
-#: main/templates/main/index.html:59
+#: main/templates/main/index.html:60
 msgid "High performance"
 msgstr "高性能"
 
-#: main/templates/main/index.html:60
+#: main/templates/main/index.html:61
 msgid "Dedicated web server for every website."
 msgstr "每个网站都有独立的服务器。"
 
-#: main/templates/main/index.html:71
+#: main/templates/main/index.html:72
 msgid "Create your website now"
 msgstr "现在就创建您的网站"
 
-#: main/templates/main/index.html:75
+#: main/templates/main/index.html:76
 msgid "Get started"
 msgstr "现在开始"
 
-#: main/templates/main/index.html:77 users/templates/registration/login.html:18
+#: main/templates/main/index.html:78 users/templates/registration/login.html:18
 msgid "Sign up"
 msgstr "注册"
 
@@ -265,7 +261,8 @@ msgstr "修改密码"
 msgid ""
 "Your new password has been set. You can log in now on the <a href="
 "\"%(login_url)s\">log in page</a>."
-msgstr "您的密码已被更新。您现在可以在<a href=\"%(login_url)s\">此页</a>上登录了。"
+msgstr ""
+"您的密码已被更新。您现在可以在<a href=\"%(login_url)s\">此页</a>上登录了。"
 
 #: users/templates/registration/password_reset_confirm.html:10
 msgid "Set new password"
@@ -284,11 +281,6 @@ msgstr "密码重置邮件已发送，请查看您的收件箱。"
 #: users/templates/registration/password_reset_form.html:13
 msgid "Send email"
 msgstr "发送邮件"
-
-#: users/templates/users/account.html:7
-#, python-format
-msgid "Welcome, %(username)s"
-msgstr "欢迎，%(username)s"
 
 #: users/templates/users/account.html:45
 msgid "Update account settings"
@@ -321,11 +313,6 @@ msgstr "已经有账号了?"
 #: users/templates/users/register.html:17
 msgid "Sign in"
 msgstr "登录"
-
-#: users/templates/users/website_confirm_delete.html:9
-#, python-format
-msgid "Delete website '%(sitename)s'"
-msgstr "删除网站 '%(sitename)s'"
 
 #: users/templates/users/website_confirm_delete.html:10
 msgid "Are you sure you want to delete this website?"
@@ -411,9 +398,10 @@ msgid ""
 "viewtopic.php?t=25595\"> it displays this even for trusted certificates</a>, "
 "you can click OK."
 msgstr ""
-"使用 FTP 客户端来链接。我们推荐 FileZilla 或 WinSCP。服务器支持 TLS 加密。FileZilla 可能会告诉您证书 \"未知\""
-"，您不必担心，<a href=\"https://forum.filezilla-project.org/viewtopic.php?t=25595\""
-">即便受信证书仍会显示这个</a>，您可点击 OK。"
+"使用 FTP 客户端来链接。我们推荐 FileZilla 或 WinSCP。服务器支持 TLS 加密。"
+"FileZilla 可能会告诉您证书 \"未知\"，您不必担心，<a href=\"https://forum."
+"filezilla-project.org/viewtopic.php?t=25595\">即便受信证书仍会显示这个</a>，"
+"您可点击 OK。"
 
 #: users/templates/users/website_form.html:18
 msgid ""
@@ -421,8 +409,8 @@ msgid ""
 "not enable HTTPS if you are using CloudFlare flexible SSL. Version changes "
 "do not take effect until you use the 'Reset' button."
 msgstr ""
-"您在启用 HTTPS 确保您的网站没有 HTTPS 也会工作。若您正在使用 Cloudflare flexible SSL，请勿启用 "
-"HTTPS。直到您使用重置按钮前，版本变化不会生效。"
+"您在启用 HTTPS 确保您的网站没有 HTTPS 也会工作。若您正在使用 Cloudflare "
+"flexible SSL，请勿启用 HTTPS。直到您使用重置按钮前，版本变化不会生效。"
 
 #: users/templates/users/website_list.html:11
 msgid "Your sites"
@@ -441,14 +429,41 @@ msgstr "创建新网站"
 msgid "Free accounts are limited to 1 website, paid accounts are limited to 3."
 msgstr "免费账号只能创建 1 个网站，付费账号可创建 3 个。"
 
-#: users/templates/users/website_reset.html:8
-#, python-format
-msgid "Reset website '%(sitename)s'"
-msgstr "重置网站 '%(sitename)s'"
-
 #: users/templates/users/website_reset.html:10
 msgid ""
 "Are you sure you want to reset your website? This will permanently delete "
 "all databases and website data. After resetting your website, wait about a "
 "minute and you'll see installer when going to your website."
-msgstr "您确定要重置您的网站吗? 这会永久删除所有数据库和网站数据。重置网站大约一分钟后，您便可在网站上看到安装器了。"
+msgstr ""
+"您确定要重置您的网站吗? 这会永久删除所有数据库和网站数据。重置网站大约一分钟"
+"后，您便可在网站上看到安装器了。"
+
+#~ msgid ""
+#~ "Start a NamelessMC website the easy way. We built our hosting system from "
+#~ "scratch to be as simple as possible without limiting possibilities."
+#~ msgstr ""
+#~ "现在，您便可以通过简洁明了的方式建立一个 NamelessMC 网站。我们的建站系统由"
+#~ "我们细心雕琢，使得您能探索无限可能。"
+
+#~ msgid ""
+#~ "No complicated panels, configuration, creating databases, uploading "
+#~ "files, etc. Enter your domain, click one button and your website is "
+#~ "online."
+#~ msgstr ""
+#~ "没有复杂的控制台，配置文件，数据库，上传文件 — 只需输入域名，动动手指，网"
+#~ "站立刻便可开始使用。"
+
+#~ msgid ""
+#~ "Currently hosting <kbd>%(websites)s</kbd> websites for <kbd>%(users)s</"
+#~ "kbd> users."
+#~ msgstr ""
+#~ "已经为 <kbd>%(users)s</kbd> 用户建立了 <kbd>%(websites)s</kbd> 个网站。"
+
+#~ msgid "Welcome, %(username)s"
+#~ msgstr "欢迎，%(username)s"
+
+#~ msgid "Delete website '%(sitename)s'"
+#~ msgstr "删除网站 '%(sitename)s'"
+
+#~ msgid "Reset website '%(sitename)s'"
+#~ msgstr "重置网站 '%(sitename)s'"

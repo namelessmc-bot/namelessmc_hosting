@@ -14,9 +14,9 @@ You can find the frontend code in `frontend/`. If you're looking for HTML, that'
 Install:
 
 ```sh
-apt install python3-django python3-django-crispy-forms && pip3 install django-paypal
+sudo apt install python3-django python3-django-crispy-forms python3-pip && sudo pip3 install django-paypal
 # or
-pip3 install django django-crispy-forms django-paypal
+sudo apt install python3-pip && pip3 install django django-crispy-forms django-paypal
 
 cd frontend
 chmod +x manage.py

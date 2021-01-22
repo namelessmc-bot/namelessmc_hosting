@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-01-18 20:22+0100\n"
+"POT-Creation-Date: 2021-01-22 20:50+0000\n"
 "PO-Revision-Date: 2021-01-15 15:19+0000\n"
 "Last-Translator: NamelessMC Translations <robin@derkad.es>\n"
 "Language-Team: Dutch <http://translate.namelessmc.com/projects/named-hosting/"
@@ -73,89 +73,76 @@ msgid "Terms of service"
 msgstr "Gebruikersvoorwaarden"
 
 #: main/templates/main/index.html:10
-msgid ""
-"Start a NamelessMC website the easy way. We built our hosting system from "
-"scratch to be as simple as possible without limiting possibilities."
+msgid "Free hosting that actually works."
 msgstr ""
-"Maak een NamelessMC website op de makkelijke manier. We hebben ons hosting-"
-"systeem zelf gebouwd om zo simpel mogelijk te zijn zonder mogelijkheden te "
-"beperken."
 
-#: main/templates/main/index.html:12
-msgid ""
-"No complicated panels, configuration, creating databases, uploading files, "
-"etc. Enter your domain, click one button and your website is online."
-msgstr ""
-"Geen ingewikkelde configuratieschermen, instellingen, databases maken, "
-"bestanden uploaden, etc. Vul je domeinnaam in, druk op een knop en je "
-"website is online."
-
-#: main/templates/main/index.html:15
+#: main/templates/main/index.html:14
 #, python-format
 msgid ""
-"Currently hosting <kbd>%(websites)s</kbd> websites for <kbd>%(users)s</kbd> "
-"users."
+"Provides FTP file access, unlike NamelessHosting. Compatible with "
+"integrations like the ingame plugin plugin and Discord bot, unlike "
+"000webhost and others.  We currently host %(websites)s websites for "
+"%(users)s customers, operated by Derkades (developer of Nameless Plugin and "
+"Discord bot)."
 msgstr ""
-"Op dit moment hosten wij <kbd>%(websites)s</kbd> websites voor <kbd>"
-"%(users)s</kbd> gebruikers."
 
-#: main/templates/main/index.html:22
+#: main/templates/main/index.html:23
 msgid "Simple"
 msgstr "Eenvoudig"
 
-#: main/templates/main/index.html:23
+#: main/templates/main/index.html:24
 msgid "Server configured automatically, start the installer right away"
 msgstr "Server automatisch ingesteld, begin meteen met installeren"
 
-#: main/templates/main/index.html:29
+#: main/templates/main/index.html:30
 msgid "Full access"
 msgstr "Volledige toegang"
 
-#: main/templates/main/index.html:30
+#: main/templates/main/index.html:31
 msgid "Upload your own templates and edit the database using phpmyadmin"
 msgstr "Upload je eigen templates en bewerk de database met phpmyadmin"
 
-#: main/templates/main/index.html:36
+#: main/templates/main/index.html:37
 msgid "No artificial limits"
 msgstr "Geen kunstmatige beperkingen"
 
-#: main/templates/main/index.html:37
+#: main/templates/main/index.html:38
 msgid "No limits on modules, templates, users, etc."
 msgstr "Onbeperkte modules, templates, gebruikers, etc."
 
-#: main/templates/main/index.html:45
+#: main/templates/main/index.html:46
 msgid "Support NamelessMC"
 msgstr "Steun NamelessMC"
 
-#: main/templates/main/index.html:46
+#: main/templates/main/index.html:47
 msgid "We donate part of our income to NamelessMC developers"
 msgstr "Wij doneren deel van ons inkomen aan NamelessMC ontwikkelaars"
 
-#: main/templates/main/index.html:52
+#: main/templates/main/index.html:53
 msgid "Secure"
 msgstr "Veilig"
 
-#: main/templates/main/index.html:53
+#: main/templates/main/index.html:54
 msgid "Protect your website with modern TLS encryption without hassle."
 msgstr "Bescherm je website met moderne TLS versleuteling zonder moeite."
 
-#: main/templates/main/index.html:59
+#: main/templates/main/index.html:60
 msgid "High performance"
 msgstr "Hoge prestaties"
 
-#: main/templates/main/index.html:60
+#: main/templates/main/index.html:61
 msgid "Dedicated web server for every website."
 msgstr "Gescheiden webserver voor elke website."
 
-#: main/templates/main/index.html:71
+#: main/templates/main/index.html:72
 msgid "Create your website now"
 msgstr "Maak je website nu"
 
-#: main/templates/main/index.html:75
+#: main/templates/main/index.html:76
 msgid "Get started"
 msgstr "Begin"
 
-#: main/templates/main/index.html:77 users/templates/registration/login.html:18
+#: main/templates/main/index.html:78 users/templates/registration/login.html:18
 msgid "Sign up"
 msgstr "Inschrijven"
 
@@ -300,11 +287,6 @@ msgstr "E-mail om wachtwoord te herstellen is verstuurd, check je inbox."
 msgid "Send email"
 msgstr "E-mail versturen"
 
-#: users/templates/users/account.html:7
-#, python-format
-msgid "Welcome, %(username)s"
-msgstr "Welkom, %(username)s"
-
 #: users/templates/users/account.html:45
 msgid "Update account settings"
 msgstr "Accountinstellingen wijzigen"
@@ -336,11 +318,6 @@ msgstr "Heb je al een account?"
 #: users/templates/users/register.html:17
 msgid "Sign in"
 msgstr "Inloggen"
-
-#: users/templates/users/website_confirm_delete.html:9
-#, python-format
-msgid "Delete website '%(sitename)s'"
-msgstr "Website '%(sitename)s' verwijderen"
 
 #: users/templates/users/website_confirm_delete.html:10
 msgid "Are you sure you want to delete this website?"
@@ -459,17 +436,45 @@ msgstr "Nieuwe website maken"
 msgid "Free accounts are limited to 1 website, paid accounts are limited to 3."
 msgstr "Gratis accounts zijn beperkt tot 1 website, betaalde accounts tot 3."
 
-#: users/templates/users/website_reset.html:8
-#, python-format
-msgid "Reset website '%(sitename)s'"
-msgstr "Website '%(sitename)s' resetten"
-
 #: users/templates/users/website_reset.html:10
 msgid ""
 "Are you sure you want to reset your website? This will permanently delete "
 "all databases and website data. After resetting your website, wait about a "
 "minute and you'll see installer when going to your website."
 msgstr ""
+
+#~ msgid ""
+#~ "Start a NamelessMC website the easy way. We built our hosting system from "
+#~ "scratch to be as simple as possible without limiting possibilities."
+#~ msgstr ""
+#~ "Maak een NamelessMC website op de makkelijke manier. We hebben ons "
+#~ "hosting-systeem zelf gebouwd om zo simpel mogelijk te zijn zonder "
+#~ "mogelijkheden te beperken."
+
+#~ msgid ""
+#~ "No complicated panels, configuration, creating databases, uploading "
+#~ "files, etc. Enter your domain, click one button and your website is "
+#~ "online."
+#~ msgstr ""
+#~ "Geen ingewikkelde configuratieschermen, instellingen, databases maken, "
+#~ "bestanden uploaden, etc. Vul je domeinnaam in, druk op een knop en je "
+#~ "website is online."
+
+#~ msgid ""
+#~ "Currently hosting <kbd>%(websites)s</kbd> websites for <kbd>%(users)s</"
+#~ "kbd> users."
+#~ msgstr ""
+#~ "Op dit moment hosten wij <kbd>%(websites)s</kbd> websites voor <kbd>"
+#~ "%(users)s</kbd> gebruikers."
+
+#~ msgid "Welcome, %(username)s"
+#~ msgstr "Welkom, %(username)s"
+
+#~ msgid "Delete website '%(sitename)s'"
+#~ msgstr "Website '%(sitename)s' verwijderen"
+
+#~ msgid "Reset website '%(sitename)s'"
+#~ msgstr "Website '%(sitename)s' resetten"
 
 #~ msgid "View"
 #~ msgstr "Bekijken"

@@ -7,11 +7,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-01-18 20:22+0100\n"
+"POT-Creation-Date: 2021-01-22 20:50+0000\n"
 "PO-Revision-Date: 2021-01-18 22:19+0000\n"
 "Last-Translator: Marcos <marckos03br@gmail.com>\n"
-"Language-Team: Spanish <http://translate.namelessmc.com/projects/"
-"named-hosting/named-hosting/es/>\n"
+"Language-Team: Spanish <http://translate.namelessmc.com/projects/named-"
+"hosting/named-hosting/es/>\n"
 "Language: es\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -73,91 +73,78 @@ msgid "Terms of service"
 msgstr "Términos de servicio"
 
 #: main/templates/main/index.html:10
-msgid ""
-"Start a NamelessMC website the easy way. We built our hosting system from "
-"scratch to be as simple as possible without limiting possibilities."
+msgid "Free hosting that actually works."
 msgstr ""
-"Iniciar un sitio web con NamelessMC de la manera más fácil. Hemos construido "
-"nuestro sistema de hospedaje desde cero para que sea lo más simple posible "
-"sin limitar las posibilidades."
 
-#: main/templates/main/index.html:12
-msgid ""
-"No complicated panels, configuration, creating databases, uploading files, "
-"etc. Enter your domain, click one button and your website is online."
-msgstr ""
-"No hay complicados paneles, configuraciones, creación de bases de datos, "
-"carga de archivos, etc. Introduce tu dominio, haz clic en un botón y tu "
-"página web estará en la red."
-
-#: main/templates/main/index.html:15
+#: main/templates/main/index.html:14
 #, python-format
 msgid ""
-"Currently hosting <kbd>%(websites)s</kbd> websites for <kbd>%(users)s</kbd> "
-"users."
+"Provides FTP file access, unlike NamelessHosting. Compatible with "
+"integrations like the ingame plugin plugin and Discord bot, unlike "
+"000webhost and others.  We currently host %(websites)s websites for "
+"%(users)s customers, operated by Derkades (developer of Nameless Plugin and "
+"Discord bot)."
 msgstr ""
-"Alojando actualmente <kbd>%(websites)s</kbd> sitios web para <kbd>%(users)s</"
-"kbd> usuarios."
 
-#: main/templates/main/index.html:22
+#: main/templates/main/index.html:23
 msgid "Simple"
 msgstr "Sencillo"
 
-#: main/templates/main/index.html:23
+#: main/templates/main/index.html:24
 msgid "Server configured automatically, start the installer right away"
 msgstr ""
 "Servidor configurado automáticamente, inicie el instalador inmediatamente"
 
-#: main/templates/main/index.html:29
+#: main/templates/main/index.html:30
 msgid "Full access"
 msgstr "Acceso completo"
 
-#: main/templates/main/index.html:30
+#: main/templates/main/index.html:31
 msgid "Upload your own templates and edit the database using phpmyadmin"
 msgstr "Sube tus propias plantillas y edita la base de datos usando phpmyadmin"
 
-#: main/templates/main/index.html:36
+#: main/templates/main/index.html:37
 msgid "No artificial limits"
 msgstr "Sin límites artificiales"
 
-#: main/templates/main/index.html:37
+#: main/templates/main/index.html:38
 msgid "No limits on modules, templates, users, etc."
 msgstr "No hay límites en cuanto a módulos, plantillas, usuarios, etc."
 
-#: main/templates/main/index.html:45
+#: main/templates/main/index.html:46
 msgid "Support NamelessMC"
 msgstr "Apoya a NamelessMC"
 
-#: main/templates/main/index.html:46
+#: main/templates/main/index.html:47
 msgid "We donate part of our income to NamelessMC developers"
 msgstr "Donamos parte de nuestros ingresos a los desarrolladores de NamelessMC"
 
-#: main/templates/main/index.html:52
+#: main/templates/main/index.html:53
 msgid "Secure"
 msgstr "Seguro"
 
-#: main/templates/main/index.html:53
+#: main/templates/main/index.html:54
 msgid "Protect your website with modern TLS encryption without hassle."
 msgstr ""
 "Proteja su sitio web con una moderna encriptación TLS sin complicaciones."
 
-#: main/templates/main/index.html:59
+#: main/templates/main/index.html:60
 msgid "High performance"
 msgstr "Alto rendimiento"
 
-#: main/templates/main/index.html:60
+#: main/templates/main/index.html:61
 msgid "Dedicated web server for every website."
 msgstr "Servidor web dedicado para cada sitio web."
 
-#: main/templates/main/index.html:71
+#: main/templates/main/index.html:72
 msgid "Create your website now"
 msgstr "Cree su sitio web ahora"
 
-#: main/templates/main/index.html:75
+#: main/templates/main/index.html:76
 msgid "Get started"
 msgstr "Comenzar"
 
-#: main/templates/main/index.html:77 users/templates/registration/login.html:18
+#: main/templates/main/index.html:78 users/templates/registration/login.html:18
 msgid "Sign up"
 msgstr "Regístrate"
 
@@ -305,11 +292,6 @@ msgstr ""
 msgid "Send email"
 msgstr "Enviar correo electrónico"
 
-#: users/templates/users/account.html:7
-#, python-format
-msgid "Welcome, %(username)s"
-msgstr "Bienvenido, %(username)s"
-
 #: users/templates/users/account.html:45
 msgid "Update account settings"
 msgstr "Actualizar la configuración de la cuenta"
@@ -341,11 +323,6 @@ msgstr "¿Ya tiene una cuenta?"
 #: users/templates/users/register.html:17
 msgid "Sign in"
 msgstr "Registrarse"
-
-#: users/templates/users/website_confirm_delete.html:9
-#, python-format
-msgid "Delete website '%(sitename)s'"
-msgstr "Eliminar el sitio web '%(sitename)s'"
 
 #: users/templates/users/website_confirm_delete.html:10
 msgid "Are you sure you want to delete this website?"
@@ -467,11 +444,6 @@ msgstr ""
 "Las cuentas gratuitas están limitadas a 1 sitio web, las cuentas de pago "
 "están limitadas a 3."
 
-#: users/templates/users/website_reset.html:8
-#, python-format
-msgid "Reset website '%(sitename)s'"
-msgstr "Reiniciar el sitio web '%(sitename)s'"
-
 #: users/templates/users/website_reset.html:10
 msgid ""
 "Are you sure you want to reset your website? This will permanently delete "
@@ -482,3 +454,36 @@ msgstr ""
 "permanentemente todas las bases de datos y los datos del sitio web. Después "
 "de restablecer su sitio web, espere un minuto y verá el instalador cuando "
 "vaya a su sitio web."
+
+#~ msgid ""
+#~ "Start a NamelessMC website the easy way. We built our hosting system from "
+#~ "scratch to be as simple as possible without limiting possibilities."
+#~ msgstr ""
+#~ "Iniciar un sitio web con NamelessMC de la manera más fácil. Hemos "
+#~ "construido nuestro sistema de hospedaje desde cero para que sea lo más "
+#~ "simple posible sin limitar las posibilidades."
+
+#~ msgid ""
+#~ "No complicated panels, configuration, creating databases, uploading "
+#~ "files, etc. Enter your domain, click one button and your website is "
+#~ "online."
+#~ msgstr ""
+#~ "No hay complicados paneles, configuraciones, creación de bases de datos, "
+#~ "carga de archivos, etc. Introduce tu dominio, haz clic en un botón y tu "
+#~ "página web estará en la red."
+
+#~ msgid ""
+#~ "Currently hosting <kbd>%(websites)s</kbd> websites for <kbd>%(users)s</"
+#~ "kbd> users."
+#~ msgstr ""
+#~ "Alojando actualmente <kbd>%(websites)s</kbd> sitios web para <kbd>"
+#~ "%(users)s</kbd> usuarios."
+
+#~ msgid "Welcome, %(username)s"
+#~ msgstr "Bienvenido, %(username)s"
+
+#~ msgid "Delete website '%(sitename)s'"
+#~ msgstr "Eliminar el sitio web '%(sitename)s'"
+
+#~ msgid "Reset website '%(sitename)s'"
+#~ msgstr "Reiniciar el sitio web '%(sitename)s'"
