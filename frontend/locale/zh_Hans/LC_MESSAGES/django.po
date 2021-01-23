@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-01-22 20:50+0000\n"
-"PO-Revision-Date: 2021-01-19 13:02+0000\n"
+"PO-Revision-Date: 2021-01-23 03:43+0000\n"
 "Last-Translator: Gabriel Leen <hello@dreta.dev>\n"
 "Language-Team: Chinese (Simplified) <http://translate.namelessmc.com/"
 "projects/named-hosting/named-hosting/zh_Hans/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 4.4\n"
+"X-Generator: Weblate 4.4.2\n"
 
 #: main/templates/main/base.html:43
 msgid "Home"
@@ -72,7 +72,7 @@ msgstr "服务条款"
 
 #: main/templates/main/index.html:10
 msgid "Free hosting that actually works."
-msgstr ""
+msgstr "真的能用的免费建站服务。"
 
 #: main/templates/main/index.html:14
 #, python-format
@@ -83,6 +83,9 @@ msgid ""
 "%(users)s customers, operated by Derkades (developer of Nameless Plugin and "
 "Discord bot)."
 msgstr ""
+"不像 NamelessHosting 封闭式管理，我们提供 FTP 文件访问功能。我们还支持例如游戏内插件和 Discord 机器人的集成，不像 "
+"000webhost 不允许集成。我们目前为 %(users)s 名客户提供 %(websites)s 个网站，由 Nameless 插件和 "
+"Discord 机器人的开发者 Derkades 管理。"
 
 #: main/templates/main/index.html:23
 msgid "Simple"
