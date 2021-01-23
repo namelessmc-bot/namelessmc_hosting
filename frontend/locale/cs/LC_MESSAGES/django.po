@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-01-23 10:25+0000\n"
-"PO-Revision-Date: 2021-01-22 11:43+0000\n"
+"PO-Revision-Date: 2021-01-23 13:43+0000\n"
 "Last-Translator: Jonáš Loskot <fjuro@seznam.cz>\n"
 "Language-Team: Czech <http://translate.namelessmc.com/projects/named-hosting/"
 "named-hosting/cs/>\n"
@@ -74,7 +74,7 @@ msgstr "Podmínky služby"
 
 #: main/templates/main/index.html:10
 msgid "Free hosting that actually works."
-msgstr ""
+msgstr "Bezplatný hosting, který opravdu funguje."
 
 #: main/templates/main/index.html:14
 #, python-format
@@ -84,6 +84,10 @@ msgid ""
 "others. We currently host %(websites)s websites for %(users)s owners, "
 "operated by Derkades (developer of Nameless Plugin and Discord bot)."
 msgstr ""
+"Poskytuje FTP přístup, narozdíl od NamelessHostingu. Je kompatibilní s "
+"integracemi jako je herní plugin a Discord bot, narozdíl od 000webhost a "
+"dalších. Momentálně hostujeme %(websites)s webů pro %(users)s majitelů. "
+"Provozuje Derkader (vývojář Nameless pluginu a Discord bota)."
 
 #: main/templates/main/index.html:23
 msgid "Simple"
