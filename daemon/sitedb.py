@@ -81,8 +81,8 @@ def reset(website_id):
 
     conn = get_db()
     cur = conn.cursor()
-    run_query(cur, f'DROP DATABASE {database}')
-    run_query(cur, f'CREATE DATABASE {database}')
+    run_query(cur, f'DROP DATABASE {database}', True)
+    run_query(cur, f'CREATE DATABASE {database}', True)
     cur.close()
     conn.commit()
     conn.close()

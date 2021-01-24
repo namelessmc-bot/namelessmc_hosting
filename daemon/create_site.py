@@ -15,7 +15,13 @@ def get_website_info(website_id):
 
 
 def run(website_id):
-    (domain, use_https, db_password, files_password, version, use_www, site_name, username, email) = get_website_info(website_id)
+    website_info = get_website_info(website_id)
+
+    if not website_info:
+        print('Error: Tried to create website, but it no longer exists?')
+        return
+
+    (domain, use_https, db_password, files_password, version, use_www, site_name, username, email) = website_info
 
     zfs.create_website_dataset(website_id)
     sitedb.install(website_id, db_password)
