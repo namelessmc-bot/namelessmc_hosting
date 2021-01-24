@@ -70,14 +70,14 @@ class Job(models.Model):
     CREATE_WEBSITE = 0 # Create website dataset and containers
     UPDATE_WEBSITE = 1 # Update domain and/or database password
     RESET_WEBSITE = 2
-    RESERVED = 3
+    RENEW_CERT = 3
     DELETE_WEBSITE = 4 # Delete website and all data
 
     JOB_TYPES = [
         (CREATE_WEBSITE, _('Create website')),
         (UPDATE_WEBSITE, _('Update website')),
         (RESET_WEBSITE, _('Reset website')),
-        (RESERVED, 'nothing'),
+        (RENEW_CERT, 'Renew certificate'),
         (DELETE_WEBSITE, _('Delete website')),
     ]
 
