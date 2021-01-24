@@ -3,7 +3,7 @@
 {% load i18n %}
 {% block content %}
 
-<section class="jumbotron mx-2 py-4">
+<section class="jumbotron mx-2 py-4 mt-2">
     <h1 class="display-4 mt-n3">Named Hosting</h1>
     <span class="lead">
         <p>
@@ -15,57 +15,6 @@
     </p>
     <span class="text-muted"></span>
 </section>
-
-<section id="features">
-    <div class="d-md-flex flex-md-equal w-100">
-        <div class="bg-secondary px-3 pt-3 pb-5 mx-2 my-2 text-center text-white overflow-hidden shadow">
-            <div class="py-3">
-                <h2 class="display-5">{% trans "Simple" %}</h2>
-                <p class="lead">{% trans "Server configured automatically, start the installer right away" %}</p>
-            </div>
-            <img src="{% static 'illustrations/undraw_web_developer.svg' %}" class="homepage-illustration">
-        </div>
-        <div class="bg-secondary px-3 pt-3 pb-5 mx-2 my-2 text-center text-white overflow-hidden shadow">
-            <div class="py-3">
-                <h2 class="display-5">{% trans "Full access" %}</h2>
-                <p class="lead">{% trans "Upload your own templates and edit the database using phpmyadmin" %}</p>
-            </div>
-            <img src="{% static 'illustrations/undraw_my_files.svg' %}" class="homepage-illustration">
-        </div>
-        <div class="bg-secondary px-3 pt-3 pb-5 mx-2 my-2 text-center text-white overflow-hidden shadow">
-            <div class="py-3">
-                <h2 class="display-5">{% trans "No artificial limits" %}</h2>
-                <p class="lead">{% trans "No limits on modules, templates, users, etc." %}</p>
-            </div>
-            <img src="{% static 'illustrations/undraw_i_can_fly.svg' %}" class="homepage-illustration">
-        </div>
-    </div>
-    <div class="d-md-flex flex-md-equal w-100">
-        <div class="bg-secondary px-3 pt-3 pb-5 mx-2 my-2 text-center text-white overflow-hidden shadow">
-            <div class="py-3">
-                <h2 class="display-5">{% trans "Support NamelessMC" %}</h2>
-                <p class="lead">{% trans "We donate part of our income to NamelessMC developers" %}</p>
-            </div>
-            <img src="{% static 'illustrations/undraw_wallet.svg' %}" class="homepage-illustration">
-        </div>
-        <div class="bg-secondary px-3 pt-3 pb-5 mx-2 my-2 text-center text-white overflow-hidden shadow">
-            <div class="py-3">
-                <h2 class="display-5">{% trans "Secure" %}</h2>
-                <p class="lead">{% trans "Protect your website with modern TLS encryption without hassle." %}</p>
-            </div>
-            <img src="{% static 'illustrations/undraw_security_on.svg' %}" class="homepage-illustration">
-        </div>
-        <div class="bg-secondary px-3 pt-3 pb-5 mx-2 my-2 text-center text-white overflow-hidden shadow">
-            <div class="py-3">
-                <h2 class="display-5">{% trans "High performance" %}</h2>
-                <p class="lead">{% trans "Dedicated web server for every website." %}</p>
-            </div>
-            <img src="{% static 'illustrations/undraw_fast_loading.svg' %}" class="homepage-illustration">
-        </div>
-    </div>
-</section>
-
-<div class="border-top mt-2"></div>
 
 <section id="create-now" class="px-5 py-5 mx-2 mt-3 text-center shadow">
     <div class="py-3">
@@ -79,5 +28,58 @@
         {% endif %}
     </div>
 </section>
+
+<div class="mt-4"></div>
+
+<div id="features-background">
+<section id="features">
+    <div class="d-md-flex flex-md-equal w-100">
+        <div class="px-3 pt-3 pb-5 mx-2 my-2 text-center text-muted overflow-hidden shadow">
+            <div class="py-3">
+                <h2 class="display-5">{% trans "Simple" %}</h2>
+                <p class="lead">{% trans "Server configured automatically, start the installer right away" %}</p>
+            </div>
+            <img src="{% static 'illustrations/undraw_web_developer.svg' %}" class="homepage-illustration">
+        </div>
+        <div class="px-3 pt-3 pb-5 mx-2 my-2 text-center text-muted overflow-hidden shadow">
+            <div class="py-3">
+                <h2 class="display-5">{% trans "Full access" %}</h2>
+                <p class="lead">{% trans "Upload your own templates and edit the database using phpmyadmin" %}</p>
+            </div>
+            <img src="{% static 'illustrations/undraw_my_files.svg' %}" class="homepage-illustration">
+        </div>
+        <div class="px-3 pt-3 pb-5 mx-2 my-2 text-center text-muted overflow-hidden shadow">
+            <div class="py-3">
+                <h2 class="display-5">{% trans "No artificial limits" %}</h2>
+                <p class="lead">{% trans "No limits on modules, templates, users, etc." %}</p>
+            </div>
+            <img src="{% static 'illustrations/undraw_i_can_fly.svg' %}" class="homepage-illustration">
+        </div>
+    </div>
+    <div class="d-md-flex flex-md-equal w-100">
+        <div class="px-3 pt-3 pb-5 mx-2 my-2 text-center text-muted overflow-hidden shadow">
+            <div class="py-3">
+                <h2 class="display-5">{% trans "Support NamelessMC" %}</h2>
+                <p class="lead">{% trans "We donate part of our income to NamelessMC developers" %}</p>
+            </div>
+            <img src="{% static 'illustrations/undraw_wallet.svg' %}" class="homepage-illustration">
+        </div>
+        <div class="px-3 pt-3 pb-5 mx-2 my-2 text-center text-muted overflow-hidden shadow">
+            <div class="py-3">
+                <h2 class="display-5">{% trans "Secure" %}</h2>
+                <p class="lead">{% trans "Protect your website with modern TLS encryption without hassle." %}</p>
+            </div>
+            <img src="{% static 'illustrations/undraw_security_on.svg' %}" class="homepage-illustration">
+        </div>
+        <div class="px-3 pt-3 pb-5 mx-2 my-2 text-center text-muted overflow-hidden shadow">
+            <div class="py-3">
+                <h2 class="display-5">{% trans "High performance" %}</h2>
+                <p class="lead">{% trans "Dedicated web server for every website." %}</p>
+            </div>
+            <img src="{% static 'illustrations/undraw_fast_loading.svg' %}" class="homepage-illustration">
+        </div>
+    </div>
+</section>
+</div>
 
 {% endblock content %}
