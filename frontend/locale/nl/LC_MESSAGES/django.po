@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-01-23 10:25+0000\n"
-"PO-Revision-Date: 2021-01-15 15:19+0000\n"
+"PO-Revision-Date: 2021-01-24 12:43+0000\n"
 "Last-Translator: NamelessMC Translations <robin@derkad.es>\n"
 "Language-Team: Dutch <http://translate.namelessmc.com/projects/named-hosting/"
 "named-hosting/nl/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.4\n"
+"X-Generator: Weblate 4.4.2\n"
 
 #: main/templates/main/base.html:43
 msgid "Home"
@@ -74,7 +74,7 @@ msgstr "Gebruikersvoorwaarden"
 
 #: main/templates/main/index.html:10
 msgid "Free hosting that actually works."
-msgstr ""
+msgstr "Gratis hosting die wél werkt."
 
 #: main/templates/main/index.html:14
 #, python-format
@@ -84,6 +84,12 @@ msgid ""
 "others. We currently host %(websites)s websites for %(users)s owners, "
 "operated by Derkades (developer of Nameless Plugin and Discord bot)."
 msgstr ""
+"Volledige toegang tot bestanden via FTP, in tegenstelling tot "
+"NamelessHosting. Ook werkt het met integraties zoals de Discord bot en in-"
+"game plugin, wat niet mogelijk is met 000webhost en veel andere gratis web "
+"hosting providers. Wij hosten op dit moment %(websites)s websites voor "
+"%(users)s servereigenaren. Dit hostingsysteem wordt verzorgd door Derkades, "
+"ontwikkelaar van Nameless-Link en de Spigot plugin."
 
 #: main/templates/main/index.html:23
 msgid "Simple"
@@ -441,6 +447,10 @@ msgid ""
 "all databases and website data. After resetting your website, wait about a "
 "minute and you'll see installer when going to your website."
 msgstr ""
+"Weet je zeker dat je de website wilt resetten? Alle data wordt permanent "
+"verwijderd. Na het resetten van je site, wacht ongeveer een minuut en je "
+"zult weer gegroet worden door de NamelessMC installer als je naar je website "
+"gaat."
 
 #~ msgid ""
 #~ "Start a NamelessMC website the easy way. We built our hosting system from "
