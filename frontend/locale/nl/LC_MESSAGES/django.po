@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-01-27 18:47+0000\n"
-"PO-Revision-Date: 2021-01-24 12:43+0000\n"
+"POT-Creation-Date: 2021-01-27 15:52+0000\n"
+"PO-Revision-Date: 2021-01-27 18:48+0000\n"
 "Last-Translator: NamelessMC Translations <robin@derkad.es>\n"
 "Language-Team: Dutch <http://translate.namelessmc.com/projects/named-hosting/"
 "named-hosting/nl/>\n"
@@ -74,19 +74,19 @@ msgstr "Gebruikersvoorwaarden"
 
 #: main/templates/main/comparison.html:5
 msgid "Hosting service comparison"
-msgstr ""
+msgstr "Hostingservice vergelijking"
 
 #: main/templates/main/comparison.html:10
 msgid "Feature"
-msgstr ""
+msgstr "Functie"
 
 #: main/templates/main/comparison.html:13
 msgid "Generic free webhost"
-msgstr ""
+msgstr "Doorsnee gratis webhost"
 
 #: main/templates/main/comparison.html:14
 msgid "VPS"
-msgstr ""
+msgstr "VPS"
 
 #: main/templates/main/comparison.html:18
 #: main/templates/main/comparison.html:20
@@ -94,64 +94,60 @@ msgstr ""
 #: main/templates/main/comparison.html:31
 #: main/templates/main/comparison.html:33
 msgid "Free"
-msgstr ""
+msgstr "Gratis"
 
 #: main/templates/main/comparison.html:19
 #: main/templates/main/comparison.html:21
 msgid "Paid"
-msgstr ""
+msgstr "Betaald"
 
 #: main/templates/main/comparison.html:28
 msgid "Price"
-msgstr ""
+msgstr "Prijs"
 
 #: main/templates/main/comparison.html:37
 msgid "Maintenance free"
-msgstr ""
+msgstr "Onderhoudsvrij"
 
 #: main/templates/main/comparison.html:46
 msgid "Fast"
-msgstr ""
+msgstr "Snel"
 
 #: main/templates/main/comparison.html:55
 msgid "Compatible with API"
-msgstr ""
+msgstr "Werkt met API"
 
 #: main/templates/main/comparison.html:64
 msgid "Automatic installation"
-msgstr ""
+msgstr "Automatische installatie"
 
 #: main/templates/main/comparison.html:73
 msgid "Choose NamelessMC version"
-msgstr ""
+msgstr "Kies NamelessMC versie"
 
 #: main/templates/main/comparison.html:82
-#, fuzzy
-#| msgid "Database"
 msgid "Database backups"
-msgstr "Database"
+msgstr "Database backups"
 
 #: main/templates/main/comparison.html:91
 msgid "File backups"
-msgstr ""
+msgstr "Backups van bestanden"
 
 #: main/templates/main/comparison.html:100
 msgid "No vendor lock-in"
-msgstr ""
+msgstr "Geen vendor lock-in"
 
 #: main/templates/main/comparison.html:109
-#, fuzzy
-#| msgid "Full access"
 msgid "FTP file access"
-msgstr "Volledige toegang"
+msgstr "FTP toegang tot bestanden"
 
 #: main/templates/main/comparison.html:118
 msgid "Web file manager"
-msgstr ""
+msgstr "Web bestandsbeheerder"
 
 #: main/templates/main/comparison.html:127
 msgid "Free subdomain"
-msgstr ""
+msgstr "Gratis subdomein"
 
 #: main/templates/main/comparison.html:136
 #: users/templates/users/website_detail.html:79
@@ -160,25 +156,23 @@ msgstr "phpmyadmin"
 
 #: main/templates/main/comparison.html:145
 msgid "Install modules/templates manually"
-msgstr ""
+msgstr "Handmatig templates/modules installeren"
 
 #: main/templates/main/comparison.html:154
 msgid "Install modules/templates automatically"
-msgstr ""
+msgstr "Automatisch templates/modules installeren"
 
 #: main/templates/main/comparison.html:163
-#, fuzzy
-#| msgid "Support NamelessMC"
 msgid "Automatic NamelessMC updates"
-msgstr "Steun NamelessMC"
+msgstr "Automatische NamelessMC updates"
 
 #: main/templates/main/comparison.html:172
 msgid "Supports CloudFlare Strict SSL"
-msgstr ""
+msgstr "Ondersteuning voor CloudFlare Strict SSL"
 
 #: main/templates/main/comparison.html:181
 msgid "Custom Nameless-Link"
-msgstr ""
+msgstr "Eigen Nameless-Link instantie"
 
 #: main/templates/main/index.html:10
 msgid "Free hosting that actually works."
