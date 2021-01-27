@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-01-27 15:48+0000\n"
+"POT-Creation-Date: 2021-01-27 15:52+0000\n"
 "PO-Revision-Date: 2021-01-23 13:43+0000\n"
 "Last-Translator: LOyoujoLI <minion2018@hotmail.com>\n"
 "Language-Team: Russian <http://translate.namelessmc.com/projects/named-"
@@ -73,6 +73,10 @@ msgstr "Политика конфиденциальности"
 #: main/templates/main/base.html:121
 msgid "Terms of service"
 msgstr "Условия использования"
+
+#: main/templates/main/comparison.html:5
+msgid "Hosting service comparison"
+msgstr ""
 
 #: main/templates/main/comparison.html:10
 msgid "Feature"

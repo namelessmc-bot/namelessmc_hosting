@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-01-27 15:48+0000\n"
+"POT-Creation-Date: 2021-01-27 15:52+0000\n"
 "PO-Revision-Date: 2021-01-15 20:19+0000\n"
 "Last-Translator: Maiu <maiuxd77@gmail.com>\n"
 "Language-Team: Norwegian Bokmål <http://translate.namelessmc.com/projects/"
@@ -70,6 +70,10 @@ msgstr "Personvernerklæring"
 #: main/templates/main/base.html:121
 msgid "Terms of service"
 msgstr "Vilkår for bruk"
+
+#: main/templates/main/comparison.html:5
+msgid "Hosting service comparison"
+msgstr ""
 
 #: main/templates/main/comparison.html:10
 msgid "Feature"
