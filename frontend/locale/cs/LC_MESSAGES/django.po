@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-01-27 18:47+0000\n"
-"PO-Revision-Date: 2021-01-23 13:43+0000\n"
+"POT-Creation-Date: 2021-01-27 15:52+0000\n"
+"PO-Revision-Date: 2021-01-27 18:48+0000\n"
 "Last-Translator: Jonáš Loskot <fjuro@seznam.cz>\n"
 "Language-Team: Czech <http://translate.namelessmc.com/projects/named-hosting/"
 "named-hosting/cs/>\n"
@@ -74,19 +74,19 @@ msgstr "Podmínky služby"
 
 #: main/templates/main/comparison.html:5
 msgid "Hosting service comparison"
-msgstr ""
+msgstr "Porovnání hostingů"
 
 #: main/templates/main/comparison.html:10
 msgid "Feature"
-msgstr ""
+msgstr "Funkce"
 
 #: main/templates/main/comparison.html:13
 msgid "Generic free webhost"
-msgstr ""
+msgstr "Normální bezplatný hosting"
 
 #: main/templates/main/comparison.html:14
 msgid "VPS"
-msgstr ""
+msgstr "VPS"
 
 #: main/templates/main/comparison.html:18
 #: main/templates/main/comparison.html:20
@@ -94,64 +94,60 @@ msgstr ""
 #: main/templates/main/comparison.html:31
 #: main/templates/main/comparison.html:33
 msgid "Free"
-msgstr ""
+msgstr "Zdarma"
 
 #: main/templates/main/comparison.html:19
 #: main/templates/main/comparison.html:21
 msgid "Paid"
-msgstr ""
+msgstr "Placený"
 
 #: main/templates/main/comparison.html:28
 msgid "Price"
-msgstr ""
+msgstr "Cena"
 
 #: main/templates/main/comparison.html:37
 msgid "Maintenance free"
-msgstr ""
+msgstr "Bez údržeb"
 
 #: main/templates/main/comparison.html:46
 msgid "Fast"
-msgstr ""
+msgstr "Rychlý"
 
 #: main/templates/main/comparison.html:55
 msgid "Compatible with API"
-msgstr ""
+msgstr "Kompatibilní s API"
 
 #: main/templates/main/comparison.html:64
 msgid "Automatic installation"
-msgstr ""
+msgstr "Automatická instalace"
 
 #: main/templates/main/comparison.html:73
 msgid "Choose NamelessMC version"
-msgstr ""
+msgstr "Výběr verze NamelessMC"
 
 #: main/templates/main/comparison.html:82
-#, fuzzy
-#| msgid "Database"
 msgid "Database backups"
-msgstr "Databáze"
+msgstr "Zálohy databází"
 
 #: main/templates/main/comparison.html:91
 msgid "File backups"
-msgstr ""
+msgstr "Zálohy souborů"
 
 #: main/templates/main/comparison.html:100
 msgid "No vendor lock-in"
-msgstr ""
+msgstr "Bez uzamčení zákazníka"
 
 #: main/templates/main/comparison.html:109
-#, fuzzy
-#| msgid "Full access"
 msgid "FTP file access"
-msgstr "Plný přístup"
+msgstr "FTP přístup"
 
 #: main/templates/main/comparison.html:118
 msgid "Web file manager"
-msgstr ""
+msgstr "Webový správce souborů"
 
 #: main/templates/main/comparison.html:127
 msgid "Free subdomain"
-msgstr ""
+msgstr "Subdoména zdarma"
 
 #: main/templates/main/comparison.html:136
 #: users/templates/users/website_detail.html:79
@@ -160,25 +156,23 @@ msgstr "phpmyadmin"
 
 #: main/templates/main/comparison.html:145
 msgid "Install modules/templates manually"
-msgstr ""
+msgstr "Manuální instalace doplňků a šablon"
 
 #: main/templates/main/comparison.html:154
 msgid "Install modules/templates automatically"
-msgstr ""
+msgstr "Automatická instalace doplňků a šablon"
 
 #: main/templates/main/comparison.html:163
-#, fuzzy
-#| msgid "Support NamelessMC"
 msgid "Automatic NamelessMC updates"
-msgstr "Podpora NamelessMC"
+msgstr "Automatická aktualizace NamelessMC"
 
 #: main/templates/main/comparison.html:172
 msgid "Supports CloudFlare Strict SSL"
-msgstr ""
+msgstr "Podpora striktního SSL Cloudflare"
 
 #: main/templates/main/comparison.html:181
 msgid "Custom Nameless-Link"
-msgstr ""
+msgstr "Vlastní Nameless-Link"
 
 #: main/templates/main/index.html:10
 msgid "Free hosting that actually works."
