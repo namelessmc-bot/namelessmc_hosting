@@ -7,11 +7,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-01-27 18:47+0000\n"
-"PO-Revision-Date: 2021-01-23 13:43+0000\n"
+"POT-Creation-Date: 2021-01-27 15:52+0000\n"
+"PO-Revision-Date: 2021-01-27 18:48+0000\n"
 "Last-Translator: Marcos <marckos03br@gmail.com>\n"
-"Language-Team: Spanish <http://translate.namelessmc.com/projects/named-"
-"hosting/named-hosting/es/>\n"
+"Language-Team: Spanish <http://translate.namelessmc.com/projects/"
+"named-hosting/named-hosting/es/>\n"
 "Language: es\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -74,19 +74,19 @@ msgstr "Términos de servicio"
 
 #: main/templates/main/comparison.html:5
 msgid "Hosting service comparison"
-msgstr ""
+msgstr "Comparación de servicios de alojamiento"
 
 #: main/templates/main/comparison.html:10
 msgid "Feature"
-msgstr ""
+msgstr "Característica"
 
 #: main/templates/main/comparison.html:13
 msgid "Generic free webhost"
-msgstr ""
+msgstr "Alojamiento web gratuito genérico"
 
 #: main/templates/main/comparison.html:14
 msgid "VPS"
-msgstr ""
+msgstr "VPS"
 
 #: main/templates/main/comparison.html:18
 #: main/templates/main/comparison.html:20
@@ -94,64 +94,60 @@ msgstr ""
 #: main/templates/main/comparison.html:31
 #: main/templates/main/comparison.html:33
 msgid "Free"
-msgstr ""
+msgstr "Gratis"
 
 #: main/templates/main/comparison.html:19
 #: main/templates/main/comparison.html:21
 msgid "Paid"
-msgstr ""
+msgstr "De pago"
 
 #: main/templates/main/comparison.html:28
 msgid "Price"
-msgstr ""
+msgstr "Precio"
 
 #: main/templates/main/comparison.html:37
 msgid "Maintenance free"
-msgstr ""
+msgstr "No necesita mantenimiento"
 
 #: main/templates/main/comparison.html:46
 msgid "Fast"
-msgstr ""
+msgstr "Rápido"
 
 #: main/templates/main/comparison.html:55
 msgid "Compatible with API"
-msgstr ""
+msgstr "Compatible con la API"
 
 #: main/templates/main/comparison.html:64
 msgid "Automatic installation"
-msgstr ""
+msgstr "Instalación automática"
 
 #: main/templates/main/comparison.html:73
 msgid "Choose NamelessMC version"
-msgstr ""
+msgstr "Elegir la versión de NamelessMC"
 
 #: main/templates/main/comparison.html:82
-#, fuzzy
-#| msgid "Database"
 msgid "Database backups"
-msgstr "Base de datos"
+msgstr "Copias de seguridad de la base de datos"
 
 #: main/templates/main/comparison.html:91
 msgid "File backups"
-msgstr ""
+msgstr "Copia de seguridad de los archivos"
 
 #: main/templates/main/comparison.html:100
 msgid "No vendor lock-in"
-msgstr ""
+msgstr "Sin bloqueo de proveedores"
 
 #: main/templates/main/comparison.html:109
-#, fuzzy
-#| msgid "Full access"
 msgid "FTP file access"
-msgstr "Acceso completo"
+msgstr "Acceso a archivos por FTP"
 
 #: main/templates/main/comparison.html:118
 msgid "Web file manager"
-msgstr ""
+msgstr "Gestor de archivos web"
 
 #: main/templates/main/comparison.html:127
 msgid "Free subdomain"
-msgstr ""
+msgstr "Subdominio gratuito"
 
 #: main/templates/main/comparison.html:136
 #: users/templates/users/website_detail.html:79
@@ -160,21 +156,19 @@ msgstr "phpmyadmin"
 
 #: main/templates/main/comparison.html:145
 msgid "Install modules/templates manually"
-msgstr ""
+msgstr "Instalar módulos/plantillas manualmente"
 
 #: main/templates/main/comparison.html:154
 msgid "Install modules/templates automatically"
-msgstr ""
+msgstr "Instalar módulos/plantillas automáticamente"
 
 #: main/templates/main/comparison.html:163
-#, fuzzy
-#| msgid "Support NamelessMC"
 msgid "Automatic NamelessMC updates"
-msgstr "Apoya a NamelessMC"
+msgstr "Actualizaciones automáticas de NamelessMC"
 
 #: main/templates/main/comparison.html:172
 msgid "Supports CloudFlare Strict SSL"
-msgstr ""
+msgstr "Admite CloudFlare Strict SSL"
 
 #: main/templates/main/comparison.html:181
 msgid "Custom Nameless-Link"
