@@ -1,0 +1,192 @@
+{% extends 'main/base.html' %}
+{% load static %}
+{% load i18n %}
+{% block content %}
+<h2>{% trans "Hosting service comparison" %}</h2>
+{% with yes="<span style=\"font-weight: bold; color: green\">&check;</span>" no="<span style=\"font-weight: bold; color: red\">&cross;</span>" maybe="<span style=\"font-weight: bold; color: orange\">~</span>"%}
+<table class="table">
+    <thead>
+        <tr>
+            <th>{% trans "Feature" %}</th>
+            <th colspan=2>Named Hosting</th>
+            <th colspan=2>NamelessHosting</th>
+            <th>{% trans "Generic free webhost" %}</th>
+            <th>{% trans "VPS" %}</th>
+        </tr>
+        <tr>
+            <th></th>
+            <th>{% trans "Free" %}</th>
+            <th>{% trans "Paid" %}</th>
+            <th>{% trans "Free" %}</th>
+            <th>{% trans "Paid" %}</th>
+            <th></th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>{% trans "Price" %}</td>
+            <td>{% trans "Free" %}</td>
+            <td>?</td>
+            <td>{% trans "Free" %}</td>
+            <td>?</td>
+            <td>{% trans "Free" %}</td>
+            <td>~$2-10</td>
+        </tr>
+        <tr>
+            <td>{% trans "Maintenance free" %}</td>
+            <td>{{ yes }}</td>
+            <td>{{ yes }}</td>
+            <td>{{ yes }}</td>
+            <td>{{ yes }}</td>
+            <td>{{ yes }}</td>
+            <td>{{ no }}</td>
+        </tr>
+        <tr>
+            <td>{% trans "Fast" %}</td>
+            <td>{{ yes }}</td>
+            <td>{{ yes }}</td>
+            <td>{{ yes }}</td>
+            <td>{{ yes }}</td>
+            <td>{{ no }}</td>
+            <td>{{ yes }}{{ yes }}</td>
+        </tr>
+        <tr>
+            <td>{% trans "Compatible with API" %}</td>
+            <td>{{ yes }}</td>
+            <td>{{ yes }}</td>
+            <td>{{ yes }}</td>
+            <td>{{ yes }}</td>
+            <td>{{ no }}</td>
+            <td>{{ yes }}</td>
+        </tr>
+        <tr>
+            <td>{% trans "Automatic installation" %}</td>
+            <td>{{ yes }}</td>
+            <td>{{ yes }}</td>
+            <td>{{ yes }}</td>
+            <td>{{ yes }}</td>
+            <td>{{ no }}</td>
+            <td>{{ no }}</td>
+        </tr>
+        <tr>
+            <td>{% trans "Choose NamelessMC version" %}</td>
+            <td>{{ yes }}</td>
+            <td>{{ yes }}</td>
+            <td>{{ no }}</td>
+            <td>{{ no }}</td>
+            <td>{{ yes }}</td>
+            <td>{{ yes }}</td>
+        </tr>
+        <tr>
+            <td>{% trans "Database backups" %}</td>
+            <td>{{ no }}</td>
+            <td>{{ yes }}</td>
+            <td>{{ no }}</td>
+            <td>{{ no }}</td>
+            <td>{{ no }}</td>
+            <td>{{ maybe }}</td>
+        </tr>
+        <tr>
+            <td>{% trans "File backups" %}</td>
+            <td>{{ no }}</td>
+            <td>{{ yes }}</td>
+            <td>{{ no }}</td>
+            <td>{{ no }}</td>
+            <td>{{ no }}</td>
+            <td>{{ maybe }}</td>
+        </tr>
+        <tr>
+            <td>{% trans "No vendor lock-in" %}</td>
+            <td>{{ yes }}</td>
+            <td>{{ yes }}</td>
+            <td>{{ no }}</td>
+            <td>{{ no }}</td>
+            <td>{{ yes }}</td>
+            <td>{{ yes }}</td>
+        </tr>
+        <tr>
+            <td>{% trans "FTP file access" %}</td>
+            <td>{{ yes }}</td>
+            <td>{{ yes }}</td>
+            <td>{{ no }}</td>
+            <td>{{ no }}</td>
+            <td>{{ yes }}</td>
+            <td>{{ yes }}</td>
+        </tr>
+        <tr>
+            <td>{% trans "Web file manager" %}</td>
+            <td>{{ no }}</td>
+            <td>{{ no }}</td>
+            <td>{{ no }}</td>
+            <td>{{ no }}</td>
+            <td>{{ maybe }}</td>
+            <td>{{ maybe }}</td>
+        </tr>
+        <tr>
+            <td>{% trans "Free subdomain" %}</td>
+            <td>{{ no }}</td>
+            <td>{{ no }}</td>
+            <td>?</td>
+            <td>{{ yes }}</td>
+            <td>{{ maybe }}</td>
+            <td>{{ maybe }}</td>
+        </tr>
+        <tr>
+            <td>{% trans "phpmyadmin" %}</td>
+            <td>{{ yes }}</td>
+            <td>{{ yes }}</td>
+            <td>{{ no }}</td>
+            <td>{{ no }}</td>
+            <td>{{ maybe }}</td>
+            <td>{{ maybe }}</td>
+        </tr>
+        <tr>
+            <td>{% trans "Install modules/templates manually" %}</td>
+            <td>{{ yes }}</td>
+            <td>{{ yes }}</td>
+            <td>{{ maybe }}</td>
+            <td>{{ maybe }}</td>
+            <td>{{ yes }}</td>
+            <td>{{ yes }}</td>
+        </tr>
+        <tr>
+            <td>{% trans "Install modules/templates automatically" %}</td>
+            <td>{{ no }}</td>
+            <td>{{ no }}</td>
+            <td>{{ maybe }}</td>
+            <td>{{ maybe }}</td>
+            <td>{{ no }}</td>
+            <td>{{ no }}</td>
+        </tr>
+        <tr>
+            <td>{% trans "Automatic NamelessMC updates" %}</td>
+            <td>{{ no }}</td>
+            <td>{{ no }}</td>
+            <td>{{ yes }}</td>
+            <td>{{ yes }}</td>
+            <td>{{ no }}</td>
+            <td>{{ no }}</td>
+        </tr>
+        <tr>
+            <td>{% trans "Supports CloudFlare Strict SSL" %}</td>
+            <td>{{ no }}</td>
+            <td>{{ no }}</td>
+            <td>{{ no }}</td>
+            <td>{{ no }}</td>
+            <td>{{ maybe }}</td>
+            <td>{{ yes }}</td>
+        </tr>
+        <tr>
+            <td>{% trans "Custom Nameless-Link" %}</td>
+            <td>{{ no }}</td>
+            <td>{{ yes }}</td>
+            <td>{{ no }}</td>
+            <td>{{ no }}</td>
+            <td>{{ no }}</td>
+            <td>{{ maybe }}</td>
+        </tr>
+    </tbody>
+</table>
+{% endwith %}
+{% endblock content %}

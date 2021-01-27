@@ -7,11 +7,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-01-23 10:25+0000\n"
+"POT-Creation-Date: 2021-01-27 15:48+0000\n"
 "PO-Revision-Date: 2021-01-23 13:43+0000\n"
 "Last-Translator: Marcos <marckos03br@gmail.com>\n"
-"Language-Team: Spanish <http://translate.namelessmc.com/projects/"
-"named-hosting/named-hosting/es/>\n"
+"Language-Team: Spanish <http://translate.namelessmc.com/projects/named-"
+"hosting/named-hosting/es/>\n"
 "Language: es\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -72,6 +72,110 @@ msgstr "Política de privacidad"
 msgid "Terms of service"
 msgstr "Términos de servicio"
 
+#: main/templates/main/comparison.html:10
+msgid "Feature"
+msgstr ""
+
+#: main/templates/main/comparison.html:13
+msgid "Generic free webhost"
+msgstr ""
+
+#: main/templates/main/comparison.html:14
+msgid "VPS"
+msgstr ""
+
+#: main/templates/main/comparison.html:18
+#: main/templates/main/comparison.html:20
+#: main/templates/main/comparison.html:29
+#: main/templates/main/comparison.html:31
+#: main/templates/main/comparison.html:33
+msgid "Free"
+msgstr ""
+
+#: main/templates/main/comparison.html:19
+#: main/templates/main/comparison.html:21
+msgid "Paid"
+msgstr ""
+
+#: main/templates/main/comparison.html:28
+msgid "Price"
+msgstr ""
+
+#: main/templates/main/comparison.html:37
+msgid "Maintenance free"
+msgstr ""
+
+#: main/templates/main/comparison.html:46
+msgid "Fast"
+msgstr ""
+
+#: main/templates/main/comparison.html:55
+msgid "Compatible with API"
+msgstr ""
+
+#: main/templates/main/comparison.html:64
+msgid "Automatic installation"
+msgstr ""
+
+#: main/templates/main/comparison.html:73
+msgid "Choose NamelessMC version"
+msgstr ""
+
+#: main/templates/main/comparison.html:82
+#, fuzzy
+#| msgid "Database"
+msgid "Database backups"
+msgstr "Base de datos"
+
+#: main/templates/main/comparison.html:91
+msgid "File backups"
+msgstr ""
+
+#: main/templates/main/comparison.html:100
+msgid "No vendor lock-in"
+msgstr ""
+
+#: main/templates/main/comparison.html:109
+#, fuzzy
+#| msgid "Full access"
+msgid "FTP file access"
+msgstr "Acceso completo"
+
+#: main/templates/main/comparison.html:118
+msgid "Web file manager"
+msgstr ""
+
+#: main/templates/main/comparison.html:127
+msgid "Free subdomain"
+msgstr ""
+
+#: main/templates/main/comparison.html:136
+#: users/templates/users/website_detail.html:79
+msgid "phpmyadmin"
+msgstr "phpmyadmin"
+
+#: main/templates/main/comparison.html:145
+msgid "Install modules/templates manually"
+msgstr ""
+
+#: main/templates/main/comparison.html:154
+msgid "Install modules/templates automatically"
+msgstr ""
+
+#: main/templates/main/comparison.html:163
+#, fuzzy
+#| msgid "Support NamelessMC"
+msgid "Automatic NamelessMC updates"
+msgstr "Apoya a NamelessMC"
+
+#: main/templates/main/comparison.html:172
+msgid "Supports CloudFlare Strict SSL"
+msgstr ""
+
+#: main/templates/main/comparison.html:181
+msgid "Custom Nameless-Link"
+msgstr ""
+
 #: main/templates/main/index.html:10
 msgid "Free hosting that actually works."
 msgstr "Alojamiento gratuito que realmente funciona."
@@ -87,70 +191,70 @@ msgstr ""
 "Proporciona acceso a archivos FTP, a diferencia de NamelessHosting. "
 "Compatible con integraciones como el plugin dentro del servidor de juego y "
 "el bot de Discord, a diferencia de 000webhost y otros. Actualmente alojamos "
-"%(websites)s sitios web para %(users)s propietarios, operado por Derkades ("
-"desarrollador de Nameless Plugin y Discord bot)."
+"%(websites)s sitios web para %(users)s propietarios, operado por Derkades "
+"(desarrollador de Nameless Plugin y Discord bot)."
 
-#: main/templates/main/index.html:23
+#: main/templates/main/index.html:21
+msgid "Create your website now"
+msgstr "Cree su sitio web ahora"
+
+#: main/templates/main/index.html:25
+msgid "Get started"
+msgstr "Comenzar"
+
+#: main/templates/main/index.html:27 users/templates/registration/login.html:18
+msgid "Sign up"
+msgstr "Regístrate"
+
+#: main/templates/main/index.html:39
 msgid "Simple"
 msgstr "Sencillo"
 
-#: main/templates/main/index.html:24
+#: main/templates/main/index.html:40
 msgid "Server configured automatically, start the installer right away"
 msgstr ""
 "Servidor configurado automáticamente, inicie el instalador inmediatamente"
 
-#: main/templates/main/index.html:30
+#: main/templates/main/index.html:46
 msgid "Full access"
 msgstr "Acceso completo"
 
-#: main/templates/main/index.html:31
+#: main/templates/main/index.html:47
 msgid "Upload your own templates and edit the database using phpmyadmin"
 msgstr "Sube tus propias plantillas y edita la base de datos usando phpmyadmin"
 
-#: main/templates/main/index.html:37
+#: main/templates/main/index.html:53
 msgid "No artificial limits"
 msgstr "Sin límites artificiales"
 
-#: main/templates/main/index.html:38
+#: main/templates/main/index.html:54
 msgid "No limits on modules, templates, users, etc."
 msgstr "No hay límites en cuanto a módulos, plantillas, usuarios, etc."
 
-#: main/templates/main/index.html:46
+#: main/templates/main/index.html:62
 msgid "Support NamelessMC"
 msgstr "Apoya a NamelessMC"
 
-#: main/templates/main/index.html:47
+#: main/templates/main/index.html:63
 msgid "We donate part of our income to NamelessMC developers"
 msgstr "Donamos parte de nuestros ingresos a los desarrolladores de NamelessMC"
 
-#: main/templates/main/index.html:53
+#: main/templates/main/index.html:69
 msgid "Secure"
 msgstr "Seguro"
 
-#: main/templates/main/index.html:54
+#: main/templates/main/index.html:70
 msgid "Protect your website with modern TLS encryption without hassle."
 msgstr ""
 "Proteja su sitio web con una moderna encriptación TLS sin complicaciones."
 
-#: main/templates/main/index.html:60
+#: main/templates/main/index.html:76
 msgid "High performance"
 msgstr "Alto rendimiento"
 
-#: main/templates/main/index.html:61
+#: main/templates/main/index.html:77
 msgid "Dedicated web server for every website."
 msgstr "Servidor web dedicado para cada sitio web."
-
-#: main/templates/main/index.html:72
-msgid "Create your website now"
-msgstr "Cree su sitio web ahora"
-
-#: main/templates/main/index.html:76
-msgid "Get started"
-msgstr "Comenzar"
-
-#: main/templates/main/index.html:78 users/templates/registration/login.html:18
-msgid "Sign up"
-msgstr "Regístrate"
 
 #: users/models.py:16 users/models.py:21 users/models.py:27
 msgid "Invalid domain"
@@ -395,10 +499,6 @@ msgstr "contraseña"
 #: users/templates/users/website_detail.html:75
 msgid "database name"
 msgstr "nombre de la base de datos"
-
-#: users/templates/users/website_detail.html:79
-msgid "phpmyadmin"
-msgstr "phpmyadmin"
 
 #: users/templates/users/website_detail.html:84
 msgid "Files"

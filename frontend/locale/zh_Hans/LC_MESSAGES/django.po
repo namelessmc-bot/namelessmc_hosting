@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-01-23 10:25+0000\n"
+"POT-Creation-Date: 2021-01-27 15:48+0000\n"
 "PO-Revision-Date: 2021-01-26 02:43+0000\n"
 "Last-Translator: Gabriel Leen <hello@dreta.dev>\n"
 "Language-Team: Chinese (Simplified) <http://translate.namelessmc.com/"
@@ -70,6 +70,110 @@ msgstr "隐私条款"
 msgid "Terms of service"
 msgstr "服务条款"
 
+#: main/templates/main/comparison.html:10
+msgid "Feature"
+msgstr ""
+
+#: main/templates/main/comparison.html:13
+msgid "Generic free webhost"
+msgstr ""
+
+#: main/templates/main/comparison.html:14
+msgid "VPS"
+msgstr ""
+
+#: main/templates/main/comparison.html:18
+#: main/templates/main/comparison.html:20
+#: main/templates/main/comparison.html:29
+#: main/templates/main/comparison.html:31
+#: main/templates/main/comparison.html:33
+msgid "Free"
+msgstr ""
+
+#: main/templates/main/comparison.html:19
+#: main/templates/main/comparison.html:21
+msgid "Paid"
+msgstr ""
+
+#: main/templates/main/comparison.html:28
+msgid "Price"
+msgstr ""
+
+#: main/templates/main/comparison.html:37
+msgid "Maintenance free"
+msgstr ""
+
+#: main/templates/main/comparison.html:46
+msgid "Fast"
+msgstr ""
+
+#: main/templates/main/comparison.html:55
+msgid "Compatible with API"
+msgstr ""
+
+#: main/templates/main/comparison.html:64
+msgid "Automatic installation"
+msgstr ""
+
+#: main/templates/main/comparison.html:73
+msgid "Choose NamelessMC version"
+msgstr ""
+
+#: main/templates/main/comparison.html:82
+#, fuzzy
+#| msgid "Database"
+msgid "Database backups"
+msgstr "数据库"
+
+#: main/templates/main/comparison.html:91
+msgid "File backups"
+msgstr ""
+
+#: main/templates/main/comparison.html:100
+msgid "No vendor lock-in"
+msgstr ""
+
+#: main/templates/main/comparison.html:109
+#, fuzzy
+#| msgid "Full access"
+msgid "FTP file access"
+msgstr "完整控制"
+
+#: main/templates/main/comparison.html:118
+msgid "Web file manager"
+msgstr ""
+
+#: main/templates/main/comparison.html:127
+msgid "Free subdomain"
+msgstr ""
+
+#: main/templates/main/comparison.html:136
+#: users/templates/users/website_detail.html:79
+msgid "phpmyadmin"
+msgstr "phpmyadmin"
+
+#: main/templates/main/comparison.html:145
+msgid "Install modules/templates manually"
+msgstr ""
+
+#: main/templates/main/comparison.html:154
+msgid "Install modules/templates automatically"
+msgstr ""
+
+#: main/templates/main/comparison.html:163
+#, fuzzy
+#| msgid "Support NamelessMC"
+msgid "Automatic NamelessMC updates"
+msgstr "支持 NamelessMC"
+
+#: main/templates/main/comparison.html:172
+msgid "Supports CloudFlare Strict SSL"
+msgstr ""
+
+#: main/templates/main/comparison.html:181
+msgid "Custom Nameless-Link"
+msgstr ""
+
 #: main/templates/main/index.html:10
 msgid "Free hosting that actually works."
 msgstr "真的能用的免费建站服务。"
@@ -82,69 +186,70 @@ msgid ""
 "others. We currently host %(websites)s websites for %(users)s owners, "
 "operated by Derkades (developer of Nameless Plugin and Discord bot)."
 msgstr ""
-"不像 NamelessHosting 封闭式管理，我们提供 FTP 文件访问功能。我们还支持例如游戏内插件和 Discord 机器人的集成，不像 "
-"000webhost 不允许集成。我们目前为 %(users)s 名站长提供 %(websites)s 个网站，由 Nameless 插件和 "
-"Discord 机器人的开发者 Derkades 管理。"
+"不像 NamelessHosting 封闭式管理，我们提供 FTP 文件访问功能。我们还支持例如游"
+"戏内插件和 Discord 机器人的集成，不像 000webhost 不允许集成。我们目前为 "
+"%(users)s 名站长提供 %(websites)s 个网站，由 Nameless 插件和 Discord 机器人的"
+"开发者 Derkades 管理。"
 
-#: main/templates/main/index.html:23
-msgid "Simple"
-msgstr "简洁"
-
-#: main/templates/main/index.html:24
-msgid "Server configured automatically, start the installer right away"
-msgstr "服务器会自动配置，您可以马上开始安装"
-
-#: main/templates/main/index.html:30
-msgid "Full access"
-msgstr "完整控制"
-
-#: main/templates/main/index.html:31
-msgid "Upload your own templates and edit the database using phpmyadmin"
-msgstr "上传您自己的模版，或用 phpMyAdmin 编辑数据库"
-
-#: main/templates/main/index.html:37
-msgid "No artificial limits"
-msgstr "无人工限制"
-
-#: main/templates/main/index.html:38
-msgid "No limits on modules, templates, users, etc."
-msgstr "您可添加无限个模块，用户，模版等。"
-
-#: main/templates/main/index.html:46
-msgid "Support NamelessMC"
-msgstr "支持 NamelessMC"
-
-#: main/templates/main/index.html:47
-msgid "We donate part of our income to NamelessMC developers"
-msgstr "我们会将部分收入捐赠给 NamelessMC 开发者"
-
-#: main/templates/main/index.html:53
-msgid "Secure"
-msgstr "安全"
-
-#: main/templates/main/index.html:54
-msgid "Protect your website with modern TLS encryption without hassle."
-msgstr "毫不麻烦地用现代 TLS 加密保护您的网站。"
-
-#: main/templates/main/index.html:60
-msgid "High performance"
-msgstr "高性能"
-
-#: main/templates/main/index.html:61
-msgid "Dedicated web server for every website."
-msgstr "每个网站都有独立的服务器。"
-
-#: main/templates/main/index.html:72
+#: main/templates/main/index.html:21
 msgid "Create your website now"
 msgstr "现在就创建您的网站"
 
-#: main/templates/main/index.html:76
+#: main/templates/main/index.html:25
 msgid "Get started"
 msgstr "现在开始"
 
-#: main/templates/main/index.html:78 users/templates/registration/login.html:18
+#: main/templates/main/index.html:27 users/templates/registration/login.html:18
 msgid "Sign up"
 msgstr "注册"
+
+#: main/templates/main/index.html:39
+msgid "Simple"
+msgstr "简洁"
+
+#: main/templates/main/index.html:40
+msgid "Server configured automatically, start the installer right away"
+msgstr "服务器会自动配置，您可以马上开始安装"
+
+#: main/templates/main/index.html:46
+msgid "Full access"
+msgstr "完整控制"
+
+#: main/templates/main/index.html:47
+msgid "Upload your own templates and edit the database using phpmyadmin"
+msgstr "上传您自己的模版，或用 phpMyAdmin 编辑数据库"
+
+#: main/templates/main/index.html:53
+msgid "No artificial limits"
+msgstr "无人工限制"
+
+#: main/templates/main/index.html:54
+msgid "No limits on modules, templates, users, etc."
+msgstr "您可添加无限个模块，用户，模版等。"
+
+#: main/templates/main/index.html:62
+msgid "Support NamelessMC"
+msgstr "支持 NamelessMC"
+
+#: main/templates/main/index.html:63
+msgid "We donate part of our income to NamelessMC developers"
+msgstr "我们会将部分收入捐赠给 NamelessMC 开发者"
+
+#: main/templates/main/index.html:69
+msgid "Secure"
+msgstr "安全"
+
+#: main/templates/main/index.html:70
+msgid "Protect your website with modern TLS encryption without hassle."
+msgstr "毫不麻烦地用现代 TLS 加密保护您的网站。"
+
+#: main/templates/main/index.html:76
+msgid "High performance"
+msgstr "高性能"
+
+#: main/templates/main/index.html:77
+msgid "Dedicated web server for every website."
+msgstr "每个网站都有独立的服务器。"
 
 #: users/models.py:16 users/models.py:21 users/models.py:27
 msgid "Invalid domain"
@@ -383,10 +488,6 @@ msgstr "密码"
 #: users/templates/users/website_detail.html:75
 msgid "database name"
 msgstr "数据库名称"
-
-#: users/templates/users/website_detail.html:79
-msgid "phpmyadmin"
-msgstr "phpmyadmin"
 
 #: users/templates/users/website_detail.html:84
 msgid "Files"

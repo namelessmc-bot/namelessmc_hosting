@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-01-23 10:25+0000\n"
+"POT-Creation-Date: 2021-01-27 15:48+0000\n"
 "PO-Revision-Date: 2021-01-24 12:43+0000\n"
 "Last-Translator: NamelessMC Translations <robin@derkad.es>\n"
 "Language-Team: Dutch <http://translate.namelessmc.com/projects/named-hosting/"
@@ -72,6 +72,110 @@ msgstr "Privacybeleid"
 msgid "Terms of service"
 msgstr "Gebruikersvoorwaarden"
 
+#: main/templates/main/comparison.html:10
+msgid "Feature"
+msgstr ""
+
+#: main/templates/main/comparison.html:13
+msgid "Generic free webhost"
+msgstr ""
+
+#: main/templates/main/comparison.html:14
+msgid "VPS"
+msgstr ""
+
+#: main/templates/main/comparison.html:18
+#: main/templates/main/comparison.html:20
+#: main/templates/main/comparison.html:29
+#: main/templates/main/comparison.html:31
+#: main/templates/main/comparison.html:33
+msgid "Free"
+msgstr ""
+
+#: main/templates/main/comparison.html:19
+#: main/templates/main/comparison.html:21
+msgid "Paid"
+msgstr ""
+
+#: main/templates/main/comparison.html:28
+msgid "Price"
+msgstr ""
+
+#: main/templates/main/comparison.html:37
+msgid "Maintenance free"
+msgstr ""
+
+#: main/templates/main/comparison.html:46
+msgid "Fast"
+msgstr ""
+
+#: main/templates/main/comparison.html:55
+msgid "Compatible with API"
+msgstr ""
+
+#: main/templates/main/comparison.html:64
+msgid "Automatic installation"
+msgstr ""
+
+#: main/templates/main/comparison.html:73
+msgid "Choose NamelessMC version"
+msgstr ""
+
+#: main/templates/main/comparison.html:82
+#, fuzzy
+#| msgid "Database"
+msgid "Database backups"
+msgstr "Database"
+
+#: main/templates/main/comparison.html:91
+msgid "File backups"
+msgstr ""
+
+#: main/templates/main/comparison.html:100
+msgid "No vendor lock-in"
+msgstr ""
+
+#: main/templates/main/comparison.html:109
+#, fuzzy
+#| msgid "Full access"
+msgid "FTP file access"
+msgstr "Volledige toegang"
+
+#: main/templates/main/comparison.html:118
+msgid "Web file manager"
+msgstr ""
+
+#: main/templates/main/comparison.html:127
+msgid "Free subdomain"
+msgstr ""
+
+#: main/templates/main/comparison.html:136
+#: users/templates/users/website_detail.html:79
+msgid "phpmyadmin"
+msgstr "phpmyadmin"
+
+#: main/templates/main/comparison.html:145
+msgid "Install modules/templates manually"
+msgstr ""
+
+#: main/templates/main/comparison.html:154
+msgid "Install modules/templates automatically"
+msgstr ""
+
+#: main/templates/main/comparison.html:163
+#, fuzzy
+#| msgid "Support NamelessMC"
+msgid "Automatic NamelessMC updates"
+msgstr "Steun NamelessMC"
+
+#: main/templates/main/comparison.html:172
+msgid "Supports CloudFlare Strict SSL"
+msgstr ""
+
+#: main/templates/main/comparison.html:181
+msgid "Custom Nameless-Link"
+msgstr ""
+
 #: main/templates/main/index.html:10
 msgid "Free hosting that actually works."
 msgstr "Gratis hosting die wél werkt."
@@ -91,65 +195,65 @@ msgstr ""
 "%(users)s servereigenaren. Dit hostingsysteem wordt verzorgd door Derkades, "
 "ontwikkelaar van Nameless-Link en de Spigot plugin."
 
-#: main/templates/main/index.html:23
-msgid "Simple"
-msgstr "Eenvoudig"
-
-#: main/templates/main/index.html:24
-msgid "Server configured automatically, start the installer right away"
-msgstr "Server automatisch ingesteld, begin meteen met installeren"
-
-#: main/templates/main/index.html:30
-msgid "Full access"
-msgstr "Volledige toegang"
-
-#: main/templates/main/index.html:31
-msgid "Upload your own templates and edit the database using phpmyadmin"
-msgstr "Upload je eigen templates en bewerk de database met phpmyadmin"
-
-#: main/templates/main/index.html:37
-msgid "No artificial limits"
-msgstr "Geen kunstmatige beperkingen"
-
-#: main/templates/main/index.html:38
-msgid "No limits on modules, templates, users, etc."
-msgstr "Onbeperkte modules, templates, gebruikers, etc."
-
-#: main/templates/main/index.html:46
-msgid "Support NamelessMC"
-msgstr "Steun NamelessMC"
-
-#: main/templates/main/index.html:47
-msgid "We donate part of our income to NamelessMC developers"
-msgstr "Wij doneren deel van ons inkomen aan NamelessMC ontwikkelaars"
-
-#: main/templates/main/index.html:53
-msgid "Secure"
-msgstr "Veilig"
-
-#: main/templates/main/index.html:54
-msgid "Protect your website with modern TLS encryption without hassle."
-msgstr "Bescherm je website met moderne TLS versleuteling zonder moeite."
-
-#: main/templates/main/index.html:60
-msgid "High performance"
-msgstr "Hoge prestaties"
-
-#: main/templates/main/index.html:61
-msgid "Dedicated web server for every website."
-msgstr "Gescheiden webserver voor elke website."
-
-#: main/templates/main/index.html:72
+#: main/templates/main/index.html:21
 msgid "Create your website now"
 msgstr "Maak je website nu"
 
-#: main/templates/main/index.html:76
+#: main/templates/main/index.html:25
 msgid "Get started"
 msgstr "Begin"
 
-#: main/templates/main/index.html:78 users/templates/registration/login.html:18
+#: main/templates/main/index.html:27 users/templates/registration/login.html:18
 msgid "Sign up"
 msgstr "Inschrijven"
+
+#: main/templates/main/index.html:39
+msgid "Simple"
+msgstr "Eenvoudig"
+
+#: main/templates/main/index.html:40
+msgid "Server configured automatically, start the installer right away"
+msgstr "Server automatisch ingesteld, begin meteen met installeren"
+
+#: main/templates/main/index.html:46
+msgid "Full access"
+msgstr "Volledige toegang"
+
+#: main/templates/main/index.html:47
+msgid "Upload your own templates and edit the database using phpmyadmin"
+msgstr "Upload je eigen templates en bewerk de database met phpmyadmin"
+
+#: main/templates/main/index.html:53
+msgid "No artificial limits"
+msgstr "Geen kunstmatige beperkingen"
+
+#: main/templates/main/index.html:54
+msgid "No limits on modules, templates, users, etc."
+msgstr "Onbeperkte modules, templates, gebruikers, etc."
+
+#: main/templates/main/index.html:62
+msgid "Support NamelessMC"
+msgstr "Steun NamelessMC"
+
+#: main/templates/main/index.html:63
+msgid "We donate part of our income to NamelessMC developers"
+msgstr "Wij doneren deel van ons inkomen aan NamelessMC ontwikkelaars"
+
+#: main/templates/main/index.html:69
+msgid "Secure"
+msgstr "Veilig"
+
+#: main/templates/main/index.html:70
+msgid "Protect your website with modern TLS encryption without hassle."
+msgstr "Bescherm je website met moderne TLS versleuteling zonder moeite."
+
+#: main/templates/main/index.html:76
+msgid "High performance"
+msgstr "Hoge prestaties"
+
+#: main/templates/main/index.html:77
+msgid "Dedicated web server for every website."
+msgstr "Gescheiden webserver voor elke website."
 
 #: users/models.py:16 users/models.py:21 users/models.py:27
 msgid "Invalid domain"
@@ -391,10 +495,6 @@ msgstr "wachtwoord"
 #: users/templates/users/website_detail.html:75
 msgid "database name"
 msgstr "database naam"
-
-#: users/templates/users/website_detail.html:79
-msgid "phpmyadmin"
-msgstr "phpmyadmin"
 
 #: users/templates/users/website_detail.html:84
 msgid "Files"

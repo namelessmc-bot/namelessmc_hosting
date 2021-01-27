@@ -8,4 +8,5 @@ urlpatterns = [
     path('privacy', TemplateView.as_view(template_name='main/privacy.html'), name='privacy'),
     path('tos', TemplateView.as_view(template_name='main/tos.html'), name='tos'),
     path('statping', TemplateView.as_view(template_name='main/statping.html'), name='statping'),
+    path('comparison', TemplateView.as_view(template_name='main/comparison.html'), name='comparison'),
 ]
