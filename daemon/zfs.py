@@ -3,7 +3,7 @@ import os
 ZFS_ROOT = os.environ['ZFS_ROOT']
 
 ZFS_DATASET_OPTIONS = {
-    'quota', '5G'
+    'quota', '1G'
 }
 
 def create_website_dataset(website_id):
