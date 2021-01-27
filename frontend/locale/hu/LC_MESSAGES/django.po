@@ -7,11 +7,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-01-27 18:47+0000\n"
-"PO-Revision-Date: 2021-01-24 10:43+0000\n"
+"POT-Creation-Date: 2021-01-27 15:52+0000\n"
+"PO-Revision-Date: 2021-01-27 18:48+0000\n"
 "Last-Translator: Magyar Adam <mestermc594@gmail.com>\n"
-"Language-Team: Hungarian <http://translate.namelessmc.com/projects/named-"
-"hosting/named-hosting/hu/>\n"
+"Language-Team: Hungarian <http://translate.namelessmc.com/projects/"
+"named-hosting/named-hosting/hu/>\n"
 "Language: hu\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -74,19 +74,19 @@ msgstr "Szolgáltatási feltételek"
 
 #: main/templates/main/comparison.html:5
 msgid "Hosting service comparison"
-msgstr ""
+msgstr "Tárhelyszolgáltatás összehasonlítása"
 
 #: main/templates/main/comparison.html:10
 msgid "Feature"
-msgstr ""
+msgstr "Funkció"
 
 #: main/templates/main/comparison.html:13
 msgid "Generic free webhost"
-msgstr ""
+msgstr "Általános ingyenes webtárhely"
 
 #: main/templates/main/comparison.html:14
 msgid "VPS"
-msgstr ""
+msgstr "VPS"
 
 #: main/templates/main/comparison.html:18
 #: main/templates/main/comparison.html:20
@@ -94,64 +94,60 @@ msgstr ""
 #: main/templates/main/comparison.html:31
 #: main/templates/main/comparison.html:33
 msgid "Free"
-msgstr ""
+msgstr "Ingyenes"
 
 #: main/templates/main/comparison.html:19
 #: main/templates/main/comparison.html:21
 msgid "Paid"
-msgstr ""
+msgstr "Fizetős"
 
 #: main/templates/main/comparison.html:28
 msgid "Price"
-msgstr ""
+msgstr "Ár"
 
 #: main/templates/main/comparison.html:37
 msgid "Maintenance free"
-msgstr ""
+msgstr "Karbantartás mentes"
 
 #: main/templates/main/comparison.html:46
 msgid "Fast"
-msgstr ""
+msgstr "Gyors"
 
 #: main/templates/main/comparison.html:55
 msgid "Compatible with API"
-msgstr ""
+msgstr "Kompatibilis az API-val"
 
 #: main/templates/main/comparison.html:64
 msgid "Automatic installation"
-msgstr ""
+msgstr "Automatikus telepítés"
 
 #: main/templates/main/comparison.html:73
 msgid "Choose NamelessMC version"
-msgstr ""
+msgstr "Válassz NamelessMC verziót"
 
 #: main/templates/main/comparison.html:82
-#, fuzzy
-#| msgid "Database"
 msgid "Database backups"
-msgstr "Adatbázis"
+msgstr "Adatbázis mentések"
 
 #: main/templates/main/comparison.html:91
 msgid "File backups"
-msgstr ""
+msgstr "Fájlmentések"
 
 #: main/templates/main/comparison.html:100
 msgid "No vendor lock-in"
-msgstr ""
+msgstr "Nincs fizetős zárolás"
 
 #: main/templates/main/comparison.html:109
-#, fuzzy
-#| msgid "Full access"
 msgid "FTP file access"
-msgstr "Teljes hozzáférés"
+msgstr "FTP fájl hozzáférés"
 
 #: main/templates/main/comparison.html:118
 msgid "Web file manager"
-msgstr ""
+msgstr "Web fájlkezelő"
 
 #: main/templates/main/comparison.html:127
 msgid "Free subdomain"
-msgstr ""
+msgstr "Ingyenes aldomain"
 
 #: main/templates/main/comparison.html:136
 #: users/templates/users/website_detail.html:79
@@ -160,25 +156,23 @@ msgstr "mysql"
 
 #: main/templates/main/comparison.html:145
 msgid "Install modules/templates manually"
-msgstr ""
+msgstr "Modulok/Sablonok manuális telepítése"
 
 #: main/templates/main/comparison.html:154
 msgid "Install modules/templates automatically"
-msgstr ""
+msgstr "Modulok/Sablonok automatikus telepítése"
 
 #: main/templates/main/comparison.html:163
-#, fuzzy
-#| msgid "Support NamelessMC"
 msgid "Automatic NamelessMC updates"
-msgstr "NamelessMC támogatása"
+msgstr "Automatikus NamelessMC frissítések"
 
 #: main/templates/main/comparison.html:172
 msgid "Supports CloudFlare Strict SSL"
-msgstr ""
+msgstr "Támogatja a CloudFlare Strict SSL-t"
 
 #: main/templates/main/comparison.html:181
 msgid "Custom Nameless-Link"
-msgstr ""
+msgstr "Egyéni Nameless-Link"
 
 #: main/templates/main/index.html:10
 msgid "Free hosting that actually works."
