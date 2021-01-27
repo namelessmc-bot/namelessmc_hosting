@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-01-27 15:52+0000\n"
+"POT-Creation-Date: 2021-01-27 18:47+0000\n"
 "PO-Revision-Date: 2021-01-24 10:43+0000\n"
 "Last-Translator: Magyar Adam <mestermc594@gmail.com>\n"
 "Language-Team: Hungarian <http://translate.namelessmc.com/projects/named-"
@@ -464,6 +464,16 @@ msgstr "Visszaállítás"
 #: users/templates/users/website_detail.html:20
 msgid "Delete"
 msgstr "Törlés"
+
+#: users/templates/users/website_detail.html:27
+#, python-format
+msgid ""
+"Add a <code>CNAME</code> record on <code>%(domain)s</code> (and <code>www."
+"%(domain)s</code>) that points to <code>%(cname_target)s</code>. This "
+"process varies depending on where you registered your domain. For more "
+"information, please read <a href=\"%(wiki_url)s\" target=\"_blank\">Wiki: "
+"Creating a CNAME record</a>."
+msgstr ""
 
 #: users/templates/users/website_detail.html:33
 msgid "Website"
