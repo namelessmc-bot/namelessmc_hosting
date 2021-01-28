@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-01-28 16:13+0000\n"
+"POT-Creation-Date: 2021-01-28 18:41+0000\n"
 "PO-Revision-Date: 2021-01-27 21:49+0000\n"
 "Last-Translator: Magyar Adam <mestermc594@gmail.com>\n"
 "Language-Team: Hungarian <http://translate.namelessmc.com/projects/named-"
@@ -114,69 +114,73 @@ msgid "Fast"
 msgstr "Gyors"
 
 #: main/templates/main/comparison.html:55
+msgid "No branding"
+msgstr ""
+
+#: main/templates/main/comparison.html:64
 msgid "Compatible with API"
 msgstr "Kompatibilis az API-val"
 
-#: main/templates/main/comparison.html:64
+#: main/templates/main/comparison.html:73
 msgid "Automatic installation"
 msgstr "Automatikus telepítés"
 
-#: main/templates/main/comparison.html:73
+#: main/templates/main/comparison.html:82
 msgid "Choose NamelessMC version"
 msgstr "Válassz NamelessMC verziót"
 
-#: main/templates/main/comparison.html:82
+#: main/templates/main/comparison.html:91
 #, fuzzy
 #| msgid "Choose NamelessMC version"
 msgid "Choose PHP version"
 msgstr "Válassz NamelessMC verziót"
 
-#: main/templates/main/comparison.html:91
+#: main/templates/main/comparison.html:100
 msgid "Database backups"
 msgstr "Adatbázis mentések"
 
-#: main/templates/main/comparison.html:100
+#: main/templates/main/comparison.html:109
 msgid "File backups"
 msgstr "Fájlmentések"
 
-#: main/templates/main/comparison.html:109
+#: main/templates/main/comparison.html:118
 msgid "No vendor lock-in"
 msgstr "Nincs fizetős zárolás"
 
-#: main/templates/main/comparison.html:118
+#: main/templates/main/comparison.html:127
 msgid "FTP file access"
 msgstr "FTP fájl hozzáférés"
 
-#: main/templates/main/comparison.html:127
+#: main/templates/main/comparison.html:136
 msgid "Web file manager"
 msgstr "Web fájlkezelő"
 
-#: main/templates/main/comparison.html:136
+#: main/templates/main/comparison.html:145
 msgid "Free subdomain"
 msgstr "Ingyenes aldomain"
 
-#: main/templates/main/comparison.html:145
+#: main/templates/main/comparison.html:154
 #: users/templates/users/website_detail.html:79
 msgid "phpmyadmin"
 msgstr "mysql"
 
-#: main/templates/main/comparison.html:154
+#: main/templates/main/comparison.html:163
 msgid "Install modules/templates manually"
 msgstr "Modulok/Sablonok manuális telepítése"
 
-#: main/templates/main/comparison.html:163
+#: main/templates/main/comparison.html:172
 msgid "Install modules/templates automatically"
 msgstr "Modulok/Sablonok automatikus telepítése"
 
-#: main/templates/main/comparison.html:172
+#: main/templates/main/comparison.html:181
 msgid "Automatic NamelessMC updates"
 msgstr "Automatikus NamelessMC frissítések"
 
-#: main/templates/main/comparison.html:181
+#: main/templates/main/comparison.html:190
 msgid "Supports CloudFlare Strict SSL"
 msgstr "Támogatja a CloudFlare Strict SSL-t"
 
-#: main/templates/main/comparison.html:190
+#: main/templates/main/comparison.html:199
 msgid "Custom Nameless-Link"
 msgstr "Egyéni Nameless-Link"
 

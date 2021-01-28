@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-01-28 16:13+0000\n"
+"POT-Creation-Date: 2021-01-28 18:41+0000\n"
 "PO-Revision-Date: 2021-01-27 18:48+0000\n"
 "Last-Translator: NamelessMC Translations <robin@derkad.es>\n"
 "Language-Team: Dutch <http://translate.namelessmc.com/projects/named-hosting/"
@@ -114,69 +114,73 @@ msgid "Fast"
 msgstr "Snel"
 
 #: main/templates/main/comparison.html:55
+msgid "No branding"
+msgstr ""
+
+#: main/templates/main/comparison.html:64
 msgid "Compatible with API"
 msgstr "Werkt met API"
 
-#: main/templates/main/comparison.html:64
+#: main/templates/main/comparison.html:73
 msgid "Automatic installation"
 msgstr "Automatische installatie"
 
-#: main/templates/main/comparison.html:73
+#: main/templates/main/comparison.html:82
 msgid "Choose NamelessMC version"
 msgstr "Kies NamelessMC versie"
 
-#: main/templates/main/comparison.html:82
+#: main/templates/main/comparison.html:91
 #, fuzzy
 #| msgid "Choose NamelessMC version"
 msgid "Choose PHP version"
 msgstr "Kies NamelessMC versie"
 
-#: main/templates/main/comparison.html:91
+#: main/templates/main/comparison.html:100
 msgid "Database backups"
 msgstr "Database backups"
 
-#: main/templates/main/comparison.html:100
+#: main/templates/main/comparison.html:109
 msgid "File backups"
 msgstr "Backups van bestanden"
 
-#: main/templates/main/comparison.html:109
+#: main/templates/main/comparison.html:118
 msgid "No vendor lock-in"
 msgstr "Geen vendor lock-in"
 
-#: main/templates/main/comparison.html:118
+#: main/templates/main/comparison.html:127
 msgid "FTP file access"
 msgstr "FTP toegang tot bestanden"
 
-#: main/templates/main/comparison.html:127
+#: main/templates/main/comparison.html:136
 msgid "Web file manager"
 msgstr "Web bestandsbeheerder"
 
-#: main/templates/main/comparison.html:136
+#: main/templates/main/comparison.html:145
 msgid "Free subdomain"
 msgstr "Gratis subdomein"
 
-#: main/templates/main/comparison.html:145
+#: main/templates/main/comparison.html:154
 #: users/templates/users/website_detail.html:79
 msgid "phpmyadmin"
 msgstr "phpmyadmin"
 
-#: main/templates/main/comparison.html:154
+#: main/templates/main/comparison.html:163
 msgid "Install modules/templates manually"
 msgstr "Handmatig templates/modules installeren"
 
-#: main/templates/main/comparison.html:163
+#: main/templates/main/comparison.html:172
 msgid "Install modules/templates automatically"
 msgstr "Automatisch templates/modules installeren"
 
-#: main/templates/main/comparison.html:172
+#: main/templates/main/comparison.html:181
 msgid "Automatic NamelessMC updates"
 msgstr "Automatische NamelessMC updates"
 
-#: main/templates/main/comparison.html:181
+#: main/templates/main/comparison.html:190
 msgid "Supports CloudFlare Strict SSL"
 msgstr "Ondersteuning voor CloudFlare Strict SSL"
 
-#: main/templates/main/comparison.html:190
+#: main/templates/main/comparison.html:199
 msgid "Custom Nameless-Link"
 msgstr "Eigen Nameless-Link instantie"
 

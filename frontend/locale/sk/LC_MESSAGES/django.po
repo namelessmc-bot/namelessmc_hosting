@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-01-28 16:13+0000\n"
+"POT-Creation-Date: 2021-01-28 18:41+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -110,67 +110,71 @@ msgid "Fast"
 msgstr ""
 
 #: main/templates/main/comparison.html:55
-msgid "Compatible with API"
+msgid "No branding"
 msgstr ""
 
 #: main/templates/main/comparison.html:64
-msgid "Automatic installation"
+msgid "Compatible with API"
 msgstr ""
 
 #: main/templates/main/comparison.html:73
-msgid "Choose NamelessMC version"
+msgid "Automatic installation"
 msgstr ""
 
 #: main/templates/main/comparison.html:82
-msgid "Choose PHP version"
+msgid "Choose NamelessMC version"
 msgstr ""
 
 #: main/templates/main/comparison.html:91
-msgid "Database backups"
+msgid "Choose PHP version"
 msgstr ""
 
 #: main/templates/main/comparison.html:100
-msgid "File backups"
+msgid "Database backups"
 msgstr ""
 
 #: main/templates/main/comparison.html:109
-msgid "No vendor lock-in"
+msgid "File backups"
 msgstr ""
 
 #: main/templates/main/comparison.html:118
-msgid "FTP file access"
+msgid "No vendor lock-in"
 msgstr ""
 
 #: main/templates/main/comparison.html:127
-msgid "Web file manager"
+msgid "FTP file access"
 msgstr ""
 
 #: main/templates/main/comparison.html:136
-msgid "Free subdomain"
+msgid "Web file manager"
 msgstr ""
 
 #: main/templates/main/comparison.html:145
+msgid "Free subdomain"
+msgstr ""
+
+#: main/templates/main/comparison.html:154
 #: users/templates/users/website_detail.html:79
 msgid "phpmyadmin"
 msgstr ""
 
-#: main/templates/main/comparison.html:154
+#: main/templates/main/comparison.html:163
 msgid "Install modules/templates manually"
 msgstr ""
 
-#: main/templates/main/comparison.html:163
+#: main/templates/main/comparison.html:172
 msgid "Install modules/templates automatically"
 msgstr ""
 
-#: main/templates/main/comparison.html:172
+#: main/templates/main/comparison.html:181
 msgid "Automatic NamelessMC updates"
 msgstr ""
 
-#: main/templates/main/comparison.html:181
+#: main/templates/main/comparison.html:190
 msgid "Supports CloudFlare Strict SSL"
 msgstr ""
 
-#: main/templates/main/comparison.html:190
+#: main/templates/main/comparison.html:199
 msgid "Custom Nameless-Link"
 msgstr ""
 
