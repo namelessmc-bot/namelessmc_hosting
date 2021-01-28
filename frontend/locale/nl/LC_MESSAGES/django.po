@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-01-28 18:41+0000\n"
-"PO-Revision-Date: 2021-01-27 18:48+0000\n"
+"PO-Revision-Date: 2021-01-28 19:04+0000\n"
 "Last-Translator: NamelessMC Translations <robin@derkad.es>\n"
 "Language-Team: Dutch <http://translate.namelessmc.com/projects/named-hosting/"
 "named-hosting/nl/>\n"
@@ -115,7 +115,7 @@ msgstr "Snel"
 
 #: main/templates/main/comparison.html:55
 msgid "No branding"
-msgstr ""
+msgstr "Geen branding"
 
 #: main/templates/main/comparison.html:64
 msgid "Compatible with API"
@@ -130,10 +130,8 @@ msgid "Choose NamelessMC version"
 msgstr "Kies NamelessMC versie"
 
 #: main/templates/main/comparison.html:91
-#, fuzzy
-#| msgid "Choose NamelessMC version"
 msgid "Choose PHP version"
-msgstr "Kies NamelessMC versie"
+msgstr "Kies PHP versie"
 
 #: main/templates/main/comparison.html:100
 msgid "Database backups"
@@ -477,6 +475,11 @@ msgid ""
 "information, please read <a href=\"%(wiki_url)s\" target=\"_blank\">Wiki: "
 "Creating a CNAME record</a>."
 msgstr ""
+"Voeg een <code>CNAME</code> record toe op <code>%(domain)s</code> (en "
+"<code>www.%(domain)s</code>) naar <code>%(cname_target)s</code>. Dit proces "
+"varieert afhankelijk van waar je je domein gekocht hebt. Voor meer "
+"informatie, zie de wiki pagina <a href=\"%(wiki_url)s\" target=\"_blank\""
+">Creating a CNAME record</a> (Engels)."
 
 #: users/templates/users/website_detail.html:33
 msgid "Website"
