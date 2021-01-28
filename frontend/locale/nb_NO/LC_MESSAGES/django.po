@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-01-27 18:47+0000\n"
+"POT-Creation-Date: 2021-01-28 16:13+0000\n"
 "PO-Revision-Date: 2021-01-15 20:19+0000\n"
 "Last-Translator: Maiu <maiuxd77@gmail.com>\n"
 "Language-Team: Norwegian Bokmål <http://translate.namelessmc.com/projects/"
@@ -125,57 +125,61 @@ msgid "Choose NamelessMC version"
 msgstr ""
 
 #: main/templates/main/comparison.html:82
+msgid "Choose PHP version"
+msgstr ""
+
+#: main/templates/main/comparison.html:91
 #, fuzzy
 #| msgid "Database"
 msgid "Database backups"
 msgstr "Database"
 
-#: main/templates/main/comparison.html:91
+#: main/templates/main/comparison.html:100
 msgid "File backups"
 msgstr ""
 
-#: main/templates/main/comparison.html:100
+#: main/templates/main/comparison.html:109
 msgid "No vendor lock-in"
 msgstr ""
 
-#: main/templates/main/comparison.html:109
+#: main/templates/main/comparison.html:118
 #, fuzzy
 #| msgid "Full access"
 msgid "FTP file access"
 msgstr "Full tilgang"
 
-#: main/templates/main/comparison.html:118
+#: main/templates/main/comparison.html:127
 msgid "Web file manager"
 msgstr ""
 
-#: main/templates/main/comparison.html:127
+#: main/templates/main/comparison.html:136
 msgid "Free subdomain"
 msgstr ""
 
-#: main/templates/main/comparison.html:136
+#: main/templates/main/comparison.html:145
 #: users/templates/users/website_detail.html:79
 msgid "phpmyadmin"
 msgstr "phpmyadmin"
 
-#: main/templates/main/comparison.html:145
+#: main/templates/main/comparison.html:154
 msgid "Install modules/templates manually"
 msgstr ""
 
-#: main/templates/main/comparison.html:154
+#: main/templates/main/comparison.html:163
 msgid "Install modules/templates automatically"
 msgstr ""
 
-#: main/templates/main/comparison.html:163
+#: main/templates/main/comparison.html:172
 #, fuzzy
 #| msgid "Support NamelessMC"
 msgid "Automatic NamelessMC updates"
 msgstr "Støtt NamelessMC"
 
-#: main/templates/main/comparison.html:172
+#: main/templates/main/comparison.html:181
 msgid "Supports CloudFlare Strict SSL"
 msgstr ""
 
-#: main/templates/main/comparison.html:181
+#: main/templates/main/comparison.html:190
 msgid "Custom Nameless-Link"
 msgstr ""
 

@@ -7,11 +7,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-01-27 15:52+0000\n"
+"POT-Creation-Date: 2021-01-28 16:13+0000\n"
 "PO-Revision-Date: 2021-01-27 21:49+0000\n"
 "Last-Translator: Marcos <marckos03br@gmail.com>\n"
-"Language-Team: Spanish <http://translate.namelessmc.com/projects/"
-"named-hosting/named-hosting/es/>\n"
+"Language-Team: Spanish <http://translate.namelessmc.com/projects/named-"
+"hosting/named-hosting/es/>\n"
 "Language: es\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -126,51 +126,57 @@ msgid "Choose NamelessMC version"
 msgstr "Elegir la versión de NamelessMC"
 
 #: main/templates/main/comparison.html:82
+#, fuzzy
+#| msgid "Choose NamelessMC version"
+msgid "Choose PHP version"
+msgstr "Elegir la versión de NamelessMC"
+
+#: main/templates/main/comparison.html:91
 msgid "Database backups"
 msgstr "Copias de seguridad de la base de datos"
 
-#: main/templates/main/comparison.html:91
+#: main/templates/main/comparison.html:100
 msgid "File backups"
 msgstr "Copia de seguridad de los archivos"
 
-#: main/templates/main/comparison.html:100
+#: main/templates/main/comparison.html:109
 msgid "No vendor lock-in"
 msgstr "Sin bloqueo de proveedores"
 
-#: main/templates/main/comparison.html:109
+#: main/templates/main/comparison.html:118
 msgid "FTP file access"
 msgstr "Acceso a archivos por FTP"
 
-#: main/templates/main/comparison.html:118
+#: main/templates/main/comparison.html:127
 msgid "Web file manager"
 msgstr "Gestor de archivos web"
 
-#: main/templates/main/comparison.html:127
+#: main/templates/main/comparison.html:136
 msgid "Free subdomain"
 msgstr "Subdominio gratuito"
 
-#: main/templates/main/comparison.html:136
+#: main/templates/main/comparison.html:145
 #: users/templates/users/website_detail.html:79
 msgid "phpmyadmin"
 msgstr "phpmyadmin"
 
-#: main/templates/main/comparison.html:145
+#: main/templates/main/comparison.html:154
 msgid "Install modules/templates manually"
 msgstr "Instalar módulos/plantillas manualmente"
 
-#: main/templates/main/comparison.html:154
+#: main/templates/main/comparison.html:163
 msgid "Install modules/templates automatically"
 msgstr "Instalar módulos/plantillas automáticamente"
 
-#: main/templates/main/comparison.html:163
+#: main/templates/main/comparison.html:172
 msgid "Automatic NamelessMC updates"
 msgstr "Actualizaciones automáticas de NamelessMC"
 
-#: main/templates/main/comparison.html:172
+#: main/templates/main/comparison.html:181
 msgid "Supports CloudFlare Strict SSL"
 msgstr "Admite CloudFlare Strict SSL"
 
-#: main/templates/main/comparison.html:181
+#: main/templates/main/comparison.html:190
 msgid "Custom Nameless-Link"
 msgstr ""
 
@@ -471,11 +477,11 @@ msgid ""
 "information, please read <a href=\"%(wiki_url)s\" target=\"_blank\">Wiki: "
 "Creating a CNAME record</a>."
 msgstr ""
-"Añade un registro <code>CNAME</code> en <code>%(domain)s</code> (y "
-"<code>www.%(domain)s</code>) que apunte a <code>%(cname_target)s</code>. "
-"Este proceso varía en función de dónde haya registrado su dominio. Para más "
-"información, lea <a href=\"%(wiki_url)s\" target=\"_blank\">Wiki: Creación "
-"de un registro CNAME</a>."
+"Añade un registro <code>CNAME</code> en <code>%(domain)s</code> (y <code>www."
+"%(domain)s</code>) que apunte a <code>%(cname_target)s</code>. Este proceso "
+"varía en función de dónde haya registrado su dominio. Para más información, "
+"lea <a href=\"%(wiki_url)s\" target=\"_blank\">Wiki: Creación de un registro "
+"CNAME</a>."
 
 #: users/templates/users/website_detail.html:33
 msgid "Website"
