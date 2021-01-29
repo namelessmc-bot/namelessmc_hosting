@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-01-28 18:41+0000\n"
-"PO-Revision-Date: 2021-01-26 02:43+0000\n"
+"PO-Revision-Date: 2021-01-29 02:49+0000\n"
 "Last-Translator: Gabriel Leen <hello@dreta.dev>\n"
 "Language-Team: Chinese (Simplified) <http://translate.namelessmc.com/"
 "projects/named-hosting/named-hosting/zh_Hans/>\n"
@@ -72,19 +72,19 @@ msgstr "服务条款"
 
 #: main/templates/main/comparison.html:5
 msgid "Hosting service comparison"
-msgstr ""
+msgstr "建站服务比较"
 
 #: main/templates/main/comparison.html:10
 msgid "Feature"
-msgstr ""
+msgstr "功能"
 
 #: main/templates/main/comparison.html:13
 msgid "Generic free webhost"
-msgstr ""
+msgstr "普通免费建站服务"
 
 #: main/templates/main/comparison.html:14
 msgid "VPS"
-msgstr ""
+msgstr "VPS"
 
 #: main/templates/main/comparison.html:18
 #: main/templates/main/comparison.html:20
@@ -92,72 +92,68 @@ msgstr ""
 #: main/templates/main/comparison.html:31
 #: main/templates/main/comparison.html:33
 msgid "Free"
-msgstr ""
+msgstr "免费"
 
 #: main/templates/main/comparison.html:19
 #: main/templates/main/comparison.html:21
 msgid "Paid"
-msgstr ""
+msgstr "收费"
 
 #: main/templates/main/comparison.html:28
 msgid "Price"
-msgstr ""
+msgstr "价格"
 
 #: main/templates/main/comparison.html:37
 msgid "Maintenance free"
-msgstr ""
+msgstr "免费维护"
 
 #: main/templates/main/comparison.html:46
 msgid "Fast"
-msgstr ""
+msgstr "快"
 
 #: main/templates/main/comparison.html:55
 msgid "No branding"
-msgstr ""
+msgstr "无水印"
 
 #: main/templates/main/comparison.html:64
 msgid "Compatible with API"
-msgstr ""
+msgstr "兼容 API"
 
 #: main/templates/main/comparison.html:73
 msgid "Automatic installation"
-msgstr ""
+msgstr "自动安装"
 
 #: main/templates/main/comparison.html:82
 msgid "Choose NamelessMC version"
-msgstr ""
+msgstr "选择 NamelessMC 版本"
 
 #: main/templates/main/comparison.html:91
 msgid "Choose PHP version"
-msgstr ""
+msgstr "选择 PHP 版本"
 
 #: main/templates/main/comparison.html:100
-#, fuzzy
-#| msgid "Database"
 msgid "Database backups"
-msgstr "数据库"
+msgstr "数据库备份"
 
 #: main/templates/main/comparison.html:109
 msgid "File backups"
-msgstr ""
+msgstr "文件备份"
 
 #: main/templates/main/comparison.html:118
 msgid "No vendor lock-in"
-msgstr ""
+msgstr "无取消费"
 
 #: main/templates/main/comparison.html:127
-#, fuzzy
-#| msgid "Full access"
 msgid "FTP file access"
-msgstr "完整控制"
+msgstr "FTP 文件访问"
 
 #: main/templates/main/comparison.html:136
 msgid "Web file manager"
-msgstr ""
+msgstr "网页文件管理器"
 
 #: main/templates/main/comparison.html:145
 msgid "Free subdomain"
-msgstr ""
+msgstr "免费子域名"
 
 #: main/templates/main/comparison.html:154
 #: users/templates/users/website_detail.html:79
@@ -166,25 +162,23 @@ msgstr "phpmyadmin"
 
 #: main/templates/main/comparison.html:163
 msgid "Install modules/templates manually"
-msgstr ""
+msgstr "手动安装模块/模版"
 
 #: main/templates/main/comparison.html:172
 msgid "Install modules/templates automatically"
-msgstr ""
+msgstr "自动安装模块/模版"
 
 #: main/templates/main/comparison.html:181
-#, fuzzy
-#| msgid "Support NamelessMC"
 msgid "Automatic NamelessMC updates"
-msgstr "支持 NamelessMC"
+msgstr "自动 NamelessMC 更新"
 
 #: main/templates/main/comparison.html:190
 msgid "Supports CloudFlare Strict SSL"
-msgstr ""
+msgstr "支持 Cloudflare 严格 SSL"
 
 #: main/templates/main/comparison.html:199
 msgid "Custom Nameless-Link"
-msgstr ""
+msgstr "定制化 Nameless-Link"
 
 #: main/templates/main/index.html:10
 msgid "Free hosting that actually works."
@@ -474,6 +468,10 @@ msgid ""
 "information, please read <a href=\"%(wiki_url)s\" target=\"_blank\">Wiki: "
 "Creating a CNAME record</a>."
 msgstr ""
+"在域名 <code>%(domain)s</code> 和 <code>www.%(domain)s</code> 上添加指向 "
+"<code>%(cname_target)s</code> 的 <code>CNAME</code> "
+"记录。不同域名提供商的操作方法可能不同。若想获得更多信息，请阅读 <a href=\"%(wiki_url)s\" target=\"_blank\""
+">指南: 创建 CNAME 记录</a>。"
 
 #: users/templates/users/website_detail.html:33
 msgid "Website"
