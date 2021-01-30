@@ -55,6 +55,8 @@ def daemon():
 
         cur.close()
         conn.close()
-        sleep(2)
+
+        if not job:
+            sleep(2)
 
 daemon()
