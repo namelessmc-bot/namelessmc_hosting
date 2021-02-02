@@ -34,9 +34,9 @@ def read_template(use_https, use_www):
     elif use_https and not use_www:
         name = 'https'
     elif not use_https and use_www:
-        name = 'www'
+        name = 'www-http'
     else:
-        name = 'default'
+        name = 'http'
     with open(f'nginx-template-{name}.conf', 'r') as file:
         return file.read()
 
