@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-02-09 12:38+0000\n"
-"PO-Revision-Date: 2021-01-28 19:04+0000\n"
+"PO-Revision-Date: 2021-02-09 14:49+0000\n"
 "Last-Translator: NamelessMC Translations <robin@derkad.es>\n"
 "Language-Team: Dutch <http://translate.namelessmc.com/projects/named-hosting/"
 "named-hosting/nl/>\n"
@@ -187,12 +187,6 @@ msgid "Free hosting that actually works."
 msgstr "Gratis hosting die wél werkt."
 
 #: main/templates/main/index.html:14
-#, fuzzy
-#| msgid ""
-#| "Provides FTP file access, unlike NamelessHosting. Compatible with "
-#| "integrations like the ingame plugin and Discord bot, unlike 000webhost "
-#| "and others. We currently host %(websites)s websites for %(users)s owners, "
-#| "operated by Derkades (developer of Nameless Plugin and Discord bot)."
 msgid ""
 "Provides FTP file access, unlike NamelessHosting. Compatible with "
 "integrations like the ingame plugin and Discord bot, unlike 000webhost, "
@@ -200,10 +194,8 @@ msgid ""
 msgstr ""
 "Volledige toegang tot bestanden via FTP, in tegenstelling tot "
 "NamelessHosting. Ook werkt het met integraties zoals de Discord bot en in-"
-"game plugin, wat niet mogelijk is met 000webhost en veel andere gratis web "
-"hosting providers. Wij hosten op dit moment %(websites)s websites voor "
-"%(users)s servereigenaren. Dit hostingsysteem wordt verzorgd door Derkades, "
-"ontwikkelaar van Nameless-Link en de Spigot plugin."
+"game plugin, wat niet mogelijk is met 000webhost, InfinityFree en veel "
+"andere gratis web hosting providers."
 
 #: main/templates/main/index.html:17
 #, python-format
@@ -211,6 +203,8 @@ msgid ""
 "We currently host %(websites)s websites. This hosting service is operated by "
 "Derkades (developer of Nameless Plugin and Discord bot)."
 msgstr ""
+"Wij hosten momenteel %(websites)s websites. Deze hostingdienst wordt beheerd "
+"door Derkades (ontwikkelaar van Nameless Plugin en Discord bot)."
 
 #: main/templates/main/index.html:24
 msgid "Create your website now"
