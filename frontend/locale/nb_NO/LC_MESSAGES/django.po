@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-01-28 18:41+0000\n"
+"POT-Creation-Date: 2021-02-09 12:38+0000\n"
 "PO-Revision-Date: 2021-01-15 20:19+0000\n"
 "Last-Translator: Maiu <maiuxd77@gmail.com>\n"
 "Language-Team: Norwegian Bokmål <http://translate.namelessmc.com/projects/"
@@ -192,71 +192,76 @@ msgid "Free hosting that actually works."
 msgstr ""
 
 #: main/templates/main/index.html:14
-#, python-format
 msgid ""
 "Provides FTP file access, unlike NamelessHosting. Compatible with "
-"integrations like the ingame plugin and Discord bot, unlike 000webhost and "
-"others. We currently host %(websites)s websites for %(users)s owners, "
-"operated by Derkades (developer of Nameless Plugin and Discord bot)."
+"integrations like the ingame plugin and Discord bot, unlike 000webhost, "
+"InfinityFree and others."
 msgstr ""
 
-#: main/templates/main/index.html:21
+#: main/templates/main/index.html:17
+#, python-format
+msgid ""
+"We currently host %(websites)s websites. This hosting service is operated by "
+"Derkades (developer of Nameless Plugin and Discord bot)."
+msgstr ""
+
+#: main/templates/main/index.html:24
 msgid "Create your website now"
 msgstr "Lag din nettside nå"
 
-#: main/templates/main/index.html:25
+#: main/templates/main/index.html:28
 msgid "Get started"
 msgstr "Kom i gang"
 
-#: main/templates/main/index.html:27 users/templates/registration/login.html:18
+#: main/templates/main/index.html:30 users/templates/registration/login.html:18
 msgid "Sign up"
 msgstr "Registrer deg"
 
-#: main/templates/main/index.html:39
+#: main/templates/main/index.html:42
 msgid "Simple"
 msgstr "Enkel"
 
-#: main/templates/main/index.html:40
+#: main/templates/main/index.html:43
 msgid "Server configured automatically, start the installer right away"
 msgstr "Server konfigurert automatisk, start installasjonen med en gang"
 
-#: main/templates/main/index.html:46
+#: main/templates/main/index.html:49
 msgid "Full access"
 msgstr "Full tilgang"
 
-#: main/templates/main/index.html:47
+#: main/templates/main/index.html:50
 msgid "Upload your own templates and edit the database using phpmyadmin"
 msgstr "Last opp dine egne maler og rediger databasen med phpmyadmin"
 
-#: main/templates/main/index.html:53
+#: main/templates/main/index.html:56
 msgid "No artificial limits"
 msgstr "Ingen kunstige begrensninger"
 
-#: main/templates/main/index.html:54
+#: main/templates/main/index.html:57
 msgid "No limits on modules, templates, users, etc."
 msgstr "Ingen begrensninger på moduler, maler, brukere, osv."
 
-#: main/templates/main/index.html:62
+#: main/templates/main/index.html:65
 msgid "Support NamelessMC"
 msgstr "Støtt NamelessMC"
 
-#: main/templates/main/index.html:63
+#: main/templates/main/index.html:66
 msgid "We donate part of our income to NamelessMC developers"
 msgstr "Vi donerer deler av inntekten til NamelessMC-utviklere"
 
-#: main/templates/main/index.html:69
+#: main/templates/main/index.html:72
 msgid "Secure"
 msgstr "Sikker"
 
-#: main/templates/main/index.html:70
+#: main/templates/main/index.html:73
 msgid "Protect your website with modern TLS encryption without hassle."
 msgstr "Beskytt din nettside med moderne TLS-kryptering uten noe problem."
 
-#: main/templates/main/index.html:76
+#: main/templates/main/index.html:79
 msgid "High performance"
 msgstr "Høy ytelse"
 
-#: main/templates/main/index.html:77
+#: main/templates/main/index.html:80
 msgid "Dedicated web server for every website."
 msgstr "Dedikerte webservere for hver nettside."
 

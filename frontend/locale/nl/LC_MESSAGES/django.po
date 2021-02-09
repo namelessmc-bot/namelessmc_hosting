@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-01-28 18:41+0000\n"
+"POT-Creation-Date: 2021-02-09 12:38+0000\n"
 "PO-Revision-Date: 2021-01-28 19:04+0000\n"
 "Last-Translator: NamelessMC Translations <robin@derkad.es>\n"
 "Language-Team: Dutch <http://translate.namelessmc.com/projects/named-hosting/"
@@ -187,12 +187,16 @@ msgid "Free hosting that actually works."
 msgstr "Gratis hosting die wél werkt."
 
 #: main/templates/main/index.html:14
-#, python-format
+#, fuzzy
+#| msgid ""
+#| "Provides FTP file access, unlike NamelessHosting. Compatible with "
+#| "integrations like the ingame plugin and Discord bot, unlike 000webhost "
+#| "and others. We currently host %(websites)s websites for %(users)s owners, "
+#| "operated by Derkades (developer of Nameless Plugin and Discord bot)."
 msgid ""
 "Provides FTP file access, unlike NamelessHosting. Compatible with "
-"integrations like the ingame plugin and Discord bot, unlike 000webhost and "
-"others. We currently host %(websites)s websites for %(users)s owners, "
-"operated by Derkades (developer of Nameless Plugin and Discord bot)."
+"integrations like the ingame plugin and Discord bot, unlike 000webhost, "
+"InfinityFree and others."
 msgstr ""
 "Volledige toegang tot bestanden via FTP, in tegenstelling tot "
 "NamelessHosting. Ook werkt het met integraties zoals de Discord bot en in-"
@@ -201,63 +205,70 @@ msgstr ""
 "%(users)s servereigenaren. Dit hostingsysteem wordt verzorgd door Derkades, "
 "ontwikkelaar van Nameless-Link en de Spigot plugin."
 
-#: main/templates/main/index.html:21
+#: main/templates/main/index.html:17
+#, python-format
+msgid ""
+"We currently host %(websites)s websites. This hosting service is operated by "
+"Derkades (developer of Nameless Plugin and Discord bot)."
+msgstr ""
+
+#: main/templates/main/index.html:24
 msgid "Create your website now"
 msgstr "Maak je website nu"
 
-#: main/templates/main/index.html:25
+#: main/templates/main/index.html:28
 msgid "Get started"
 msgstr "Begin"
 
-#: main/templates/main/index.html:27 users/templates/registration/login.html:18
+#: main/templates/main/index.html:30 users/templates/registration/login.html:18
 msgid "Sign up"
 msgstr "Inschrijven"
 
-#: main/templates/main/index.html:39
+#: main/templates/main/index.html:42
 msgid "Simple"
 msgstr "Eenvoudig"
 
-#: main/templates/main/index.html:40
+#: main/templates/main/index.html:43
 msgid "Server configured automatically, start the installer right away"
 msgstr "Server automatisch ingesteld, begin meteen met installeren"
 
-#: main/templates/main/index.html:46
+#: main/templates/main/index.html:49
 msgid "Full access"
 msgstr "Volledige toegang"
 
-#: main/templates/main/index.html:47
+#: main/templates/main/index.html:50
 msgid "Upload your own templates and edit the database using phpmyadmin"
 msgstr "Upload je eigen templates en bewerk de database met phpmyadmin"
 
-#: main/templates/main/index.html:53
+#: main/templates/main/index.html:56
 msgid "No artificial limits"
 msgstr "Geen kunstmatige beperkingen"
 
-#: main/templates/main/index.html:54
+#: main/templates/main/index.html:57
 msgid "No limits on modules, templates, users, etc."
 msgstr "Onbeperkte modules, templates, gebruikers, etc."
 
-#: main/templates/main/index.html:62
+#: main/templates/main/index.html:65
 msgid "Support NamelessMC"
 msgstr "Steun NamelessMC"
 
-#: main/templates/main/index.html:63
+#: main/templates/main/index.html:66
 msgid "We donate part of our income to NamelessMC developers"
 msgstr "Wij doneren deel van ons inkomen aan NamelessMC ontwikkelaars"
 
-#: main/templates/main/index.html:69
+#: main/templates/main/index.html:72
 msgid "Secure"
 msgstr "Veilig"
 
-#: main/templates/main/index.html:70
+#: main/templates/main/index.html:73
 msgid "Protect your website with modern TLS encryption without hassle."
 msgstr "Bescherm je website met moderne TLS versleuteling zonder moeite."
 
-#: main/templates/main/index.html:76
+#: main/templates/main/index.html:79
 msgid "High performance"
 msgstr "Hoge prestaties"
 
-#: main/templates/main/index.html:77
+#: main/templates/main/index.html:80
 msgid "Dedicated web server for every website."
 msgstr "Gescheiden webserver voor elke website."
 
@@ -478,8 +489,8 @@ msgstr ""
 "Voeg een <code>CNAME</code> record toe op <code>%(domain)s</code> (en "
 "<code>www.%(domain)s</code>) naar <code>%(cname_target)s</code>. Dit proces "
 "varieert afhankelijk van waar je je domein gekocht hebt. Voor meer "
-"informatie, zie de wiki pagina <a href=\"%(wiki_url)s\" target=\"_blank\""
-">Creating a CNAME record</a> (Engels)."
+"informatie, zie de wiki pagina <a href=\"%(wiki_url)s\" target=\"_blank"
+"\">Creating a CNAME record</a> (Engels)."
 
 #: users/templates/users/website_detail.html:33
 msgid "Website"

@@ -7,11 +7,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-01-28 18:41+0000\n"
+"POT-Creation-Date: 2021-02-09 12:38+0000\n"
 "PO-Revision-Date: 2021-01-28 21:49+0000\n"
 "Last-Translator: Magyar Adam <mestermc594@gmail.com>\n"
-"Language-Team: Hungarian <http://translate.namelessmc.com/projects/"
-"named-hosting/named-hosting/hu/>\n"
+"Language-Team: Hungarian <http://translate.namelessmc.com/projects/named-"
+"hosting/named-hosting/hu/>\n"
 "Language: hu\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -187,12 +187,16 @@ msgid "Free hosting that actually works."
 msgstr "Valójában működő ingyenes tárhely."
 
 #: main/templates/main/index.html:14
-#, python-format
+#, fuzzy
+#| msgid ""
+#| "Provides FTP file access, unlike NamelessHosting. Compatible with "
+#| "integrations like the ingame plugin and Discord bot, unlike 000webhost "
+#| "and others. We currently host %(websites)s websites for %(users)s owners, "
+#| "operated by Derkades (developer of Nameless Plugin and Discord bot)."
 msgid ""
 "Provides FTP file access, unlike NamelessHosting. Compatible with "
-"integrations like the ingame plugin and Discord bot, unlike 000webhost and "
-"others. We currently host %(websites)s websites for %(users)s owners, "
-"operated by Derkades (developer of Nameless Plugin and Discord bot)."
+"integrations like the ingame plugin and Discord bot, unlike 000webhost, "
+"InfinityFree and others."
 msgstr ""
 "FTP fájlhozzáférést biztosít, ellentétben a NamelessHosting programmal. "
 "Kompatibilis az olyan integrációkkal, mint az ingame plugin és a Discord "
@@ -200,65 +204,72 @@ msgstr ""
 "tárolunk%(users)s tulajdonosok számára, amelyeket a Derkades (a Nameless "
 "Plugin és a Discord bot fejlesztője) üzemeltet."
 
-#: main/templates/main/index.html:21
+#: main/templates/main/index.html:17
+#, python-format
+msgid ""
+"We currently host %(websites)s websites. This hosting service is operated by "
+"Derkades (developer of Nameless Plugin and Discord bot)."
+msgstr ""
+
+#: main/templates/main/index.html:24
 msgid "Create your website now"
 msgstr "Készítse el most webhelyét"
 
-#: main/templates/main/index.html:25
+#: main/templates/main/index.html:28
 msgid "Get started"
 msgstr "Kezdés"
 
-#: main/templates/main/index.html:27 users/templates/registration/login.html:18
+#: main/templates/main/index.html:30 users/templates/registration/login.html:18
 msgid "Sign up"
 msgstr "Regisztrálj"
 
-#: main/templates/main/index.html:39
+#: main/templates/main/index.html:42
 msgid "Simple"
 msgstr "Egyszerű"
 
-#: main/templates/main/index.html:40
+#: main/templates/main/index.html:43
 msgid "Server configured automatically, start the installer right away"
 msgstr "Az automatikusan konfigurált szerver, azonnal elindítja a telepítőt"
 
-#: main/templates/main/index.html:46
+#: main/templates/main/index.html:49
 msgid "Full access"
 msgstr "Teljes hozzáférés"
 
-#: main/templates/main/index.html:47
+#: main/templates/main/index.html:50
 msgid "Upload your own templates and edit the database using phpmyadmin"
 msgstr ""
 "Töltse fel saját sablonjait és szerkessze az adatbázist a phpmyadmin "
 "segítségével"
 
-#: main/templates/main/index.html:53
+#: main/templates/main/index.html:56
 msgid "No artificial limits"
 msgstr "Nincsenek mesterséges korlátok"
 
-#: main/templates/main/index.html:54
+#: main/templates/main/index.html:57
 msgid "No limits on modules, templates, users, etc."
 msgstr "Nincs korlátozás a modulokra, a sablonokra, a felhasználókra stb."
 
-#: main/templates/main/index.html:62
+#: main/templates/main/index.html:65
 msgid "Support NamelessMC"
 msgstr "NamelessMC támogatása"
 
-#: main/templates/main/index.html:63
+#: main/templates/main/index.html:66
 msgid "We donate part of our income to NamelessMC developers"
 msgstr "A jövedelmünk egy részét a NamelessMC fejlesztőknek ajánljuk fel"
 
-#: main/templates/main/index.html:69
+#: main/templates/main/index.html:72
 msgid "Secure"
 msgstr "Biztonságos"
 
-#: main/templates/main/index.html:70
+#: main/templates/main/index.html:73
 msgid "Protect your website with modern TLS encryption without hassle."
 msgstr "Védje webhelyét modern TLS titkosítással, gond nélkül."
 
-#: main/templates/main/index.html:76
+#: main/templates/main/index.html:79
 msgid "High performance"
 msgstr "Nagy teljesítményű"
 
-#: main/templates/main/index.html:77
+#: main/templates/main/index.html:80
 msgid "Dedicated web server for every website."
 msgstr "Dedikált webszerver minden webhelyhez."
 
