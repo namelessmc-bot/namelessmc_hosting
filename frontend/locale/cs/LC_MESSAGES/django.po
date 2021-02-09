@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-01-28 18:41+0000\n"
-"PO-Revision-Date: 2021-01-27 18:48+0000\n"
+"PO-Revision-Date: 2021-02-09 08:49+0000\n"
 "Last-Translator: Jonáš Loskot <fjuro@seznam.cz>\n"
 "Language-Team: Czech <http://translate.namelessmc.com/projects/named-hosting/"
 "named-hosting/cs/>\n"
@@ -115,7 +115,7 @@ msgstr "Rychlý"
 
 #: main/templates/main/comparison.html:55
 msgid "No branding"
-msgstr ""
+msgstr "Bez brandingu"
 
 #: main/templates/main/comparison.html:64
 msgid "Compatible with API"
@@ -130,10 +130,8 @@ msgid "Choose NamelessMC version"
 msgstr "Výběr verze NamelessMC"
 
 #: main/templates/main/comparison.html:91
-#, fuzzy
-#| msgid "Choose NamelessMC version"
 msgid "Choose PHP version"
-msgstr "Výběr verze NamelessMC"
+msgstr "Výběr verze PHP"
 
 #: main/templates/main/comparison.html:100
 msgid "Database backups"
@@ -475,6 +473,11 @@ msgid ""
 "information, please read <a href=\"%(wiki_url)s\" target=\"_blank\">Wiki: "
 "Creating a CNAME record</a>."
 msgstr ""
+"Přidejte <code>CNAME</code> záznam na <code>%(domain)s</code> (a "
+"<code>www.%(domain)s</code>), který směřuje na <code>%(cname_target)s</"
+"code>. Tento postup se liší v závislosti na tom, kde máte zaregistrovanou "
+"vaší doménu. Pro více informací si přečtěte <a href=\"%(wiki_url)s\" target="
+"\"_blank\">Wiki: Vytváření CNAME záznamu</a>."
 
 #: users/templates/users/website_detail.html:33
 msgid "Website"
