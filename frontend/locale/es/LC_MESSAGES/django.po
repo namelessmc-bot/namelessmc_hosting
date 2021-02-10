@@ -8,10 +8,10 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-02-09 12:38+0000\n"
-"PO-Revision-Date: 2021-01-28 21:49+0000\n"
+"PO-Revision-Date: 2021-02-10 15:49+0000\n"
 "Last-Translator: Marcos <marckos03br@gmail.com>\n"
-"Language-Team: Spanish <http://translate.namelessmc.com/projects/named-"
-"hosting/named-hosting/es/>\n"
+"Language-Team: Spanish <http://translate.namelessmc.com/projects/"
+"named-hosting/named-hosting/es/>\n"
 "Language: es\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -180,29 +180,21 @@ msgstr "Admite CloudFlare Strict SSL"
 
 #: main/templates/main/comparison.html:199
 msgid "Custom Nameless-Link"
-msgstr ""
+msgstr "Nameless-Link propio"
 
 #: main/templates/main/index.html:10
 msgid "Free hosting that actually works."
 msgstr "Alojamiento gratuito que realmente funciona."
 
 #: main/templates/main/index.html:14
-#, fuzzy
-#| msgid ""
-#| "Provides FTP file access, unlike NamelessHosting. Compatible with "
-#| "integrations like the ingame plugin and Discord bot, unlike 000webhost "
-#| "and others. We currently host %(websites)s websites for %(users)s owners, "
-#| "operated by Derkades (developer of Nameless Plugin and Discord bot)."
 msgid ""
 "Provides FTP file access, unlike NamelessHosting. Compatible with "
 "integrations like the ingame plugin and Discord bot, unlike 000webhost, "
 "InfinityFree and others."
 msgstr ""
-"Proporciona acceso a archivos FTP, a diferencia de NamelessHosting. "
-"Compatible con integraciones como el plugin dentro del servidor de juego y "
-"el bot de Discord, a diferencia de 000webhost y otros. Actualmente alojamos "
-"%(websites)s sitios web para %(users)s propietarios, operado por Derkades "
-"(desarrollador de Nameless Plugin y Discord bot)."
+"Proporciona acceso a los archivos por FTP, a diferencia de NamelessHosting. "
+"Compatible con integraciones como el plugin ingame y el bot de Discord, a "
+"diferencia de 000webhost, InfinityFree y otros."
 
 #: main/templates/main/index.html:17
 #, python-format
@@ -210,6 +202,9 @@ msgid ""
 "We currently host %(websites)s websites. This hosting service is operated by "
 "Derkades (developer of Nameless Plugin and Discord bot)."
 msgstr ""
+"Actualmente alojamos %(websites)s sitios web. Este servicio de alojamiento "
+"es operado por Derkades (desarrollador del plugin Nameless y del bot de "
+"Discord)."
 
 #: main/templates/main/index.html:24
 msgid "Create your website now"
