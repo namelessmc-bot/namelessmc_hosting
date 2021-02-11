@@ -1,4 +1,6 @@
-# Nameless Hosting
+# Named Hosting
+
+Note: Not the same as NamelessHosting, which is not open source and does not provide ftp file access.
 
 ## Contributing
 
