@@ -81,7 +81,7 @@
         </table>
         <h4>{% trans "Files" %}</h4>
         <p>
-{% blocktrans %}Use an FTP client to connect. We recommend FileZilla or WinSCP. The server supports TLS encryption. FileZilla will tell you that the certificate is "unknown", no worries, <a href="https://forum.filezilla-project.org/viewtopic.php?t=25595"> it displays this even for trusted certificates</a>, you can click OK.{% endblocktrans %}
+{% blocktrans with ftp_domain="ftp.namedhosting.com" %}Use an FTP client to connect. We recommend FileZilla or WinSCP. The server supports TLS encryption. If you get a certificate pop-up, make sure it's a valid certificate for <code>{{ ftp_domain }}</code> before accepting it. To ensure you're connecting securely, please configure your FTP client to require FTP over TLS.{% endblocktrans %}
         </p>
         <table class="table table-hover">
             <tbody>

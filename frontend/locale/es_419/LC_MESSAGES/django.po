@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-02-09 12:38+0000\n"
+"POT-Creation-Date: 2021-03-04 09:57+0000\n"
 "PO-Revision-Date: 2021-03-03 21:24+0000\n"
 "Last-Translator: Daniel Medina <danielflash.danielflash@gmail.com>\n"
 "Language-Team: Spanish (Latin America) <http://translate.namelessmc.com/"
@@ -49,16 +49,16 @@ msgid ""
 "Not affiliated with the <a href=\"https://namelessmc.com\">NamelessMC "
 "project</a>"
 msgstr ""
-"Named Hosting no está afiliado con <a href=\"https://namelessmc.com\""
-">NamelessMC project</a>"
+"Named Hosting no está afiliado con <a href=\"https://namelessmc.com"
+"\">NamelessMC project</a>"
 
 #: main/templates/main/base.html:112
 msgid ""
 "This hosting system is <a href=\"https://github.com/Derkades/"
 "namelessmc_hosting\">open source</a>"
 msgstr ""
-"Este sistema de host <a href=\"https://github.com/Derkades/"
-"namelessmc_hosting\">es codigo abierto</a>"
+"Este sistema de host <a href=\"https://github.com/Derkades/namelessmc_hosting"
+"\">es codigo abierto</a>"
 
 #: main/templates/main/base.html:117
 msgid "Support Discord"
@@ -512,12 +512,13 @@ msgid "Files"
 msgstr ""
 
 #: users/templates/users/website_detail.html:86
+#, python-format
 msgid ""
 "Use an FTP client to connect. We recommend FileZilla or WinSCP. The server "
-"supports TLS encryption. FileZilla will tell you that the certificate is "
-"\"unknown\", no worries, <a href=\"https://forum.filezilla-project.org/"
-"viewtopic.php?t=25595\"> it displays this even for trusted certificates</a>, "
-"you can click OK."
+"supports TLS encryption. If you get a certificate pop-up, make sure it's a "
+"valid certificate for <code>%(ftp_domain)s</code> before accepting it. To "
+"ensure you're connecting securely, please configure your FTP client to "
+"require FTP over TLS."
 msgstr ""
 
 #: users/templates/users/website_form.html:18
