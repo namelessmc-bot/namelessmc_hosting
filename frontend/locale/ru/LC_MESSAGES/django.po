@@ -8,10 +8,10 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-03-04 09:57+0000\n"
-"PO-Revision-Date: 2021-02-09 19:49+0000\n"
+"PO-Revision-Date: 2021-03-04 20:24+0000\n"
 "Last-Translator: LOyoujoLI <minion2018@hotmail.com>\n"
-"Language-Team: Russian <http://translate.namelessmc.com/projects/named-"
-"hosting/named-hosting/ru/>\n"
+"Language-Team: Russian <http://translate.namelessmc.com/projects/"
+"named-hosting/named-hosting/ru/>\n"
 "Language: ru\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -19,7 +19,7 @@ msgstr ""
 "Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
 "%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n"
 "%100>=11 && n%100<=14)? 2 : 3);\n"
-"X-Generator: Weblate 4.4.2\n"
+"X-Generator: Weblate 4.5\n"
 
 #: main/templates/main/base.html:43
 msgid "Home"
@@ -221,7 +221,7 @@ msgstr "Войти"
 
 #: main/templates/main/index.html:42
 msgid "Simple"
-msgstr "Лёгкий"
+msgstr "Простота"
 
 #: main/templates/main/index.html:43
 msgid "Server configured automatically, start the installer right away"
@@ -229,7 +229,7 @@ msgstr "Сервер будет настроен автоматически, з�
 
 #: main/templates/main/index.html:49
 msgid "Full access"
-msgstr "Полный доступ"
+msgstr "Доступность"
 
 #: main/templates/main/index.html:50
 msgid "Upload your own templates and edit the database using phpmyadmin"
@@ -238,7 +238,7 @@ msgstr ""
 
 #: main/templates/main/index.html:56
 msgid "No artificial limits"
-msgstr "Никаких ограничений"
+msgstr "Без подвохов"
 
 #: main/templates/main/index.html:57
 msgid "No limits on modules, templates, users, etc."
@@ -246,7 +246,7 @@ msgstr "У нас нету лимитов на модули, пользоват�
 
 #: main/templates/main/index.html:65
 msgid "Support NamelessMC"
-msgstr "Спонсировпние NamelessMC"
+msgstr "Спонсируем NamelessMC"
 
 #: main/templates/main/index.html:66
 msgid "We donate part of our income to NamelessMC developers"
@@ -538,6 +538,11 @@ msgid ""
 "ensure you're connecting securely, please configure your FTP client to "
 "require FTP over TLS."
 msgstr ""
+"Используйте FTP клиенты для подключения. Мы вам можем порекомендовать "
+"FileZilla или WinSCP. Наши сервера имеют поддержку TLS шифрования. Если вы "
+"получили окно для проверки сертификата безопасности, то убедитесь, что "
+"сертификат адресован к <code>%(ftp_domain)s</code>. Для надёжности "
+"соединения используйте технологию FTPS в вашей программе."
 
 #: users/templates/users/website_form.html:18
 msgid ""
