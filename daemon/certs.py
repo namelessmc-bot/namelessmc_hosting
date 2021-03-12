@@ -7,43 +7,44 @@ NGINX_CERTS_DIR = os.environ['NGINX_CERTS_DIR']
 
 
 def generate_certs(website_id, domain, use_www):
-    if has_certs(website_id, domain, use_www):
-        copy_certs(website_id, domain) # just in case
-        print("Website already has certs")
-        return True
+    print("Generating certs...", 'website_id', website_id, 'domain', domain, 'www', use_www)
 
-    print("Website does not have certs, generating..")
-    get_cert(website_id, domain, use_www)
+    domains = [domain]
+    if use_www:
+        domains.append('www.' + domain)
 
-    if has_certs(website_id, domain, use_www):
-        print("it worked!")
-        # epic.
-        if use_www:
-            os.system(f'touch /{ZFS_ROOT}/{website_id}/.certs_www')
+    for domain in domains:
+        if has_certs(website_id, domain):
+            copy_certs(website_id, domain) # just in case
+            print("cert already exists for domain", domain)
+            continue
+
+        print('Generating cert for', domain)
+
+        run_certbot(website_id, domain)
+
+        if has_certs(website_id, domain):
+            print("it worked!")
+            # epic.
+            copy_certs(website_id, domain)
         else:
-            os.system(f'rm -f /{ZFS_ROOT}/{website_id}/.certs_www')
-        copy_certs(website_id, domain)
-        return True
+            print("it did not work.")
+            # No need to try other domain if present, this way we don't run into API limits as quickly
+            return False
 
-    print("it did not work.")
-    # :(
-    return False
-
-
-def has_certs(website_id, domain, use_www):
-    cert_exists = os.path.exists(f'/{ZFS_ROOT}/{website_id}/certs/live/{domain}/fullchain.pem')
-
-    if cert_exists and use_www and not os.path.exists(f'/{ZFS_ROOT}/{website_id}/.certs_www'):
-        print('Certs exist but not for www.')
-        cert_exists = False
-
-    return cert_exists
+    print('certificate created for all domains')
+    return True
 
 
-def get_cert(website_id, domain, use_www):
+def has_certs(website_id, domain):
+    return = os.path.exists(f'/{ZFS_ROOT}/{website_id}/certs/live/{domain}/fullchain.pem')
+
+
+def run_certbot(website_id, domain):
     dataset = f'/{ZFS_ROOT}/{website_id}'
-    domains = f'-d {domain} -d www.{domain}' if use_www else f'-d {domain}'
-    os.system(f'docker run -it --rm -v {dataset}/web:/web -v {dataset}/certs:/etc/letsencrypt certbot/certbot certonly -n --webroot --register-unsafely-without-email --agree-tos {domains} --webroot-path /web')
+    command = f'docker run -it --rm -v {dataset}/web:/web -v {dataset}/certs:/etc/letsencrypt certbot/certbot certonly -n --webroot --register-unsafely-without-email --agree-tos -d {domain} --webroot-path /web'
+    print('running certbot command:', command)
+    os.system(command)
 
 
 def renew_cert(website_id):
@@ -51,34 +52,41 @@ def renew_cert(website_id):
 
     with db.open_db() as conn:
         with conn.cursor() as cur:
-            query = "SELECT domain,use_https,www FROM users_website WHERE id=%s"
+            query = "SELECT domain,www FROM users_website WHERE id=%s"
             cur.execute(query, (website_id,))
             website_info = cur.fetchone()
-    
+
     if not website_info:
         print('Failed to retrieve website information for site ' + website_id)
         return
 
-    (domain, use_https, use_www) = website_info
+    (domain, use_www) = website_info
 
-    if not use_https:
-        print('Not renewing certificates, use HTTPS is disabled.')
-        return
-    
-    if not has_certs(website_id, domain, use_www):
-        print('Website does not have certificates yet, attempt to generate them first..')
-        generate_certs(website_id, domain, use_www)
+    domains = [domain]
+    if use_www:
+        domains.append('www.' + domain)
 
-    if not has_certs(website_id, domain, use_www):
-        print('Website still does not have certificates, ABORT!')
-        return
+    for domain in domains:
+        print('checking', domain)
 
+        if not has_certs(website_id, domain):
+            print('no certificate exists for this domain. attempt to generate first..')
+            run_certbot(website_id, domain)
+
+        if not has_certs(website_id, domain):
+            print('certificate still doesn\'t exist, ABORT!')
+            return
+
+    print('running certbot renew')
     dataset = f'/{ZFS_ROOT}/{website_id}'
     os.system(f'docker run -it --rm -v {dataset}/web:/web -v {dataset}/certs:/etc/letsencrypt certbot/certbot renew')
-    copy_certs(website_id, domain)
+
+    for domain in domains:
+        copy_certs(website_id, domain)
 
 
 def copy_certs(website_id, domain):
+    print('copy cert', domain)
     # TODO Is rm necessary?
     os.system(f'rm -f {NGINX_CERTS_DIR}/{domain}.cert')
     os.system(f'rm -f {NGINX_CERTS_DIR}/{domain}.key')
