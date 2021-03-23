@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-03-04 09:57+0000\n"
+"POT-Creation-Date: 2021-03-23 16:47+0000\n"
 "PO-Revision-Date: 2021-03-19 00:30+0000\n"
 "Last-Translator: Gabriel Leen <hello@dreta.dev>\n"
 "Language-Team: Chinese (Simplified) <http://translate.namelessmc.com/"
@@ -190,7 +190,8 @@ msgid ""
 "Provides FTP file access, unlike NamelessHosting. Compatible with "
 "integrations like the ingame plugin and Discord bot, unlike 000webhost, "
 "InfinityFree and others."
-msgstr "我们既提供 FTP 文件访问功能，还支持例如游戏内插件和 Discord 机器人的集成。"
+msgstr ""
+"我们既提供 FTP 文件访问功能，还支持例如游戏内插件和 Discord 机器人的集成。"
 
 #: main/templates/main/index.html:17
 #, python-format
@@ -526,9 +527,10 @@ msgid ""
 "ensure you're connecting securely, please configure your FTP client to "
 "require FTP over TLS."
 msgstr ""
-"您可使用 FTP 客户端来链接。我们推荐 FileZilla 或 WinSCP。服务器支持 TLS 加密。如果你看到了一个有关加密证书的弹出窗口，"
-"请确保此证书在 <code>%(ftp_domain)s</code> 上是有效证书。为了保证您的信息不被泄露，您可在您的 FTP 客户端中启用强制 "
-"TLS 加密。"
+"您可使用 FTP 客户端来链接。我们推荐 FileZilla 或 WinSCP。服务器支持 TLS 加"
+"密。如果你看到了一个有关加密证书的弹出窗口，请确保此证书在 <code>"
+"%(ftp_domain)s</code> 上是有效证书。为了保证您的信息不被泄露，您可在您的 FTP "
+"客户端中启用强制 TLS 加密。"
 
 #: users/templates/users/website_form.html:18
 msgid ""
@@ -536,8 +538,8 @@ msgid ""
 "not enable HTTPS if you are using CloudFlare flexible SSL. Version changes "
 "do not take effect until you use the 'Reset' button."
 msgstr ""
-"启用 HTTPS 前，请确保您的网站没有 HTTPS 也能使用。若您正在使用 Cloudflare flexible SSL，请勿启用 "
-"HTTPS。版本变化会在您重置后生效。"
+"启用 HTTPS 前，请确保您的网站没有 HTTPS 也能使用。若您正在使用 Cloudflare "
+"flexible SSL，请勿启用 HTTPS。版本变化会在您重置后生效。"
 
 #: users/templates/users/website_list.html:11
 msgid "Your sites"
@@ -553,7 +555,11 @@ msgid "Create new website"
 msgstr "创建新网站"
 
 #: users/templates/users/website_list.html:26
-msgid "Free accounts are limited to 1 website, paid accounts are limited to 3."
+#, fuzzy
+#| msgid ""
+#| "Free accounts are limited to 1 website, paid accounts are limited to 3."
+msgid ""
+"Free accounts are limited to 2 websites, paid accounts are limited to 5."
 msgstr "免费账号只能创建 1 个网站，付费账号可创建 3 个。"
 
 #: users/templates/users/website_reset.html:10
@@ -561,7 +567,9 @@ msgid ""
 "Are you sure you want to reset your website? This will permanently delete "
 "all databases and website data. After resetting your website, wait about a "
 "minute and you'll see installer when going to your website."
-msgstr "您确定要重置您的网站吗? 这会永久删除所有数据库和网站数据。重置网站大约一分钟后，您便可在网站上看到安装界面了。"
+msgstr ""
+"您确定要重置您的网站吗? 这会永久删除所有数据库和网站数据。重置网站大约一分钟"
+"后，您便可在网站上看到安装界面了。"
 
 #~ msgid ""
 #~ "Use an FTP client to connect. We recommend FileZilla or WinSCP. The "

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-03-04 09:57+0000\n"
+"POT-Creation-Date: 2021-03-23 16:47+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -537,7 +537,8 @@ msgid "Create new website"
 msgstr ""
 
 #: users/templates/users/website_list.html:26
-msgid "Free accounts are limited to 1 website, paid accounts are limited to 3."
+msgid ""
+"Free accounts are limited to 2 websites, paid accounts are limited to 5."
 msgstr ""
 
 #: users/templates/users/website_reset.html:10
