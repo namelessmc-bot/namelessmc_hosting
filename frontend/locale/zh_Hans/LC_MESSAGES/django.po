@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-03-04 09:57+0000\n"
-"PO-Revision-Date: 2021-03-22 07:30+0000\n"
+"PO-Revision-Date: 2021-03-24 14:44+0000\n"
 "Last-Translator: Gabriel Leen <hello@dreta.dev>\n"
 "Language-Team: Chinese (Simplified) <http://translate.namelessmc.com/"
 "projects/named-hosting/named-hosting/zh_Hans/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 4.5\n"
+"X-Generator: Weblate 4.5.1\n"
 
 #: main/templates/main/base.html:43
 msgid "Home"
@@ -554,12 +554,9 @@ msgid "Create new website"
 msgstr "创建新网站"
 
 #: users/templates/users/website_list.html:26
-#, fuzzy
-#| msgid ""
-#| "Free accounts are limited to 1 website, paid accounts are limited to 3."
 msgid ""
 "Free accounts are limited to 2 websites, paid accounts are limited to 5."
-msgstr "免费账号只能创建 1 个网站，付费账号可创建 3 个。"
+msgstr "免费账号只能创建 2 个网站，而付费账号可创建 5 个。"
 
 #: users/templates/users/website_reset.html:10
 msgid ""
