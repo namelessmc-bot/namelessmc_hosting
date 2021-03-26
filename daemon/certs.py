@@ -37,7 +37,7 @@ def generate_certs(website_id, domain, use_www):
 
 
 def has_certs(website_id, domain):
-    return = os.path.exists(f'/{ZFS_ROOT}/{website_id}/certs/live/{domain}/fullchain.pem')
+    return os.path.exists(f'/{ZFS_ROOT}/{website_id}/certs/live/{domain}/fullchain.pem')
 
 
 def run_certbot(website_id, domain):
