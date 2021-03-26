@@ -3,87 +3,91 @@
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-03-23 16:47+0000\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
+"PO-Revision-Date: 2021-03-26 16:44+0000\n"
+"Last-Translator: NamelessMC Translations <robin@derkad.es>\n"
+"Language-Team: Polish <http://translate.namelessmc.com/projects/"
+"named-hosting/named-hosting/pl/>\n"
+"Language: pl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=4; plural=(n==1 ? 0 : (n%10>=2 && n%10<=4) && (n"
 "%100<12 || n%100>14) ? 1 : n!=1 && (n%10>=0 && n%10<=1) || (n%10>=5 && n"
 "%10<=9) || (n%100>=12 && n%100<=14) ? 2 : 3);\n"
+"X-Generator: Weblate 4.5.1\n"
 
 #: main/templates/main/base.html:43
 msgid "Home"
-msgstr ""
+msgstr "Strona główna"
 
 #: main/templates/main/base.html:56
 msgid "Your Websites"
-msgstr ""
+msgstr "Twoje strony"
 
 #: main/templates/main/base.html:61 users/templates/users/website_detail.html:7
 #: users/templates/users/website_list.html:7
 msgid "Account"
-msgstr ""
+msgstr "Konto"
 
 #: main/templates/main/base.html:66
 msgid "Logout"
-msgstr ""
+msgstr "Wyloguj się"
 
 #: main/templates/main/base.html:71
 msgid "Login"
-msgstr ""
+msgstr "Zaloguj"
 
 #: main/templates/main/base.html:76
 msgid "Register"
-msgstr ""
+msgstr "Rejestracja"
 
 #: main/templates/main/base.html:110
 msgid ""
 "Not affiliated with the <a href=\"https://namelessmc.com\">NamelessMC "
 "project</a>"
 msgstr ""
+"Nie powiązany z <a href=\"https://namelessmc.com\">projektem NamelessMC</a>"
 
 #: main/templates/main/base.html:112
 msgid ""
 "This hosting system is <a href=\"https://github.com/Derkades/"
 "namelessmc_hosting\">open source</a>"
 msgstr ""
+"Ten hosting jest <a href=\"https://github.com/Derkades/namelessmc_hosting\""
+">open source!</a>"
 
 #: main/templates/main/base.html:117
 msgid "Support Discord"
-msgstr ""
+msgstr "Serwer Discord"
 
 #: main/templates/main/base.html:120
 msgid "Privacy Policy"
-msgstr ""
+msgstr "Polityka prywatności"
 
 #: main/templates/main/base.html:121
 msgid "Terms of service"
-msgstr ""
+msgstr "Warunki użytkowania"
 
 #: main/templates/main/comparison.html:5
 msgid "Hosting service comparison"
-msgstr ""
+msgstr "Porównanie ofert"
 
 #: main/templates/main/comparison.html:10
 msgid "Feature"
-msgstr ""
+msgstr "Funkcja"
 
 #: main/templates/main/comparison.html:13
 msgid "Generic free webhost"
-msgstr ""
+msgstr "Zwykły, darmowy hosting"
 
 #: main/templates/main/comparison.html:14
 msgid "VPS"
-msgstr ""
+msgstr "VPS"
 
 #: main/templates/main/comparison.html:18
 #: main/templates/main/comparison.html:20
@@ -91,52 +95,52 @@ msgstr ""
 #: main/templates/main/comparison.html:31
 #: main/templates/main/comparison.html:33
 msgid "Free"
-msgstr ""
+msgstr "Darmowy"
 
 #: main/templates/main/comparison.html:19
 #: main/templates/main/comparison.html:21
 msgid "Paid"
-msgstr ""
+msgstr "Płatny"
 
 #: main/templates/main/comparison.html:28
 msgid "Price"
-msgstr ""
+msgstr "Cena"
 
 #: main/templates/main/comparison.html:37
 msgid "Maintenance free"
-msgstr ""
+msgstr "Bezobsługowy"
 
 #: main/templates/main/comparison.html:46
 msgid "Fast"
-msgstr ""
+msgstr "Szybki"
 
 #: main/templates/main/comparison.html:55
 msgid "No branding"
-msgstr ""
+msgstr "Bez reklam"
 
 #: main/templates/main/comparison.html:64
 msgid "Compatible with API"
-msgstr ""
+msgstr "Kompatybilny z API"
 
 #: main/templates/main/comparison.html:73
 msgid "Automatic installation"
-msgstr ""
+msgstr "Automatyczna instalacja"
 
 #: main/templates/main/comparison.html:82
 msgid "Choose NamelessMC version"
-msgstr ""
+msgstr "Wybierz wersje NamelessMC"
 
 #: main/templates/main/comparison.html:91
 msgid "Choose PHP version"
-msgstr ""
+msgstr "Wybierz wersje PHP"
 
 #: main/templates/main/comparison.html:100
 msgid "Database backups"
-msgstr ""
+msgstr "Kopie zapasowe bazy danych"
 
 #: main/templates/main/comparison.html:109
 msgid "File backups"
-msgstr ""
+msgstr "Kopie zapasowe plików"
 
 #: main/templates/main/comparison.html:118
 msgid "No vendor lock-in"
@@ -144,44 +148,44 @@ msgstr ""
 
 #: main/templates/main/comparison.html:127
 msgid "FTP file access"
-msgstr ""
+msgstr "Dostęp do FTP"
 
 #: main/templates/main/comparison.html:136
 msgid "Web file manager"
-msgstr ""
+msgstr "Menedżer plików online"
 
 #: main/templates/main/comparison.html:145
 msgid "Free subdomain"
-msgstr ""
+msgstr "Darmowa subdomena"
 
 #: main/templates/main/comparison.html:154
 #: users/templates/users/website_detail.html:79
 msgid "phpmyadmin"
-msgstr ""
+msgstr "phpmyadmin"
 
 #: main/templates/main/comparison.html:163
 msgid "Install modules/templates manually"
-msgstr ""
+msgstr "Instalacja modułów/szablonów manulanie"
 
 #: main/templates/main/comparison.html:172
 msgid "Install modules/templates automatically"
-msgstr ""
+msgstr "Instalacja modułów/szablonów automatycznie"
 
 #: main/templates/main/comparison.html:181
 msgid "Automatic NamelessMC updates"
-msgstr ""
+msgstr "Automatyczne aktualizacje NamelessMC"
 
 #: main/templates/main/comparison.html:190
 msgid "Supports CloudFlare Strict SSL"
-msgstr ""
+msgstr "Wspiera SSL Strict CloudFlare"
 
 #: main/templates/main/comparison.html:199
 msgid "Custom Nameless-Link"
-msgstr ""
+msgstr "Niestandardowy link Nameless"
 
 #: main/templates/main/index.html:10
 msgid "Free hosting that actually works."
-msgstr ""
+msgstr "Darmowy hosting, który naprawdę działa."
 
 #: main/templates/main/index.html:14
 msgid ""
@@ -189,6 +193,9 @@ msgid ""
 "integrations like the ingame plugin and Discord bot, unlike 000webhost, "
 "InfinityFree and others."
 msgstr ""
+"Wspiera dostęp do FTP, w przeciwieństwie do NamelessHosting. Kompatybilny z "
+"integracjami takimi jak bot Discord lub plugin in-game, w przeciwieństwie do "
+"000webhost, InfinityFree i innych."
 
 #: main/templates/main/index.html:17
 #, python-format
@@ -196,164 +203,167 @@ msgid ""
 "We currently host %(websites)s websites. This hosting service is operated by "
 "Derkades (developer of Nameless Plugin and Discord bot)."
 msgstr ""
+"Obecnie hostujemy %(websites)s stron. Ten hosting jest zarządzany przez "
+"Derkades (deweloper pluginu Nameless i bota Discord)."
 
 #: main/templates/main/index.html:24
 msgid "Create your website now"
-msgstr ""
+msgstr "Stwórz swoją strone teraz"
 
 #: main/templates/main/index.html:28
 msgid "Get started"
-msgstr ""
+msgstr "Zaczynaj"
 
 #: main/templates/main/index.html:30 users/templates/registration/login.html:18
 msgid "Sign up"
-msgstr ""
+msgstr "Stwórz konto"
 
 #: main/templates/main/index.html:42
 msgid "Simple"
-msgstr ""
+msgstr "Prosty"
 
 #: main/templates/main/index.html:43
 msgid "Server configured automatically, start the installer right away"
-msgstr ""
+msgstr "Serwer skonfigurowany automatycznie, wystarczy odpalić installer"
 
 #: main/templates/main/index.html:49
 msgid "Full access"
-msgstr ""
+msgstr "Pełny dostęp"
 
 #: main/templates/main/index.html:50
 msgid "Upload your own templates and edit the database using phpmyadmin"
-msgstr ""
+msgstr "Wgrywaj swoje własne szablony i edytuj bazę danych poprzez phpmyadmin"
 
 #: main/templates/main/index.html:56
 msgid "No artificial limits"
-msgstr ""
+msgstr "Bez limitów"
 
 #: main/templates/main/index.html:57
 msgid "No limits on modules, templates, users, etc."
-msgstr ""
+msgstr "Brak limitu do modułów, szablonów, użytkowników, etc."
 
 #: main/templates/main/index.html:65
 msgid "Support NamelessMC"
-msgstr ""
+msgstr "Wspierasz NamelessMC"
 
 #: main/templates/main/index.html:66
 msgid "We donate part of our income to NamelessMC developers"
-msgstr ""
+msgstr "Oddajemy część naszego dochodu do deweloperów NamelessMC"
 
 #: main/templates/main/index.html:72
 msgid "Secure"
-msgstr ""
+msgstr "Bezpieczny"
 
 #: main/templates/main/index.html:73
 msgid "Protect your website with modern TLS encryption without hassle."
-msgstr ""
+msgstr "Zabezpiecz swoją stronę nowoczesnym szyfrowaniem TLS bez problemu."
 
 #: main/templates/main/index.html:79
 msgid "High performance"
-msgstr ""
+msgstr "Wysoka wydajność"
 
 #: main/templates/main/index.html:80
 msgid "Dedicated web server for every website."
-msgstr ""
+msgstr "Dedykowany serwer do każdej strony."
 
 #: users/models.py:16 users/models.py:21 users/models.py:27
 msgid "Invalid domain"
-msgstr ""
+msgstr "Nieprawidłowa domena"
 
 #: users/models.py:24
 msgid "Don't include www. in your domain"
-msgstr ""
+msgstr "Nie dodawaj www. do domeny"
 
 #: users/models.py:31 users/templates/users/website_detail.html:37
 msgid "Domain"
-msgstr ""
+msgstr "Domena"
 
 #: users/models.py:32
 msgid "Use HTTPS?"
-msgstr ""
+msgstr "Używać HTTPS?"
 
 #: users/models.py:34
 msgid "Website name"
-msgstr ""
+msgstr "Nazwa strony"
 
 #: users/models.py:39
 msgid "v2 pre release 7 (old)"
-msgstr ""
+msgstr "v2 pre release 7 (stary)"
 
 #: users/models.py:40
 msgid "v2 pre release 8 (previous)"
-msgstr ""
+msgstr "v2 pre release 8 (poprzedni)"
 
 #: users/models.py:41
 msgid "v2 pre release 9 (current)"
-msgstr ""
+msgstr "v2 pre release 9 (obecny)"
 
 #: users/models.py:42
 msgid "v2 pre release 9 on PHP 8 - TESTING ONLY"
-msgstr ""
+msgstr "v2 pre release 9 na PHP 8 - TYLKO TESTY"
 
 #: users/models.py:43
+#, fuzzy
 msgid "Development - TESTING ONLY"
-msgstr ""
+msgstr "Development - TESTING ONLY"
 
 #: users/models.py:44
 msgid "Development on PHP 8 - TESTING ONLY"
-msgstr ""
+msgstr "Development on PHP 8 - TYLKO TESTY"
 
 #: users/models.py:46
 msgid "Version"
-msgstr ""
+msgstr "Wersja"
 
 #: users/models.py:48
 msgid "Enable www."
-msgstr ""
+msgstr "Włącz www."
 
 #: users/models.py:77 users/templates/users/website_form.html:12
 msgid "Create website"
-msgstr ""
+msgstr "Stwórz witryne"
 
 #: users/models.py:78 users/templates/users/website_form.html:10
 msgid "Update website"
-msgstr ""
+msgstr "Zaktualizuj stronę"
 
 #: users/models.py:79
 msgid "Reset website"
-msgstr ""
+msgstr "Resetuj strone"
 
 #: users/models.py:81
 msgid "Delete website"
-msgstr ""
+msgstr "Usuń strone"
 
 #: users/templates/registration/logged_out.html:4
 msgid "You have been logged out."
-msgstr ""
+msgstr "Zostałeś wylogowany."
 
 #: users/templates/registration/logged_out.html:6
 msgid "Log in again"
-msgstr ""
+msgstr "Zaloguj ponownie"
 
 #: users/templates/registration/login.html:9
 #: users/templates/registration/login.html:13
 msgid "Log in"
-msgstr ""
+msgstr "Zaloguj się"
 
 #: users/templates/registration/login.html:18
 msgid "Need an account?"
-msgstr ""
+msgstr "Potrzeba konta?"
 
 #: users/templates/registration/login.html:19
 msgid "Forgot password?"
-msgstr ""
+msgstr "Zapomniałeś hasła?"
 
 #: users/templates/registration/login.html:19
 #: users/templates/registration/password_reset_form.html:9
 msgid "Reset password"
-msgstr ""
+msgstr "Resetuj hasło"
 
 #: users/templates/registration/password_change_done.html:4
 msgid "Password changed."
-msgstr ""
+msgstr "Zmieniono hasło."
 
 #: users/templates/registration/password_change_done.html:6
 msgid "Back to account page"
