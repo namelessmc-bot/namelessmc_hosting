@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-03-23 16:47+0000\n"
-"PO-Revision-Date: 2021-02-09 14:49+0000\n"
+"PO-Revision-Date: 2021-03-27 00:44+0000\n"
 "Last-Translator: NamelessMC Translations <robin@derkad.es>\n"
 "Language-Team: Dutch <http://translate.namelessmc.com/projects/named-hosting/"
 "named-hosting/nl/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.4.2\n"
+"X-Generator: Weblate 4.5.1\n"
 
 #: main/templates/main/base.html:43
 msgid "Home"
@@ -535,6 +535,12 @@ msgid ""
 "ensure you're connecting securely, please configure your FTP client to "
 "require FTP over TLS."
 msgstr ""
+"Gebruik een FTP applicatie om te verbinden, zoals FileZilla of WinSCP. De "
+"FTP server ondersteund TLS versluiteling. Als je een pop-up krijgt die "
+"vraagt om een certificaat te accepteren, controleer dat het een geldig "
+"certificaat is voor <code>%(ftp_domain)s</code>. Om er zeker van de zijn dat "
+"de verbinding veilig is, raden we aan het programma in te stellen om geen "
+"onbeveiligde verbindingen te maken."
 
 #: users/templates/users/website_form.html:18
 msgid ""
@@ -560,12 +566,9 @@ msgid "Create new website"
 msgstr "Nieuwe website maken"
 
 #: users/templates/users/website_list.html:26
-#, fuzzy
-#| msgid ""
-#| "Free accounts are limited to 1 website, paid accounts are limited to 3."
 msgid ""
 "Free accounts are limited to 2 websites, paid accounts are limited to 5."
-msgstr "Gratis accounts zijn beperkt tot 1 website, betaalde accounts tot 3."
+msgstr "Gratis accounts zijn beperkt tot 2 websites, betaalde accounts tot 5."
 
 #: users/templates/users/website_reset.html:10
 msgid ""
