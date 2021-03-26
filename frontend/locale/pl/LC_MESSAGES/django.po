@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-03-23 16:47+0000\n"
-"PO-Revision-Date: 2021-03-26 16:44+0000\n"
+"PO-Revision-Date: 2021-03-27 00:44+0000\n"
 "Last-Translator: NamelessMC Translations <robin@derkad.es>\n"
 "Language-Team: Polish <http://translate.namelessmc.com/projects/"
 "named-hosting/named-hosting/pl/>\n"
@@ -303,13 +303,12 @@ msgid "v2 pre release 9 on PHP 8 - TESTING ONLY"
 msgstr "v2 pre release 9 na PHP 8 - TYLKO TESTY"
 
 #: users/models.py:43
-#, fuzzy
 msgid "Development - TESTING ONLY"
-msgstr "Development - TESTING ONLY"
+msgstr "Development - TYLKO TESTY"
 
 #: users/models.py:44
 msgid "Development on PHP 8 - TESTING ONLY"
-msgstr "Development on PHP 8 - TYLKO TESTY"
+msgstr "Development na PHP 8 - TYLKO TESTY"
 
 #: users/models.py:46
 msgid "Version"
