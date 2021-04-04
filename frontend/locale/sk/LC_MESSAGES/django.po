@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-03-23 16:47+0000\n"
-"PO-Revision-Date: 2021-04-02 00:37+0000\n"
+"PO-Revision-Date: 2021-04-04 19:54+0000\n"
 "Last-Translator: CharlieCat <meow@charliecat.space>\n"
 "Language-Team: Slovak <http://translate.namelessmc.com/projects/"
 "named-hosting/named-hosting/sk/>\n"
@@ -18,11 +18,11 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=4; plural=(n % 1 == 0 && n == 1 ? 0 : n % 1 == 0 && n "
 ">= 2 && n <= 4 ? 1 : n % 1 != 0 ? 2: 3);\n"
-"X-Generator: Weblate 4.5.1\n"
+"X-Generator: Weblate 4.5.3\n"
 
 #: main/templates/main/base.html:43
 msgid "Home"
-msgstr ""
+msgstr "Domov"
 
 #: main/templates/main/base.html:56
 msgid "Your Websites"
@@ -50,6 +50,7 @@ msgid ""
 "Not affiliated with the <a href=\"https://namelessmc.com\">NamelessMC "
 "project</a>"
 msgstr ""
+"Nie sme spojený s <a href=\"https://namelessmc.com\">projektomNamelessMC</a>"
 
 #: main/templates/main/base.html:112
 msgid ""
@@ -65,7 +66,7 @@ msgstr "Discord Podpora"
 
 #: main/templates/main/base.html:120
 msgid "Privacy Policy"
-msgstr ""
+msgstr "Zásada ochrany osobních údajov"
 
 #: main/templates/main/base.html:121
 msgid "Terms of service"
