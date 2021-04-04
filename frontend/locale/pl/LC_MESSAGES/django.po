@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-03-23 16:47+0000\n"
-"PO-Revision-Date: 2021-03-27 00:44+0000\n"
+"PO-Revision-Date: 2021-04-04 19:54+0000\n"
 "Last-Translator: NamelessMC Translations <robin@derkad.es>\n"
 "Language-Team: Polish <http://translate.namelessmc.com/projects/"
 "named-hosting/named-hosting/pl/>\n"
@@ -19,7 +19,7 @@ msgstr ""
 "Plural-Forms: nplurals=4; plural=(n==1 ? 0 : (n%10>=2 && n%10<=4) && (n"
 "%100<12 || n%100>14) ? 1 : n!=1 && (n%10>=0 && n%10<=1) || (n%10>=5 && n"
 "%10<=9) || (n%100>=12 && n%100<=14) ? 2 : 3);\n"
-"X-Generator: Weblate 4.5.1\n"
+"X-Generator: Weblate 4.5.3\n"
 
 #: main/templates/main/base.html:43
 msgid "Home"
@@ -366,17 +366,17 @@ msgstr "Zmieniono hasło."
 
 #: users/templates/registration/password_change_done.html:6
 msgid "Back to account page"
-msgstr ""
+msgstr "Spowrotem na stronę konta"
 
 #: users/templates/registration/password_change_form.html:9
 msgid "Update password"
-msgstr ""
+msgstr "Aktualizuj hasło"
 
 #: users/templates/registration/password_change_form.html:13
 #: users/templates/registration/password_reset_confirm.html:14
 #: users/templates/users/account.html:54
 msgid "Change password"
-msgstr ""
+msgstr "Zmień hasło"
 
 #: users/templates/registration/password_reset_complete.html:7
 #, python-format
@@ -384,88 +384,92 @@ msgid ""
 "Your new password has been set. You can log in now on the <a href="
 "\"%(login_url)s\">log in page</a>."
 msgstr ""
+"Twoje nowe hasło zostało ustawione. Możesz się teraz zalogować na <a href=\""
+"%(login_url)s\">stronie logowania</a>."
 
 #: users/templates/registration/password_reset_confirm.html:10
 msgid "Set new password"
-msgstr ""
+msgstr "Ustaw nowe hasło"
 
 #: users/templates/registration/password_reset_confirm.html:18
 msgid ""
 "The password reset link was invalid, possibly because it has already been "
 "used. Please request a new password reset."
 msgstr ""
+"Link resetowania hasła jest nie poprawny, prawdopodobnie już został użyty. "
+"Proszę poproś o nowy reset hasła."
 
 #: users/templates/registration/password_reset_done.html:5
 msgid "Password reset email sent, please check your inbox."
-msgstr ""
+msgstr "Email resetowania hasła wysłany, proszę sprawdź swoją pocztę."
 
 #: users/templates/registration/password_reset_form.html:13
 msgid "Send email"
-msgstr ""
+msgstr "Wyślij emai"
 
 #: users/templates/users/account.html:45
 msgid "Update account settings"
-msgstr ""
+msgstr "Aktualizuj ustawienia konta"
 
 #: users/templates/users/account.html:51
 msgid "Submit"
-msgstr ""
+msgstr "Gotowe"
 
 #: users/templates/users/payment_cancelled.html:4
 msgid "Payment cancelled."
-msgstr ""
+msgstr "Płatność anulowana."
 
 #: users/templates/users/payment_complete.html:4
 msgid "Payment complete"
-msgstr ""
+msgstr "Płatność zakończona"
 
 #: users/templates/users/register.html:9
 msgid "Create account"
-msgstr ""
+msgstr "Swórz konto"
 
 #: users/templates/users/register.html:13
 msgid "Sign Up"
-msgstr ""
+msgstr "Stwórz konto"
 
 #: users/templates/users/register.html:17
 msgid "Already have an account?"
-msgstr ""
+msgstr "Masz już konto?"
 
 #: users/templates/users/register.html:17
 msgid "Sign in"
-msgstr ""
+msgstr "Zaloguj się"
 
 #: users/templates/users/website_confirm_delete.html:10
 msgid "Are you sure you want to delete this website?"
-msgstr ""
+msgstr "Na pewno chcesz usunąć tą stronę?"
 
 #: users/templates/users/website_confirm_delete.html:13
 #: users/templates/users/website_reset.html:14
 msgid "Cancel"
-msgstr ""
+msgstr "Anuluj"
 
 #: users/templates/users/website_confirm_delete.html:14
 #: users/templates/users/website_form.html:23
 #: users/templates/users/website_reset.html:15
 msgid "Confirm"
-msgstr ""
+msgstr "Gotowe"
 
 #: users/templates/users/website_detail.html:8
 #: users/templates/users/website_list.html:8
 msgid "Websites"
-msgstr ""
+msgstr "Strony"
 
 #: users/templates/users/website_detail.html:18
 msgid "Edit"
-msgstr ""
+msgstr "Edytuj"
 
 #: users/templates/users/website_detail.html:19
 msgid "Reset"
-msgstr ""
+msgstr "Reset"
 
 #: users/templates/users/website_detail.html:20
 msgid "Delete"
-msgstr ""
+msgstr "Usuń"
 
 #: users/templates/users/website_detail.html:27
 #, python-format
@@ -479,43 +483,43 @@ msgstr ""
 
 #: users/templates/users/website_detail.html:33
 msgid "Website"
-msgstr ""
+msgstr "Strona"
 
 #: users/templates/users/website_detail.html:49
 msgid "Date created (UTC)"
-msgstr ""
+msgstr "Data utworzenia (UTC)"
 
 #: users/templates/users/website_detail.html:54
 msgid "Database"
-msgstr ""
+msgstr "Database"
 
 #: users/templates/users/website_detail.html:58
 #: users/templates/users/website_detail.html:91
 msgid "address"
-msgstr ""
+msgstr "adres"
 
 #: users/templates/users/website_detail.html:62
 #: users/templates/users/website_detail.html:95
 msgid "port"
-msgstr ""
+msgstr "port"
 
 #: users/templates/users/website_detail.html:66
 #: users/templates/users/website_detail.html:99
 msgid "username"
-msgstr ""
+msgstr "Nazwa użytkownika"
 
 #: users/templates/users/website_detail.html:70
 #: users/templates/users/website_detail.html:103
 msgid "password"
-msgstr ""
+msgstr "hasło"
 
 #: users/templates/users/website_detail.html:75
 msgid "database name"
-msgstr ""
+msgstr "nazwa database"
 
 #: users/templates/users/website_detail.html:84
 msgid "Files"
-msgstr ""
+msgstr "Pliki"
 
 #: users/templates/users/website_detail.html:86
 #, python-format
@@ -536,21 +540,22 @@ msgstr ""
 
 #: users/templates/users/website_list.html:11
 msgid "Your sites"
-msgstr ""
+msgstr "Twoje strony"
 
 #: users/templates/users/website_list.html:18
 msgid "View &amp; Edit"
-msgstr ""
+msgstr "Zobacz &amp; Edytuj"
 
 #: users/templates/users/website_list.html:24
 #: users/templates/users/website_list.html:26
 msgid "Create new website"
-msgstr ""
+msgstr "Stwórz nową stronę"
 
 #: users/templates/users/website_list.html:26
 msgid ""
 "Free accounts are limited to 2 websites, paid accounts are limited to 5."
 msgstr ""
+"Darmowe konta są limitowane do 2 stron, płatne konta są limitowane do 5."
 
 #: users/templates/users/website_reset.html:10
 msgid ""
