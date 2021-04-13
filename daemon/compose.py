@@ -38,6 +38,9 @@ def install(website_id, domain, use_https, db_password, files_password, version,
     with open(dest_path, 'w') as dest_file:
         dest_file.write(data)
 
+    mkdir(f"/{env['ZFS_ROOT']}/{website_id}/web")
+    mkdir(f"/{env['ZFS_ROOT']}/{website_id}/certs")
+
     os.system(f"docker-compose -f {dest_path} up -d --remove-orphans --force-recreate")
 
 
@@ -51,3 +54,11 @@ def get_phpmyadmin_uri(domain, use_https):
         return f"https://{domain}/phpmyadmin"
     else:
         return f"http://{domain}/phpmyadmin"
+
+def mkdir(dir_path):
+    try:
+        print('mkdir', dir_path)
+        os.mkdir(dir_path)
+    except FileExistsError:
+        print('dir already exists')
+        pass

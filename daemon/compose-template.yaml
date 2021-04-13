@@ -1,4 +1,4 @@
-version: '3'
+version: '3.2'
 
 services:
 
@@ -6,17 +6,23 @@ services:
     image: namelessmc/nginx:REPLACEME_VERSION
     extra_hosts: ['database:10.0.6.2']
     networks:
-      # default:
       namelessmc_proxy:
         ipv4_address: REPLACEME_IPADDR
-    volumes: ['./web:/data:ro']
+    volumes:
+      - type: bind
+        source: ./web
+        target: /data
+        read_only: true
     environment:
       PHP_FPM: localhost:9000
     restart: always
 
   php:
     image: namelessmc/php:REPLACEME_VERSION
-    volumes: ['./web:/data']
+    volumes:
+      - type: bind
+        source: ./web
+        target: /data
     network_mode: 'service:nginx'
     environment:
       NAMELESS_HOSTNAME: REPLACEME_HOSTNAME
