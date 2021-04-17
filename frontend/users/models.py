@@ -72,6 +72,7 @@ class Job(models.Model):
     RESET_WEBSITE = 2
     RENEW_CERT = 3
     DELETE_WEBSITE = 4 # Delete website and all data
+    START_WEBSITE = 5
 
     JOB_TYPES = [
         (CREATE_WEBSITE, _('Create website')),
@@ -79,6 +80,7 @@ class Job(models.Model):
         (RESET_WEBSITE, _('Reset website')),
         (RENEW_CERT, 'Renew certificate'),
         (DELETE_WEBSITE, _('Delete website')),
+        (START_WEBSITE, _('Start website')),
     ]
 
     CRITICAL = 4

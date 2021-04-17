@@ -6,6 +6,7 @@ import update_site
 import delete_site
 import reset_site
 import certs
+import compose
 
 
 print("Daemon started")
@@ -40,6 +41,9 @@ def daemon():
                 site_id = int(job_content[:pos])
                 _domain = job_content[pos+1:]
                 delete_site.run(site_id)
+            elif job_type == 5:
+                site_id = int(job_content)
+                compose.start(site_id)
             else:
                 print(f"Unknown job type {job_type}")
                 cur.execute("UPDATE jobs SET running = FALSE WHERE id=%s", (job_id,))
@@ -57,7 +61,10 @@ def daemon():
         conn.close()
 
         if job:
-            sleep(1)
+            if job_type == 5:
+                sleep(.3)
+            else:
+                sleep(1)
         else:
             sleep(3)
 

@@ -44,6 +44,11 @@ def install(website_id, domain, use_https, db_password, files_password, version,
     os.system(f"docker-compose -f {dest_path} up -d --remove-orphans --force-recreate")
 
 
+def start(website_id):
+    compose_file = f"/{env['ZFS_ROOT']}/{website_id}/docker-compose.yaml"
+    os.system(f"docker-compose -f {compose_file} start")
+
+
 def uninstall(website_id):
     dest_path = f"/{env['ZFS_ROOT']}/{website_id}/docker-compose.yaml"
     os.system(f"docker-compose -f {dest_path} down")
