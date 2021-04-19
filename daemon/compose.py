@@ -14,7 +14,7 @@ autofill_domains = [
 ]
 
 
-def install(website_id, domain, use_https, db_password, files_password, version):
+def install(website_id, domain, use_https, db_password, version):
     with open('compose-template.yaml', 'r') as file:
         data = file.read()
 
@@ -22,10 +22,6 @@ def install(website_id, domain, use_https, db_password, files_password, version)
     data = data \
         .replace('REPLACEME_SITEID', str(website_id)) \
         .replace('REPLACEME_IPADDR', ip_addr) \
-        .replace('REPLACEME_DBPASSWORD', db_password) \
-        .replace('REPLACEME_PHPMYADMINURI', get_phpmyadmin_uri(domain, use_https)) \
-        .replace('REPLACEME_FILESUSER', "user") \
-        .replace('REPLACEME_FILESPASSWORD', files_password) \
         .replace('REPLACEME_VERSION', version) \
         .replace('REPLACEME_HOSTNAME', domain) \
         .replace('REPLACEME_DBPASSWORD', db_password if domain in autofill_domains else '')
@@ -49,12 +45,6 @@ def uninstall(website_id):
     dest_path = f"/{env['ZFS_ROOT']}/{website_id}/docker-compose.yaml"
     os.system(f"docker-compose -f {dest_path} down")
 
-
-def get_phpmyadmin_uri(domain, use_https):
-    if use_https:
-        return f"https://{domain}/phpmyadmin"
-    else:
-        return f"http://{domain}/phpmyadmin"
 
 def mkdir(dir_path):
     try:

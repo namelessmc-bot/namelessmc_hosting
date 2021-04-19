@@ -25,6 +25,6 @@ def run(website_id):
 
     zfs.create_website_dataset(website_id)
     sitedb.install(website_id, db_password)
-    compose.install(website_id, domain, use_https, db_password, files_password, version)
+    compose.install(website_id, domain, use_https, db_password, version)
     nginx.install(website_id, domain, use_https, use_www)
     ftp.add_account(website_id, files_password)
