@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-04-12 10:15+0000\n"
-"PO-Revision-Date: 2021-04-07 09:54+0000\n"
+"PO-Revision-Date: 2021-04-19 00:59+0000\n"
 "Last-Translator: Gabriel Vittor <mansfferpro@gmail.com>\n"
 "Language-Team: Portuguese (Brazil) <http://translate.namelessmc.com/projects/"
 "named-hosting/named-hosting/pt_BR/>\n"
@@ -49,40 +49,44 @@ msgid ""
 "Not affiliated with the <a href=\"https://namelessmc.com\">NamelessMC "
 "project</a>"
 msgstr ""
+"Nós não somos afiliados ao projeto <a href=\"https://namelessmc.com\""
+">NamelessMC</a>"
 
 #: main/templates/main/base.html:112
 msgid ""
 "This hosting system is <a href=\"https://github.com/Derkades/"
 "namelessmc_hosting\">open source</a>"
 msgstr ""
+"Este sistema de hospedagem é de <a href=\"https://github.com/Derkades/"
+"namelessmc_hosting\"> código aberto </a>"
 
 #: main/templates/main/base.html:117
 msgid "Support Discord"
-msgstr ""
+msgstr "Suporte no Discord"
 
 #: main/templates/main/base.html:120
 msgid "Privacy Policy"
-msgstr ""
+msgstr "Política de Privacidade"
 
 #: main/templates/main/base.html:121
 msgid "Terms of service"
-msgstr ""
+msgstr "Termos de serviço"
 
 #: main/templates/main/comparison.html:5
 msgid "Hosting service comparison"
-msgstr ""
+msgstr "Comparação de serviços de hospedagem"
 
 #: main/templates/main/comparison.html:10
 msgid "Feature"
-msgstr ""
+msgstr "Características"
 
 #: main/templates/main/comparison.html:13
 msgid "Generic free webhost"
-msgstr ""
+msgstr "Webhost genérico gratuito"
 
 #: main/templates/main/comparison.html:14
 msgid "VPS"
-msgstr ""
+msgstr "VPS"
 
 #: main/templates/main/comparison.html:18
 #: main/templates/main/comparison.html:20
@@ -90,36 +94,36 @@ msgstr ""
 #: main/templates/main/comparison.html:31
 #: main/templates/main/comparison.html:33
 msgid "Free"
-msgstr ""
+msgstr "Gratuito"
 
 #: main/templates/main/comparison.html:19
 #: main/templates/main/comparison.html:21
 msgid "Paid"
-msgstr ""
+msgstr "Pago"
 
 #: main/templates/main/comparison.html:28
 msgid "Price"
-msgstr ""
+msgstr "Preço"
 
 #: main/templates/main/comparison.html:37
 msgid "Maintenance free"
-msgstr ""
+msgstr "Sem necessidade de manutenção"
 
 #: main/templates/main/comparison.html:46
 msgid "Fast"
-msgstr ""
+msgstr "Rápido"
 
 #: main/templates/main/comparison.html:55
 msgid "No branding"
-msgstr ""
+msgstr "Sem marca"
 
 #: main/templates/main/comparison.html:64
 msgid "Compatible with API"
-msgstr ""
+msgstr "Compatível com API"
 
 #: main/templates/main/comparison.html:73
 msgid "Automatic installation"
-msgstr ""
+msgstr "Instalação automática"
 
 #: main/templates/main/comparison.html:82
 msgid "Choose NamelessMC version"
@@ -139,48 +143,48 @@ msgstr "Arquivo de Backups"
 
 #: main/templates/main/comparison.html:118
 msgid "No vendor lock-in"
-msgstr ""
+msgstr "Sem dependência de fornecedor"
 
 #: main/templates/main/comparison.html:127
 msgid "FTP file access"
-msgstr ""
+msgstr "Acesso a arquivo no FTP"
 
 #: main/templates/main/comparison.html:136
 msgid "Web file manager"
-msgstr ""
+msgstr "Gerenciador de arquivos da web"
 
 #: main/templates/main/comparison.html:145
 msgid "Free subdomain"
-msgstr ""
+msgstr "Subdomínio gratuito"
 
 #: main/templates/main/comparison.html:154
 #: users/templates/users/website_detail.html:79
 msgid "phpmyadmin"
-msgstr ""
+msgstr "phpmyadmin"
 
 #: main/templates/main/comparison.html:163
 msgid "Install modules/templates manually"
-msgstr ""
+msgstr "Instale módulos/modelos manualmente"
 
 #: main/templates/main/comparison.html:172
 msgid "Install modules/templates automatically"
-msgstr ""
+msgstr "Instale módulos/modelos automaticamente"
 
 #: main/templates/main/comparison.html:181
 msgid "Automatic NamelessMC updates"
-msgstr ""
+msgstr "Atualizações automáticas do NamelessMC"
 
 #: main/templates/main/comparison.html:190
 msgid "Supports CloudFlare Strict SSL"
-msgstr ""
+msgstr "Suporta CloudFlare Strict SSL"
 
 #: main/templates/main/comparison.html:199
 msgid "Custom Nameless-Link"
-msgstr ""
+msgstr "Nameless-Link personalizado"
 
 #: main/templates/main/index.html:10
 msgid "Free hosting that actually works."
-msgstr ""
+msgstr "A Hospedagem gratuita que realmente funciona."
 
 #: main/templates/main/index.html:14
 msgid ""
@@ -188,6 +192,9 @@ msgid ""
 "integrations like the ingame plugin and Discord bot, unlike 000webhost, "
 "InfinityFree and others."
 msgstr ""
+"Fornece acesso a arquivos FTP, ao contrário do NamelessHosting. Compatível "
+"com integrações como o plugin no jogo e o bot Discord, ao contrário do "
+"000webhost, InfinityFree e outros."
 
 #: main/templates/main/index.html:17
 #, python-format
@@ -195,178 +202,181 @@ msgid ""
 "We currently host %(websites)s websites. This hosting service is operated by "
 "Derkades (developer of Nameless Plugin and Discord bot)."
 msgstr ""
+"Nós atualmente hospedamos %(websites)s sites. Este serviço de hospedagem é "
+"operado pelo Derkades (desenvolvedor do Nameless Plugin e do bot do Discord)."
 
 #: main/templates/main/index.html:24
 msgid "Create your website now"
-msgstr ""
+msgstr "Crie o seu site agora"
 
 #: main/templates/main/index.html:28
 msgid "Get started"
-msgstr ""
+msgstr "Vamos iniciar"
 
 #: main/templates/main/index.html:30 users/templates/registration/login.html:18
 msgid "Sign up"
-msgstr ""
+msgstr "Inscrever-se"
 
 #: main/templates/main/index.html:42
 msgid "Simple"
-msgstr ""
+msgstr "Simples"
 
 #: main/templates/main/index.html:43
 msgid "Server configured automatically, start the installer right away"
-msgstr ""
+msgstr "Servidor configurado automaticamente, inicie o instalador imediatamente"
 
 #: main/templates/main/index.html:49
 msgid "Full access"
-msgstr ""
+msgstr "Acesso total"
 
 #: main/templates/main/index.html:50
 msgid "Upload your own templates and edit the database using phpmyadmin"
 msgstr ""
+"Carregue seus próprios modelos e edite o banco de dados usando o phpmyadmin"
 
 #: main/templates/main/index.html:56
 msgid "No artificial limits"
-msgstr ""
+msgstr "Sem limites artificiais"
 
 #: main/templates/main/index.html:57
 msgid "No limits on modules, templates, users, etc."
-msgstr ""
+msgstr "Sem limites para módulos, modelos, usuários, etc."
 
 #: main/templates/main/index.html:65
 msgid "Support NamelessMC"
-msgstr ""
+msgstr "Suporte ao NamelessMC"
 
 #: main/templates/main/index.html:66
 msgid "We donate part of our income to NamelessMC developers"
-msgstr ""
+msgstr "Doamos parte da nossa receita para os desenvolvedores do NamelessMC"
 
 #: main/templates/main/index.html:72
 msgid "Secure"
-msgstr ""
+msgstr "Seguro"
 
 #: main/templates/main/index.html:73
 msgid "Protect your website with modern TLS encryption without hassle."
-msgstr ""
+msgstr "Proteja seu site com criptografia TLS moderna sem complicações."
 
 #: main/templates/main/index.html:79
 msgid "High performance"
-msgstr ""
+msgstr "Alta performance"
 
 #: main/templates/main/index.html:80
 msgid "Dedicated web server for every website."
-msgstr ""
+msgstr "Servidor web dedicado para cada site."
 
 #: users/models.py:16 users/models.py:21 users/models.py:27
 msgid "Invalid domain"
-msgstr ""
+msgstr "Domínio inválido"
 
 #: users/models.py:24
 msgid "Don't include www. in your domain"
-msgstr ""
+msgstr "Não inclua www. em seu domínio"
 
 #: users/models.py:31 users/templates/users/website_detail.html:37
 msgid "Domain"
-msgstr ""
+msgstr "Domínio"
 
 #: users/models.py:32
 msgid "Use HTTPS?"
-msgstr ""
+msgstr "Usar HTTPS?"
 
 #: users/models.py:34
 msgid "Website name"
-msgstr ""
+msgstr "Nome do site"
 
 #: users/models.py:39
 msgid "v2 pre release 7 (old)"
-msgstr ""
+msgstr "v2 pre release 7 (antiga)"
 
 #: users/models.py:40
 msgid "v2 pre release 8 (previous)"
-msgstr ""
+msgstr "v2 pre release 8 (anterior)"
 
 #: users/models.py:41
 msgid "v2 pre release 9 (current)"
-msgstr ""
+msgstr "v2 pre release 9 (atual)"
 
 #: users/models.py:42
 msgid "v2 pre release 9 on PHP 8 - TESTING ONLY"
-msgstr ""
+msgstr "v2 pre release 9 no PHP 8 - SOMENTE TESTE"
 
 #: users/models.py:43
 msgid "Development - TESTING ONLY"
-msgstr ""
+msgstr "Desenvolvimento - SOMENTE TESTE"
 
 #: users/models.py:44
 msgid "Development on PHP 8 - TESTING ONLY"
-msgstr ""
+msgstr "Desenvolvimento no PHP 8 - SOMENTE TESTE"
 
 #: users/models.py:46
 msgid "Version"
-msgstr ""
+msgstr "Versão"
 
 #: users/models.py:48
 msgid "Enable www."
-msgstr ""
+msgstr "Habilitar www."
 
 #: users/models.py:77 users/templates/users/website_form.html:12
 msgid "Create website"
-msgstr ""
+msgstr "Criar site"
 
 #: users/models.py:78 users/templates/users/website_form.html:10
 msgid "Update website"
-msgstr ""
+msgstr "Atualizar site"
 
 #: users/models.py:79
 msgid "Reset website"
-msgstr ""
+msgstr "Redefinir site"
 
 #: users/models.py:81
 msgid "Delete website"
-msgstr ""
+msgstr "Deletar site"
 
 #: users/templates/registration/logged_out.html:4
 msgid "You have been logged out."
-msgstr ""
+msgstr "Você foi desconectado."
 
 #: users/templates/registration/logged_out.html:6
 msgid "Log in again"
-msgstr ""
+msgstr "Entrar novamente"
 
 #: users/templates/registration/login.html:9
 #: users/templates/registration/login.html:13
 msgid "Log in"
-msgstr ""
+msgstr "Conecte-se"
 
 #: users/templates/registration/login.html:18
 msgid "Need an account?"
-msgstr ""
+msgstr "Precisa de uma conta?"
 
 #: users/templates/registration/login.html:19
 msgid "Forgot password?"
-msgstr ""
+msgstr "Esqueceu a senha?"
 
 #: users/templates/registration/login.html:19
 #: users/templates/registration/password_reset_form.html:9
 msgid "Reset password"
-msgstr ""
+msgstr "Redefinir senha"
 
 #: users/templates/registration/password_change_done.html:4
 msgid "Password changed."
-msgstr ""
+msgstr "Senha alterada."
 
 #: users/templates/registration/password_change_done.html:6
 msgid "Back to account page"
-msgstr ""
+msgstr "Voltar para a página da conta"
 
 #: users/templates/registration/password_change_form.html:9
 msgid "Update password"
-msgstr ""
+msgstr "Atualizar senha"
 
 #: users/templates/registration/password_change_form.html:13
 #: users/templates/registration/password_reset_confirm.html:14
 #: users/templates/users/account.html:54
 msgid "Change password"
-msgstr ""
+msgstr "Alterar senha"
 
 #: users/templates/registration/password_reset_complete.html:7
 #, python-format
@@ -374,88 +384,92 @@ msgid ""
 "Your new password has been set. You can log in now on the <a href="
 "\"%(login_url)s\">log in page</a>."
 msgstr ""
+"A sua nova senha foi definida. Você pode fazer login agora na <a href=\""
+"%(login_url)s\">página de login</a>."
 
 #: users/templates/registration/password_reset_confirm.html:10
 msgid "Set new password"
-msgstr ""
+msgstr "Definir nova senha"
 
 #: users/templates/registration/password_reset_confirm.html:18
 msgid ""
 "The password reset link was invalid, possibly because it has already been "
 "used. Please request a new password reset."
 msgstr ""
+"O link de redefinição de senha era inválido, possivelmente porque já foi "
+"usado. Solicite uma nova redefinição de senha."
 
 #: users/templates/registration/password_reset_done.html:5
 msgid "Password reset email sent, please check your inbox."
-msgstr ""
+msgstr "Email de redefinição de senha enviado, verifique sua caixa de entrada."
 
 #: users/templates/registration/password_reset_form.html:13
 msgid "Send email"
-msgstr ""
+msgstr "Enviar email"
 
 #: users/templates/users/account.html:45
 msgid "Update account settings"
-msgstr ""
+msgstr "Atualize as configurações da conta"
 
 #: users/templates/users/account.html:51
 msgid "Submit"
-msgstr ""
+msgstr "Enviar"
 
 #: users/templates/users/payment_cancelled.html:4
 msgid "Payment cancelled."
-msgstr ""
+msgstr "Pagamento cancelado."
 
 #: users/templates/users/payment_complete.html:4
 msgid "Payment complete"
-msgstr ""
+msgstr "Pagamento completo"
 
 #: users/templates/users/register.html:9
 msgid "Create account"
-msgstr ""
+msgstr "Criar Conta"
 
 #: users/templates/users/register.html:13
 msgid "Sign Up"
-msgstr ""
+msgstr "Inscreva-se"
 
 #: users/templates/users/register.html:17
 msgid "Already have an account?"
-msgstr ""
+msgstr "Já tem uma conta?"
 
 #: users/templates/users/register.html:17
 msgid "Sign in"
-msgstr ""
+msgstr "Entrar"
 
 #: users/templates/users/website_confirm_delete.html:10
 msgid "Are you sure you want to delete this website?"
-msgstr ""
+msgstr "Tem certeza que deseja excluir este site?"
 
 #: users/templates/users/website_confirm_delete.html:13
 #: users/templates/users/website_reset.html:14
 msgid "Cancel"
-msgstr ""
+msgstr "Cancelar"
 
 #: users/templates/users/website_confirm_delete.html:14
 #: users/templates/users/website_form.html:23
 #: users/templates/users/website_reset.html:15
 msgid "Confirm"
-msgstr ""
+msgstr "Confirmar"
 
 #: users/templates/users/website_detail.html:8
 #: users/templates/users/website_list.html:8
 msgid "Websites"
-msgstr ""
+msgstr "Sites"
 
 #: users/templates/users/website_detail.html:18
 msgid "Edit"
-msgstr ""
+msgstr "Editar"
 
 #: users/templates/users/website_detail.html:19
 msgid "Reset"
-msgstr ""
+msgstr "Redefinir"
 
 #: users/templates/users/website_detail.html:20
 msgid "Delete"
-msgstr ""
+msgstr "Excluir"
 
 #: users/templates/users/website_detail.html:27
 #, python-format
@@ -466,46 +480,51 @@ msgid ""
 "information, please read <a href=\"%(wiki_url)s\" target=\"_blank\">Wiki: "
 "Creating a CNAME record</a>."
 msgstr ""
+"Adicione um registro <code>CNAME</code> em <code>%(domain)s</code> (e "
+"<code>www.%(domain)s</code>) que aponta para <code>%(cname_target)s</"
+"code>.Este processo varia dependendo de onde você registrou seu domínio. "
+"Para obter mais informações, leia <a href=\"%(wiki_url)s\" target=\"_blank\""
+">Wiki: Criando um registro CNAME</a>."
 
 #: users/templates/users/website_detail.html:33
 msgid "Website"
-msgstr ""
+msgstr "Site"
 
 #: users/templates/users/website_detail.html:49
 msgid "Date created (UTC)"
-msgstr ""
+msgstr "Data de criação (UTC)"
 
 #: users/templates/users/website_detail.html:54
 msgid "Database"
-msgstr ""
+msgstr "Banco de dados"
 
 #: users/templates/users/website_detail.html:58
 #: users/templates/users/website_detail.html:91
 msgid "address"
-msgstr ""
+msgstr "Endereço"
 
 #: users/templates/users/website_detail.html:62
 #: users/templates/users/website_detail.html:95
 msgid "port"
-msgstr ""
+msgstr "porta"
 
 #: users/templates/users/website_detail.html:66
 #: users/templates/users/website_detail.html:99
 msgid "username"
-msgstr ""
+msgstr "nome de usuário"
 
 #: users/templates/users/website_detail.html:70
 #: users/templates/users/website_detail.html:103
 msgid "password"
-msgstr ""
+msgstr "senha"
 
 #: users/templates/users/website_detail.html:75
 msgid "database name"
-msgstr ""
+msgstr "nome do banco de dados"
 
 #: users/templates/users/website_detail.html:84
 msgid "Files"
-msgstr ""
+msgstr "Arquivos"
 
 #: users/templates/users/website_detail.html:86
 #, python-format
@@ -516,6 +535,11 @@ msgid ""
 "ensure you're connecting securely, please configure your FTP client to "
 "require FTP over TLS."
 msgstr ""
+"Use um cliente FTP para se conectar. Recomendamos o FileZilla ou WinSCP. O "
+"servidor suporta criptografia TLS. Se você receber um pop-up de certificado, "
+"certifique-se de que é um certificado válido para <code>%(ftp_domain)s</"
+"code> antes de aceitá-lo. Para garantir que você está se conectando com "
+"segurança, configure seu cliente FTP para exigir FTP sobre TLS."
 
 #: users/templates/users/website_form.html:18
 msgid ""
@@ -523,24 +547,30 @@ msgid ""
 "not enable HTTPS if you are using CloudFlare flexible SSL. Version changes "
 "do not take effect until you use the 'Reset' button."
 msgstr ""
+"Certifique-se de que o seu site funciona sem HTTPS antes de habilitar o "
+"HTTPS. Não habilite o HTTPS se você estiver usando o SSL flexível "
+"CloudFlare. As alterações da versão não entraram em vigor até você usar o "
+"botão 'Redefinir'."
 
 #: users/templates/users/website_list.html:11
 msgid "Your sites"
-msgstr ""
+msgstr "Seus sites"
 
 #: users/templates/users/website_list.html:18
 msgid "View &amp; Edit"
-msgstr ""
+msgstr "Visualizar &amp; Editar"
 
 #: users/templates/users/website_list.html:24
 #: users/templates/users/website_list.html:26
 msgid "Create new website"
-msgstr ""
+msgstr "Criar um novo site"
 
 #: users/templates/users/website_list.html:26
 msgid ""
 "Free accounts are limited to 2 websites, paid accounts are limited to 5."
 msgstr ""
+"As contas gratuitas são limitadas a 2 sites, as contas pagas são limitadas a "
+"5."
 
 #: users/templates/users/website_reset.html:10
 msgid ""
@@ -548,3 +578,6 @@ msgid ""
 "all databases and website data. After resetting your website, wait about a "
 "minute and you'll see installer when going to your website."
 msgstr ""
+"Tem certeza de que deseja redefinir seu site? Isso excluirá permanentemente "
+"todos os bancos de dados e dados do site. Depois de redefinir seu site, "
+"espere cerca de um minuto e você verá o instalador ao acessar seu site."
