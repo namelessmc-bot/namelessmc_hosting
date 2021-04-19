@@ -14,8 +14,7 @@ autofill_domains = [
 ]
 
 
-def install(website_id, domain, use_https, db_password, files_password, version, \
-            site_name, username, email):
+def install(website_id, domain, use_https, db_password, files_password, version):
     with open('compose-template.yaml', 'r') as file:
         data = file.read()
 
@@ -29,10 +28,7 @@ def install(website_id, domain, use_https, db_password, files_password, version,
         .replace('REPLACEME_FILESPASSWORD', files_password) \
         .replace('REPLACEME_VERSION', version) \
         .replace('REPLACEME_HOSTNAME', domain) \
-        .replace('REPLACEME_SITENAME', site_name) \
-        .replace('REPLACEME_USERNAME', username) \
-        .replace('REPLACEME_EMAIL', email) \
-        .replace('REPLACEME_DBPASSWORD', db_password if domain in autofill_domains else '') \
+        .replace('REPLACEME_DBPASSWORD', db_password if domain in autofill_domains else '')
 
     dest_path = f"/{env['ZFS_ROOT']}/{website_id}/docker-compose.yaml"
     with open(dest_path, 'w') as dest_file:
