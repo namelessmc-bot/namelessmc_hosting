@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-04-21 11:29+0000\n"
+"POT-Creation-Date: 2021-04-21 11:31+0000\n"
 "PO-Revision-Date: 2021-03-03 21:24+0000\n"
 "Last-Translator: Daniel Medina <danielflash.danielflash@gmail.com>\n"
 "Language-Team: Spanish (Latin America) <http://translate.namelessmc.com/"
@@ -462,7 +462,11 @@ msgid ""
 "this means, please <a href=\"%(support_discord_url)s\">contact support</a>. "
 "Websites that have not been working properly for a long time may be "
 "permanently deleted to free up space for active sites. <br><br> Down since "
-"%(down_since_date)s (checked every hour)"
+"%(down_since_date)s (checked every hour)."
+msgstr ""
+
+#: users/templates/users/website_detail.html:47
+msgid "Your domain appears to be linked successfully."
 msgstr ""
 
 #: users/templates/users/website_detail.html:52
