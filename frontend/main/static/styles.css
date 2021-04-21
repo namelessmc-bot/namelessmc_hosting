@@ -1,3 +1,13 @@
+/* https://google-webfonts-helper.herokuapp.com/fonts/source-sans-pro?subsets=cyrillic,cyrillic-ext,greek,greek-ext,latin,latin-ext,vietnamese */
+@font-face {
+    font-family: 'Source Sans Pro';
+    font-style: normal;
+    font-weight: 400;
+    src: local(''),
+         url('fonts/source-sans-pro-v14-vietnamese_latin-ext_latin_greek-ext_greek_cyrillic-ext_cyrillic-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('fonts/source-sans-pro-v14-vietnamese_latin-ext_latin_greek-ext_greek_cyrillic-ext_cyrillic-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
 html {
     position: relative;
     min-height: 100%;
@@ -6,6 +16,7 @@ html {
 body {
     /* Compensate for footer height */
     margin-bottom: 200px;
+    font-family: 'Source Sans Pro', sans-serif;
 }
 
 footer a {
