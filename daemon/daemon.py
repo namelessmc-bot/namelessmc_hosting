@@ -36,9 +36,7 @@ def daemon():
                 site_id = int(job_content)
                 certs.renew_cert(site_id)
             elif job_type == 4:
-                pos = job_content.find('_')
-                site_id = int(job_content[:pos])
-                _domain = job_content[pos+1:]
+                site_id = int(job_content)
                 delete_site.run(site_id)
             elif job_type == 5:
                 site_id = int(job_content)

@@ -44,7 +44,7 @@
     {% if show_create_button %}
         <a href="{% url 'website-new' %}" class="btn btn-outline-success">{% trans "Create new website" %}</a>
     {% else %}
-        <button class="btn btn-outline-success" disabled>{% trans "Create new website" %}</button> {% trans "Free accounts are limited to 2 websites, paid accounts are limited to 5." %}
+        <button class="btn btn-outline-success" disabled>{% trans "Create new website" %}</button> {% trans "Accounts are currently limited to 3 websites." %}
     {% endif %}
 </div>
 {% endblock content %}

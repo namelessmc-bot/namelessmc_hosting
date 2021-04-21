@@ -48,20 +48,24 @@ class Website(models.Model):
     www = models.BooleanField(default=False, verbose_name=_('Enable www.'))
     down_since = models.DateTimeField(auto_now_add=True, null=True, blank=True)
 
+
     def __str__(self):
-        return self.domain
+        return f'{self.name} - {self.domain}'
 
 
     def get_absolute_url(self):
         return reverse("website-detail", kwargs={"pk": self.pk})
 
 
+    class Meta:
+        ordering = ['name']
+
+
 class Account(models.Model):
     user = models.OneToOneField(User, on_delete=models.CASCADE)
-    credit = models.IntegerField(default=30)
 
     def __str__(self):
-        return f'{self.user.username} - {self.credit} Account'
+        return f'{self.user.username}'
 
 
 class Job(models.Model):

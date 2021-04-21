@@ -33,9 +33,8 @@ def save_website(sender, instance, created, **_kwargs): # pylint: disable=unused
 
 @receiver(pre_delete, sender=Website)
 def delete_website(sender, instance, using, **_kwargs): # pylint: disable=unused-argument
-    content = f'{instance.id}_{instance.domain}'
-    Job.objects.filter(content=content).delete()
-    Job.objects.create(type=Job.DELETE_WEBSITE, priority=Job.LOW, content=content)
+    Job.objects.filter(content=instance.id).delete()
+    Job.objects.create(type=Job.DELETE_WEBSITE, priority=Job.LOW, content=instance.id)
 
 
 def paypal_money_received(sender, **_kwargs):
