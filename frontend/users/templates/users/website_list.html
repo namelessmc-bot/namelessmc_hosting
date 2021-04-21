@@ -8,18 +8,39 @@
             <li class="breadcrumb-item active" aria-current="page">{% trans "Websites" %}</li>
         </ol>
     </nav>
-    <h2 class="border-bottom">{% trans "Your sites" %}</h2>
-    {% for website in websites %}
-        <div class="card mb-4 mt-4">
-            <div class="card-header bg-dark text-white">
-                {{ website.name }} - <a href="{% if website.use_https %}https://{{ website.domain }}{% else %}http://{{ website.domain}}{% endif %}">{{ website.domain }}</a>
-            </div>
-            <div class="card-body">
-                <a class="btn btn-outline-info" href="{% url 'website-detail' website.id %}">{% trans "View &amp; Edit" %}</a>
-            </div>
-        </div>
-    {% endfor %}
-
+    <h2>{% trans "Your sites" %}</h2>
+    {% if websites %}
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Domain</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for website in websites %}
+                    <tr>
+                    {% comment %} <div class="card mb-4 mt-4">
+                        <div class="card-header bg-dark text-white">
+                            {{ website.name }} - <a href="{% if website.use_https %}https://{{ website.domain }}{% else %}http://{{ website.domain}}{% endif %}">{{ website.domain }}</a>
+                        </div>
+                        <div class="card-body">
+                            <a class="btn btn-outline-info" href="{% url 'website-detail' website.id %}">{% trans "View &amp; Edit" %}</a>
+                        </div>
+                    </div> {% endcomment %}
+                        <td>{{ website.name }}</td>
+                        <td><a href="{% if website.use_https %}https://{{ website.domain }}{% else %}http://{{ website.domain}}{% endif %}">{{ website.domain }}</a></td>
+                        <td><a class="btn btn-outline-info" href="{% url 'website-detail' website.id %}">{% trans "Configure" %}</a></td>
+                    </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    {% else %}
+        <p>
+        {% blocktrans %}You don't have any websites.{% endblocktrans %}
+        </p>
+    {% endif %}
     {% if show_create_button %}
         <a href="{% url 'website-new' %}" class="btn btn-outline-success">{% trans "Create new website" %}</a>
     {% else %}
