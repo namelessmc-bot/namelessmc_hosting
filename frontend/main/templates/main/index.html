@@ -11,10 +11,10 @@
         </p>
     </span>
     <p>
-{% blocktrans %}Provides FTP file access, unlike NamelessHosting. Compatible with integrations like the ingame plugin and Discord bot, unlike 000webhost, InfinityFree and others.{% endblocktrans %}
+{% blocktrans %}Finally, free hosting for NamelessMC websites with automatic installation and FTP file access without blocking API access!{% endblocktrans %}
     </p>
     <p class="text-muted">
-{% blocktrans with websites=count_websites users=count_users %}We currently host {{ websites }} websites. This hosting service is operated by Derkades (developer of Nameless Plugin and Discord bot).{% endblocktrans %}
+{% blocktrans with websites=count_websites users=count_users discord_handle="Derkades#9976" github_handle="<a href=\"https://github.com/Derkades\">Derkades</a>"%}We currently host {{ websites }} websites. Operated by {{ discord_handle }} in Discord or {{ github_handle }} on GitHub{% endblocktrans %}
     </p>
     <span class="text-muted"></span>
 </section>
@@ -32,6 +32,7 @@
     </div>
 </section>
 
+<!--
 <div class="mt-4"></div>
 
 <div id="features-background">
@@ -84,5 +85,6 @@
     </div>
 </section>
 </div>
+-->
 
 {% endblock content %}

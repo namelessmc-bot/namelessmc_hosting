@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-04-21 11:31+0000\n"
+"POT-Creation-Date: 2021-04-21 12:02+0000\n"
 "PO-Revision-Date: 2021-03-27 00:44+0000\n"
 "Last-Translator: NamelessMC Translations <robin@derkad.es>\n"
 "Language-Team: Dutch <http://translate.namelessmc.com/projects/named-hosting/"
@@ -188,20 +188,18 @@ msgstr "Gratis hosting die wél werkt."
 
 #: main/templates/main/index.html:14
 msgid ""
-"Provides FTP file access, unlike NamelessHosting. Compatible with "
-"integrations like the ingame plugin and Discord bot, unlike 000webhost, "
-"InfinityFree and others."
+"Finally, free hosting for NamelessMC websites with automatic installation "
+"and FTP file access without blocking API access!"
 msgstr ""
-"Volledige toegang tot bestanden via FTP, in tegenstelling tot "
-"NamelessHosting. Ook werkt het met integraties zoals de Discord bot en in-"
-"game plugin, wat niet mogelijk is met 000webhost, InfinityFree en veel "
-"andere gratis web hosting providers."
 
 #: main/templates/main/index.html:17
-#, python-format
+#, fuzzy, python-format
+#| msgid ""
+#| "We currently host %(websites)s websites. This hosting service is operated "
+#| "by Derkades (developer of Nameless Plugin and Discord bot)."
 msgid ""
-"We currently host %(websites)s websites. This hosting service is operated by "
-"Derkades (developer of Nameless Plugin and Discord bot)."
+"We currently host %(websites)s websites. Operated by %(discord_handle)s in "
+"Discord or %(github_handle)s on GitHub"
 msgstr ""
 "Wij hosten momenteel %(websites)s websites. Deze hostingdienst wordt beheerd "
 "door Derkades (ontwikkelaar van Nameless Plugin en Discord bot)."
@@ -218,51 +216,51 @@ msgstr "Begin"
 msgid "Sign up"
 msgstr "Inschrijven"
 
-#: main/templates/main/index.html:42
+#: main/templates/main/index.html:43
 msgid "Simple"
 msgstr "Eenvoudig"
 
-#: main/templates/main/index.html:43
+#: main/templates/main/index.html:44
 msgid "Server configured automatically, start the installer right away"
 msgstr "Server automatisch ingesteld, begin meteen met installeren"
 
-#: main/templates/main/index.html:49
+#: main/templates/main/index.html:50
 msgid "Full access"
 msgstr "Volledige toegang"
 
-#: main/templates/main/index.html:50
+#: main/templates/main/index.html:51
 msgid "Upload your own templates and edit the database using phpmyadmin"
 msgstr "Upload je eigen templates en bewerk de database met phpmyadmin"
 
-#: main/templates/main/index.html:56
+#: main/templates/main/index.html:57
 msgid "No artificial limits"
 msgstr "Geen kunstmatige beperkingen"
 
-#: main/templates/main/index.html:57
+#: main/templates/main/index.html:58
 msgid "No limits on modules, templates, users, etc."
 msgstr "Onbeperkte modules, templates, gebruikers, etc."
 
-#: main/templates/main/index.html:65
+#: main/templates/main/index.html:66
 msgid "Support NamelessMC"
 msgstr "Steun NamelessMC"
 
-#: main/templates/main/index.html:66
+#: main/templates/main/index.html:67
 msgid "We donate part of our income to NamelessMC developers"
 msgstr "Wij doneren deel van ons inkomen aan NamelessMC ontwikkelaars"
 
-#: main/templates/main/index.html:72
+#: main/templates/main/index.html:73
 msgid "Secure"
 msgstr "Veilig"
 
-#: main/templates/main/index.html:73
+#: main/templates/main/index.html:74
 msgid "Protect your website with modern TLS encryption without hassle."
 msgstr "Bescherm je website met moderne TLS versleuteling zonder moeite."
 
-#: main/templates/main/index.html:79
+#: main/templates/main/index.html:80
 msgid "High performance"
 msgstr "Hoge prestaties"
 
-#: main/templates/main/index.html:80
+#: main/templates/main/index.html:81
 msgid "Dedicated web server for every website."
 msgstr "Gescheiden webserver voor elke website."
 
@@ -586,6 +584,16 @@ msgstr ""
 "verwijderd. Na het resetten van je site, wacht ongeveer een minuut en je "
 "zult weer gegroet worden door de NamelessMC installer als je naar je website "
 "gaat."
+
+#~ msgid ""
+#~ "Provides FTP file access, unlike NamelessHosting. Compatible with "
+#~ "integrations like the ingame plugin and Discord bot, unlike 000webhost, "
+#~ "InfinityFree and others."
+#~ msgstr ""
+#~ "Volledige toegang tot bestanden via FTP, in tegenstelling tot "
+#~ "NamelessHosting. Ook werkt het met integraties zoals de Discord bot en in-"
+#~ "game plugin, wat niet mogelijk is met 000webhost, InfinityFree en veel "
+#~ "andere gratis web hosting providers."
 
 #~ msgid "Reset website"
 #~ msgstr "Reset website"

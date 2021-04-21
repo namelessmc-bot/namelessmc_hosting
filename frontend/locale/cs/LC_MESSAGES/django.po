@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-04-21 11:31+0000\n"
+"POT-Creation-Date: 2021-04-21 12:02+0000\n"
 "PO-Revision-Date: 2021-03-23 19:30+0000\n"
 "Last-Translator: Jonáš Loskot <fjuro@seznam.cz>\n"
 "Language-Team: Czech <http://translate.namelessmc.com/projects/named-hosting/"
@@ -188,19 +188,18 @@ msgstr "Bezplatný hosting, který opravdu funguje."
 
 #: main/templates/main/index.html:14
 msgid ""
-"Provides FTP file access, unlike NamelessHosting. Compatible with "
-"integrations like the ingame plugin and Discord bot, unlike 000webhost, "
-"InfinityFree and others."
+"Finally, free hosting for NamelessMC websites with automatic installation "
+"and FTP file access without blocking API access!"
 msgstr ""
-"Poskytuje FTP přístup, narozdíl od NamelessHostingu. Je kompatibilní s "
-"integracemi jako je herní plugin a Discord bot, narozdíl od 000webhost, "
-"InfinityFree a dalších."
 
 #: main/templates/main/index.html:17
-#, python-format
+#, fuzzy, python-format
+#| msgid ""
+#| "We currently host %(websites)s websites. This hosting service is operated "
+#| "by Derkades (developer of Nameless Plugin and Discord bot)."
 msgid ""
-"We currently host %(websites)s websites. This hosting service is operated by "
-"Derkades (developer of Nameless Plugin and Discord bot)."
+"We currently host %(websites)s websites. Operated by %(discord_handle)s in "
+"Discord or %(github_handle)s on GitHub"
 msgstr ""
 "Momentálně hostujeme %(websites)s webů. Tento hosting provozuje Derkades "
 "(vývojář Nameless pluginu a Discord bota)."
@@ -217,51 +216,51 @@ msgstr "Začít"
 msgid "Sign up"
 msgstr "Zaregistrovat se"
 
-#: main/templates/main/index.html:42
+#: main/templates/main/index.html:43
 msgid "Simple"
 msgstr "Jednoduchý"
 
-#: main/templates/main/index.html:43
+#: main/templates/main/index.html:44
 msgid "Server configured automatically, start the installer right away"
 msgstr "Server je automaticky nakonfigurován, stačí jen spustit instalátor"
 
-#: main/templates/main/index.html:49
+#: main/templates/main/index.html:50
 msgid "Full access"
 msgstr "Plný přístup"
 
-#: main/templates/main/index.html:50
+#: main/templates/main/index.html:51
 msgid "Upload your own templates and edit the database using phpmyadmin"
 msgstr "Nahrávejte vlastní šablony a upravujte databázi pomocí phpMyAdmin"
 
-#: main/templates/main/index.html:56
+#: main/templates/main/index.html:57
 msgid "No artificial limits"
 msgstr "Žádné umělé limity"
 
-#: main/templates/main/index.html:57
+#: main/templates/main/index.html:58
 msgid "No limits on modules, templates, users, etc."
 msgstr "Žádné omezení doplňků, šablon, uživatelů atd."
 
-#: main/templates/main/index.html:65
+#: main/templates/main/index.html:66
 msgid "Support NamelessMC"
 msgstr "Podpora NamelessMC"
 
-#: main/templates/main/index.html:66
+#: main/templates/main/index.html:67
 msgid "We donate part of our income to NamelessMC developers"
 msgstr "Část našich příjmů darujeme vývojářům NamelessMC"
 
-#: main/templates/main/index.html:72
+#: main/templates/main/index.html:73
 msgid "Secure"
 msgstr "Bezpečný"
 
-#: main/templates/main/index.html:73
+#: main/templates/main/index.html:74
 msgid "Protect your website with modern TLS encryption without hassle."
 msgstr "Chraňte svůj web pomocí šifrování TLS bez potíží."
 
-#: main/templates/main/index.html:79
+#: main/templates/main/index.html:80
 msgid "High performance"
 msgstr "Vysoký výkon"
 
-#: main/templates/main/index.html:80
+#: main/templates/main/index.html:81
 msgid "Dedicated web server for every website."
 msgstr "Dedikovaný server pro každý web."
 
@@ -583,6 +582,15 @@ msgstr ""
 "Opravdu chcete obnovit váš web? Všechny databáze a data webu budou "
 "nenávratně smazána. Po obnovení vašeho webu bude trvat přibližně minutu, než "
 "uvidíte instalátor při návštěvě vašeho webu."
+
+#~ msgid ""
+#~ "Provides FTP file access, unlike NamelessHosting. Compatible with "
+#~ "integrations like the ingame plugin and Discord bot, unlike 000webhost, "
+#~ "InfinityFree and others."
+#~ msgstr ""
+#~ "Poskytuje FTP přístup, narozdíl od NamelessHostingu. Je kompatibilní s "
+#~ "integracemi jako je herní plugin a Discord bot, narozdíl od 000webhost, "
+#~ "InfinityFree a dalších."
 
 #~ msgid "Reset website"
 #~ msgstr "Obnovit web"

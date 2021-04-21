@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-04-21 11:31+0000\n"
+"POT-Creation-Date: 2021-04-21 12:02+0000\n"
 "PO-Revision-Date: 2021-03-24 14:44+0000\n"
 "Last-Translator: Gabriel Leen <hello@dreta.dev>\n"
 "Language-Team: Chinese (Simplified) <http://translate.namelessmc.com/"
@@ -187,17 +187,18 @@ msgstr "真的能用的免费建站服务。"
 
 #: main/templates/main/index.html:14
 msgid ""
-"Provides FTP file access, unlike NamelessHosting. Compatible with "
-"integrations like the ingame plugin and Discord bot, unlike 000webhost, "
-"InfinityFree and others."
+"Finally, free hosting for NamelessMC websites with automatic installation "
+"and FTP file access without blocking API access!"
 msgstr ""
-"我们既提供 FTP 文件访问功能，还支持例如游戏内插件和 Discord 机器人的集成。"
 
 #: main/templates/main/index.html:17
-#, python-format
+#, fuzzy, python-format
+#| msgid ""
+#| "We currently host %(websites)s websites. This hosting service is operated "
+#| "by Derkades (developer of Nameless Plugin and Discord bot)."
 msgid ""
-"We currently host %(websites)s websites. This hosting service is operated by "
-"Derkades (developer of Nameless Plugin and Discord bot)."
+"We currently host %(websites)s websites. Operated by %(discord_handle)s in "
+"Discord or %(github_handle)s on GitHub"
 msgstr ""
 "我们目前正在运行 %(websites)s 个网站。此建站服务由 Nameless 插件和 Discord 机"
 "器人开发 Derkades 运营。"
@@ -214,51 +215,51 @@ msgstr "现在开始"
 msgid "Sign up"
 msgstr "注册"
 
-#: main/templates/main/index.html:42
+#: main/templates/main/index.html:43
 msgid "Simple"
 msgstr "简洁"
 
-#: main/templates/main/index.html:43
+#: main/templates/main/index.html:44
 msgid "Server configured automatically, start the installer right away"
 msgstr "服务器会自动配置，您可以马上开始安装"
 
-#: main/templates/main/index.html:49
+#: main/templates/main/index.html:50
 msgid "Full access"
 msgstr "完整控制"
 
-#: main/templates/main/index.html:50
+#: main/templates/main/index.html:51
 msgid "Upload your own templates and edit the database using phpmyadmin"
 msgstr "上传您自己的模版，或用 phpMyAdmin 编辑数据库"
 
-#: main/templates/main/index.html:56
+#: main/templates/main/index.html:57
 msgid "No artificial limits"
 msgstr "无人工限制"
 
-#: main/templates/main/index.html:57
+#: main/templates/main/index.html:58
 msgid "No limits on modules, templates, users, etc."
 msgstr "您可添加无限个模块，用户，模版等。"
 
-#: main/templates/main/index.html:65
+#: main/templates/main/index.html:66
 msgid "Support NamelessMC"
 msgstr "支持 NamelessMC"
 
-#: main/templates/main/index.html:66
+#: main/templates/main/index.html:67
 msgid "We donate part of our income to NamelessMC developers"
 msgstr "我们会将部分收入捐赠给 NamelessMC 开发者"
 
-#: main/templates/main/index.html:72
+#: main/templates/main/index.html:73
 msgid "Secure"
 msgstr "安全"
 
-#: main/templates/main/index.html:73
+#: main/templates/main/index.html:74
 msgid "Protect your website with modern TLS encryption without hassle."
 msgstr "毫不麻烦地用现代 TLS 加密保护您的网站。"
 
-#: main/templates/main/index.html:79
+#: main/templates/main/index.html:80
 msgid "High performance"
 msgstr "高性能"
 
-#: main/templates/main/index.html:80
+#: main/templates/main/index.html:81
 msgid "Dedicated web server for every website."
 msgstr "每个网站都有独立的服务器。"
 
@@ -573,6 +574,13 @@ msgid ""
 msgstr ""
 "您确定要重置您的网站吗? 这会永久删除所有数据库和网站数据。重置网站大约一分钟"
 "后，您便可在网站上看到安装界面了。"
+
+#~ msgid ""
+#~ "Provides FTP file access, unlike NamelessHosting. Compatible with "
+#~ "integrations like the ingame plugin and Discord bot, unlike 000webhost, "
+#~ "InfinityFree and others."
+#~ msgstr ""
+#~ "我们既提供 FTP 文件访问功能，还支持例如游戏内插件和 Discord 机器人的集成。"
 
 #~ msgid "Reset website"
 #~ msgstr "重置网站"

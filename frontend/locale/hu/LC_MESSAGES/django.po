@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-04-21 11:31+0000\n"
+"POT-Creation-Date: 2021-04-21 12:02+0000\n"
 "PO-Revision-Date: 2021-03-25 10:44+0000\n"
 "Last-Translator: Magyar Adam <mestermc594@gmail.com>\n"
 "Language-Team: Hungarian <http://translate.namelessmc.com/projects/named-"
@@ -188,19 +188,18 @@ msgstr "Valójában működő ingyenes tárhely."
 
 #: main/templates/main/index.html:14
 msgid ""
-"Provides FTP file access, unlike NamelessHosting. Compatible with "
-"integrations like the ingame plugin and Discord bot, unlike 000webhost, "
-"InfinityFree and others."
+"Finally, free hosting for NamelessMC websites with automatic installation "
+"and FTP file access without blocking API access!"
 msgstr ""
-"FTP fájlhozzáférést biztosít, ellentétben a NamelessHosting weboldallal. "
-"Kompatibilis az olyan integrációkkal, mint az minecraft plugin és a Discord "
-"bot, ellentétben a 000webhosttal, az InfinityFree-rel és másokkal."
 
 #: main/templates/main/index.html:17
-#, python-format
+#, fuzzy, python-format
+#| msgid ""
+#| "We currently host %(websites)s websites. This hosting service is operated "
+#| "by Derkades (developer of Nameless Plugin and Discord bot)."
 msgid ""
-"We currently host %(websites)s websites. This hosting service is operated by "
-"Derkades (developer of Nameless Plugin and Discord bot)."
+"We currently host %(websites)s websites. Operated by %(discord_handle)s in "
+"Discord or %(github_handle)s on GitHub"
 msgstr ""
 "Jelenleg%(websites)s webhelyet tárolunk. Ezt a tárhelyszolgáltatást a "
 "Derkades (a Nameless Plugin és a Discord bot fejlesztője) üzemelteti."
@@ -217,53 +216,53 @@ msgstr "Kezdés"
 msgid "Sign up"
 msgstr "Regisztrálj"
 
-#: main/templates/main/index.html:42
+#: main/templates/main/index.html:43
 msgid "Simple"
 msgstr "Egyszerű"
 
-#: main/templates/main/index.html:43
+#: main/templates/main/index.html:44
 msgid "Server configured automatically, start the installer right away"
 msgstr "Az automatikusan konfigurált szerver, azonnal elindítja a telepítőt"
 
-#: main/templates/main/index.html:49
+#: main/templates/main/index.html:50
 msgid "Full access"
 msgstr "Teljes hozzáférés"
 
-#: main/templates/main/index.html:50
+#: main/templates/main/index.html:51
 msgid "Upload your own templates and edit the database using phpmyadmin"
 msgstr ""
 "Töltse fel saját sablonjait és szerkessze az adatbázist a phpmyadmin "
 "segítségével"
 
-#: main/templates/main/index.html:56
+#: main/templates/main/index.html:57
 msgid "No artificial limits"
 msgstr "Nincsenek mesterséges korlátok"
 
-#: main/templates/main/index.html:57
+#: main/templates/main/index.html:58
 msgid "No limits on modules, templates, users, etc."
 msgstr "Nincs korlátozás a modulokra, a sablonokra, a felhasználókra stb."
 
-#: main/templates/main/index.html:65
+#: main/templates/main/index.html:66
 msgid "Support NamelessMC"
 msgstr "NamelessMC támogatása"
 
-#: main/templates/main/index.html:66
+#: main/templates/main/index.html:67
 msgid "We donate part of our income to NamelessMC developers"
 msgstr "A jövedelmünk egy részét a NamelessMC fejlesztőknek ajánljuk fel"
 
-#: main/templates/main/index.html:72
+#: main/templates/main/index.html:73
 msgid "Secure"
 msgstr "Biztonságos"
 
-#: main/templates/main/index.html:73
+#: main/templates/main/index.html:74
 msgid "Protect your website with modern TLS encryption without hassle."
 msgstr "Védje webhelyét modern TLS titkosítással, gond nélkül."
 
-#: main/templates/main/index.html:79
+#: main/templates/main/index.html:80
 msgid "High performance"
 msgstr "Nagy teljesítményű"
 
-#: main/templates/main/index.html:80
+#: main/templates/main/index.html:81
 msgid "Dedicated web server for every website."
 msgstr "Dedikált webszerver minden webhelyhez."
 
@@ -586,6 +585,15 @@ msgstr ""
 "Biztosan visszaállítja webhelyét? Ezzel véglegesen törli az összes "
 "adatbázist és webhelyadatot. Miután visszaállította a webhelyet, várjon kb. "
 "Egy percet, és megjelenik a telepítő, amikor webhelyére megy."
+
+#~ msgid ""
+#~ "Provides FTP file access, unlike NamelessHosting. Compatible with "
+#~ "integrations like the ingame plugin and Discord bot, unlike 000webhost, "
+#~ "InfinityFree and others."
+#~ msgstr ""
+#~ "FTP fájlhozzáférést biztosít, ellentétben a NamelessHosting weboldallal. "
+#~ "Kompatibilis az olyan integrációkkal, mint az minecraft plugin és a "
+#~ "Discord bot, ellentétben a 000webhosttal, az InfinityFree-rel és másokkal."
 
 #~ msgid "Reset website"
 #~ msgstr "Webhely visszaállítása"

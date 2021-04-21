@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-04-21 11:31+0000\n"
+"POT-Creation-Date: 2021-04-21 12:02+0000\n"
 "PO-Revision-Date: 2021-04-12 13:54+0000\n"
 "Last-Translator: Greg <gregvizier@gmail.com>\n"
 "Language-Team: French <http://translate.namelessmc.com/projects/named-"
@@ -188,19 +188,18 @@ msgstr "Un hébergement gratuit qui fonctionne réellement."
 
 #: main/templates/main/index.html:14
 msgid ""
-"Provides FTP file access, unlike NamelessHosting. Compatible with "
-"integrations like the ingame plugin and Discord bot, unlike 000webhost, "
-"InfinityFree and others."
+"Finally, free hosting for NamelessMC websites with automatic installation "
+"and FTP file access without blocking API access!"
 msgstr ""
-"Fournit un accès aux fichiers FTP, contrairement à NamelessHosting. "
-"Compatible avec des intégrations comme le plugin ingame et le robot Discord, "
-"contrairement à 000webhost, InfinityFree et autres."
 
 #: main/templates/main/index.html:17
-#, python-format
+#, fuzzy, python-format
+#| msgid ""
+#| "We currently host %(websites)s websites. This hosting service is operated "
+#| "by Derkades (developer of Nameless Plugin and Discord bot)."
 msgid ""
-"We currently host %(websites)s websites. This hosting service is operated by "
-"Derkades (developer of Nameless Plugin and Discord bot)."
+"We currently host %(websites)s websites. Operated by %(discord_handle)s in "
+"Discord or %(github_handle)s on GitHub"
 msgstr ""
 "Nous hébergeons actuellement %(websites)s. sites web Ce service "
 "d'hébergement est exploité par Derkades (développeur du plugin Nameless et "
@@ -218,57 +217,57 @@ msgstr "Commencez"
 msgid "Sign up"
 msgstr "S'inscrire"
 
-#: main/templates/main/index.html:42
+#: main/templates/main/index.html:43
 msgid "Simple"
 msgstr "Simple"
 
-#: main/templates/main/index.html:43
+#: main/templates/main/index.html:44
 msgid "Server configured automatically, start the installer right away"
 msgstr ""
 "Serveur configuré automatiquement, lancez le programme d'installation tout "
 "de suite"
 
-#: main/templates/main/index.html:49
+#: main/templates/main/index.html:50
 msgid "Full access"
 msgstr "Accès complet"
 
-#: main/templates/main/index.html:50
+#: main/templates/main/index.html:51
 msgid "Upload your own templates and edit the database using phpmyadmin"
 msgstr ""
 "Téléchargez vos propres modèles et modifiez la base de données à l'aide de "
 "phpmyadmin"
 
-#: main/templates/main/index.html:56
+#: main/templates/main/index.html:57
 msgid "No artificial limits"
 msgstr "Pas de limites artificielles"
 
-#: main/templates/main/index.html:57
+#: main/templates/main/index.html:58
 msgid "No limits on modules, templates, users, etc."
 msgstr "Aucune limite en termes de modules, de modèles, d'utilisateurs, etc."
 
-#: main/templates/main/index.html:65
+#: main/templates/main/index.html:66
 msgid "Support NamelessMC"
 msgstr "Soutenir NamelessMC"
 
-#: main/templates/main/index.html:66
+#: main/templates/main/index.html:67
 msgid "We donate part of our income to NamelessMC developers"
 msgstr ""
 "Nous reversons une partie de nos revenus aux développeurs de NamelessMC"
 
-#: main/templates/main/index.html:72
+#: main/templates/main/index.html:73
 msgid "Secure"
 msgstr "Sécuriser"
 
-#: main/templates/main/index.html:73
+#: main/templates/main/index.html:74
 msgid "Protect your website with modern TLS encryption without hassle."
 msgstr ""
 "Protégez votre site Web grâce à un cryptage TLS moderne et sans problème."
 
-#: main/templates/main/index.html:79
+#: main/templates/main/index.html:80
 msgid "High performance"
 msgstr "Haute performance"
 
-#: main/templates/main/index.html:80
+#: main/templates/main/index.html:81
 msgid "Dedicated web server for every website."
 msgstr "Un serveur web dédié pour chaque site web."
 
@@ -598,6 +597,15 @@ msgstr ""
 "définitivement toutes les bases de données et les données du site. Après "
 "avoir réinitialisé votre site Web, attendez environ une minute et vous "
 "verrez l'installateur en allant sur votre site Web."
+
+#~ msgid ""
+#~ "Provides FTP file access, unlike NamelessHosting. Compatible with "
+#~ "integrations like the ingame plugin and Discord bot, unlike 000webhost, "
+#~ "InfinityFree and others."
+#~ msgstr ""
+#~ "Fournit un accès aux fichiers FTP, contrairement à NamelessHosting. "
+#~ "Compatible avec des intégrations comme le plugin ingame et le robot "
+#~ "Discord, contrairement à 000webhost, InfinityFree et autres."
 
 #~ msgid "Reset website"
 #~ msgstr "Réinitialisation du site web"
