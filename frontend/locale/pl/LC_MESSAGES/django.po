@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-04-12 10:15+0000\n"
+"POT-Creation-Date: 2021-04-21 11:21+0000\n"
 "PO-Revision-Date: 2021-04-04 19:54+0000\n"
 "Last-Translator: NamelessMC Translations <robin@derkad.es>\n"
 "Language-Team: Polish <http://translate.namelessmc.com/projects/named-"
@@ -159,7 +159,7 @@ msgid "Free subdomain"
 msgstr "Darmowa subdomena"
 
 #: main/templates/main/comparison.html:154
-#: users/templates/users/website_detail.html:79
+#: users/templates/users/website_detail.html:98
 msgid "phpmyadmin"
 msgstr "phpmyadmin"
 
@@ -274,7 +274,7 @@ msgstr "Nieprawidłowa domena"
 msgid "Don't include www. in your domain"
 msgstr "Nie dodawaj www. do domeny"
 
-#: users/models.py:31 users/templates/users/website_detail.html:37
+#: users/models.py:31 users/templates/users/website_detail.html:56
 msgid "Domain"
 msgstr "Domena"
 
@@ -318,21 +318,33 @@ msgstr "Wersja"
 msgid "Enable www."
 msgstr "Włącz www."
 
-#: users/models.py:77 users/templates/users/website_form.html:12
+#: users/models.py:80 users/templates/users/website_form.html:12
 msgid "Create website"
 msgstr "Stwórz witryne"
 
-#: users/models.py:78 users/templates/users/website_form.html:10
+#: users/models.py:81 users/templates/users/website_form.html:10
 msgid "Update website"
 msgstr "Zaktualizuj stronę"
 
-#: users/models.py:79
+#: users/models.py:82
 msgid "Reset website"
 msgstr "Resetuj strone"
 
-#: users/models.py:81
+#: users/models.py:84
 msgid "Delete website"
 msgstr "Usuń strone"
+
+#: users/models.py:85
+#, fuzzy
+#| msgid "Create website"
+msgid "Start website"
+msgstr "Stwórz witryne"
+
+#: users/models.py:86
+#, fuzzy
+#| msgid "Reset website"
+msgid "Ping website"
+msgstr "Resetuj strone"
 
 #: users/templates/registration/logged_out.html:4
 msgid "You have been logged out."
@@ -471,7 +483,7 @@ msgstr "Reset"
 msgid "Delete"
 msgstr "Usuń"
 
-#: users/templates/users/website_detail.html:27
+#: users/templates/users/website_detail.html:30
 #, python-format
 msgid ""
 "Add a <code>CNAME</code> record on <code>%(domain)s</code> (and <code>www."
@@ -481,47 +493,57 @@ msgid ""
 "Creating a CNAME record</a>."
 msgstr ""
 
-#: users/templates/users/website_detail.html:33
+#: users/templates/users/website_detail.html:36
+#, python-format
+msgid ""
+"Your domain appears to not be linked properly. If you do not understand what "
+"this means, please <a href=\"%(support_discord_url)s\">contact support</a>. "
+"Websites that have not been working properly for a long time may be "
+"permanently deleted to free up space for active sites. <br><br> Down since "
+"%(down_since_date)s (checked every hour)"
+msgstr ""
+
+#: users/templates/users/website_detail.html:52
 msgid "Website"
 msgstr "Strona"
 
-#: users/templates/users/website_detail.html:49
+#: users/templates/users/website_detail.html:68
 msgid "Date created (UTC)"
 msgstr "Data utworzenia (UTC)"
 
-#: users/templates/users/website_detail.html:54
+#: users/templates/users/website_detail.html:73
 msgid "Database"
 msgstr "Database"
 
-#: users/templates/users/website_detail.html:58
-#: users/templates/users/website_detail.html:91
+#: users/templates/users/website_detail.html:77
+#: users/templates/users/website_detail.html:110
 msgid "address"
 msgstr "adres"
 
-#: users/templates/users/website_detail.html:62
-#: users/templates/users/website_detail.html:95
+#: users/templates/users/website_detail.html:81
+#: users/templates/users/website_detail.html:114
 msgid "port"
 msgstr "port"
 
-#: users/templates/users/website_detail.html:66
-#: users/templates/users/website_detail.html:99
+#: users/templates/users/website_detail.html:85
+#: users/templates/users/website_detail.html:118
 msgid "username"
 msgstr "Nazwa użytkownika"
 
-#: users/templates/users/website_detail.html:70
-#: users/templates/users/website_detail.html:103
+#: users/templates/users/website_detail.html:89
+#: users/templates/users/website_detail.html:122
 msgid "password"
 msgstr "hasło"
 
-#: users/templates/users/website_detail.html:75
+#: users/templates/users/website_detail.html:94
 msgid "database name"
 msgstr "nazwa database"
 
-#: users/templates/users/website_detail.html:84
+#: users/templates/users/website_detail.html:103
 msgid "Files"
 msgstr "Pliki"
 
-#: users/templates/users/website_detail.html:86
+#: users/templates/users/website_detail.html:105
 #, python-format
 msgid ""
 "Use an FTP client to connect. We recommend FileZilla or WinSCP. The server "

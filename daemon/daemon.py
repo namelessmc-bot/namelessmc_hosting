@@ -7,14 +7,13 @@ import delete_site
 import reset_site
 import certs
 import compose
+import site_pinger
 
 
 print("Daemon started")
 
 
 def daemon():
-    # ftp.recreate()
-
     while True:
         conn = db.open_db()
         cur = conn.cursor()
@@ -44,6 +43,9 @@ def daemon():
             elif job_type == 5:
                 site_id = int(job_content)
                 compose.start(site_id)
+            elif job_type == 6:
+                site_id = int(job_content)
+                site_pinger.ping(site_id)
             else:
                 print(f"Unknown job type {job_type}")
                 cur.execute("UPDATE jobs SET running = FALSE WHERE id=%s", (job_id,))

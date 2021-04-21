@@ -46,6 +46,7 @@ class Website(models.Model):
     version = models.CharField(max_length=20, default='v2-pr9', choices=versions_choices, verbose_name=_('Version'))
     webserver_ip = models.CharField(max_length=20, default=None, null=True, blank=True)
     www = models.BooleanField(default=False, verbose_name=_('Enable www.'))
+    down_since = models.DateTimeField(auto_now_add=True, null=True, blank=True)
 
     def __str__(self):
         return self.domain
@@ -73,6 +74,7 @@ class Job(models.Model):
     RENEW_CERT = 3
     DELETE_WEBSITE = 4 # Delete website and all data
     START_WEBSITE = 5
+    PING_WEBSITE = 6
 
     JOB_TYPES = [
         (CREATE_WEBSITE, _('Create website')),
@@ -81,6 +83,7 @@ class Job(models.Model):
         (RENEW_CERT, 'Renew certificate'),
         (DELETE_WEBSITE, _('Delete website')),
         (START_WEBSITE, _('Start website')),
+        (PING_WEBSITE, _('Ping website')),
     ]
 
     CRITICAL = 4

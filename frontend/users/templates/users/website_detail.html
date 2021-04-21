@@ -22,12 +22,31 @@
     </div>
 
     {% comment %} <a href="{% url 'website-db-pass-regen' website.id %}" class="btn btn-outline-warning">Regenerate database password</a> {% endcomment %}
-    <div class="alert alert-secondary mt-4" role="alert">
-        {% blocktrans trimmed with domain=website.domain cname_target="site.namedhosting.com" wiki_url="https://github.com/Derkades/namelessmc_hosting/wiki/Creating-a-CNAME-record" %}
-            Add a <code>CNAME</code> record on <code>{{ domain }}</code> (and <code>www.{{ domain }}</code>) that points to <code>{{ cname_target }}</code>. This process varies depending on
-            where you registered your domain. For more information, please read <a href="{{ wiki_url }}" target="_blank">Wiki: Creating a CNAME record</a>.
-        {% endblocktrans %}
-    </div>
+
+
+    {% if website.down_since %}
+        <div class="alert alert-secondary mt-4" role="alert">
+            {% blocktrans trimmed with domain=website.domain cname_target="site.namedhosting.com" wiki_url="https://github.com/Derkades/namelessmc_hosting/wiki/Creating-a-CNAME-record" %}
+                Add a <code>CNAME</code> record on <code>{{ domain }}</code> (and <code>www.{{ domain }}</code>) that points to <code>{{ cname_target }}</code>. This process varies depending on
+                where you registered your domain. For more information, please read <a href="{{ wiki_url }}" target="_blank">Wiki: Creating a CNAME record</a>.
+            {% endblocktrans %}
+        </div>
+        <div class="alert alert-danger mt-4" role="alert">
+            {% blocktrans trimmed with support_discord_url="https://discord.gg/ePApzPp" down_since_date=website.down_since %}
+                Your domain appears to not be linked properly. If you do not understand
+                what this means, please <a href="{{ support_discord_url }}">contact support</a>. Websites that
+                have not been working properly for a long time may be permanently deleted to free up space for
+                active sites.
+                <br><br>
+                Down since {{ down_since_date }} (checked every hour)
+            {% endblocktrans %}
+        </div>
+    {% else %}
+        <div class="alert alert-success mt-4" role="alert">
+            Your domain appears to be linked successfully.
+        </div>
+    {% endif %}
+
     <div class="mt-2">
         <h4>{% trans "Website" %}</h4>
         <table class="table table-hover">

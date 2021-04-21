@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-04-12 10:15+0000\n"
+"POT-Creation-Date: 2021-04-21 11:21+0000\n"
 "PO-Revision-Date: 2021-03-24 14:44+0000\n"
 "Last-Translator: Gabriel Leen <hello@dreta.dev>\n"
 "Language-Team: Chinese (Simplified) <http://translate.namelessmc.com/"
@@ -157,7 +157,7 @@ msgid "Free subdomain"
 msgstr "免费子域名"
 
 #: main/templates/main/comparison.html:154
-#: users/templates/users/website_detail.html:79
+#: users/templates/users/website_detail.html:98
 msgid "phpmyadmin"
 msgstr "phpmyadmin"
 
@@ -270,7 +270,7 @@ msgstr "无效域名"
 msgid "Don't include www. in your domain"
 msgstr "请勿在域名中包含 www."
 
-#: users/models.py:31 users/templates/users/website_detail.html:37
+#: users/models.py:31 users/templates/users/website_detail.html:56
 msgid "Domain"
 msgstr "域名"
 
@@ -314,21 +314,33 @@ msgstr "版本"
 msgid "Enable www."
 msgstr "启用 www."
 
-#: users/models.py:77 users/templates/users/website_form.html:12
+#: users/models.py:80 users/templates/users/website_form.html:12
 msgid "Create website"
 msgstr "创建网站"
 
-#: users/models.py:78 users/templates/users/website_form.html:10
+#: users/models.py:81 users/templates/users/website_form.html:10
 msgid "Update website"
 msgstr "更新网站"
 
-#: users/models.py:79
+#: users/models.py:82
 msgid "Reset website"
 msgstr "重置网站"
 
-#: users/models.py:81
+#: users/models.py:84
 msgid "Delete website"
 msgstr "删除网站"
+
+#: users/models.py:85
+#, fuzzy
+#| msgid "Create website"
+msgid "Start website"
+msgstr "创建网站"
+
+#: users/models.py:86
+#, fuzzy
+#| msgid "Reset website"
+msgid "Ping website"
+msgstr "重置网站"
 
 #: users/templates/registration/logged_out.html:4
 msgid "You have been logged out."
@@ -464,7 +476,7 @@ msgstr "重置"
 msgid "Delete"
 msgstr "删除"
 
-#: users/templates/users/website_detail.html:27
+#: users/templates/users/website_detail.html:30
 #, python-format
 msgid ""
 "Add a <code>CNAME</code> record on <code>%(domain)s</code> (and <code>www."
@@ -478,47 +490,57 @@ msgstr ""
 "作方法可能不同。若想获得更多信息，请阅读 <a href=\"%(wiki_url)s\" target="
 "\"_blank\">指南: 创建 CNAME 记录</a>。"
 
-#: users/templates/users/website_detail.html:33
+#: users/templates/users/website_detail.html:36
+#, python-format
+msgid ""
+"Your domain appears to not be linked properly. If you do not understand what "
+"this means, please <a href=\"%(support_discord_url)s\">contact support</a>. "
+"Websites that have not been working properly for a long time may be "
+"permanently deleted to free up space for active sites. <br><br> Down since "
+"%(down_since_date)s (checked every hour)"
+msgstr ""
+
+#: users/templates/users/website_detail.html:52
 msgid "Website"
 msgstr "网站"
 
-#: users/templates/users/website_detail.html:49
+#: users/templates/users/website_detail.html:68
 msgid "Date created (UTC)"
 msgstr "创建日期 (UTC)"
 
-#: users/templates/users/website_detail.html:54
+#: users/templates/users/website_detail.html:73
 msgid "Database"
 msgstr "数据库"
 
-#: users/templates/users/website_detail.html:58
-#: users/templates/users/website_detail.html:91
+#: users/templates/users/website_detail.html:77
+#: users/templates/users/website_detail.html:110
 msgid "address"
 msgstr "地址"
 
-#: users/templates/users/website_detail.html:62
-#: users/templates/users/website_detail.html:95
+#: users/templates/users/website_detail.html:81
+#: users/templates/users/website_detail.html:114
 msgid "port"
 msgstr "端口"
 
-#: users/templates/users/website_detail.html:66
-#: users/templates/users/website_detail.html:99
+#: users/templates/users/website_detail.html:85
+#: users/templates/users/website_detail.html:118
 msgid "username"
 msgstr "用户名"
 
-#: users/templates/users/website_detail.html:70
-#: users/templates/users/website_detail.html:103
+#: users/templates/users/website_detail.html:89
+#: users/templates/users/website_detail.html:122
 msgid "password"
 msgstr "密码"
 
-#: users/templates/users/website_detail.html:75
+#: users/templates/users/website_detail.html:94
 msgid "database name"
 msgstr "数据库名称"
 
-#: users/templates/users/website_detail.html:84
+#: users/templates/users/website_detail.html:103
 msgid "Files"
 msgstr "文件"
 
-#: users/templates/users/website_detail.html:86
+#: users/templates/users/website_detail.html:105
 #, python-format
 msgid ""
 "Use an FTP client to connect. We recommend FileZilla or WinSCP. The server "
