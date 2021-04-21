@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-04-21 12:02+0000\n"
+"POT-Creation-Date: 2021-04-21 12:51+0000\n"
 "PO-Revision-Date: 2021-03-24 14:44+0000\n"
 "Last-Translator: Gabriel Leen <hello@dreta.dev>\n"
 "Language-Team: Chinese (Simplified) <http://translate.namelessmc.com/"
@@ -19,39 +19,39 @@ msgstr ""
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Generator: Weblate 4.5.1\n"
 
-#: main/templates/main/base.html:43
+#: main/templates/main/base.html:45
 msgid "Home"
 msgstr "主页"
 
-#: main/templates/main/base.html:56
+#: main/templates/main/base.html:58
 msgid "Your Websites"
 msgstr "你的网站"
 
-#: main/templates/main/base.html:61 users/templates/users/website_detail.html:7
+#: main/templates/main/base.html:63 users/templates/users/website_detail.html:7
 #: users/templates/users/website_list.html:7
 msgid "Account"
 msgstr "账号"
 
-#: main/templates/main/base.html:66
+#: main/templates/main/base.html:68
 msgid "Logout"
 msgstr "登出"
 
-#: main/templates/main/base.html:71
+#: main/templates/main/base.html:73
 msgid "Login"
 msgstr "登录"
 
-#: main/templates/main/base.html:76
+#: main/templates/main/base.html:78
 msgid "Register"
 msgstr "注册"
 
-#: main/templates/main/base.html:110
+#: main/templates/main/base.html:112
 msgid ""
 "Not affiliated with the <a href=\"https://namelessmc.com\">NamelessMC "
 "project</a>"
 msgstr ""
 "不受 <a href=\"https://namelessmc.com\">NamelessMC 项目组</a> 的官方支持"
 
-#: main/templates/main/base.html:112
+#: main/templates/main/base.html:114
 msgid ""
 "This hosting system is <a href=\"https://github.com/Derkades/"
 "namelessmc_hosting\">open source</a>"
@@ -59,15 +59,15 @@ msgstr ""
 "此建站系统是<a href=\"https://github.com/Derkades/namelessmc_hosting\">开源软"
 "件</a>"
 
-#: main/templates/main/base.html:117
+#: main/templates/main/base.html:119
 msgid "Support Discord"
 msgstr "支持 Discord"
 
-#: main/templates/main/base.html:120
+#: main/templates/main/base.html:122
 msgid "Privacy Policy"
 msgstr "隐私条款"
 
-#: main/templates/main/base.html:121
+#: main/templates/main/base.html:123
 msgid "Terms of service"
 msgstr "服务条款"
 
@@ -385,6 +385,11 @@ msgstr "密码重置邮件已发送，请查看您的收件箱。"
 msgid "Send email"
 msgstr "发送邮件"
 
+#: users/templates/users/account.html:7
+#, python-format
+msgid "Welcome, %(username)s"
+msgstr "欢迎，%(username)s"
+
 #: users/templates/users/account.html:45
 msgid "Update account settings"
 msgstr "更新账号设置"
@@ -416,6 +421,11 @@ msgstr "已经有账号了?"
 #: users/templates/users/register.html:17
 msgid "Sign in"
 msgstr "登录"
+
+#: users/templates/users/website_confirm_delete.html:9
+#, python-format
+msgid "Delete website '%(sitename)s'"
+msgstr "删除网站 '%(sitename)s'"
 
 #: users/templates/users/website_confirm_delete.html:10
 msgid "Are you sure you want to delete this website?"
@@ -552,19 +562,30 @@ msgstr ""
 msgid "Your sites"
 msgstr "您的网站"
 
-#: users/templates/users/website_list.html:18
-msgid "View &amp; Edit"
-msgstr "查看 &amp; 编辑"
+#: users/templates/users/website_list.html:35
+#, fuzzy
+#| msgid "Confirm"
+msgid "Configure"
+msgstr "确认"
 
-#: users/templates/users/website_list.html:24
-#: users/templates/users/website_list.html:26
+#: users/templates/users/website_list.html:42
+msgid "You don't have any websites."
+msgstr ""
+
+#: users/templates/users/website_list.html:46
+#: users/templates/users/website_list.html:48
 msgid "Create new website"
 msgstr "创建新网站"
 
-#: users/templates/users/website_list.html:26
+#: users/templates/users/website_list.html:48
 msgid ""
 "Free accounts are limited to 2 websites, paid accounts are limited to 5."
 msgstr "免费账号只能创建 2 个网站，而付费账号可创建 5 个。"
+
+#: users/templates/users/website_reset.html:8
+#, python-format
+msgid "Reset website '%(sitename)s'"
+msgstr "重置网站 '%(sitename)s'"
 
 #: users/templates/users/website_reset.html:10
 msgid ""
@@ -574,6 +595,9 @@ msgid ""
 msgstr ""
 "您确定要重置您的网站吗? 这会永久删除所有数据库和网站数据。重置网站大约一分钟"
 "后，您便可在网站上看到安装界面了。"
+
+#~ msgid "View &amp; Edit"
+#~ msgstr "查看 &amp; 编辑"
 
 #~ msgid ""
 #~ "Provides FTP file access, unlike NamelessHosting. Compatible with "
@@ -630,12 +654,3 @@ msgstr ""
 #~ "kbd> users."
 #~ msgstr ""
 #~ "已经为 <kbd>%(users)s</kbd> 用户建立了 <kbd>%(websites)s</kbd> 个网站。"
-
-#~ msgid "Welcome, %(username)s"
-#~ msgstr "欢迎，%(username)s"
-
-#~ msgid "Delete website '%(sitename)s'"
-#~ msgstr "删除网站 '%(sitename)s'"
-
-#~ msgid "Reset website '%(sitename)s'"
-#~ msgstr "重置网站 '%(sitename)s'"

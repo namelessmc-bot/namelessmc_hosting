@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-04-21 12:02+0000\n"
+"POT-Creation-Date: 2021-04-21 12:51+0000\n"
 "PO-Revision-Date: 2021-01-15 20:19+0000\n"
 "Last-Translator: Maiu <maiuxd77@gmail.com>\n"
 "Language-Team: Norwegian Bokmål <http://translate.namelessmc.com/projects/"
@@ -19,39 +19,39 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: Weblate 4.4\n"
 
-#: main/templates/main/base.html:43
+#: main/templates/main/base.html:45
 msgid "Home"
 msgstr "Hjem"
 
-#: main/templates/main/base.html:56
+#: main/templates/main/base.html:58
 msgid "Your Websites"
 msgstr "Dine nettsider"
 
-#: main/templates/main/base.html:61 users/templates/users/website_detail.html:7
+#: main/templates/main/base.html:63 users/templates/users/website_detail.html:7
 #: users/templates/users/website_list.html:7
 msgid "Account"
 msgstr "Konto"
 
-#: main/templates/main/base.html:66
+#: main/templates/main/base.html:68
 msgid "Logout"
 msgstr "Logg ut"
 
-#: main/templates/main/base.html:71
+#: main/templates/main/base.html:73
 msgid "Login"
 msgstr "Logg inn"
 
-#: main/templates/main/base.html:76
+#: main/templates/main/base.html:78
 msgid "Register"
 msgstr "Registrer"
 
-#: main/templates/main/base.html:110
+#: main/templates/main/base.html:112
 msgid ""
 "Not affiliated with the <a href=\"https://namelessmc.com\">NamelessMC "
 "project</a>"
 msgstr ""
 "Ikke tilknyttet <a href=\"https://namelessmc.com\">NamelessMC-prosjektet</a>"
 
-#: main/templates/main/base.html:112
+#: main/templates/main/base.html:114
 msgid ""
 "This hosting system is <a href=\"https://github.com/Derkades/"
 "namelessmc_hosting\">open source</a>"
@@ -59,15 +59,15 @@ msgstr ""
 "Dette hosting-systemet er <a href=\"https://github.com/Derkades/"
 "namelessmc_hosting\">åpen kildekode</a>"
 
-#: main/templates/main/base.html:117
+#: main/templates/main/base.html:119
 msgid "Support Discord"
 msgstr "Discord for kundestøtte"
 
-#: main/templates/main/base.html:120
+#: main/templates/main/base.html:122
 msgid "Privacy Policy"
 msgstr "Personvernerklæring"
 
-#: main/templates/main/base.html:121
+#: main/templates/main/base.html:123
 msgid "Terms of service"
 msgstr "Vilkår for bruk"
 
@@ -389,6 +389,11 @@ msgstr "Tilbakestillingse-post har blitt sendt, vennligst sjekk din innboks."
 msgid "Send email"
 msgstr "Send e-post"
 
+#: users/templates/users/account.html:7
+#, python-format
+msgid "Welcome, %(username)s"
+msgstr "Velkommen, %(username)s"
+
 #: users/templates/users/account.html:45
 msgid "Update account settings"
 msgstr "Oppdater kontoinnstillinger"
@@ -420,6 +425,11 @@ msgstr "Har du allerede en konto?"
 #: users/templates/users/register.html:17
 msgid "Sign in"
 msgstr "Logg inn"
+
+#: users/templates/users/website_confirm_delete.html:9
+#, python-format
+msgid "Delete website '%(sitename)s'"
+msgstr "Slett nettside '%(sitename)s'"
 
 #: users/templates/users/website_confirm_delete.html:10
 msgid "Are you sure you want to delete this website?"
@@ -549,16 +559,22 @@ msgstr ""
 msgid "Your sites"
 msgstr "Dine sider"
 
-#: users/templates/users/website_list.html:18
-msgid "View &amp; Edit"
-msgstr "Se &amp; Rediger"
+#: users/templates/users/website_list.html:35
+#, fuzzy
+#| msgid "Confirm"
+msgid "Configure"
+msgstr "Bekreft"
 
-#: users/templates/users/website_list.html:24
-#: users/templates/users/website_list.html:26
+#: users/templates/users/website_list.html:42
+msgid "You don't have any websites."
+msgstr ""
+
+#: users/templates/users/website_list.html:46
+#: users/templates/users/website_list.html:48
 msgid "Create new website"
 msgstr "Opprett ny nettside"
 
-#: users/templates/users/website_list.html:26
+#: users/templates/users/website_list.html:48
 #, fuzzy
 #| msgid ""
 #| "Free accounts are limited to 1 website, paid accounts are limited to 3."
@@ -568,12 +584,20 @@ msgstr ""
 "Gratiskontoer er begrenset til 1 nettside, mens betalte kontoer er begrenset "
 "til 3."
 
+#: users/templates/users/website_reset.html:8
+#, python-format
+msgid "Reset website '%(sitename)s'"
+msgstr "Tilbakestill nettside '%(sitename)s'"
+
 #: users/templates/users/website_reset.html:10
 msgid ""
 "Are you sure you want to reset your website? This will permanently delete "
 "all databases and website data. After resetting your website, wait about a "
 "minute and you'll see installer when going to your website."
 msgstr ""
+
+#~ msgid "View &amp; Edit"
+#~ msgstr "Se &amp; Rediger"
 
 #~ msgid "Reset website"
 #~ msgstr "Tilbakestill nettside"
@@ -627,12 +651,3 @@ msgstr ""
 #~ msgstr ""
 #~ "Hoster for øyeblikket <kbd>%(websites)s</kbd> nettsider for <kbd>"
 #~ "%(users)s</kbd> brukere."
-
-#~ msgid "Welcome, %(username)s"
-#~ msgstr "Velkommen, %(username)s"
-
-#~ msgid "Delete website '%(sitename)s'"
-#~ msgstr "Slett nettside '%(sitename)s'"
-
-#~ msgid "Reset website '%(sitename)s'"
-#~ msgstr "Tilbakestill nettside '%(sitename)s'"
