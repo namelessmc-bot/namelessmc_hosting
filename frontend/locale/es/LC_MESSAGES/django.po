@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-04-21 11:21+0000\n"
+"POT-Creation-Date: 2021-04-21 11:29+0000\n"
 "PO-Revision-Date: 2021-04-06 21:54+0000\n"
 "Last-Translator: Marcos <marckos03br@gmail.com>\n"
 "Language-Team: Spanish <http://translate.namelessmc.com/projects/named-"
@@ -320,34 +320,6 @@ msgstr "Versión"
 msgid "Enable www."
 msgstr "Activar www."
 
-#: users/models.py:80 users/templates/users/website_form.html:12
-msgid "Create website"
-msgstr "Crear un sitio web"
-
-#: users/models.py:81 users/templates/users/website_form.html:10
-msgid "Update website"
-msgstr "Actualizar el sitio web"
-
-#: users/models.py:82
-msgid "Reset website"
-msgstr "Reiniciar el sitio web"
-
-#: users/models.py:84
-msgid "Delete website"
-msgstr "Eliminar el sitio web"
-
-#: users/models.py:85
-#, fuzzy
-#| msgid "Create website"
-msgid "Start website"
-msgstr "Crear un sitio web"
-
-#: users/models.py:86
-#, fuzzy
-#| msgid "Reset website"
-msgid "Ping website"
-msgstr "Reiniciar el sitio web"
-
 #: users/templates/registration/logged_out.html:4
 msgid "You have been logged out."
 msgstr "Se ha cerrado la sesión."
@@ -568,6 +540,14 @@ msgstr ""
 "%(ftp_domain)s</code> antes de aceptarlo. Para asegurarse de que se conecta "
 "de forma segura, configure su cliente FTP para que requiera FTP sobre TLS."
 
+#: users/templates/users/website_form.html:10
+msgid "Update website"
+msgstr "Actualizar el sitio web"
+
+#: users/templates/users/website_form.html:12
+msgid "Create website"
+msgstr "Crear un sitio web"
+
 #: users/templates/users/website_form.html:18
 msgid ""
 "Please make sure your website works without HTTPS before enabling HTTPS. Do "
@@ -609,6 +589,22 @@ msgstr ""
 "permanentemente todas las bases de datos y los datos del sitio web. Después "
 "de restablecer su sitio web, espere un minuto y verá el instalador cuando "
 "vaya a su sitio web."
+
+#~ msgid "Reset website"
+#~ msgstr "Reiniciar el sitio web"
+
+#~ msgid "Delete website"
+#~ msgstr "Eliminar el sitio web"
+
+#, fuzzy
+#~| msgid "Create website"
+#~ msgid "Start website"
+#~ msgstr "Crear un sitio web"
+
+#, fuzzy
+#~| msgid "Reset website"
+#~ msgid "Ping website"
+#~ msgstr "Reiniciar el sitio web"
 
 #~ msgid ""
 #~ "Use an FTP client to connect. We recommend FileZilla or WinSCP. The "

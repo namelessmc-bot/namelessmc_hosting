@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-04-21 11:21+0000\n"
+"POT-Creation-Date: 2021-04-21 11:29+0000\n"
 "PO-Revision-Date: 2021-03-25 10:44+0000\n"
 "Last-Translator: Magyar Adam <mestermc594@gmail.com>\n"
 "Language-Team: Hungarian <http://translate.namelessmc.com/projects/named-"
@@ -319,34 +319,6 @@ msgstr "Verzió"
 msgid "Enable www."
 msgstr "Engedélyezi a www."
 
-#: users/models.py:80 users/templates/users/website_form.html:12
-msgid "Create website"
-msgstr "Weboldal létrehozása"
-
-#: users/models.py:81 users/templates/users/website_form.html:10
-msgid "Update website"
-msgstr "Webhely frissítése"
-
-#: users/models.py:82
-msgid "Reset website"
-msgstr "Webhely visszaállítása"
-
-#: users/models.py:84
-msgid "Delete website"
-msgstr "Webhely törlése"
-
-#: users/models.py:85
-#, fuzzy
-#| msgid "Create website"
-msgid "Start website"
-msgstr "Weboldal létrehozása"
-
-#: users/models.py:86
-#, fuzzy
-#| msgid "Reset website"
-msgid "Ping website"
-msgstr "Webhely visszaállítása"
-
 #: users/templates/registration/logged_out.html:4
 msgid "You have been logged out."
 msgstr "Kijelentkeztél."
@@ -564,6 +536,14 @@ msgstr ""
 "tanúsítványt, mielőtt elfogadja. A biztonságos csatlakozás érdekében kérjük, "
 "állítsa be az FTP-klienst, hogy az TLS-n keresztüli FTP-t igényeljen."
 
+#: users/templates/users/website_form.html:10
+msgid "Update website"
+msgstr "Webhely frissítése"
+
+#: users/templates/users/website_form.html:12
+msgid "Create website"
+msgstr "Weboldal létrehozása"
+
 #: users/templates/users/website_form.html:18
 msgid ""
 "Please make sure your website works without HTTPS before enabling HTTPS. Do "
@@ -602,6 +582,22 @@ msgstr ""
 "Biztosan visszaállítja webhelyét? Ezzel véglegesen törli az összes "
 "adatbázist és webhelyadatot. Miután visszaállította a webhelyet, várjon kb. "
 "Egy percet, és megjelenik a telepítő, amikor webhelyére megy."
+
+#~ msgid "Reset website"
+#~ msgstr "Webhely visszaállítása"
+
+#~ msgid "Delete website"
+#~ msgstr "Webhely törlése"
+
+#, fuzzy
+#~| msgid "Create website"
+#~ msgid "Start website"
+#~ msgstr "Weboldal létrehozása"
+
+#, fuzzy
+#~| msgid "Reset website"
+#~ msgid "Ping website"
+#~ msgstr "Webhely visszaállítása"
 
 #~ msgid ""
 #~ "Use an FTP client to connect. We recommend FileZilla or WinSCP. The "

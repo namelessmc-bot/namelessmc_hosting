@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-04-21 11:21+0000\n"
+"POT-Creation-Date: 2021-04-21 11:29+0000\n"
 "PO-Revision-Date: 2021-01-15 20:19+0000\n"
 "Last-Translator: Maiu <maiuxd77@gmail.com>\n"
 "Language-Team: Norwegian Bokmål <http://translate.namelessmc.com/projects/"
@@ -317,34 +317,6 @@ msgstr "Versjon"
 msgid "Enable www."
 msgstr "Aktiver www."
 
-#: users/models.py:80 users/templates/users/website_form.html:12
-msgid "Create website"
-msgstr "Opprett nettside"
-
-#: users/models.py:81 users/templates/users/website_form.html:10
-msgid "Update website"
-msgstr "Oppdater nettside"
-
-#: users/models.py:82
-msgid "Reset website"
-msgstr "Tilbakestill nettside"
-
-#: users/models.py:84
-msgid "Delete website"
-msgstr "Slett nettside"
-
-#: users/models.py:85
-#, fuzzy
-#| msgid "Create website"
-msgid "Start website"
-msgstr "Opprett nettside"
-
-#: users/models.py:86
-#, fuzzy
-#| msgid "Reset website"
-msgid "Ping website"
-msgstr "Tilbakestill nettside"
-
 #: users/templates/registration/logged_out.html:4
 msgid "You have been logged out."
 msgstr "Du har blitt logget ut."
@@ -552,6 +524,14 @@ msgid ""
 "require FTP over TLS."
 msgstr ""
 
+#: users/templates/users/website_form.html:10
+msgid "Update website"
+msgstr "Oppdater nettside"
+
+#: users/templates/users/website_form.html:12
+msgid "Create website"
+msgstr "Opprett nettside"
+
 #: users/templates/users/website_form.html:18
 msgid ""
 "Please make sure your website works without HTTPS before enabling HTTPS. Do "
@@ -591,6 +571,22 @@ msgid ""
 "all databases and website data. After resetting your website, wait about a "
 "minute and you'll see installer when going to your website."
 msgstr ""
+
+#~ msgid "Reset website"
+#~ msgstr "Tilbakestill nettside"
+
+#~ msgid "Delete website"
+#~ msgstr "Slett nettside"
+
+#, fuzzy
+#~| msgid "Create website"
+#~ msgid "Start website"
+#~ msgstr "Opprett nettside"
+
+#, fuzzy
+#~| msgid "Reset website"
+#~ msgid "Ping website"
+#~ msgstr "Tilbakestill nettside"
 
 #~ msgid ""
 #~ "Use an FTP client to connect. We recommend FileZilla or WinSCP. The "

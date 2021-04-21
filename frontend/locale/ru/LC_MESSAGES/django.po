@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-04-21 11:21+0000\n"
+"POT-Creation-Date: 2021-04-21 11:29+0000\n"
 "PO-Revision-Date: 2021-03-24 17:44+0000\n"
 "Last-Translator: LOyoujoLI <minion2018@hotmail.com>\n"
 "Language-Team: Russian <http://translate.namelessmc.com/projects/named-"
@@ -320,34 +320,6 @@ msgstr "Версия"
 msgid "Enable www."
 msgstr "Включить www."
 
-#: users/models.py:80 users/templates/users/website_form.html:12
-msgid "Create website"
-msgstr "Создать сайт"
-
-#: users/models.py:81 users/templates/users/website_form.html:10
-msgid "Update website"
-msgstr "Обновить сайт"
-
-#: users/models.py:82
-msgid "Reset website"
-msgstr "Сбросить настройки сайта"
-
-#: users/models.py:84
-msgid "Delete website"
-msgstr "Удалить сайт"
-
-#: users/models.py:85
-#, fuzzy
-#| msgid "Create website"
-msgid "Start website"
-msgstr "Создать сайт"
-
-#: users/models.py:86
-#, fuzzy
-#| msgid "Reset website"
-msgid "Ping website"
-msgstr "Сбросить настройки сайта"
-
 #: users/templates/registration/logged_out.html:4
 msgid "You have been logged out."
 msgstr "Вы вышли из аккаунта."
@@ -566,6 +538,14 @@ msgstr ""
 "сертификат адресован к <code>%(ftp_domain)s</code>. Для надёжности "
 "соединения используйте технологию FTPS в вашей программе."
 
+#: users/templates/users/website_form.html:10
+msgid "Update website"
+msgstr "Обновить сайт"
+
+#: users/templates/users/website_form.html:12
+msgid "Create website"
+msgstr "Создать сайт"
+
 #: users/templates/users/website_form.html:18
 msgid ""
 "Please make sure your website works without HTTPS before enabling HTTPS. Do "
@@ -604,6 +584,22 @@ msgid ""
 msgstr ""
 "Вы действительно хотите сбросить настройки для этого сайта? Это приведёт к "
 "потери всех данных. После сброса, подождите минуту для появления установщика."
+
+#~ msgid "Reset website"
+#~ msgstr "Сбросить настройки сайта"
+
+#~ msgid "Delete website"
+#~ msgstr "Удалить сайт"
+
+#, fuzzy
+#~| msgid "Create website"
+#~ msgid "Start website"
+#~ msgstr "Создать сайт"
+
+#, fuzzy
+#~| msgid "Reset website"
+#~ msgid "Ping website"
+#~ msgstr "Сбросить настройки сайта"
 
 #~ msgid ""
 #~ "Use an FTP client to connect. We recommend FileZilla or WinSCP. The "

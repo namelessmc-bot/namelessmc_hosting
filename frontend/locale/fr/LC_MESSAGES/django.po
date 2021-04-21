@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-04-21 11:21+0000\n"
+"POT-Creation-Date: 2021-04-21 11:29+0000\n"
 "PO-Revision-Date: 2021-04-12 13:54+0000\n"
 "Last-Translator: Greg <gregvizier@gmail.com>\n"
 "Language-Team: French <http://translate.namelessmc.com/projects/named-"
@@ -324,34 +324,6 @@ msgstr "Version"
 msgid "Enable www."
 msgstr "Activez www."
 
-#: users/models.py:80 users/templates/users/website_form.html:12
-msgid "Create website"
-msgstr "Créer un site web"
-
-#: users/models.py:81 users/templates/users/website_form.html:10
-msgid "Update website"
-msgstr "Mise à jour du site web"
-
-#: users/models.py:82
-msgid "Reset website"
-msgstr "Réinitialisation du site web"
-
-#: users/models.py:84
-msgid "Delete website"
-msgstr "Supprimer le site web"
-
-#: users/models.py:85
-#, fuzzy
-#| msgid "Create website"
-msgid "Start website"
-msgstr "Créer un site web"
-
-#: users/models.py:86
-#, fuzzy
-#| msgid "Reset website"
-msgid "Ping website"
-msgstr "Réinitialisation du site web"
-
 #: users/templates/registration/logged_out.html:4
 msgid "You have been logged out."
 msgstr "Vous avez été déconnecté."
@@ -573,6 +545,14 @@ msgstr ""
 "vous assurer que vous vous connectez en toute sécurité, veuillez configurer "
 "votre client FTP pour qu'il exige le protocole FTP sur TLS."
 
+#: users/templates/users/website_form.html:10
+msgid "Update website"
+msgstr "Mise à jour du site web"
+
+#: users/templates/users/website_form.html:12
+msgid "Create website"
+msgstr "Créer un site web"
+
 #: users/templates/users/website_form.html:18
 msgid ""
 "Please make sure your website works without HTTPS before enabling HTTPS. Do "
@@ -614,3 +594,19 @@ msgstr ""
 "définitivement toutes les bases de données et les données du site. Après "
 "avoir réinitialisé votre site Web, attendez environ une minute et vous "
 "verrez l'installateur en allant sur votre site Web."
+
+#~ msgid "Reset website"
+#~ msgstr "Réinitialisation du site web"
+
+#~ msgid "Delete website"
+#~ msgstr "Supprimer le site web"
+
+#, fuzzy
+#~| msgid "Create website"
+#~ msgid "Start website"
+#~ msgstr "Créer un site web"
+
+#, fuzzy
+#~| msgid "Reset website"
+#~ msgid "Ping website"
+#~ msgstr "Réinitialisation du site web"

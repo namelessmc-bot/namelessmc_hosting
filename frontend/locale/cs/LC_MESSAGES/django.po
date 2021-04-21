@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-04-21 11:21+0000\n"
+"POT-Creation-Date: 2021-04-21 11:29+0000\n"
 "PO-Revision-Date: 2021-03-23 19:30+0000\n"
 "Last-Translator: Jonáš Loskot <fjuro@seznam.cz>\n"
 "Language-Team: Czech <http://translate.namelessmc.com/projects/named-hosting/"
@@ -317,34 +317,6 @@ msgstr "Verze"
 msgid "Enable www."
 msgstr "Povolit www."
 
-#: users/models.py:80 users/templates/users/website_form.html:12
-msgid "Create website"
-msgstr "Vytvořit web"
-
-#: users/models.py:81 users/templates/users/website_form.html:10
-msgid "Update website"
-msgstr "Aktualizovat web"
-
-#: users/models.py:82
-msgid "Reset website"
-msgstr "Obnovit web"
-
-#: users/models.py:84
-msgid "Delete website"
-msgstr "Odstranit web"
-
-#: users/models.py:85
-#, fuzzy
-#| msgid "Create website"
-msgid "Start website"
-msgstr "Vytvořit web"
-
-#: users/models.py:86
-#, fuzzy
-#| msgid "Reset website"
-msgid "Ping website"
-msgstr "Obnovit web"
-
 #: users/templates/registration/logged_out.html:4
 msgid "You have been logged out."
 msgstr "Byli jste odhlášeni."
@@ -562,6 +534,14 @@ msgstr ""
 "code>. Abyste se ujistili, že se připojujete bezpečně, nakonfigurujte vašeho "
 "FTP klienta, aby vyžadoval FTP přes TLS."
 
+#: users/templates/users/website_form.html:10
+msgid "Update website"
+msgstr "Aktualizovat web"
+
+#: users/templates/users/website_form.html:12
+msgid "Create website"
+msgstr "Vytvořit web"
+
 #: users/templates/users/website_form.html:18
 msgid ""
 "Please make sure your website works without HTTPS before enabling HTTPS. Do "
@@ -599,6 +579,22 @@ msgstr ""
 "Opravdu chcete obnovit váš web? Všechny databáze a data webu budou "
 "nenávratně smazána. Po obnovení vašeho webu bude trvat přibližně minutu, než "
 "uvidíte instalátor při návštěvě vašeho webu."
+
+#~ msgid "Reset website"
+#~ msgstr "Obnovit web"
+
+#~ msgid "Delete website"
+#~ msgstr "Odstranit web"
+
+#, fuzzy
+#~| msgid "Create website"
+#~ msgid "Start website"
+#~ msgstr "Vytvořit web"
+
+#, fuzzy
+#~| msgid "Reset website"
+#~ msgid "Ping website"
+#~ msgstr "Obnovit web"
 
 #~ msgid ""
 #~ "Use an FTP client to connect. We recommend FileZilla or WinSCP. The "

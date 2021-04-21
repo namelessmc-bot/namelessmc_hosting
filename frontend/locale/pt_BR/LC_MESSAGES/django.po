@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-04-21 11:21+0000\n"
+"POT-Creation-Date: 2021-04-21 11:29+0000\n"
 "PO-Revision-Date: 2021-04-19 00:59+0000\n"
 "Last-Translator: Gabriel Vittor <mansfferpro@gmail.com>\n"
 "Language-Team: Portuguese (Brazil) <http://translate.namelessmc.com/projects/"
@@ -319,34 +319,6 @@ msgstr "Versão"
 msgid "Enable www."
 msgstr "Habilitar www."
 
-#: users/models.py:80 users/templates/users/website_form.html:12
-msgid "Create website"
-msgstr "Criar site"
-
-#: users/models.py:81 users/templates/users/website_form.html:10
-msgid "Update website"
-msgstr "Atualizar site"
-
-#: users/models.py:82
-msgid "Reset website"
-msgstr "Redefinir site"
-
-#: users/models.py:84
-msgid "Delete website"
-msgstr "Deletar site"
-
-#: users/models.py:85
-#, fuzzy
-#| msgid "Create website"
-msgid "Start website"
-msgstr "Criar site"
-
-#: users/models.py:86
-#, fuzzy
-#| msgid "Reset website"
-msgid "Ping website"
-msgstr "Redefinir site"
-
 #: users/templates/registration/logged_out.html:4
 msgid "You have been logged out."
 msgstr "Você foi desconectado."
@@ -564,6 +536,14 @@ msgstr ""
 "code> antes de aceitá-lo. Para garantir que você está se conectando com "
 "segurança, configure seu cliente FTP para exigir FTP sobre TLS."
 
+#: users/templates/users/website_form.html:10
+msgid "Update website"
+msgstr "Atualizar site"
+
+#: users/templates/users/website_form.html:12
+msgid "Create website"
+msgstr "Criar site"
+
 #: users/templates/users/website_form.html:18
 msgid ""
 "Please make sure your website works without HTTPS before enabling HTTPS. Do "
@@ -604,3 +584,19 @@ msgstr ""
 "Tem certeza de que deseja redefinir seu site? Isso excluirá permanentemente "
 "todos os bancos de dados e dados do site. Depois de redefinir seu site, "
 "espere cerca de um minuto e você verá o instalador ao acessar seu site."
+
+#~ msgid "Reset website"
+#~ msgstr "Redefinir site"
+
+#~ msgid "Delete website"
+#~ msgstr "Deletar site"
+
+#, fuzzy
+#~| msgid "Create website"
+#~ msgid "Start website"
+#~ msgstr "Criar site"
+
+#, fuzzy
+#~| msgid "Reset website"
+#~ msgid "Ping website"
+#~ msgstr "Redefinir site"

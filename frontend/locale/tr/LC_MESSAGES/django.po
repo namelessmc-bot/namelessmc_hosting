@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-04-21 11:21+0000\n"
+"POT-Creation-Date: 2021-04-21 11:29+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -307,30 +307,6 @@ msgstr ""
 msgid "Enable www."
 msgstr ""
 
-#: users/models.py:80 users/templates/users/website_form.html:12
-msgid "Create website"
-msgstr ""
-
-#: users/models.py:81 users/templates/users/website_form.html:10
-msgid "Update website"
-msgstr ""
-
-#: users/models.py:82
-msgid "Reset website"
-msgstr ""
-
-#: users/models.py:84
-msgid "Delete website"
-msgstr ""
-
-#: users/models.py:85
-msgid "Start website"
-msgstr ""
-
-#: users/models.py:86
-msgid "Ping website"
-msgstr ""
-
 #: users/templates/registration/logged_out.html:4
 msgid "You have been logged out."
 msgstr ""
@@ -532,6 +508,14 @@ msgid ""
 "valid certificate for <code>%(ftp_domain)s</code> before accepting it. To "
 "ensure you're connecting securely, please configure your FTP client to "
 "require FTP over TLS."
+msgstr ""
+
+#: users/templates/users/website_form.html:10
+msgid "Update website"
+msgstr ""
+
+#: users/templates/users/website_form.html:12
+msgid "Create website"
 msgstr ""
 
 #: users/templates/users/website_form.html:18

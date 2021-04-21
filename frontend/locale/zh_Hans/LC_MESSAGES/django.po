@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-04-21 11:21+0000\n"
+"POT-Creation-Date: 2021-04-21 11:29+0000\n"
 "PO-Revision-Date: 2021-03-24 14:44+0000\n"
 "Last-Translator: Gabriel Leen <hello@dreta.dev>\n"
 "Language-Team: Chinese (Simplified) <http://translate.namelessmc.com/"
@@ -314,34 +314,6 @@ msgstr "版本"
 msgid "Enable www."
 msgstr "启用 www."
 
-#: users/models.py:80 users/templates/users/website_form.html:12
-msgid "Create website"
-msgstr "创建网站"
-
-#: users/models.py:81 users/templates/users/website_form.html:10
-msgid "Update website"
-msgstr "更新网站"
-
-#: users/models.py:82
-msgid "Reset website"
-msgstr "重置网站"
-
-#: users/models.py:84
-msgid "Delete website"
-msgstr "删除网站"
-
-#: users/models.py:85
-#, fuzzy
-#| msgid "Create website"
-msgid "Start website"
-msgstr "创建网站"
-
-#: users/models.py:86
-#, fuzzy
-#| msgid "Reset website"
-msgid "Ping website"
-msgstr "重置网站"
-
 #: users/templates/registration/logged_out.html:4
 msgid "You have been logged out."
 msgstr "您已被登出。"
@@ -554,6 +526,14 @@ msgstr ""
 "%(ftp_domain)s</code> 上是有效证书。为了保证您的信息不被泄露，您可在您的 FTP "
 "客户端中启用强制 TLS 加密。"
 
+#: users/templates/users/website_form.html:10
+msgid "Update website"
+msgstr "更新网站"
+
+#: users/templates/users/website_form.html:12
+msgid "Create website"
+msgstr "创建网站"
+
 #: users/templates/users/website_form.html:18
 msgid ""
 "Please make sure your website works without HTTPS before enabling HTTPS. Do "
@@ -589,6 +569,22 @@ msgid ""
 msgstr ""
 "您确定要重置您的网站吗? 这会永久删除所有数据库和网站数据。重置网站大约一分钟"
 "后，您便可在网站上看到安装界面了。"
+
+#~ msgid "Reset website"
+#~ msgstr "重置网站"
+
+#~ msgid "Delete website"
+#~ msgstr "删除网站"
+
+#, fuzzy
+#~| msgid "Create website"
+#~ msgid "Start website"
+#~ msgstr "创建网站"
+
+#, fuzzy
+#~| msgid "Reset website"
+#~ msgid "Ping website"
+#~ msgstr "重置网站"
 
 #~ msgid ""
 #~ "Use an FTP client to connect. We recommend FileZilla or WinSCP. The "

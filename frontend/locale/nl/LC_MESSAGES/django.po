@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-04-21 11:21+0000\n"
+"POT-Creation-Date: 2021-04-21 11:29+0000\n"
 "PO-Revision-Date: 2021-03-27 00:44+0000\n"
 "Last-Translator: NamelessMC Translations <robin@derkad.es>\n"
 "Language-Team: Dutch <http://translate.namelessmc.com/projects/named-hosting/"
@@ -318,34 +318,6 @@ msgstr "Versie"
 msgid "Enable www."
 msgstr "Gebruik www."
 
-#: users/models.py:80 users/templates/users/website_form.html:12
-msgid "Create website"
-msgstr "Website maken"
-
-#: users/models.py:81 users/templates/users/website_form.html:10
-msgid "Update website"
-msgstr "Website wijzigen"
-
-#: users/models.py:82
-msgid "Reset website"
-msgstr "Reset website"
-
-#: users/models.py:84
-msgid "Delete website"
-msgstr "Website verwijderen"
-
-#: users/models.py:85
-#, fuzzy
-#| msgid "Create website"
-msgid "Start website"
-msgstr "Website maken"
-
-#: users/models.py:86
-#, fuzzy
-#| msgid "Reset website"
-msgid "Ping website"
-msgstr "Reset website"
-
 #: users/templates/registration/logged_out.html:4
 msgid "You have been logged out."
 msgstr "Je bent uitgelogd."
@@ -564,6 +536,14 @@ msgstr ""
 "de verbinding veilig is, raden we aan het programma in te stellen om geen "
 "onbeveiligde verbindingen te maken."
 
+#: users/templates/users/website_form.html:10
+msgid "Update website"
+msgstr "Website wijzigen"
+
+#: users/templates/users/website_form.html:12
+msgid "Create website"
+msgstr "Website maken"
+
 #: users/templates/users/website_form.html:18
 msgid ""
 "Please make sure your website works without HTTPS before enabling HTTPS. Do "
@@ -602,6 +582,22 @@ msgstr ""
 "verwijderd. Na het resetten van je site, wacht ongeveer een minuut en je "
 "zult weer gegroet worden door de NamelessMC installer als je naar je website "
 "gaat."
+
+#~ msgid "Reset website"
+#~ msgstr "Reset website"
+
+#~ msgid "Delete website"
+#~ msgstr "Website verwijderen"
+
+#, fuzzy
+#~| msgid "Create website"
+#~ msgid "Start website"
+#~ msgstr "Website maken"
+
+#, fuzzy
+#~| msgid "Reset website"
+#~ msgid "Ping website"
+#~ msgstr "Reset website"
 
 #~ msgid ""
 #~ "Use an FTP client to connect. We recommend FileZilla or WinSCP. The "

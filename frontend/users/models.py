@@ -77,13 +77,13 @@ class Job(models.Model):
     PING_WEBSITE = 6
 
     JOB_TYPES = [
-        (CREATE_WEBSITE, _('Create website')),
-        (UPDATE_WEBSITE, _('Update website')),
-        (RESET_WEBSITE, _('Reset website')),
+        (CREATE_WEBSITE, 'Create website'),
+        (UPDATE_WEBSITE, 'Update website'),
+        (RESET_WEBSITE, 'Reset website'),
         (RENEW_CERT, 'Renew certificate'),
-        (DELETE_WEBSITE, _('Delete website')),
-        (START_WEBSITE, _('Start website')),
-        (PING_WEBSITE, _('Ping website')),
+        (DELETE_WEBSITE, 'Delete website'),
+        (START_WEBSITE, 'Start website'),
+        (PING_WEBSITE, 'Ping website'),
     ]
 
     CRITICAL = 4
