@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-04-22 12:19+0000\n"
+"POT-Creation-Date: 2021-04-22 12:40+0000\n"
 "PO-Revision-Date: 2021-04-06 21:54+0000\n"
 "Last-Translator: Marcos <marckos03br@gmail.com>\n"
 "Language-Team: Spanish <http://translate.namelessmc.com/projects/named-"
@@ -105,13 +105,25 @@ msgstr "De pago"
 msgid "Price"
 msgstr "Precio"
 
+#: main/templates/main/comparison.html:30
+msgid "N/A"
+msgstr ""
+
+#: main/templates/main/comparison.html:32
+msgid "$6/mo"
+msgstr ""
+
+#: main/templates/main/comparison.html:34
+msgid "~$5/mo"
+msgstr ""
+
 #: main/templates/main/comparison.html:37
 msgid "Maintenance free"
 msgstr "No necesita mantenimiento"
 
 #: main/templates/main/comparison.html:46
-msgid "Fast"
-msgstr "Rápido"
+msgid "Fast page load times"
+msgstr ""
 
 #: main/templates/main/comparison.html:55
 msgid "No branding"
@@ -179,7 +191,9 @@ msgid "Supports CloudFlare Strict SSL"
 msgstr "Admite CloudFlare Strict SSL"
 
 #: main/templates/main/comparison.html:199
-msgid "Custom Nameless-Link"
+#, fuzzy
+#| msgid "Custom Nameless-Link"
+msgid "Included custom Nameless-Link instance"
 msgstr "Nameless-Link propio"
 
 #: main/templates/main/index.html:10
@@ -563,10 +577,17 @@ msgid "Create website"
 msgstr "Crear un sitio web"
 
 #: users/templates/users/website_form.html:18
+#, fuzzy
+#| msgid ""
+#| "Please make sure your website works without HTTPS before enabling HTTPS. "
+#| "Do not enable HTTPS if you are using CloudFlare flexible SSL. Version "
+#| "changes do not take effect until you use the 'Reset' button."
 msgid ""
 "Please make sure your website works without HTTPS before enabling HTTPS. Do "
 "not enable HTTPS if you are using CloudFlare flexible SSL. Version changes "
-"do not take effect until you use the 'Reset' button."
+"do not take effect until you use the 'Reset' button. If you want to upgrade "
+"an existing site, read <a href=\"https://github.com/Derkades/"
+"namelessmc_hosting/wiki/Changing-versions\">this</a>."
 msgstr ""
 "Por favor, asegúrese de que su sitio web funciona sin HTTPS antes de activar "
 "el HTTPS. No habilite HTTPS si está utilizando el SSL flexible de "
@@ -615,6 +636,9 @@ msgstr ""
 "permanentemente todas las bases de datos y los datos del sitio web. Después "
 "de restablecer su sitio web, espere un minuto y verá el instalador cuando "
 "vaya a su sitio web."
+
+#~ msgid "Fast"
+#~ msgstr "Rápido"
 
 #~ msgid ""
 #~ "This hosting system is <a href=\"https://github.com/Derkades/"

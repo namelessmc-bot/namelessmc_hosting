@@ -27,11 +27,11 @@
         <tr>
             <td>{% trans "Price" %}</td>
             <td>{% trans "Free" %}</td>
-            <td>?</td>
+            <td>{% trans "N/A" %}</td>
             <td>{% trans "Free" %}</td>
-            <td>?</td>
+            <td>{% trans "$6/mo" %}</td>
             <td>{% trans "Free" %}</td>
-            <td>~$2-10</td>
+            <td>{% trans "~$5/mo" %}</td>
         </tr>
         <tr>
             <td>{% trans "Maintenance free" %}</td>
@@ -43,7 +43,7 @@
             <td>{{ no }}</td>
         </tr>
         <tr>
-            <td>{% trans "Fast" %}</td>
+            <td>{% trans "Fast page load times" %}</td>
             <td>{{ yes }}</td>
             <td>{{ yes }}</td>
             <td>{{ yes }}</td>
@@ -145,7 +145,7 @@
             <td>{% trans "Free subdomain" %}</td>
             <td>{{ no }}</td>
             <td>{{ no }}</td>
-            <td>?</td>
+            <td>{{ yes }}</td>
             <td>{{ yes }}</td>
             <td>{{ maybe }}</td>
             <td>{{ maybe }}</td>
@@ -188,15 +188,15 @@
         </tr>
         <tr>
             <td>{% trans "Supports CloudFlare Strict SSL" %}</td>
-            <td>{{ no }}</td>
-            <td>{{ no }}</td>
-            <td>{{ no }}</td>
-            <td>{{ no }}</td>
+            <td>{{ maybe }}</td>
+            <td>{{ maybe }}</td>
+            <td>{{ maybe }}</td>
+            <td>{{ maybe }}</td>
             <td>{{ maybe }}</td>
             <td>{{ yes }}</td>
         </tr>
         <tr>
-            <td>{% trans "Custom Nameless-Link" %}</td>
+            <td>{% trans "Included custom Nameless-Link instance" %}</td>
             <td>{{ no }}</td>
             <td>{{ yes }}</td>
             <td>{{ no }}</td>

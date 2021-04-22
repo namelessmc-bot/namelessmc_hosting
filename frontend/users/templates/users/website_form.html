@@ -15,7 +15,7 @@
             {{ form|crispy }}
             {% if object %}
                 <p class="text-muted">
-{% blocktrans %}Please make sure your website works without HTTPS before enabling HTTPS. Do not enable HTTPS if you are using CloudFlare flexible SSL. Version changes do not take effect until you use the 'Reset' button.{% endblocktrans %}
+{% blocktrans %}Please make sure your website works without HTTPS before enabling HTTPS. Do not enable HTTPS if you are using CloudFlare flexible SSL. Version changes do not take effect until you use the 'Reset' button. If you want to upgrade an existing site, read <a href="https://github.com/Derkades/namelessmc_hosting/wiki/Changing-versions">this</a>.{% endblocktrans %}
                 </p>
             {% endif %}
         </fieldset>

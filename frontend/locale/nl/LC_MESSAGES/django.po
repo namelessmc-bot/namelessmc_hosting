@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-04-22 12:19+0000\n"
+"POT-Creation-Date: 2021-04-22 12:40+0000\n"
 "PO-Revision-Date: 2021-04-21 12:32+0000\n"
 "Last-Translator: NamelessMC Translations <robin@derkad.es>\n"
 "Language-Team: Dutch <http://translate.namelessmc.com/projects/named-hosting/"
@@ -105,13 +105,25 @@ msgstr "Betaald"
 msgid "Price"
 msgstr "Prijs"
 
+#: main/templates/main/comparison.html:30
+msgid "N/A"
+msgstr ""
+
+#: main/templates/main/comparison.html:32
+msgid "$6/mo"
+msgstr ""
+
+#: main/templates/main/comparison.html:34
+msgid "~$5/mo"
+msgstr ""
+
 #: main/templates/main/comparison.html:37
 msgid "Maintenance free"
 msgstr "Onderhoudsvrij"
 
 #: main/templates/main/comparison.html:46
-msgid "Fast"
-msgstr "Snel"
+msgid "Fast page load times"
+msgstr ""
 
 #: main/templates/main/comparison.html:55
 msgid "No branding"
@@ -179,7 +191,9 @@ msgid "Supports CloudFlare Strict SSL"
 msgstr "Ondersteuning voor CloudFlare Strict SSL"
 
 #: main/templates/main/comparison.html:199
-msgid "Custom Nameless-Link"
+#, fuzzy
+#| msgid "Custom Nameless-Link"
+msgid "Included custom Nameless-Link instance"
 msgstr "Eigen Nameless-Link instantie"
 
 #: main/templates/main/index.html:10
@@ -566,10 +580,17 @@ msgid "Create website"
 msgstr "Website maken"
 
 #: users/templates/users/website_form.html:18
+#, fuzzy
+#| msgid ""
+#| "Please make sure your website works without HTTPS before enabling HTTPS. "
+#| "Do not enable HTTPS if you are using CloudFlare flexible SSL. Version "
+#| "changes do not take effect until you use the 'Reset' button."
 msgid ""
 "Please make sure your website works without HTTPS before enabling HTTPS. Do "
 "not enable HTTPS if you are using CloudFlare flexible SSL. Version changes "
-"do not take effect until you use the 'Reset' button."
+"do not take effect until you use the 'Reset' button. If you want to upgrade "
+"an existing site, read <a href=\"https://github.com/Derkades/"
+"namelessmc_hosting/wiki/Changing-versions\">this</a>."
 msgstr ""
 "Zorg alsjeblieft dat je website werkt zonder HTTPS voordat je HTTPS aanzet. "
 "Zet HTTPS niet aan als je gebruik maakt van CloudFlare Flexible SSL. "
@@ -617,6 +638,9 @@ msgstr ""
 "verwijderd. Na het resetten van je site, wacht ongeveer een minuut en je "
 "zult weer gegroet worden door de NamelessMC installer als je naar je website "
 "gaat."
+
+#~ msgid "Fast"
+#~ msgstr "Snel"
 
 #~ msgid ""
 #~ "This hosting system is <a href=\"https://github.com/Derkades/"

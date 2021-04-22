@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-04-22 12:19+0000\n"
+"POT-Creation-Date: 2021-04-22 12:40+0000\n"
 "PO-Revision-Date: 2021-03-24 14:44+0000\n"
 "Last-Translator: Gabriel Leen <hello@dreta.dev>\n"
 "Language-Team: Chinese (Simplified) <http://translate.namelessmc.com/"
@@ -104,13 +104,25 @@ msgstr "收费"
 msgid "Price"
 msgstr "价格"
 
+#: main/templates/main/comparison.html:30
+msgid "N/A"
+msgstr ""
+
+#: main/templates/main/comparison.html:32
+msgid "$6/mo"
+msgstr ""
+
+#: main/templates/main/comparison.html:34
+msgid "~$5/mo"
+msgstr ""
+
 #: main/templates/main/comparison.html:37
 msgid "Maintenance free"
 msgstr "免维护费"
 
 #: main/templates/main/comparison.html:46
-msgid "Fast"
-msgstr "高速度"
+msgid "Fast page load times"
+msgstr ""
 
 #: main/templates/main/comparison.html:55
 msgid "No branding"
@@ -178,7 +190,9 @@ msgid "Supports CloudFlare Strict SSL"
 msgstr "支持 Cloudflare 严格 SSL"
 
 #: main/templates/main/comparison.html:199
-msgid "Custom Nameless-Link"
+#, fuzzy
+#| msgid "Custom Nameless-Link"
+msgid "Included custom Nameless-Link instance"
 msgstr "定制化 Nameless-Link"
 
 #: main/templates/main/index.html:10
@@ -551,10 +565,17 @@ msgid "Create website"
 msgstr "创建网站"
 
 #: users/templates/users/website_form.html:18
+#, fuzzy
+#| msgid ""
+#| "Please make sure your website works without HTTPS before enabling HTTPS. "
+#| "Do not enable HTTPS if you are using CloudFlare flexible SSL. Version "
+#| "changes do not take effect until you use the 'Reset' button."
 msgid ""
 "Please make sure your website works without HTTPS before enabling HTTPS. Do "
 "not enable HTTPS if you are using CloudFlare flexible SSL. Version changes "
-"do not take effect until you use the 'Reset' button."
+"do not take effect until you use the 'Reset' button. If you want to upgrade "
+"an existing site, read <a href=\"https://github.com/Derkades/"
+"namelessmc_hosting/wiki/Changing-versions\">this</a>."
 msgstr ""
 "启用 HTTPS 前，请确保您的网站没有 HTTPS 也能使用。若您正在使用 Cloudflare "
 "flexible SSL，请勿启用 HTTPS。版本变化会在您重置后生效。"
@@ -599,6 +620,9 @@ msgid ""
 msgstr ""
 "您确定要重置您的网站吗? 这会永久删除所有数据库和网站数据。重置网站大约一分钟"
 "后，您便可在网站上看到安装界面了。"
+
+#~ msgid "Fast"
+#~ msgstr "高速度"
 
 #~ msgid ""
 #~ "This hosting system is <a href=\"https://github.com/Derkades/"

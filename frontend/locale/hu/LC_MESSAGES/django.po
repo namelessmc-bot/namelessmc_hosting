@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-04-22 12:19+0000\n"
+"POT-Creation-Date: 2021-04-22 12:40+0000\n"
 "PO-Revision-Date: 2021-03-25 10:44+0000\n"
 "Last-Translator: Magyar Adam <mestermc594@gmail.com>\n"
 "Language-Team: Hungarian <http://translate.namelessmc.com/projects/named-"
@@ -105,13 +105,25 @@ msgstr "Fizetős"
 msgid "Price"
 msgstr "Ár"
 
+#: main/templates/main/comparison.html:30
+msgid "N/A"
+msgstr ""
+
+#: main/templates/main/comparison.html:32
+msgid "$6/mo"
+msgstr ""
+
+#: main/templates/main/comparison.html:34
+msgid "~$5/mo"
+msgstr ""
+
 #: main/templates/main/comparison.html:37
 msgid "Maintenance free"
 msgstr "Karbantartás mentes"
 
 #: main/templates/main/comparison.html:46
-msgid "Fast"
-msgstr "Gyors"
+msgid "Fast page load times"
+msgstr ""
 
 #: main/templates/main/comparison.html:55
 msgid "No branding"
@@ -179,7 +191,9 @@ msgid "Supports CloudFlare Strict SSL"
 msgstr "Támogatja a CloudFlare Strict SSL-t"
 
 #: main/templates/main/comparison.html:199
-msgid "Custom Nameless-Link"
+#, fuzzy
+#| msgid "Custom Nameless-Link"
+msgid "Included custom Nameless-Link instance"
 msgstr "Egyéni Nameless-Link"
 
 #: main/templates/main/index.html:10
@@ -559,10 +573,17 @@ msgid "Create website"
 msgstr "Weboldal létrehozása"
 
 #: users/templates/users/website_form.html:18
+#, fuzzy
+#| msgid ""
+#| "Please make sure your website works without HTTPS before enabling HTTPS. "
+#| "Do not enable HTTPS if you are using CloudFlare flexible SSL. Version "
+#| "changes do not take effect until you use the 'Reset' button."
 msgid ""
 "Please make sure your website works without HTTPS before enabling HTTPS. Do "
 "not enable HTTPS if you are using CloudFlare flexible SSL. Version changes "
-"do not take effect until you use the 'Reset' button."
+"do not take effect until you use the 'Reset' button. If you want to upgrade "
+"an existing site, read <a href=\"https://github.com/Derkades/"
+"namelessmc_hosting/wiki/Changing-versions\">this</a>."
 msgstr ""
 "A HTTPS engedélyezése előtt ellenőrizze, hogy webhelye HTTPS nélkül működik-"
 "e. Ne engedélyezze a HTTPS-t, ha CloudFlare rugalmas SSL-t használ. A "
@@ -609,6 +630,9 @@ msgstr ""
 "Biztosan visszaállítja webhelyét? Ezzel véglegesen törli az összes "
 "adatbázist és webhelyadatot. Miután visszaállította a webhelyet, várjon kb. "
 "Egy percet, és megjelenik a telepítő, amikor webhelyére megy."
+
+#~ msgid "Fast"
+#~ msgstr "Gyors"
 
 #~ msgid ""
 #~ "This hosting system is <a href=\"https://github.com/Derkades/"

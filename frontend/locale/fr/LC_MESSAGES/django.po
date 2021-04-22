@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-04-22 12:19+0000\n"
+"POT-Creation-Date: 2021-04-22 12:40+0000\n"
 "PO-Revision-Date: 2021-04-12 13:54+0000\n"
 "Last-Translator: Greg <gregvizier@gmail.com>\n"
 "Language-Team: French <http://translate.namelessmc.com/projects/named-"
@@ -105,13 +105,25 @@ msgstr "Payé"
 msgid "Price"
 msgstr "Prix"
 
+#: main/templates/main/comparison.html:30
+msgid "N/A"
+msgstr ""
+
+#: main/templates/main/comparison.html:32
+msgid "$6/mo"
+msgstr ""
+
+#: main/templates/main/comparison.html:34
+msgid "~$5/mo"
+msgstr ""
+
 #: main/templates/main/comparison.html:37
 msgid "Maintenance free"
 msgstr "Sans entretien"
 
 #: main/templates/main/comparison.html:46
-msgid "Fast"
-msgstr "Rapide"
+msgid "Fast page load times"
+msgstr ""
 
 #: main/templates/main/comparison.html:55
 msgid "No branding"
@@ -179,7 +191,9 @@ msgid "Supports CloudFlare Strict SSL"
 msgstr "Prend en charge CloudFlare Strict SSL"
 
 #: main/templates/main/comparison.html:199
-msgid "Custom Nameless-Link"
+#, fuzzy
+#| msgid "Custom Nameless-Link"
+msgid "Included custom Nameless-Link instance"
 msgstr "Nameless-Link sur mesure"
 
 #: main/templates/main/index.html:10
@@ -569,10 +583,17 @@ msgid "Create website"
 msgstr "Créer un site web"
 
 #: users/templates/users/website_form.html:18
+#, fuzzy
+#| msgid ""
+#| "Please make sure your website works without HTTPS before enabling HTTPS. "
+#| "Do not enable HTTPS if you are using CloudFlare flexible SSL. Version "
+#| "changes do not take effect until you use the 'Reset' button."
 msgid ""
 "Please make sure your website works without HTTPS before enabling HTTPS. Do "
 "not enable HTTPS if you are using CloudFlare flexible SSL. Version changes "
-"do not take effect until you use the 'Reset' button."
+"do not take effect until you use the 'Reset' button. If you want to upgrade "
+"an existing site, read <a href=\"https://github.com/Derkades/"
+"namelessmc_hosting/wiki/Changing-versions\">this</a>."
 msgstr ""
 "Veuillez vous assurer que votre site Web fonctionne sans HTTPS avant "
 "d'activer le HTTPS. N'activez pas HTTPS si vous utilisez CloudFlare flexible "
@@ -622,6 +643,9 @@ msgstr ""
 "définitivement toutes les bases de données et les données du site. Après "
 "avoir réinitialisé votre site Web, attendez environ une minute et vous "
 "verrez l'installateur en allant sur votre site Web."
+
+#~ msgid "Fast"
+#~ msgstr "Rapide"
 
 #~ msgid ""
 #~ "This hosting system is <a href=\"https://github.com/Derkades/"
