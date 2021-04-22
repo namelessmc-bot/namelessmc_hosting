@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-04-22 12:19+0000\n"
-"PO-Revision-Date: 2021-04-22 09:52+0000\n"
+"PO-Revision-Date: 2021-04-22 14:52+0000\n"
 "Last-Translator: Jonáš Loskot <fjuro@seznam.cz>\n"
 "Language-Team: Czech <http://translate.namelessmc.com/projects/named-hosting/"
 "named-hosting/cs/>\n"
@@ -46,19 +46,16 @@ msgid "Register"
 msgstr "Zaregistrovat se"
 
 #: main/templates/main/base.html:112
-#, fuzzy
-#| msgid ""
-#| "Not affiliated with the <a href=\"https://namelessmc.com\">NamelessMC "
-#| "project</a>"
 msgid ""
 "Uses open source <a href=\"https://namelessmc.com\">NamelessMC software</a>"
 msgstr ""
-"Nejsme spojeni s <a href=\"https://namelessmc.com\">projektem NamelessMC</a>"
+"Používá open source <a href=\"https://namelessmc.com\">software "
+"NamelessMC</a>"
 
 #: main/templates/main/base.html:114
 #, python-format
 msgid "Help translate at %(weblate_link)s"
-msgstr ""
+msgstr "Pomozte s překladem na %(weblate_link)s"
 
 #: main/templates/main/base.html:118
 msgid "Support Discord"
@@ -572,11 +569,11 @@ msgstr ""
 
 #: users/templates/users/website_list.html:16
 msgid "Name"
-msgstr ""
+msgstr "Název"
 
 #: users/templates/users/website_list.html:18
 msgid "Actions"
-msgstr ""
+msgstr "Akce"
 
 #: users/templates/users/website_list.html:35
 msgid "Configure"
