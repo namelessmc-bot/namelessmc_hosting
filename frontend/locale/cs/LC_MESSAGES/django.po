@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-04-21 18:09+0000\n"
-"PO-Revision-Date: 2021-04-21 12:04+0000\n"
+"PO-Revision-Date: 2021-04-22 09:52+0000\n"
 "Last-Translator: Jonáš Loskot <fjuro@seznam.cz>\n"
 "Language-Team: Czech <http://translate.namelessmc.com/projects/named-hosting/"
 "named-hosting/cs/>\n"
@@ -191,18 +191,17 @@ msgid ""
 "Finally, free hosting for NamelessMC websites with automatic installation "
 "and FTP file access without blocking API access!"
 msgstr ""
+"Konečně bezplatný hosting pro NamelessMC weby s automatickou instalací a FTP "
+"přístupem bez blokování přístupu k API!"
 
 #: main/templates/main/index.html:17
-#, fuzzy, python-format
-#| msgid ""
-#| "We currently host %(websites)s websites. This hosting service is operated "
-#| "by Derkades (developer of Nameless Plugin and Discord bot)."
+#, python-format
 msgid ""
 "We currently host %(websites)s websites. Operated by %(discord_handle)s in "
 "Discord or %(github_handle)s on GitHub."
 msgstr ""
-"Momentálně hostujeme %(websites)s webů. Tento hosting provozuje Derkades "
-"(vývojář Nameless pluginu a Discord bota)."
+"Momentálně hostujeme %(websites)s webů. Provozuje %(discord_handle)s na "
+"Discordu nebo %(github_handle)s na GitHubu."
 
 #: main/templates/main/index.html:24
 msgid "Create your website now"
@@ -575,14 +574,12 @@ msgid "Your sites"
 msgstr "Vaše weby"
 
 #: users/templates/users/website_list.html:35
-#, fuzzy
-#| msgid "Confirm"
 msgid "Configure"
-msgstr "Potvrdit"
+msgstr "Nastavení"
 
 #: users/templates/users/website_list.html:42
 msgid "You don't have any websites."
-msgstr ""
+msgstr "Nemáte žádné weby."
 
 #: users/templates/users/website_list.html:46
 #: users/templates/users/website_list.html:48
@@ -591,7 +588,7 @@ msgstr "Vytvořit nový web"
 
 #: users/templates/users/website_list.html:48
 msgid "Accounts are currently limited to 3 websites."
-msgstr ""
+msgstr "Účty mají momentálně limit 3 webů."
 
 #: users/templates/users/website_reset.html:8
 #, python-format
