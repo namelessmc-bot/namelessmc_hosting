@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-04-21 18:09+0000\n"
+"POT-Creation-Date: 2021-04-22 12:15+0000\n"
 "PO-Revision-Date: 2021-04-12 13:54+0000\n"
 "Last-Translator: Greg <gregvizier@gmail.com>\n"
 "Language-Team: French <http://translate.namelessmc.com/projects/named-"
@@ -23,7 +23,7 @@ msgstr ""
 msgid "Home"
 msgstr "Accueil"
 
-#: main/templates/main/base.html:58
+#: main/templates/main/base.html:58 users/templates/users/website_list.html:11
 msgid "Your Websites"
 msgstr "Vos sites web"
 
@@ -280,6 +280,7 @@ msgid "Don't include www. in your domain"
 msgstr "N'incluez pas www. dans votre domaine"
 
 #: users/models.py:31 users/templates/users/website_detail.html:56
+#: users/templates/users/website_list.html:17
 msgid "Domain"
 msgstr "Domaine"
 
@@ -578,9 +579,13 @@ msgstr ""
 "SSL. Les changements de version ne prennent effet que lorsque vous utilisez "
 "le bouton \"Reset\"."
 
-#: users/templates/users/website_list.html:11
-msgid "Your sites"
-msgstr "Vos sites"
+#: users/templates/users/website_list.html:16
+msgid "Name"
+msgstr ""
+
+#: users/templates/users/website_list.html:18
+msgid "Actions"
+msgstr ""
 
 #: users/templates/users/website_list.html:35
 #, fuzzy
@@ -617,6 +622,9 @@ msgstr ""
 "définitivement toutes les bases de données et les données du site. Après "
 "avoir réinitialisé votre site Web, attendez environ une minute et vous "
 "verrez l'installateur en allant sur votre site Web."
+
+#~ msgid "Your sites"
+#~ msgstr "Vos sites"
 
 #~ msgid ""
 #~ "Free accounts are limited to 2 websites, paid accounts are limited to 5."

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-04-21 18:09+0000\n"
+"POT-Creation-Date: 2021-04-22 12:15+0000\n"
 "PO-Revision-Date: 2021-01-15 20:19+0000\n"
 "Last-Translator: Maiu <maiuxd77@gmail.com>\n"
 "Language-Team: Norwegian Bokmål <http://translate.namelessmc.com/projects/"
@@ -23,7 +23,7 @@ msgstr ""
 msgid "Home"
 msgstr "Hjem"
 
-#: main/templates/main/base.html:58
+#: main/templates/main/base.html:58 users/templates/users/website_list.html:11
 msgid "Your Websites"
 msgstr "Dine nettsider"
 
@@ -273,6 +273,7 @@ msgid "Don't include www. in your domain"
 msgstr "Ikke inkluder www. i ditt domene"
 
 #: users/models.py:31 users/templates/users/website_detail.html:56
+#: users/templates/users/website_list.html:17
 msgid "Domain"
 msgstr "Domene"
 
@@ -555,9 +556,13 @@ msgstr ""
 "Ikke aktiver HTTPS hvis du bruker CloudFlare flexible SSL. Versjonendringer "
 "blir ikke tatt i bruk før du trykker 'Tilbakestill'-knappen."
 
-#: users/templates/users/website_list.html:11
-msgid "Your sites"
-msgstr "Dine sider"
+#: users/templates/users/website_list.html:16
+msgid "Name"
+msgstr ""
+
+#: users/templates/users/website_list.html:18
+msgid "Actions"
+msgstr ""
 
 #: users/templates/users/website_list.html:35
 #, fuzzy
@@ -589,6 +594,9 @@ msgid ""
 "all databases and website data. After resetting your website, wait about a "
 "minute and you'll see installer when going to your website."
 msgstr ""
+
+#~ msgid "Your sites"
+#~ msgstr "Dine sider"
 
 #, fuzzy
 #~| msgid ""

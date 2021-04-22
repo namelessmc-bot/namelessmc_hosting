@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-04-21 18:09+0000\n"
+"POT-Creation-Date: 2021-04-22 12:15+0000\n"
 "PO-Revision-Date: 2021-04-22 09:52+0000\n"
 "Last-Translator: Jonáš Loskot <fjuro@seznam.cz>\n"
 "Language-Team: Czech <http://translate.namelessmc.com/projects/named-hosting/"
@@ -24,7 +24,7 @@ msgstr ""
 msgid "Home"
 msgstr "Domů"
 
-#: main/templates/main/base.html:58
+#: main/templates/main/base.html:58 users/templates/users/website_list.html:11
 msgid "Your Websites"
 msgstr "Vaše weby"
 
@@ -272,6 +272,7 @@ msgid "Don't include www. in your domain"
 msgstr "Do domény nezahrnujte www."
 
 #: users/models.py:31 users/templates/users/website_detail.html:56
+#: users/templates/users/website_list.html:17
 msgid "Domain"
 msgstr "Doména"
 
@@ -569,9 +570,13 @@ msgstr ""
 "HTTPS, pokud používáte \"Flexible\" SSL Cloudflare. Změny verzí se "
 "neprojeví, dokud nepoužijete tlačítko 'Obnovit'."
 
-#: users/templates/users/website_list.html:11
-msgid "Your sites"
-msgstr "Vaše weby"
+#: users/templates/users/website_list.html:16
+msgid "Name"
+msgstr ""
+
+#: users/templates/users/website_list.html:18
+msgid "Actions"
+msgstr ""
 
 #: users/templates/users/website_list.html:35
 msgid "Configure"
@@ -604,6 +609,9 @@ msgstr ""
 "Opravdu chcete obnovit váš web? Všechny databáze a data webu budou "
 "nenávratně smazána. Po obnovení vašeho webu bude trvat přibližně minutu, než "
 "uvidíte instalátor při návštěvě vašeho webu."
+
+#~ msgid "Your sites"
+#~ msgstr "Vaše weby"
 
 #~ msgid ""
 #~ "Free accounts are limited to 2 websites, paid accounts are limited to 5."

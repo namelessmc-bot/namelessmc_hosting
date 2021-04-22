@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-04-21 18:09+0000\n"
+"POT-Creation-Date: 2021-04-22 12:15+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -23,7 +23,7 @@ msgstr ""
 msgid "Home"
 msgstr ""
 
-#: main/templates/main/base.html:58
+#: main/templates/main/base.html:58 users/templates/users/website_list.html:11
 msgid "Your Websites"
 msgstr ""
 
@@ -264,6 +264,7 @@ msgid "Don't include www. in your domain"
 msgstr ""
 
 #: users/models.py:31 users/templates/users/website_detail.html:56
+#: users/templates/users/website_list.html:17
 msgid "Domain"
 msgstr ""
 
@@ -539,8 +540,12 @@ msgid ""
 "do not take effect until you use the 'Reset' button."
 msgstr ""
 
-#: users/templates/users/website_list.html:11
-msgid "Your sites"
+#: users/templates/users/website_list.html:16
+msgid "Name"
+msgstr ""
+
+#: users/templates/users/website_list.html:18
+msgid "Actions"
 msgstr ""
 
 #: users/templates/users/website_list.html:35

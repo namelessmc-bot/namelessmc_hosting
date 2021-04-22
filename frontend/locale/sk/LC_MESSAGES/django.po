@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-04-21 18:09+0000\n"
+"POT-Creation-Date: 2021-04-22 12:15+0000\n"
 "PO-Revision-Date: 2021-04-04 19:54+0000\n"
 "Last-Translator: CharlieCat <meow@charliecat.space>\n"
 "Language-Team: Slovak <http://translate.namelessmc.com/projects/named-"
@@ -24,7 +24,7 @@ msgstr ""
 msgid "Home"
 msgstr "Domov"
 
-#: main/templates/main/base.html:58
+#: main/templates/main/base.html:58 users/templates/users/website_list.html:11
 msgid "Your Websites"
 msgstr "Váše Weby"
 
@@ -268,6 +268,7 @@ msgid "Don't include www. in your domain"
 msgstr ""
 
 #: users/models.py:31 users/templates/users/website_detail.html:56
+#: users/templates/users/website_list.html:17
 msgid "Domain"
 msgstr ""
 
@@ -543,8 +544,12 @@ msgid ""
 "do not take effect until you use the 'Reset' button."
 msgstr ""
 
-#: users/templates/users/website_list.html:11
-msgid "Your sites"
+#: users/templates/users/website_list.html:16
+msgid "Name"
+msgstr ""
+
+#: users/templates/users/website_list.html:18
+msgid "Actions"
 msgstr ""
 
 #: users/templates/users/website_list.html:35

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-04-21 18:09+0000\n"
+"POT-Creation-Date: 2021-04-22 12:15+0000\n"
 "PO-Revision-Date: 2021-04-21 12:32+0000\n"
 "Last-Translator: NamelessMC Translations <robin@derkad.es>\n"
 "Language-Team: Dutch <http://translate.namelessmc.com/projects/named-hosting/"
@@ -23,7 +23,7 @@ msgstr ""
 msgid "Home"
 msgstr "Home"
 
-#: main/templates/main/base.html:58
+#: main/templates/main/base.html:58 users/templates/users/website_list.html:11
 msgid "Your Websites"
 msgstr "Jouw Websites"
 
@@ -276,6 +276,7 @@ msgid "Don't include www. in your domain"
 msgstr "Laat www. weg uit je domein"
 
 #: users/models.py:31 users/templates/users/website_detail.html:56
+#: users/templates/users/website_list.html:17
 msgid "Domain"
 msgstr "Domein"
 
@@ -574,9 +575,13 @@ msgstr ""
 "Zet HTTPS niet aan als je gebruik maakt van CloudFlare Flexible SSL. "
 "Versiewijzigingen hebben geen effect tot je op de 'Reset' knop drukt."
 
-#: users/templates/users/website_list.html:11
-msgid "Your sites"
-msgstr "Jouw websites"
+#: users/templates/users/website_list.html:16
+msgid "Name"
+msgstr ""
+
+#: users/templates/users/website_list.html:18
+msgid "Actions"
+msgstr ""
 
 #: users/templates/users/website_list.html:35
 #, fuzzy
@@ -612,6 +617,9 @@ msgstr ""
 "verwijderd. Na het resetten van je site, wacht ongeveer een minuut en je "
 "zult weer gegroet worden door de NamelessMC installer als je naar je website "
 "gaat."
+
+#~ msgid "Your sites"
+#~ msgstr "Jouw websites"
 
 #~ msgid ""
 #~ "Free accounts are limited to 2 websites, paid accounts are limited to 5."

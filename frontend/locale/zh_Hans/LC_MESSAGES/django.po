@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-04-21 18:09+0000\n"
+"POT-Creation-Date: 2021-04-22 12:15+0000\n"
 "PO-Revision-Date: 2021-03-24 14:44+0000\n"
 "Last-Translator: Gabriel Leen <hello@dreta.dev>\n"
 "Language-Team: Chinese (Simplified) <http://translate.namelessmc.com/"
@@ -23,7 +23,7 @@ msgstr ""
 msgid "Home"
 msgstr "主页"
 
-#: main/templates/main/base.html:58
+#: main/templates/main/base.html:58 users/templates/users/website_list.html:11
 msgid "Your Websites"
 msgstr "你的网站"
 
@@ -272,6 +272,7 @@ msgid "Don't include www. in your domain"
 msgstr "请勿在域名中包含 www."
 
 #: users/models.py:31 users/templates/users/website_detail.html:56
+#: users/templates/users/website_list.html:17
 msgid "Domain"
 msgstr "域名"
 
@@ -558,9 +559,13 @@ msgstr ""
 "启用 HTTPS 前，请确保您的网站没有 HTTPS 也能使用。若您正在使用 Cloudflare "
 "flexible SSL，请勿启用 HTTPS。版本变化会在您重置后生效。"
 
-#: users/templates/users/website_list.html:11
-msgid "Your sites"
-msgstr "您的网站"
+#: users/templates/users/website_list.html:16
+msgid "Name"
+msgstr ""
+
+#: users/templates/users/website_list.html:18
+msgid "Actions"
+msgstr ""
 
 #: users/templates/users/website_list.html:35
 #, fuzzy
@@ -594,6 +599,9 @@ msgid ""
 msgstr ""
 "您确定要重置您的网站吗? 这会永久删除所有数据库和网站数据。重置网站大约一分钟"
 "后，您便可在网站上看到安装界面了。"
+
+#~ msgid "Your sites"
+#~ msgstr "您的网站"
 
 #~ msgid ""
 #~ "Free accounts are limited to 2 websites, paid accounts are limited to 5."

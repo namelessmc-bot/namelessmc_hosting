@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-04-21 18:09+0000\n"
+"POT-Creation-Date: 2021-04-22 12:15+0000\n"
 "PO-Revision-Date: 2021-04-19 00:59+0000\n"
 "Last-Translator: Gabriel Vittor <mansfferpro@gmail.com>\n"
 "Language-Team: Portuguese (Brazil) <http://translate.namelessmc.com/projects/"
@@ -23,7 +23,7 @@ msgstr ""
 msgid "Home"
 msgstr "Início"
 
-#: main/templates/main/base.html:58
+#: main/templates/main/base.html:58 users/templates/users/website_list.html:11
 msgid "Your Websites"
 msgstr "Seus Sites"
 
@@ -275,6 +275,7 @@ msgid "Don't include www. in your domain"
 msgstr "Não inclua www. em seu domínio"
 
 #: users/models.py:31 users/templates/users/website_detail.html:56
+#: users/templates/users/website_list.html:17
 msgid "Domain"
 msgstr "Domínio"
 
@@ -569,9 +570,13 @@ msgstr ""
 "CloudFlare. As alterações da versão não entraram em vigor até você usar o "
 "botão 'Redefinir'."
 
-#: users/templates/users/website_list.html:11
-msgid "Your sites"
-msgstr "Seus sites"
+#: users/templates/users/website_list.html:16
+msgid "Name"
+msgstr ""
+
+#: users/templates/users/website_list.html:18
+msgid "Actions"
+msgstr ""
 
 #: users/templates/users/website_list.html:35
 #, fuzzy
@@ -607,6 +612,9 @@ msgstr ""
 "Tem certeza de que deseja redefinir seu site? Isso excluirá permanentemente "
 "todos os bancos de dados e dados do site. Depois de redefinir seu site, "
 "espere cerca de um minuto e você verá o instalador ao acessar seu site."
+
+#~ msgid "Your sites"
+#~ msgstr "Seus sites"
 
 #~ msgid ""
 #~ "Free accounts are limited to 2 websites, paid accounts are limited to 5."
