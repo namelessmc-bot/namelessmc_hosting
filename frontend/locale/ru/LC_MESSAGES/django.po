@@ -8,10 +8,10 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-04-21 18:09+0000\n"
-"PO-Revision-Date: 2021-03-24 17:44+0000\n"
+"PO-Revision-Date: 2021-04-22 09:52+0000\n"
 "Last-Translator: LOyoujoLI <minion2018@hotmail.com>\n"
-"Language-Team: Russian <http://translate.namelessmc.com/projects/named-"
-"hosting/named-hosting/ru/>\n"
+"Language-Team: Russian <http://translate.namelessmc.com/projects/"
+"named-hosting/named-hosting/ru/>\n"
 "Language: ru\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -19,7 +19,7 @@ msgstr ""
 "Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
 "%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n"
 "%100>=11 && n%100<=14)? 2 : 3);\n"
-"X-Generator: Weblate 4.5.1\n"
+"X-Generator: Weblate 4.6\n"
 
 #: main/templates/main/base.html:45
 msgid "Home"
@@ -193,18 +193,17 @@ msgid ""
 "Finally, free hosting for NamelessMC websites with automatic installation "
 "and FTP file access without blocking API access!"
 msgstr ""
+"Наконец-то вышел бесплатный хостинг для NamelessMC с автоматической "
+"установкой и с доступом по FTP без блокировки API запросов!"
 
 #: main/templates/main/index.html:17
-#, fuzzy, python-format
-#| msgid ""
-#| "We currently host %(websites)s websites. This hosting service is operated "
-#| "by Derkades (developer of Nameless Plugin and Discord bot)."
+#, python-format
 msgid ""
 "We currently host %(websites)s websites. Operated by %(discord_handle)s in "
 "Discord or %(github_handle)s on GitHub."
 msgstr ""
-"В данный момент у нас запущено %(websites)s сайтов. Этим хостингом руководит "
-"Derkades (Разработчик плагина и бота в Discord для движка NamelessMC)."
+"В данный момент работает %(websites)s сайтов. Управляет %(discord_handle)s в "
+"Discord or %(github_handle)s на GitHub."
 
 #: main/templates/main/index.html:24
 msgid "Create your website now"
@@ -491,10 +490,14 @@ msgid ""
 "permanently deleted to free up space for active sites. <br><br> Down since "
 "%(down_since_date)s (checked every hour)."
 msgstr ""
+"Ваш домен скорее всего не подключён. Если не знаете что делать, то свяжитесь "
+"с <a href=\"%(support_discord_url)s\">технической поддержкой</a>. Сайты "
+"которые долгое время не функционируют, подлежат удалению. <br><br> Сайт не "
+"работает с %(down_since_date)s (проверяется каждый час)."
 
 #: users/templates/users/website_detail.html:47
 msgid "Your domain appears to be linked successfully."
-msgstr ""
+msgstr "Ваш домен подключён."
 
 #: users/templates/users/website_detail.html:52
 msgid "Website"
@@ -574,14 +577,12 @@ msgid "Your sites"
 msgstr "Ваши сайты"
 
 #: users/templates/users/website_list.html:35
-#, fuzzy
-#| msgid "Confirm"
 msgid "Configure"
-msgstr "Подтвердить"
+msgstr "Настроить"
 
 #: users/templates/users/website_list.html:42
 msgid "You don't have any websites."
-msgstr ""
+msgstr "В данный момент здесь нету созданных сайтов."
 
 #: users/templates/users/website_list.html:46
 #: users/templates/users/website_list.html:48
@@ -590,7 +591,7 @@ msgstr "Создать новый сайт"
 
 #: users/templates/users/website_list.html:48
 msgid "Accounts are currently limited to 3 websites."
-msgstr ""
+msgstr "Аккаунты могут иметь максимум 3 сайта."
 
 #: users/templates/users/website_reset.html:8
 #, python-format
