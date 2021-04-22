@@ -61,8 +61,10 @@ def _signal_broken(website_id):
             if down_since is None:
                 query = "UPDATE users_website SET down_since = now() WHERE id=%s"
                 cur.execute(query, (website_id,))
+                print('Marked as down')
             else:
-                print('Not setting down time, site was already down')
+                # print('Not setting down time, site was already down')
+                pass
 
 
 def _signal_working(website_id):
