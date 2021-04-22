@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-04-21 18:09+0000\n"
-"PO-Revision-Date: 2021-04-22 12:20+0000\n"
+"PO-Revision-Date: 2021-04-22 14:52+0000\n"
 "Last-Translator: NamelessMC Translations <robin@derkad.es>\n"
 "Language-Team: Dutch <http://translate.namelessmc.com/projects/named-hosting/"
 "named-hosting/nl/>\n"
@@ -45,20 +45,16 @@ msgid "Register"
 msgstr "Registreren"
 
 #: main/templates/main/base.html:112
-#, fuzzy
-#| msgid ""
-#| "Not affiliated with the <a href=\"https://namelessmc.com\">NamelessMC "
-#| "project</a>"
 msgid ""
 "Uses open source <a href=\"https://namelessmc.com\">NamelessMC software</a>"
 msgstr ""
-"Niet aangesloten bij het <a href=\"https://namelessmc.com\">NamelessMC "
-"project</a>"
+"Gebruikt open source <a href=\"https://namelessmc.com\">NamelessMC "
+"software</a>"
 
 #: main/templates/main/base.html:114
 #, python-format
 msgid "Help translate at %(weblate_link)s"
-msgstr ""
+msgstr "Help met vertalen op %(weblate_link)s"
 
 #: main/templates/main/base.html:118
 msgid "Support Discord"
@@ -574,11 +570,11 @@ msgstr ""
 
 #: users/templates/users/website_list.html:16
 msgid "Name"
-msgstr ""
+msgstr "Naam"
 
 #: users/templates/users/website_list.html:18
 msgid "Actions"
-msgstr ""
+msgstr "Acties"
 
 #: users/templates/users/website_list.html:35
 msgid "Configure"
