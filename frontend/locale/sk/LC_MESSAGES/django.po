@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-04-22 12:15+0000\n"
+"POT-Creation-Date: 2021-04-22 12:19+0000\n"
 "PO-Revision-Date: 2021-04-04 19:54+0000\n"
 "Last-Translator: CharlieCat <meow@charliecat.space>\n"
 "Language-Team: Slovak <http://translate.namelessmc.com/projects/named-"
@@ -46,29 +46,29 @@ msgid "Register"
 msgstr "Zaregistrovať sa"
 
 #: main/templates/main/base.html:112
+#, fuzzy
+#| msgid ""
+#| "Not affiliated with the <a href=\"https://namelessmc.com\">NamelessMC "
+#| "project</a>"
 msgid ""
-"Not affiliated with the <a href=\"https://namelessmc.com\">NamelessMC "
-"project</a>"
+"Uses open source <a href=\"https://namelessmc.com\">NamelessMC software</a>"
 msgstr ""
 "Nie sme spojený s <a href=\"https://namelessmc.com\">projektomNamelessMC</a>"
 
 #: main/templates/main/base.html:114
-msgid ""
-"This hosting system is <a href=\"https://github.com/Derkades/"
-"namelessmc_hosting\">open source</a>"
+#, python-format
+msgid "Help translate at %(weblate_link)s"
 msgstr ""
-"Tento hosting je <a href=\"https://github.com/Derkades/namelessmc_hosting"
-"\">open source</a>"
 
-#: main/templates/main/base.html:119
+#: main/templates/main/base.html:118
 msgid "Support Discord"
 msgstr "Discord Podpora"
 
-#: main/templates/main/base.html:122
+#: main/templates/main/base.html:121
 msgid "Privacy Policy"
 msgstr "Zásada ochrany osobních údajov"
 
-#: main/templates/main/base.html:123
+#: main/templates/main/base.html:122
 msgid "Terms of service"
 msgstr "Podmienky služieb"
 
@@ -580,6 +580,13 @@ msgid ""
 "all databases and website data. After resetting your website, wait about a "
 "minute and you'll see installer when going to your website."
 msgstr ""
+
+#~ msgid ""
+#~ "This hosting system is <a href=\"https://github.com/Derkades/"
+#~ "namelessmc_hosting\">open source</a>"
+#~ msgstr ""
+#~ "Tento hosting je <a href=\"https://github.com/Derkades/namelessmc_hosting"
+#~ "\">open source</a>"
 
 #, fuzzy
 #~| msgid "Your Websites"

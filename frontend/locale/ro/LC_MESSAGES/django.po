@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-04-22 12:15+0000\n"
+"POT-Creation-Date: 2021-04-22 12:19+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -46,25 +46,23 @@ msgstr ""
 
 #: main/templates/main/base.html:112
 msgid ""
-"Not affiliated with the <a href=\"https://namelessmc.com\">NamelessMC "
-"project</a>"
+"Uses open source <a href=\"https://namelessmc.com\">NamelessMC software</a>"
 msgstr ""
 
 #: main/templates/main/base.html:114
-msgid ""
-"This hosting system is <a href=\"https://github.com/Derkades/"
-"namelessmc_hosting\">open source</a>"
+#, python-format
+msgid "Help translate at %(weblate_link)s"
 msgstr ""
 
-#: main/templates/main/base.html:119
+#: main/templates/main/base.html:118
 msgid "Support Discord"
 msgstr ""
 
-#: main/templates/main/base.html:122
+#: main/templates/main/base.html:121
 msgid "Privacy Policy"
 msgstr ""
 
-#: main/templates/main/base.html:123
+#: main/templates/main/base.html:122
 msgid "Terms of service"
 msgstr ""
 

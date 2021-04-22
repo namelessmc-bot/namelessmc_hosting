@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-04-22 12:15+0000\n"
+"POT-Creation-Date: 2021-04-22 12:19+0000\n"
 "PO-Revision-Date: 2021-04-12 13:54+0000\n"
 "Last-Translator: Greg <gregvizier@gmail.com>\n"
 "Language-Team: French <http://translate.namelessmc.com/projects/named-"
@@ -45,30 +45,30 @@ msgid "Register"
 msgstr "Enregistrez vous"
 
 #: main/templates/main/base.html:112
+#, fuzzy
+#| msgid ""
+#| "Not affiliated with the <a href=\"https://namelessmc.com\">NamelessMC "
+#| "project</a>"
 msgid ""
-"Not affiliated with the <a href=\"https://namelessmc.com\">NamelessMC "
-"project</a>"
+"Uses open source <a href=\"https://namelessmc.com\">NamelessMC software</a>"
 msgstr ""
 "Non affilié au projet <a href=\"https://namelessmc.com\">NamelessMC project</"
 "a>"
 
 #: main/templates/main/base.html:114
-msgid ""
-"This hosting system is <a href=\"https://github.com/Derkades/"
-"namelessmc_hosting\">open source</a>"
+#, python-format
+msgid "Help translate at %(weblate_link)s"
 msgstr ""
-"Ce système d'hébergement est <a href=\"https://github.com/Derkades/"
-"namelessmc_hosting\">open source</a>"
 
-#: main/templates/main/base.html:119
+#: main/templates/main/base.html:118
 msgid "Support Discord"
 msgstr "Support Discord"
 
-#: main/templates/main/base.html:122
+#: main/templates/main/base.html:121
 msgid "Privacy Policy"
 msgstr "Politique de confidentialité"
 
-#: main/templates/main/base.html:123
+#: main/templates/main/base.html:122
 msgid "Terms of service"
 msgstr "Conditions d'utilisation"
 
@@ -622,6 +622,13 @@ msgstr ""
 "définitivement toutes les bases de données et les données du site. Après "
 "avoir réinitialisé votre site Web, attendez environ une minute et vous "
 "verrez l'installateur en allant sur votre site Web."
+
+#~ msgid ""
+#~ "This hosting system is <a href=\"https://github.com/Derkades/"
+#~ "namelessmc_hosting\">open source</a>"
+#~ msgstr ""
+#~ "Ce système d'hébergement est <a href=\"https://github.com/Derkades/"
+#~ "namelessmc_hosting\">open source</a>"
 
 #~ msgid "Your sites"
 #~ msgstr "Vos sites"

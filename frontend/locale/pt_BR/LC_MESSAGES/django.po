@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-04-22 12:15+0000\n"
+"POT-Creation-Date: 2021-04-22 12:19+0000\n"
 "PO-Revision-Date: 2021-04-19 00:59+0000\n"
 "Last-Translator: Gabriel Vittor <mansfferpro@gmail.com>\n"
 "Language-Team: Portuguese (Brazil) <http://translate.namelessmc.com/projects/"
@@ -45,30 +45,30 @@ msgid "Register"
 msgstr "Registrar"
 
 #: main/templates/main/base.html:112
+#, fuzzy
+#| msgid ""
+#| "Not affiliated with the <a href=\"https://namelessmc.com\">NamelessMC "
+#| "project</a>"
 msgid ""
-"Not affiliated with the <a href=\"https://namelessmc.com\">NamelessMC "
-"project</a>"
+"Uses open source <a href=\"https://namelessmc.com\">NamelessMC software</a>"
 msgstr ""
 "Nós não somos afiliados ao projeto <a href=\"https://namelessmc.com"
 "\">NamelessMC</a>"
 
 #: main/templates/main/base.html:114
-msgid ""
-"This hosting system is <a href=\"https://github.com/Derkades/"
-"namelessmc_hosting\">open source</a>"
+#, python-format
+msgid "Help translate at %(weblate_link)s"
 msgstr ""
-"Este sistema de hospedagem é de <a href=\"https://github.com/Derkades/"
-"namelessmc_hosting\"> código aberto </a>"
 
-#: main/templates/main/base.html:119
+#: main/templates/main/base.html:118
 msgid "Support Discord"
 msgstr "Suporte no Discord"
 
-#: main/templates/main/base.html:122
+#: main/templates/main/base.html:121
 msgid "Privacy Policy"
 msgstr "Política de Privacidade"
 
-#: main/templates/main/base.html:123
+#: main/templates/main/base.html:122
 msgid "Terms of service"
 msgstr "Termos de serviço"
 
@@ -612,6 +612,13 @@ msgstr ""
 "Tem certeza de que deseja redefinir seu site? Isso excluirá permanentemente "
 "todos os bancos de dados e dados do site. Depois de redefinir seu site, "
 "espere cerca de um minuto e você verá o instalador ao acessar seu site."
+
+#~ msgid ""
+#~ "This hosting system is <a href=\"https://github.com/Derkades/"
+#~ "namelessmc_hosting\">open source</a>"
+#~ msgstr ""
+#~ "Este sistema de hospedagem é de <a href=\"https://github.com/Derkades/"
+#~ "namelessmc_hosting\"> código aberto </a>"
 
 #~ msgid "Your sites"
 #~ msgstr "Seus sites"

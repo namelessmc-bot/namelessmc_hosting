@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-04-22 12:15+0000\n"
+"POT-Creation-Date: 2021-04-22 12:19+0000\n"
 "PO-Revision-Date: 2021-04-22 09:52+0000\n"
 "Last-Translator: LOyoujoLI <minion2018@hotmail.com>\n"
 "Language-Team: Russian <http://translate.namelessmc.com/projects/named-"
@@ -47,30 +47,30 @@ msgid "Register"
 msgstr "Зарегистрироваться"
 
 #: main/templates/main/base.html:112
+#, fuzzy
+#| msgid ""
+#| "Not affiliated with the <a href=\"https://namelessmc.com\">NamelessMC "
+#| "project</a>"
 msgid ""
-"Not affiliated with the <a href=\"https://namelessmc.com\">NamelessMC "
-"project</a>"
+"Uses open source <a href=\"https://namelessmc.com\">NamelessMC software</a>"
 msgstr ""
 "Не имеет отношения к проекту <a href=\"https://namelessmc.com\">NamelessMC</"
 "a>"
 
 #: main/templates/main/base.html:114
-msgid ""
-"This hosting system is <a href=\"https://github.com/Derkades/"
-"namelessmc_hosting\">open source</a>"
+#, python-format
+msgid "Help translate at %(weblate_link)s"
 msgstr ""
-"У этой системы хостинга есть <a href=\"https://github.com/Derkades/"
-"namelessmc_hosting\">открытый исходный код</a>"
 
-#: main/templates/main/base.html:119
+#: main/templates/main/base.html:118
 msgid "Support Discord"
 msgstr "Поддержка в Discord"
 
-#: main/templates/main/base.html:122
+#: main/templates/main/base.html:121
 msgid "Privacy Policy"
 msgstr "Политика конфиденциальности"
 
-#: main/templates/main/base.html:123
+#: main/templates/main/base.html:122
 msgid "Terms of service"
 msgstr "Условия использования"
 
@@ -611,6 +611,13 @@ msgid ""
 msgstr ""
 "Вы действительно хотите сбросить настройки для этого сайта? Это приведёт к "
 "потери всех данных. После сброса, подождите минуту для появления установщика."
+
+#~ msgid ""
+#~ "This hosting system is <a href=\"https://github.com/Derkades/"
+#~ "namelessmc_hosting\">open source</a>"
+#~ msgstr ""
+#~ "У этой системы хостинга есть <a href=\"https://github.com/Derkades/"
+#~ "namelessmc_hosting\">открытый исходный код</a>"
 
 #~ msgid "Your sites"
 #~ msgstr "Ваши сайты"

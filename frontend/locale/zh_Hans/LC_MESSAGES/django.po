@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-04-22 12:15+0000\n"
+"POT-Creation-Date: 2021-04-22 12:19+0000\n"
 "PO-Revision-Date: 2021-03-24 14:44+0000\n"
 "Last-Translator: Gabriel Leen <hello@dreta.dev>\n"
 "Language-Team: Chinese (Simplified) <http://translate.namelessmc.com/"
@@ -45,29 +45,29 @@ msgid "Register"
 msgstr "注册"
 
 #: main/templates/main/base.html:112
+#, fuzzy
+#| msgid ""
+#| "Not affiliated with the <a href=\"https://namelessmc.com\">NamelessMC "
+#| "project</a>"
 msgid ""
-"Not affiliated with the <a href=\"https://namelessmc.com\">NamelessMC "
-"project</a>"
+"Uses open source <a href=\"https://namelessmc.com\">NamelessMC software</a>"
 msgstr ""
 "不受 <a href=\"https://namelessmc.com\">NamelessMC 项目组</a> 的官方支持"
 
 #: main/templates/main/base.html:114
-msgid ""
-"This hosting system is <a href=\"https://github.com/Derkades/"
-"namelessmc_hosting\">open source</a>"
+#, python-format
+msgid "Help translate at %(weblate_link)s"
 msgstr ""
-"此建站系统是<a href=\"https://github.com/Derkades/namelessmc_hosting\">开源软"
-"件</a>"
 
-#: main/templates/main/base.html:119
+#: main/templates/main/base.html:118
 msgid "Support Discord"
 msgstr "支持 Discord"
 
-#: main/templates/main/base.html:122
+#: main/templates/main/base.html:121
 msgid "Privacy Policy"
 msgstr "隐私条款"
 
-#: main/templates/main/base.html:123
+#: main/templates/main/base.html:122
 msgid "Terms of service"
 msgstr "服务条款"
 
@@ -599,6 +599,13 @@ msgid ""
 msgstr ""
 "您确定要重置您的网站吗? 这会永久删除所有数据库和网站数据。重置网站大约一分钟"
 "后，您便可在网站上看到安装界面了。"
+
+#~ msgid ""
+#~ "This hosting system is <a href=\"https://github.com/Derkades/"
+#~ "namelessmc_hosting\">open source</a>"
+#~ msgstr ""
+#~ "此建站系统是<a href=\"https://github.com/Derkades/namelessmc_hosting\">开"
+#~ "源软件</a>"
 
 #~ msgid "Your sites"
 #~ msgstr "您的网站"

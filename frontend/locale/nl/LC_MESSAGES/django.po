@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-04-22 12:15+0000\n"
+"POT-Creation-Date: 2021-04-22 12:19+0000\n"
 "PO-Revision-Date: 2021-04-21 12:32+0000\n"
 "Last-Translator: NamelessMC Translations <robin@derkad.es>\n"
 "Language-Team: Dutch <http://translate.namelessmc.com/projects/named-hosting/"
@@ -45,30 +45,30 @@ msgid "Register"
 msgstr "Registreren"
 
 #: main/templates/main/base.html:112
+#, fuzzy
+#| msgid ""
+#| "Not affiliated with the <a href=\"https://namelessmc.com\">NamelessMC "
+#| "project</a>"
 msgid ""
-"Not affiliated with the <a href=\"https://namelessmc.com\">NamelessMC "
-"project</a>"
+"Uses open source <a href=\"https://namelessmc.com\">NamelessMC software</a>"
 msgstr ""
 "Niet aangesloten bij het <a href=\"https://namelessmc.com\">NamelessMC "
 "project</a>"
 
 #: main/templates/main/base.html:114
-msgid ""
-"This hosting system is <a href=\"https://github.com/Derkades/"
-"namelessmc_hosting\">open source</a>"
+#, python-format
+msgid "Help translate at %(weblate_link)s"
 msgstr ""
-"Dit hosting systeem is <a href=\"https://github.com/Derkades/"
-"namelessmc_hosting\">open source</a>"
 
-#: main/templates/main/base.html:119
+#: main/templates/main/base.html:118
 msgid "Support Discord"
 msgstr "Discord ondersteuning"
 
-#: main/templates/main/base.html:122
+#: main/templates/main/base.html:121
 msgid "Privacy Policy"
 msgstr "Privacybeleid"
 
-#: main/templates/main/base.html:123
+#: main/templates/main/base.html:122
 msgid "Terms of service"
 msgstr "Gebruikersvoorwaarden"
 
@@ -617,6 +617,13 @@ msgstr ""
 "verwijderd. Na het resetten van je site, wacht ongeveer een minuut en je "
 "zult weer gegroet worden door de NamelessMC installer als je naar je website "
 "gaat."
+
+#~ msgid ""
+#~ "This hosting system is <a href=\"https://github.com/Derkades/"
+#~ "namelessmc_hosting\">open source</a>"
+#~ msgstr ""
+#~ "Dit hosting systeem is <a href=\"https://github.com/Derkades/"
+#~ "namelessmc_hosting\">open source</a>"
 
 #~ msgid "Your sites"
 #~ msgstr "Jouw websites"
