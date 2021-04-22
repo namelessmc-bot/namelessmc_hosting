@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-04-21 18:09+0000\n"
-"PO-Revision-Date: 2021-04-22 14:52+0000\n"
+"PO-Revision-Date: 2021-04-22 16:52+0000\n"
 "Last-Translator: NamelessMC Translations <robin@derkad.es>\n"
 "Language-Team: Dutch <http://translate.namelessmc.com/projects/named-hosting/"
 "named-hosting/nl/>\n"
@@ -103,15 +103,15 @@ msgstr "Prijs"
 
 #: main/templates/main/comparison.html:30
 msgid "N/A"
-msgstr ""
+msgstr "n.v.t"
 
 #: main/templates/main/comparison.html:32
 msgid "$6/mo"
-msgstr ""
+msgstr "$6/maand"
 
 #: main/templates/main/comparison.html:34
 msgid "~$5/mo"
-msgstr ""
+msgstr "~$5/maand"
 
 #: main/templates/main/comparison.html:37
 msgid "Maintenance free"
@@ -119,7 +119,7 @@ msgstr "Onderhoudsvrij"
 
 #: main/templates/main/comparison.html:46
 msgid "Fast page load times"
-msgstr ""
+msgstr "Snelle paginalaadtijden"
 
 #: main/templates/main/comparison.html:55
 msgid "No branding"
@@ -187,10 +187,8 @@ msgid "Supports CloudFlare Strict SSL"
 msgstr "Ondersteuning voor CloudFlare Strict SSL"
 
 #: main/templates/main/comparison.html:199
-#, fuzzy
-#| msgid "Custom Nameless-Link"
 msgid "Included custom Nameless-Link instance"
-msgstr "Eigen Nameless-Link instantie"
+msgstr "Inbegrepen eigen Nameless-Link instantie"
 
 #: main/templates/main/index.html:10
 msgid "Free hosting that actually works."
@@ -573,11 +571,6 @@ msgid "Create website"
 msgstr "Website maken"
 
 #: users/templates/users/website_form.html:18
-#, fuzzy
-#| msgid ""
-#| "Please make sure your website works without HTTPS before enabling HTTPS. "
-#| "Do not enable HTTPS if you are using CloudFlare flexible SSL. Version "
-#| "changes do not take effect until you use the 'Reset' button."
 msgid ""
 "Please make sure your website works without HTTPS before enabling HTTPS. Do "
 "not enable HTTPS if you are using CloudFlare flexible SSL. Version changes "
@@ -587,7 +580,9 @@ msgid ""
 msgstr ""
 "Zorg alsjeblieft dat je website werkt zonder HTTPS voordat je HTTPS aanzet. "
 "Zet HTTPS niet aan als je gebruik maakt van CloudFlare Flexible SSL. "
-"Versiewijzigingen hebben geen effect tot je op de 'Reset' knop drukt."
+"Versiewijzigingen hebben geen effect tot je op de 'Reset' knop drukt, als je "
+"een bestaande website wilt updaten zie <a href=\"https://github.com/Derkades/"
+"namelessmc_hosting/wiki/Changing-versions\">deze wiki pagina</a>."
 
 #: users/templates/users/website_list.html:16
 msgid "Name"
