@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-04-22 12:19+0000\n"
-"PO-Revision-Date: 2021-04-21 12:32+0000\n"
+"POT-Creation-Date: 2021-04-21 18:09+0000\n"
+"PO-Revision-Date: 2021-04-22 12:20+0000\n"
 "Last-Translator: NamelessMC Translations <robin@derkad.es>\n"
 "Language-Team: Dutch <http://translate.namelessmc.com/projects/named-hosting/"
 "named-hosting/nl/>\n"
@@ -196,16 +196,13 @@ msgstr ""
 "blokkeren!"
 
 #: main/templates/main/index.html:17
-#, fuzzy, python-format
-#| msgid ""
-#| "We currently host %(websites)s websites. Operated by %(discord_handle)s "
-#| "in Discord or %(github_handle)s on GitHub"
+#, python-format
 msgid ""
 "We currently host %(websites)s websites. Operated by %(discord_handle)s in "
 "Discord or %(github_handle)s on GitHub."
 msgstr ""
 "Wij hosten momenteel %(websites)s websites. Deze hostingdienst wordt beheerd "
-"door %(discord_handle)s (Discord) of %(github_handle)s (GitHub)"
+"door %(discord_handle)s (Discord) of %(github_handle)s (GitHub)."
 
 #: main/templates/main/index.html:24
 msgid "Create your website now"
@@ -584,14 +581,12 @@ msgid "Actions"
 msgstr ""
 
 #: users/templates/users/website_list.html:35
-#, fuzzy
-#| msgid "Confirm"
 msgid "Configure"
-msgstr "Bevestigen"
+msgstr "Instellingen"
 
 #: users/templates/users/website_list.html:42
 msgid "You don't have any websites."
-msgstr ""
+msgstr "Je hebt geen websites."
 
 #: users/templates/users/website_list.html:46
 #: users/templates/users/website_list.html:48
@@ -600,7 +595,7 @@ msgstr "Nieuwe website maken"
 
 #: users/templates/users/website_list.html:48
 msgid "Accounts are currently limited to 3 websites."
-msgstr ""
+msgstr "Accounts zijn momenteel beperkt tot 3 websites."
 
 #: users/templates/users/website_reset.html:8
 #, python-format
