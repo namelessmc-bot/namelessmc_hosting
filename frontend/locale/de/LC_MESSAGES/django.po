@@ -3,20 +3,21 @@
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-04-22 12:40+0000\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
+"PO-Revision-Date: 2021-04-23 18:52+0000\n"
+"Last-Translator: Lucid <gaminglooted@gmail.com>\n"
+"Language-Team: German <http://translate.namelessmc.com/projects/"
+"named-hosting/named-hosting/de/>\n"
+"Language: de\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 4.6\n"
 
 #: main/templates/main/base.html:45
 msgid "Home"
@@ -24,46 +25,48 @@ msgstr ""
 
 #: main/templates/main/base.html:58 users/templates/users/website_list.html:11
 msgid "Your Websites"
-msgstr ""
+msgstr "Ihre Websites"
 
 #: main/templates/main/base.html:63 users/templates/users/website_detail.html:7
 #: users/templates/users/website_list.html:7
 msgid "Account"
-msgstr ""
+msgstr "Konto"
 
 #: main/templates/main/base.html:68
 msgid "Logout"
-msgstr ""
+msgstr "Abmelden"
 
 #: main/templates/main/base.html:73
 msgid "Login"
-msgstr ""
+msgstr "Anmeldung"
 
 #: main/templates/main/base.html:78
 msgid "Register"
-msgstr ""
+msgstr "Registrieren"
 
 #: main/templates/main/base.html:112
 msgid ""
 "Uses open source <a href=\"https://namelessmc.com\">NamelessMC software</a>"
 msgstr ""
+"Verwendet open source <a href=\"https://namelessmc.com\">NamelessMC "
+"Software</a>"
 
 #: main/templates/main/base.html:114
 #, python-format
 msgid "Help translate at %(weblate_link)s"
-msgstr ""
+msgstr "Hilfe beim Übersetzen beim %(weblate_link)s"
 
 #: main/templates/main/base.html:118
 msgid "Support Discord"
-msgstr ""
+msgstr "Unterstützung Discord"
 
 #: main/templates/main/base.html:121
 msgid "Privacy Policy"
-msgstr ""
+msgstr "Datenschutz-Bestimmungen"
 
 #: main/templates/main/base.html:122
 msgid "Terms of service"
-msgstr ""
+msgstr "Nutzungsbedingungen"
 
 #: main/templates/main/comparison.html:5
 msgid "Hosting service comparison"
@@ -79,7 +82,7 @@ msgstr ""
 
 #: main/templates/main/comparison.html:14
 msgid "VPS"
-msgstr ""
+msgstr "VPS"
 
 #: main/templates/main/comparison.html:18
 #: main/templates/main/comparison.html:20
@@ -87,28 +90,28 @@ msgstr ""
 #: main/templates/main/comparison.html:31
 #: main/templates/main/comparison.html:33
 msgid "Free"
-msgstr ""
+msgstr "Kostenlos"
 
 #: main/templates/main/comparison.html:19
 #: main/templates/main/comparison.html:21
 msgid "Paid"
-msgstr ""
+msgstr "Bezahlt"
 
 #: main/templates/main/comparison.html:28
 msgid "Price"
-msgstr ""
+msgstr "Preis"
 
 #: main/templates/main/comparison.html:30
 msgid "N/A"
-msgstr ""
+msgstr "N/A"
 
 #: main/templates/main/comparison.html:32
 msgid "$6/mo"
-msgstr ""
+msgstr "$6/mo"
 
 #: main/templates/main/comparison.html:34
 msgid "~$5/mo"
-msgstr ""
+msgstr "~$5/mo"
 
 #: main/templates/main/comparison.html:37
 msgid "Maintenance free"
