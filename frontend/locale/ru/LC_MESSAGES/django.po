@@ -8,10 +8,10 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-04-24 11:02+0000\n"
-"PO-Revision-Date: 2021-04-22 09:52+0000\n"
+"PO-Revision-Date: 2021-04-24 13:52+0000\n"
 "Last-Translator: LOyoujoLI <minion2018@hotmail.com>\n"
-"Language-Team: Russian <http://translate.namelessmc.com/projects/named-"
-"hosting/named-hosting/ru/>\n"
+"Language-Team: Russian <http://translate.namelessmc.com/projects/"
+"named-hosting/named-hosting/ru/>\n"
 "Language: ru\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -47,20 +47,15 @@ msgid "Register"
 msgstr "Зарегистрироваться"
 
 #: main/templates/main/base.html:112
-#, fuzzy
-#| msgid ""
-#| "Not affiliated with the <a href=\"https://namelessmc.com\">NamelessMC "
-#| "project</a>"
 msgid ""
 "Uses open source <a href=\"https://namelessmc.com\">NamelessMC software</a>"
 msgstr ""
-"Не имеет отношения к проекту <a href=\"https://namelessmc.com\">NamelessMC</"
-"a>"
+"Использует открытое ПО <a href=\"https://namelessmc.com\">NamelessMC</a>"
 
 #: main/templates/main/base.html:114
 #, python-format
 msgid "Help translate at %(weblate_link)s"
-msgstr ""
+msgstr "Исправь перевод на %(weblate_link)s"
 
 #: main/templates/main/base.html:118
 msgid "Support Discord"
@@ -109,15 +104,15 @@ msgstr "Цена"
 
 #: main/templates/main/comparison.html:30
 msgid "N/A"
-msgstr ""
+msgstr "N/A"
 
 #: main/templates/main/comparison.html:32
 msgid "$6/mo"
-msgstr ""
+msgstr "$6/месяц"
 
 #: main/templates/main/comparison.html:34
 msgid "~$5/mo"
-msgstr ""
+msgstr "~$5/месяц"
 
 #: main/templates/main/comparison.html:37
 msgid "Maintenance free"
@@ -125,7 +120,7 @@ msgstr "Защита от падения сайта"
 
 #: main/templates/main/comparison.html:46
 msgid "Fast page load times"
-msgstr ""
+msgstr "Быстрая загрузка страниц"
 
 #: main/templates/main/comparison.html:55
 msgid "No branding"
@@ -193,8 +188,6 @@ msgid "Supports CloudFlare Strict SSL"
 msgstr "Поддержка CloudFlare Strict SSL"
 
 #: main/templates/main/comparison.html:199
-#, fuzzy
-#| msgid "Custom Nameless-Link"
 msgid "Included custom Nameless-Link instance"
 msgstr "Поддержка кастомного бота"
 
@@ -578,11 +571,6 @@ msgid "Create website"
 msgstr "Создать сайт"
 
 #: users/templates/users/website_form.html:18
-#, fuzzy
-#| msgid ""
-#| "Please make sure your website works without HTTPS before enabling HTTPS. "
-#| "Do not enable HTTPS if you are using CloudFlare flexible SSL. Version "
-#| "changes do not take effect until you use the 'Reset' button."
 msgid ""
 "Please make sure your website works without HTTPS before enabling HTTPS. Do "
 "not enable HTTPS if you are using CloudFlare flexible SSL. Version changes "
@@ -592,15 +580,17 @@ msgid ""
 msgstr ""
 "Убедитесь, что ваш сайт работает с HTTP. Не включайте здесь HTTPS, если у "
 "вас SSL от CloudFlare. Смена версии не влияет пока вы не сбросите настройки "
-"сайта."
+"сайта. Если вы хотите обновить существующий сайт, то прочитайте <a href="
+"\"https://github.com/Derkades/namelessmc_hosting/wiki/Changing-versions\""
+">инструкцию</a>."
 
 #: users/templates/users/website_list.html:16
 msgid "Name"
-msgstr ""
+msgstr "Название"
 
 #: users/templates/users/website_list.html:18
 msgid "Actions"
-msgstr ""
+msgstr "Действия"
 
 #: users/templates/users/website_list.html:35
 msgid "Configure"
