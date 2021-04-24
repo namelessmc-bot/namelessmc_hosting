@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-04-24 11:02+0000\n"
-"PO-Revision-Date: 2021-04-22 16:52+0000\n"
-"Last-Translator: NamelessMC Translations <robin@derkad.es>\n"
+"PO-Revision-Date: 2021-04-24 15:52+0000\n"
+"Last-Translator: Supercrafter100 <admin@supercrafter100.com>\n"
 "Language-Team: Dutch <http://translate.namelessmc.com/projects/named-hosting/"
 "named-hosting/nl/>\n"
 "Language: nl\n"
@@ -143,7 +143,7 @@ msgstr "Kies PHP versie"
 
 #: main/templates/main/comparison.html:100
 msgid "Database backups"
-msgstr "Database backups"
+msgstr "Database back-ups"
 
 #: main/templates/main/comparison.html:109
 msgid "File backups"
